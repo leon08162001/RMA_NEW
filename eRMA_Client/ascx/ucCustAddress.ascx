@@ -1,0 +1,68 @@
+﻿<%@ Control Language="VB" AutoEventWireup="false" CodeFile="ucCustAddress.ascx.vb" Inherits="ascx_ucCustAddress" %>
+
+
+
+<asp:Panel ID="UI_panel" runat="server" style="display:none;position:absolute;width:70%;border:3px solid #808080;background:#ffffff;" >
+ 
+
+    <fieldset  align="top"  style="padding:5%;background:#ffffff;"   >
+    <table id="table2" class="table"  style="width:100%;" align="center" border="0" cellspacing="1" >
+        <tr >
+            <td align="left">
+                <asp:Label ID="UI_lblAddressTittle" runat ="server" Text="206_Please select a Address from below lists."></asp:Label>
+            </td>
+        </tr>
+        <tr  valign="top">
+            <td align="center">
+                <div align="center">
+                    <asp:GridView ID="UI_dvAddress" runat ="server" CellPadding ="0" CellSpacing ="1" border="0" Cssclass="table" AutoGenerateColumns="False" AllowPaging="true" PagerSettings-Mode="Numeric"  >
+                        <Columns>
+                          <asp:TemplateField>
+                             <HeaderStyle Width="10%" Height ="20px" HorizontalAlign="Center"></HeaderStyle>
+                             <ItemStyle HorizontalAlign="Center" CssClass="text9pt" Height="25px"></ItemStyle>
+                             <ItemTemplate>
+                                    <asp:RadioButton runat="server" ID="raoAddress" GroupName="Address" />
+                             </ItemTemplate>
+                          </asp:TemplateField>
+                          
+                        <asp:TemplateField HeaderText="008_Address">
+                             <HeaderStyle Width="90%" Height ="20px" HorizontalAlign="Center"></HeaderStyle>
+                             <ItemStyle HorizontalAlign="left" CssClass="text9pt" Height="25px"></ItemStyle>
+                             <ItemTemplate>
+                                    <asp:Label runat="server" ID="UI_CUAddress" Text='<%# Eval("CU_Address") %>'></asp:Label>
+                             </ItemTemplate>
+                          </asp:TemplateField>        
+                         
+                        </Columns> 
+                        <HeaderStyle CssClass="Text_Head"/>
+                        <RowStyle CssClass="TR_1" />
+                        <AlternatingRowStyle CssClass="ListRowEven" />
+                        <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Center" />
+                    </asp:GridView>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">&nbsp;&nbsp;
+                <asp:Button ID="UI_cmdClose" runat="server" Text="_Close" CssClass="btn btn-primary" />
+                <asp:Button ID="UI_cmdSubmit" runat="server" Text="_Submit" CssClass="btn btn-primary" />
+            </td>
+        </tr>
+    </table>
+    </fieldset>	
+  
+
+
+<asp:button id="UI_butTarget" Width="0px" Height="0px" runat="server" style="display:none"></asp:button>
+<asp:button id="UI_butOK" Width="0px" Height="0px" runat="server" style="display:none"></asp:button>
+
+
+</asp:Panel>
+
+<ajaxToolkit:ModalPopupExtender ID="ajModalProgress" TargetControlID="UI_butTarget"  
+PopupControlID="UI_panel"  
+OkControlID="UI_butOK" 
+CancelControlID="UI_cmdClose"
+BackgroundCssClass = "modalBackground"
+runat="server">
+</ajaxToolkit:ModalPopupExtender>

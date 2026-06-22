@@ -1,0 +1,107 @@
+﻿Imports DefLanguage
+
+Partial Class MasterPageRWD
+    Inherits System.Web.UI.MasterPage
+    Dim _oLanguage As New ctlLanguage
+    Dim _Crypto As New SecurityCrypt.Crypto
+    Dim _ctlLanguage As New ctlLanguage
+
+    ''' <summary>
+    ''' 取得語系資料
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub QueryLanguage()
+        Dim dtLanguage As New LanguageDTO.DEFLANGUAGEDataTable
+        dtLanguage = _ctlLanguage.QueryByDefLanguage()
+
+
+        _ctlLanguage.reLoad(Session("_LanguageID"))
+
+
+    End Sub
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
+        Me.Page.Title = Session("_Title").ToString().Trim()
+
+
+        If Session("_UserID") = "" Then
+            'Session("_isTimeOut") = True
+            'Response.Redirect("Default.aspx")
+        End If
+
+        Call setScript_Processing()
+
+    End Sub
+
+    ''' <summary>
+    ''' 設定控制項
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub setControls()
+        Dim i As Integer = 0
+        Dim flagRole As Boolean = False
+
+
+        '角色:0.View、1.Receiver、2.Repair center、3.Sales、4.Shipping、9.Admin
+        Dim arrRole() As String = Session("_Role").ToString().Split(",")
+        If arrRole.Length > 1 Then
+            For i = 0 To arrRole.Length - 1
+                Select Case arrRole(i).Trim()
+                    Case "1"
+
+
+                    Case "2"
+
+
+                    Case "3"
+
+                    Case "4"
+
+                End Select
+            Next
+        End If
+
+
+        '一人會有多角色, 希望在介面上可以清楚的知道目前是在操作哪各角色-->利用介面上的切換角色的按鈕用顏色來判斷
+        Dim arrOperationRole() As String = Session("_OperationRole").ToString().Split(",")
+        If arrOperationRole.Length > 0 Then
+            Select Case arrOperationRole(0).ToString.Trim()
+                Case "1"
+
+
+                Case "2"
+
+
+                Case "3"
+
+                Case "4"
+
+            End Select
+        End If
+
+    End Sub
+
+    Private Sub setScript_Processing()
+        '取得Processing Text
+        Dim sScript As String = ""
+        sScript = sScript & "<script type=""text/javascript"">" & vbCrLf
+        sScript = sScript & "var delMsg=""" & _oLanguage.getText("Processing", "001", ctlLanguage.eumType.Processing) & """;" & vbCrLf
+        sScript = sScript & "var CancelItemMsg=""" & _oLanguage.getText("Processing", "015", ctlLanguage.eumType.Processing) & """;" & vbCrLf
+        sScript = sScript & "var BarCodeMsg=""" & _oLanguage.getText("Processing", "016", ctlLanguage.eumType.Processing) & """;" & vbCrLf
+
+        sScript = sScript & "var Progress_SaveMsg=""" & _oLanguage.getText("Processing", "002", ctlLanguage.eumType.Processing) & """;" & vbCrLf
+        sScript = sScript & "var Progress_LoadMsg=""" & _oLanguage.getText("Processing", "003", ctlLanguage.eumType.Processing) & """;" & vbCrLf
+        sScript = sScript & "var Progress_DelMsg=""" & _oLanguage.getText("Processing", "004", ctlLanguage.eumType.Processing) & """;" & vbCrLf
+        sScript = sScript & "var Progress_ExportMsg=""" & _oLanguage.getText("Processing", "005", ctlLanguage.eumType.Processing) & """;" & vbCrLf
+        sScript = sScript & "var Progress_ProcessMsg=""" & _oLanguage.getText("Processing", "006", ctlLanguage.eumType.Processing) & """;" & vbCrLf
+        sScript = sScript & "var Progress_CancelMsg=""" & _oLanguage.getText("Processing", "013", ctlLanguage.eumType.Processing) & """;" & vbCrLf
+
+        sScript = sScript & "var doubleConfirmMsg=""" & _oLanguage.getText("RMA", "237", ctlLanguage.eumType.Validator) & """;" & vbCrLf
+
+        sScript = sScript & "</script>" & vbCrLf
+        Me.Page.ClientScript.RegisterClientScriptBlock(Me.Page.GetType(), "delMsg", sScript)
+    End Sub
+
+End Class
+

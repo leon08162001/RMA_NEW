@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51E0AD8F-0298-406F-9E57-20B48AB56550}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DataService</RootNamespace>
+    <AssemblyName>DataService</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DataService.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DataService.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoDocumentNo">
+      <HintPath>DLL\AutoDocumentNo.dll</HintPath>
+    </Reference>
+    <Reference Include="ICAT_OracleDAO">
+      <HintPath>DLL\ICAT_OracleDAO.dll</HintPath>
+    </Reference>
+    <Reference Include="SecurityCrypt">
+      <HintPath>DLL\SecurityCrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common.vb" />
+    <Compile Include="ctAddress.vb" />
+    <Compile Include="ctlAdmin.vb" />
+    <Compile Include="ctlChargeQuoted.vb" />
+    <Compile Include="ctlCipherExtend.vb" />
+    <Compile Include="ctlCipherlab.vb" />
+    <Compile Include="ctlCompany.vb" />
+    <Compile Include="ctlCountry.vb" />
+    <Compile Include="ctlCustomer.vb" />
+    <Compile Include="ctlExchangeRate.vb" />
+    <Compile Include="ctlExtend.vb" />
+    <Compile Include="ctlFailure.vb" />
+    <Compile Include="ctlFAQ.vb" />
+    <Compile Include="ctlMail.vb" />
+    <Compile Include="ctlOverTime.vb" />
+    <Compile Include="ctlPolicy.vb" />
+    <Compile Include="ctlReport.vb" />
+    <Compile Include="ctlRMA.vb" />
+    <Compile Include="ctlWarranty.vb" />
+    <Compile Include="DTO\AccountDTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\AccountDTO.vb">
+      <DependentUpon>AccountDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ChargeQuotedDTO.Designer.vb">
+      <DependentUpon>ChargeQuotedDTO.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DTO\ChargeQuotedDTO.vb">
+      <DependentUpon>ChargeQuotedDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CipherExtendDTO.Designer.vb">
+      <DependentUpon>CipherExtendDTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CipherExtendDTO.vb">
+      <DependentUpon>CipherExtendDTO.xsd</DependentUpon>
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="DTO\CompanyDTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CompanyDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CompanyDTO.vb">
+      <DependentUpon>CompanyDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CountryDTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CountryDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ctlDefective.vb" />
+    <Compile Include="DTO\CurrencyDTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CurrencyDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CustomerDTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\CustomerDTO.vb">
+      <DependentUpon>CustomerDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\DefectiveDTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DefectiveDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\FailureDTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FailureDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\FailureDTO.vb">
+      <DependentUpon>FailureDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\FaqDTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FaqDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\FaqDTO.vb">
+      <DependentUpon>FaqDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ImpRmaDTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImpRmaDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\OverTimeDTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OverTimeDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\PolicyDTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PolicyDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\PolicyDTO.vb">
+      <DependentUpon>PolicyDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ReportDTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ReportDTO.vb">
+      <DependentUpon>ReportDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\RmaDTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RmaDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\RmaDTO.vb">
+      <DependentUpon>RmaDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\WarrantyDTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WarrantyDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\WarrantyDTO.vb">
+      <DependentUpon>WarrantyDTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DTO\AccountDTO.xsc">
+      <DependentUpon>AccountDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\AccountDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\AccountDTO.xss">
+      <DependentUpon>AccountDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ChargeQuotedDTO.xsc">
+      <DependentUpon>ChargeQuotedDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ChargeQuotedDTO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>ChargeQuotedDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\ChargeQuotedDTO.xss">
+      <DependentUpon>ChargeQuotedDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CipherExtendDTO.xsc">
+      <DependentUpon>CipherExtendDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CipherExtendDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CipherExtendDTO1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\CipherExtendDTO.xss">
+      <DependentUpon>CipherExtendDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CompanyDTO.xsc">
+      <DependentUpon>CompanyDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CompanyDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CompanyDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\CompanyDTO.xss">
+      <DependentUpon>CompanyDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CountryDTO.xsc">
+      <DependentUpon>CountryDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CountryDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CountryDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\CountryDTO.xss">
+      <DependentUpon>CountryDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CurrencyDTO.xsc">
+      <DependentUpon>CurrencyDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CurrencyDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CurrencyDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\CurrencyDTO.xss">
+      <DependentUpon>CurrencyDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CustomerDTO.xsc">
+      <DependentUpon>CustomerDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\CustomerDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\CustomerDTO.xss">
+      <DependentUpon>CustomerDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\DefectiveDTO.xsc">
+      <DependentUpon>DefectiveDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\DefectiveDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DefectiveDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\DefectiveDTO.xss">
+      <DependentUpon>DefectiveDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\FailureDTO.xsc">
+      <DependentUpon>FailureDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\FailureDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FailureDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\FailureDTO.xss">
+      <DependentUpon>FailureDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\FaqDTO.xsc">
+      <DependentUpon>FaqDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\FaqDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FaqDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\FaqDTO.xss">
+      <DependentUpon>FaqDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ImpRmaDTO.xsc">
+      <DependentUpon>ImpRmaDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ImpRmaDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImpRmaDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\ImpRmaDTO.xss">
+      <DependentUpon>ImpRmaDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OverTimeDTO.xsc">
+      <DependentUpon>OverTimeDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\OverTimeDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OverTimeDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\OverTimeDTO.xss">
+      <DependentUpon>OverTimeDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\PolicyDTO.xsc">
+      <DependentUpon>PolicyDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\PolicyDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PolicyDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\PolicyDTO.xss">
+      <DependentUpon>PolicyDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ReportDTO.xsc">
+      <DependentUpon>ReportDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\ReportDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\ReportDTO.xss">
+      <DependentUpon>ReportDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\RmaDTO.xsc">
+      <DependentUpon>RmaDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\RmaDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RmaDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\RmaDTO.xss">
+      <DependentUpon>RmaDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\WarrantyDTO.xsc">
+      <DependentUpon>WarrantyDTO.xsd</DependentUpon>
+    </None>
+    <None Include="DTO\WarrantyDTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WarrantyDTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DTO\WarrantyDTO.xss">
+      <DependentUpon>WarrantyDTO.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DefLanguage\DefLanguage.vbproj">
+      <Project>{aaa94d3a-2d75-40cb-ae36-debb5fdcca3a}</Project>
+      <Name>DefLanguage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RMA_Model\RMA_Model.vbproj">
+      <Project>{5e4e7315-1072-4a9a-a78f-a424852b962e}</Project>
+      <Name>RMA_Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\ICAT_OracleDAO.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

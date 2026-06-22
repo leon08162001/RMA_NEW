@@ -1,0 +1,134 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.37327.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "eRMA_Client", "eRMA_Client\", "{FD574772-115D-48BE-B1D6-EDF8400B2849}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7"
+		ProjectReferences = "{51e0ad8f-0298-406f-9e57-20b48ab56550}|DataService.dll;{aaa94d3a-2d75-40cb-ae36-debb5fdcca3a}|DefLanguage.dll;{5E4E7315-1072-4A9A-A78F-A424852B962E}|RMA_Model.dll;{22ccfaeb-d8fb-4d25-9231-ca0b92bdd9d4}|RMA_Common.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56434"
+		Debug.AspNetCompiler.PhysicalPath = "eRMA_Client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56434\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56434"
+		Release.AspNetCompiler.PhysicalPath = "eRMA_Client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56434\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56434"
+		SlnRelativePath = "eRMA_Client\"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{22CCFAEB-D8FB-4D25-9231-CA0B92BDD9D4} = {22CCFAEB-D8FB-4D25-9231-CA0B92BDD9D4}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DataService", "DataService\DataService.vbproj", "{51E0AD8F-0298-406F-9E57-20B48AB56550}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DefLanguage", "DefLanguage\DefLanguage.vbproj", "{AAA94D3A-2D75-40CB-AE36-DEBB5FDCCA3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMA_Troubleshooting", "RMA_Troubleshooting\RMA_Troubleshooting.csproj", "{FA3C890F-6CF3-4EA3-9A1D-7A7BE42D5EA3}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RMA_Common", "RMA_Common\RMA_Common.vbproj", "{22CCFAEB-D8FB-4D25-9231-CA0B92BDD9D4}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RMA_Model", "RMA_Model\RMA_Model.vbproj", "{5E4E7315-1072-4A9A-A78F-A424852B962E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "eRMA_Backend", "eRMA_Backend\", "{E4684E53-DDFB-4FDE-8DDE-A51BE388A41A}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7"
+		ProjectReferences = "{51e0ad8f-0298-406f-9e57-20b48ab56550}|DataService.dll;{aaa94d3a-2d75-40cb-ae36-debb5fdcca3a}|DefLanguage.dll;{5E4E7315-1072-4A9A-A78F-A424852B962E}|RMA_Model.dll;{22ccfaeb-d8fb-4d25-9231-ca0b92bdd9d4}|RMA_Common.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50996"
+		Debug.AspNetCompiler.PhysicalPath = "eRMA_Backend\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50996\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50996"
+		Release.AspNetCompiler.PhysicalPath = "eRMA_Backend\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50996\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50996"
+		SlnRelativePath = "eRMA_Backend\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD574772-115D-48BE-B1D6-EDF8400B2849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD574772-115D-48BE-B1D6-EDF8400B2849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD574772-115D-48BE-B1D6-EDF8400B2849}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FD574772-115D-48BE-B1D6-EDF8400B2849}.Debug|x86.Build.0 = Debug|Any CPU
+		{FD574772-115D-48BE-B1D6-EDF8400B2849}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD574772-115D-48BE-B1D6-EDF8400B2849}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{FD574772-115D-48BE-B1D6-EDF8400B2849}.Release|x86.ActiveCfg = Debug|Any CPU
+		{FD574772-115D-48BE-B1D6-EDF8400B2849}.Release|x86.Build.0 = Debug|Any CPU
+		{51E0AD8F-0298-406F-9E57-20B48AB56550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E0AD8F-0298-406F-9E57-20B48AB56550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E0AD8F-0298-406F-9E57-20B48AB56550}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{51E0AD8F-0298-406F-9E57-20B48AB56550}.Debug|x86.Build.0 = Debug|Any CPU
+		{51E0AD8F-0298-406F-9E57-20B48AB56550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E0AD8F-0298-406F-9E57-20B48AB56550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51E0AD8F-0298-406F-9E57-20B48AB56550}.Release|x86.ActiveCfg = Release|Any CPU
+		{51E0AD8F-0298-406F-9E57-20B48AB56550}.Release|x86.Build.0 = Release|Any CPU
+		{AAA94D3A-2D75-40CB-AE36-DEBB5FDCCA3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA94D3A-2D75-40CB-AE36-DEBB5FDCCA3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA94D3A-2D75-40CB-AE36-DEBB5FDCCA3A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AAA94D3A-2D75-40CB-AE36-DEBB5FDCCA3A}.Debug|x86.Build.0 = Debug|Any CPU
+		{AAA94D3A-2D75-40CB-AE36-DEBB5FDCCA3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA94D3A-2D75-40CB-AE36-DEBB5FDCCA3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA94D3A-2D75-40CB-AE36-DEBB5FDCCA3A}.Release|x86.ActiveCfg = Release|Any CPU
+		{AAA94D3A-2D75-40CB-AE36-DEBB5FDCCA3A}.Release|x86.Build.0 = Release|Any CPU
+		{FA3C890F-6CF3-4EA3-9A1D-7A7BE42D5EA3}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{FA3C890F-6CF3-4EA3-9A1D-7A7BE42D5EA3}.Debug|Any CPU.Build.0 = Debug|x86
+		{FA3C890F-6CF3-4EA3-9A1D-7A7BE42D5EA3}.Debug|x86.ActiveCfg = Debug|x86
+		{FA3C890F-6CF3-4EA3-9A1D-7A7BE42D5EA3}.Debug|x86.Build.0 = Debug|x86
+		{FA3C890F-6CF3-4EA3-9A1D-7A7BE42D5EA3}.Release|Any CPU.ActiveCfg = Release|x86
+		{FA3C890F-6CF3-4EA3-9A1D-7A7BE42D5EA3}.Release|Any CPU.Build.0 = Release|x86
+		{FA3C890F-6CF3-4EA3-9A1D-7A7BE42D5EA3}.Release|x86.ActiveCfg = Release|x86
+		{FA3C890F-6CF3-4EA3-9A1D-7A7BE42D5EA3}.Release|x86.Build.0 = Release|x86
+		{22CCFAEB-D8FB-4D25-9231-CA0B92BDD9D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22CCFAEB-D8FB-4D25-9231-CA0B92BDD9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22CCFAEB-D8FB-4D25-9231-CA0B92BDD9D4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{22CCFAEB-D8FB-4D25-9231-CA0B92BDD9D4}.Debug|x86.Build.0 = Debug|Any CPU
+		{22CCFAEB-D8FB-4D25-9231-CA0B92BDD9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22CCFAEB-D8FB-4D25-9231-CA0B92BDD9D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22CCFAEB-D8FB-4D25-9231-CA0B92BDD9D4}.Release|x86.ActiveCfg = Release|Any CPU
+		{22CCFAEB-D8FB-4D25-9231-CA0B92BDD9D4}.Release|x86.Build.0 = Release|Any CPU
+		{5E4E7315-1072-4A9A-A78F-A424852B962E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E4E7315-1072-4A9A-A78F-A424852B962E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E4E7315-1072-4A9A-A78F-A424852B962E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5E4E7315-1072-4A9A-A78F-A424852B962E}.Debug|x86.Build.0 = Debug|Any CPU
+		{5E4E7315-1072-4A9A-A78F-A424852B962E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E4E7315-1072-4A9A-A78F-A424852B962E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E4E7315-1072-4A9A-A78F-A424852B962E}.Release|x86.ActiveCfg = Release|Any CPU
+		{5E4E7315-1072-4A9A-A78F-A424852B962E}.Release|x86.Build.0 = Release|Any CPU
+		{E4684E53-DDFB-4FDE-8DDE-A51BE388A41A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4684E53-DDFB-4FDE-8DDE-A51BE388A41A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4684E53-DDFB-4FDE-8DDE-A51BE388A41A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E4684E53-DDFB-4FDE-8DDE-A51BE388A41A}.Debug|x86.Build.0 = Debug|Any CPU
+		{E4684E53-DDFB-4FDE-8DDE-A51BE388A41A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4684E53-DDFB-4FDE-8DDE-A51BE388A41A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{E4684E53-DDFB-4FDE-8DDE-A51BE388A41A}.Release|x86.ActiveCfg = Debug|Any CPU
+		{E4684E53-DDFB-4FDE-8DDE-A51BE388A41A}.Release|x86.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4E1325D-70DF-47EC-9412-5F61F873E05D}
+	EndGlobalSection
+EndGlobal

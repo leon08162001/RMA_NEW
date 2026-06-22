@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Product Information</title>
+    <link href="../css/system.css" rel="stylesheet" />
+    <link href="../css/commonStyle.css" rel="stylesheet" />
+    <link href="../css/system-header.css" rel="stylesheet" />
+    <link href="../NeatUpload/default.css" rel="stylesheet" />
+    <script src="../js/jquery-3.5.0.js"></script>
+    <script src="../script/jsUpdateProgress.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            // 取得區域參數
+            const params = new URLSearchParams(window.location.search);
+            const repair = params.get('repair'); 
+            const country = params.get('country');
+
+            // 根據維修中心 + 國家 決定圖片
+            let imgSrc = '';
+
+            //加入澳洲中心 by buck modify 2025/09/16
+            if (repair === 'CEAT' || repair === 'UK_FALA' || repair === 'JP_BYTE') {
+                imgSrc = '../images/Notice/EU_UK_JP_Notice202509.jpg';
+            } else if (repair.indexOf("AU") > -1) {
+                imgSrc = '../images/Notice/AU_Notice202509.png';
+            }
+            else if (repair === 'CLHQ') {
+                if (country === 'TW') {
+                    imgSrc = '../images/Notice/TW_Notice202509.jpg';
+                } else {
+                    imgSrc = '../images/Notice/TW_Outside_Notice202509.jpg';
+                }
+            } 
+
+            // 設定圖片 src
+            document.getElementById('adjustmentImage').src = imgSrc;
+        });
+    </script>
+
+    <style>
+        u {
+            font-size: 8.0pt;
+        }
+
+        .SpellE {
+            font-size: 8.0pt;
+            font-family: 新細明體;
+        }
+
+        .GramE {
+            font-size: 8.0pt;
+            font-family: 新細明體;
+        }
+
+        .Product_Information_Lab {
+            display: block;
+            font-size: 0.83em;
+            margin-block-start: 1.67em;
+            margin-block-end: 1.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+    </style>
+    <style>
+        * {
+            font-size: 14px;
+        }
+
+        .erma-table-components-list {
+            border: 0px solid #ffffff;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .erma-download-btn {
+            border: 1px solid #000000;
+            color: #000000;
+            background: #ffffff;
+            padding: 9px 25px;
+            border-radius: 5px;
+            display: table-cell;
+        }
+
+
+        .Head_UI {
+            z-index: -50000;
+        }
+
+        .Add_btn {
+            border-radius: 20px;
+            border: 1px solid #496FF2;
+            color: #496FF2;
+            padding: 6px 18px;
+            background: #fff;
+            margin-top: 15px;
+            margin-right: 1.5%;
+            cursor: pointer;
+        }
+
+        .modalBackground {
+            background-color: black;
+            opacity: 0.5;
+        }
+
+        .file-upload:hover {
+        }
+
+        .file-upload {
+            display: inline-block;
+            overflow: hidden;
+            text-align: center;
+            vertical-align: middle;
+            font-family: Arial;
+            border: 1px solid #000000;
+            background: #fff;
+            color: #000000;
+            border-radius: 6px;
+            -moz-border-radius: 6px;
+            cursor: pointer;
+            -webkit-border-radius: 6px;
+        }
+
+            .file-upload:hover {
+            }
+
+        /* The button size */
+        .file-upload {
+            height: 35px;
+            position: relative;
+        }
+
+            .file-upload input {
+                top: 0;
+                left: 0;
+                margin: 0;
+                font-size: 11px;
+                font-weight: bold;
+                /* Loses tab index in webkit if width is set to 0 */
+                opacity: 0;
+                filter: alpha(opacity=0);
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+
+            .file-upload strong {
+                font: normal 12px Tahoma,sans-serif;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .file-upload span {
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                display: table;
+            }
+
+
+        .Problem_Edit {
+            background: #F1F3FF;
+            color: #5E7FF4;
+            font-size: 15px;
+            border: 0px solid #F1F3FF;
+        }
+
+
+        .erma-button-back-003 {
+            border: 1px solid #000000;
+            background: #fff;
+            color: #000000;
+            border-radius: 5px;
+            margin-left: 5px;
+            width: 125px;
+            height: 40px;
+        }
+
+
+        .ProductInformation_03-cancel {
+            float: right;
+        }
+
+        .erma-button-next-div-new {
+            border: 1px solid #496FF2;
+            background: #496FF2;
+            color: #ffffff;
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .erma-button-cancel-div,
+        .erma-button-next-div,
+        .erma-button-save-div {
+            border: 1px solid black;
+            background: #fff;
+            color: black;
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+
+            .erma-button-next-div:hover {
+                border: 1px solid #496FF2;
+                background: #496FF2;
+                color: #ffffff;
+                border-radius: 5px;
+                margin-left: 5px;
+                cursor: pointer;
+            }
+
+        .erma-info-uploadFile-message-001 {
+            position: fixed;
+            background: #fff;
+            box-shadow: 0 0 5px 0 #47474761;
+            padding: 15px 30px;
+            border-radius: 10px;
+            z-index: 100;
+            display: none;
+        }
+
+        .erma-title:hover .erma-info-uploadFile-message-001 {
+            display: block;
+        }
+
+        .erma-title img {
+            width: 15px;
+            ;
+            height: 15px;
+            ;
+        }
+
+
+        .erma-image-cancel-001 {
+            width: 16px;
+            padding: 5px;
+            position: absolute;
+            display: table;
+            right: -80px;
+            top: 5px;
+            cursor: pointer;
+        }
+
+        .erma-number-box #Sample_hyperlink {
+            color: #496FF2;
+        }
+
+        .erma-button-back-003 {
+            border: 1px solid #000000;
+            background: #fff;
+            color: #000000;
+            border-radius: 5px;
+            margin-left: 5px;
+            width: 125px;
+            height: 40px;
+        }
+
+        .erma-buttons-Agree {
+            border: 1px solid #000000;
+            background: #fff;
+            color: #000000;
+            border-radius: 5px;
+            margin-left: 5px;
+            width: 100px;
+            height: 35px;
+            display: block;
+        }
+
+        .erma-buttons-table {
+            position: absolute;
+            right: 2%;
+            bottom: 2.5%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div style="height:480px;overflow: auto;width: 100%;overflow-x: scroll;scroll-padding-bottom: 10px;padding: 25px;box-sizing: border-box;">
+            <img id="adjustmentImage" src="" style="width:100%; height:auto;">
+        </div>
+            <center class="erma-buttons-center">
+
+                <table class="erma-buttons-table">
+                    <tr>
+                        <td>
+                            <input type="submit" name="UI_cmdAgree" value="Agree" id="UI_cmdAgree" class="erma-buttons-Agree erma-button-Agree" onclick="window.parent.Close_windows();">
+                        </td>
+                    </tr>
+                </table>
+
+            </center>
+        </div>
+
+
+</body>
+</html>

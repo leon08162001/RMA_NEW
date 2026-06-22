@@ -1,0 +1,174 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="_Default, App_Web_guyaruol" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SN Query List</title>    
+     <style type="text/css">
+         .style1
+        {
+            width: 838px;
+         }
+        .style2
+        {
+         }
+        .style3
+        {
+             text-align: center;
+         }
+         .style6
+         {
+             text-align: right;
+             width: 838px;
+         }
+         .style7
+         {
+             text-align: left;
+             width: 838px;
+         }
+         .style8
+         {
+             text-align: center;
+         }
+         .style10
+         {
+             width: 90px;
+         }
+
+    </style>		
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+        </asp:ToolkitScriptManager>
+    <table>
+        <tr>
+            <td class="style8">
+                出貨日期：</td>
+            <td class="style2" colspan="3">
+                <asp:TextBox ID="txt_sDate" runat="server" Width="128px"></asp:TextBox>
+                
+                <asp:CalendarExtender ID="txt_sDate_CalendarExtender" runat="server" 
+                    TargetControlID="txt_sDate" PopupButtonID="Image1" Format="yyyy/MM/dd">
+                
+                </asp:CalendarExtender>
+                
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/images/CALENDAR.GIF" />
+                
+                &nbsp;～<asp:TextBox ID="txt_eDate" runat="server"></asp:TextBox>
+                    
+                <asp:CalendarExtender ID="txt_eDate_CalendarExtender" runat="server" TargetControlID="txt_eDate" PopupButtonID="Image2" Format="yyyy/MM/dd">               
+                </asp:CalendarExtender>     
+               <asp:Image ID="Image2" runat="server" ImageUrl="~/images/CALENDAR.GIF" />
+                </td>
+        </tr>
+        <tr>
+            <td class="style8">
+                產品序號：</td>
+            <td class="style10">
+                <asp:TextBox ID="txt_PartsSN" runat="server"></asp:TextBox>
+            </td>
+            <td class="style8">
+                產品料號：</td>
+            <td class="style10">
+                <asp:TextBox ID="txt_PartsPN" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="style8">
+                客戶代號：</td>
+            <td class="style10">
+                <asp:TextBox ID="txt_CustNo" runat="server"></asp:TextBox>
+            </td>
+            <td class="style8">
+                訂單單號：</td>
+            <td class="style10">
+                <asp:TextBox ID="txt_POSN" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="style8">
+                出通單號：</td>
+            <td class="style10">
+                <asp:TextBox ID="txt_ShippingSN" runat="server"></asp:TextBox>
+            </td>
+            <td class="style8">
+                工單單號：</td>
+            <td class="style10">
+                <asp:TextBox ID="txt_PackingSN" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="style3" colspan="4">
+                <asp:Button ID="btn_Query" runat="server" Text="查  詢" 
+                    onclick="btn_Query_Click" />
+            &nbsp;
+                <asp:Button ID="btn_Reset" runat="server" Text="重  設" 
+                    onclick="btn_Reset_Click" />
+            &nbsp;</td>
+        </tr>
+   </table>
+       
+    </div>
+   <table Width="1200px">
+        <tr>
+            <td class="style7">
+                &nbsp; &nbsp;<asp:Button ID="btnExcel" runat="server" Text="Excel匯出" 
+                    onclick="btnExcel_Click" />
+            <asp:Label ID="lbl_TotalAmount" runat="server" Text="共 0 筆"></asp:Label></td>
+            <td class="style6">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style1" colspan="2">
+    <asp:GridView ID="GridView1" runat="server" style="text-align: center" 
+        AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" BorderWidth="1px"
+        GridLines="None" onrowdatabound="GridView1_RowDataBound" AllowPaging="True" 
+                    onpageindexchanging="GridView1_PageIndexChanging" PageSize="20" Font-Size="Small"
+                    Width="1200px">
+            <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />          
+            <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+            <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+            <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+            <EditRowStyle BackColor="#999999" />
+            <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+        <Columns>
+            <asp:BoundField HeaderText="編號" />
+            <asp:HyperLinkField DataTextField="export_m_sn" HeaderText="成品序號" 
+                SortExpression="export_m_sn" />    
+            <asp:HyperLinkField DataTextField="EXPORT_PARTNO" HeaderText="成品料號" 
+                SortExpression="EXPORT_PARTNO" />                                    
+            <asp:HyperLinkField DataTextField="export_serialno" HeaderText="虛半序號" 
+                SortExpression="export_serialno" />
+            <asp:HyperLinkField DataTextField="expar_m_itemno" HeaderText="虛半料號" 
+                SortExpression="expar_m_itemno" />                 
+            <asp:HyperLinkField DataTextField="EXPORT_CUSTNO" HeaderText="客戶代號" 
+                SortExpression="EXPORT_CUSTNO" />
+            <asp:HyperLinkField DataTextField="EXPORT_CUSTOMERNAME" HeaderText="客戶名稱" 
+                SortExpression="EXPORT_CUSTOMERNAME" />
+            <asp:HyperLinkField DataTextField="export_ordernumber" HeaderText="訂單單號" 
+                SortExpression="export_ordernumber" />                            
+            <asp:HyperLinkField DataTextField="EXPORT_SALESNUMBER" HeaderText="出通單號" 
+                SortExpression="EXPORT_SALESNUMBER" />
+            <asp:HyperLinkField DataTextField="EXPAR_POID" HeaderText="工單單號" 
+                SortExpression="EXPAR_POID"/>            
+            <asp:HyperLinkField DataTextField="EXPORT_SHIPPING_TIME" HeaderText="出貨日期" 
+                SortExpression="EXPORT_SHIPPING_TIME" />
+            <asp:HyperLinkField DataTextField="EXPORT_WARRANTY_DATE" HeaderText="保固日期" 
+                SortExpression="EXPORT_WARRANTY_DATE" />        
+        </Columns>
+        <EmptyDataTemplate>
+            --無資料--
+        </EmptyDataTemplate>
+    </asp:GridView>
+            </td>
+        </tr>
+    </table>  
+    </form>
+</body>
+</html>

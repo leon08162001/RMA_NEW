@@ -1,0 +1,88 @@
+.ermaSys-menu{
+    position: relative;
+}
+
+.ermaSys-menu {
+    background-color: #fff;
+    padding: 10px 3%;
+    box-shadow: 0 0px 5px #4d4d4d81;
+}
+
+.ermaSys-menu .erma-cipherLab-logo{
+    width: 250px;
+    vertical-align: middle;
+}
+
+.ermaSys-header{
+    position: relative;
+}
+
+.ermaSys-system-logo{
+    display: inline-block;
+}
+
+.ermaSys-tools{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.erma-logo-text{
+    display: inline-block;
+}
+
+.erma-RMA-logo,.erma-Repair-logo{
+    font-size: 22px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.erma-RMA-logo{
+    color: #496FF2;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.ermaSys-header .erma-combobox-control {
+    top: 20%;
+    position: unset;
+    cursor: pointer;
+}
+
+.erma-line{
+    padding: 0 10px;
+    border-right: 1px solid #a0a0a0;
+    width: auto;
+    vertical-align: middle;
+    display: flex;
+}
+
+.ermaSys-functionClass{
+    display: table;
+    margin: auto 12px;
+
+}
+
+.ermaSys-functionClass img{
+    margin: 0 8px;
+    width:24px;
+}
+
+    .ermaSys-functionClass a {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+    @media screen and (max-width: 1366px) {
+    
+        .ermaSys-functionClass img {
+            width: 20px;
+        }
+        
+    
+    }

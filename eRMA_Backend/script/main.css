@@ -1,0 +1,220 @@
+html {
+  background: url(../images/body_bg.gif) top repeat-x #fff;
+  height: 101%;
+  text-align: center;
+}
+body {
+ /* min-width: 1000px;  */
+  font: normal 12px arial, verdana, sans-serif;
+  margin: 0px auto;
+  text-align: left;
+  background: #fff;
+}
+a {text-decoration: none;}
+form p {margin: 0px;}
+a img {border:none;}
+/******************* banner *******************/
+#logout {
+  background: #336b92;
+  padding: 3px 38px 5px 15px;
+  color: #fff;
+  float: right;
+  font-size: 12px;
+  font-weight: bold; 
+}
+#contact {
+  background: #336b92;
+  padding: 3px 135px 5px 7px;
+  color: #fff;
+  float: right;
+  font-size: 12px;
+  font-weight: bold; 
+}
+#logout a {
+  color: #84b6d8;
+  margin-left: 5px;
+}
+#contact a {
+  color: #fff;
+  margin-left: 5px;
+}
+#logo {margin: 10px 0px 30px 50px;}
+#banner form {
+  float: right;
+  clear: right;
+  padding-top: 5px;  
+/*  border-top: solid 1px #d1d1d1; */
+  margin-top: 3px;
+}
+#search_entry {
+  width: 127px;
+  font-size: 11px;
+  vertical-align: top;
+}
+#submit_button {
+  background: url(../images/search_bg.jpg) no-repeat right center #b8ad9a;
+  margin-right: 5px;
+  text-align: right;
+  text-transform: uppercase;
+  padding-right: 15px;
+  font: 10px bold arial, sans-serif;
+  color: #efe9da;
+  width: 70px;
+}
+
+/******************** navbar *******************/
+#navbar {
+  list-style-type: none;
+  text-transform: uppercase;
+  color: #448fb4;
+  font-weight: bold;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 24px;
+  clear: both;
+}
+#navbar li {
+  float: left;
+  padding-bottom: 8px;
+}
+#navbar a {
+  color: #448fb4;
+  padding: 0px 25px 0px;
+  border-right: solid 1px #448fb4; 
+}
+#navbar li#lastNavitem a {border-right: none;}
+ul#navbar a:hover {border-bottom: solid 8px #add8f7;}
+
+/******************* homepage content ******************/
+#rightColumn {
+  background: url(../images/home_bg3.jpg) no-repeat;
+  width: 307px;
+  float: right;
+  margin: 0px;
+}
+#rightColumn img {vertical-align: top;}
+#rightColumn p {
+  height: 80px;
+  color: #555;
+  margin: 30px 10px 3px;
+}
+#rightColumn p a {
+  border-top: solid 1px #c2b392;
+  padding-top: 3px;
+  color: #8e6f46;
+  font-weight: bold;
+}
+#rightColumn p a:hover {text-decoration: underline;}
+#flashcontent {
+  float:left;  /* IE 6.0 */
+}
+embed {vertical-align: top;}
+table {
+  width: 100%;
+  clear: both;
+  border-collapse: collapse;
+  border-top: solid 2px #efe9da; 
+}
+table a {
+  font-weight: bold;
+  color: #fff; 
+}
+table a:hover {text-decoration: underline;}
+table td {padding: 0px;}
+tr.row1 {vertical-align: middle;}
+#tr1td1 {
+  background: #efbc87; 
+  text-align: right;
+  padding: 0px 10px 0px 0px;
+  width: 176px;
+}
+#tr1td1 a {color: #336b92;}
+#tr1td3 {
+  background: #dfd5bf;
+  padding: 15px 0px 0px;
+  width: 311px;  
+}
+#tr1td3 select {margin-left: 15px;}
+#tr2td1 {
+  background: url(../images/home_menu_bg.jpg) bottom no-repeat #e3974a;
+  text-align: right;  
+  padding: 100px 10px 3px 0px;
+  color: #fff;
+  width: 176px;
+  vertical-align: bottom;
+}
+#tr2td3 {
+  background: url(../images/map.jpg) bottom no-repeat #dfd5bf;
+  width: 201px;
+  vertical-align: bottom;  
+}
+#news {
+ background: url(../images/home_news_bg.jpg) bottom repeat-x #efe9da; 
+ vertical-align: top;
+ padding: 5px 10px 20px 7px;
+ color: #6c6962; 
+}
+#news h4 {font-size: 12px; margin: 10px 3px; text-transform: uppercase;}
+#news a {color: #6c6962;}
+#news ul 
+{
+  height: 100px;
+  margin: 0px;
+  margin-left: 20px;
+  padding: 0px;
+  font-size: 11px;
+}
+#news #lcol {
+  width: 260px;
+  float: left;  
+}
+#news #rcol {
+  margin-left: 287px;
+  width: 200px;
+}
+#news ul li {
+  list-style-image: url(../images/bullet.jpg);
+  margin-bottom: 10px;
+}
+#flashcontent2 { vertical-align: top;}
+
+/*********************** footer ********************/
+#footer {
+  clear: both;
+  text-align: right;
+  border-top: solid 1px #ccdae4;
+  margin-top: 1px;
+  padding: 15px 10px 30px 20px;
+  color: #ccc;
+  font: bold 11px arial;
+}
+#footer ul {
+  margin: 0px;
+  padding: 0px;
+}
+#footer ul li{
+  float: left;
+  list-style-type: none;
+}
+#footer a {
+  color: #aaa;
+  padding: 0px 6px;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+#footer h4 {color: #555; font-size: 11px; text-align: left;}
+/************************ new CSS rules for liquid layout *****************/
+
+table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+table td {padding: 0px;}
+#partnertd {background: url(../images/partner_bg.jpg) repeat-x;}
+#col0 {width: 690px;}
+#col2 {background: url(../images/bg_home.gif) repeat-x;}
+#col4 {
+  background: url(../images/bg_home.gif) repeat-x;
+  width: 307px;
+}

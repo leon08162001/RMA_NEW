@@ -1,0 +1,45 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="_Default, App_Web_pv3oxpzk" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SN Query Detail</title>
+     <style type="text/css">
+         .style1
+        {
+            text-align: right;
+        }
+        </style>		
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table style="width:100%;">
+        <tr>
+            <td>
+    <asp:GridView ID="GridView2" runat="server" style="text-align: left" 
+        AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" BorderWidth="1px"
+        GridLines="None" AllowPaging="True" Font-Size="Small"
+                    onpageindexchanging="GridView2_PageIndexChanging" PageSize="20" 
+                    Width="562px" onrowdatabound="GridView2_RowDataBound">
+            <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />          
+            <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+            <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+            <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+            <EditRowStyle BackColor="#999999" />
+            <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+        <Columns>
+            <asp:BoundField HeaderText="編號" />
+            <asp:HyperLinkField DataTextField="expar_m_sn" HeaderText="虛半序號" />
+            <asp:HyperLinkField DataTextField="expar_m_itemno" HeaderText="虛半料號" />
+            <asp:BoundField DataField="expar_d_sn" HeaderText="零件序號" />
+            <asp:BoundField DataField="expar_d_itemno" HeaderText="零件料號" />
+        </Columns>
+    </asp:GridView>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

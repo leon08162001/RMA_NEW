@@ -1,0 +1,32 @@
+﻿.MyCalendar .ajax__calendar_container
+{
+	border: 1px solid #646464;
+	background-color: #ffffcc;
+	color: gray;
+}
+
+.MyCalendar .ajax__calendar_other .ajax__calendar_day,
+.MyCalendar .ajax__calendar_other .ajax__calendar_year
+ { 
+    color: #cccccc;
+ }
+
+.MyCalendar .ajax__calendar_hover .ajax__calendar_day 
+ {
+    color: green;
+ }
+.MyCalendar .ajax__calendar_hover .ajax__calendar_year, 
+.MyCalendar .ajax__calendar_hover .ajax__calendar_month
+{
+	color: #33cc66;
+}
+.MyCalendar .ajax__calendar_active .ajax__calendar_day
+{
+    color: red;
+    font-weight:bolder;
+}
+.MyCalendar .ajax__calendar_active .ajax__calendar_month, .MyCalendar .ajax__calendar_active .ajax__calendar_year
+{
+	color: #ff6633;
+	font-weight:bold;
+}

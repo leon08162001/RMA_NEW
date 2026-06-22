@@ -1,0 +1,316 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.OleDb;
+
+public partial class _Default : System.Web.UI.Page 
+{
+    OleDbConnection myCon = null;
+    OleDbCommand myCmd = null;
+    OleDbDataReader myDr = null;
+    string ConStr = "";
+    DataSet ds = null;
+    
+    //filter condition
+    string sSDate = "";
+    string sEDate = "";
+    string sPartPN = "";
+    string sPartSN = "";
+    string sSubPartSN = "";
+    string sCustNO = "";
+    string sPONO = "";
+    string sSNNO = "";
+    string sPKNO = "";
+
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        ConStr = "Provider=MSDAORA;Data Source=topprod;User ID=RMA;Password=4321RMA;";
+        myCon = new OleDbConnection(ConStr);
+
+        if (!this.IsPostBack)
+        {
+            CheckParameter();            
+
+            if (Request.QueryString["sEDate"] != null)
+                ExecuteQuery();
+        }          
+    }
+
+    private void CheckParameter()
+    {
+        //get the condition if have
+        if (Request.QueryString["sSDate"] != null)
+        {
+            sSDate = Request.QueryString["sSDate"].ToString();
+            this.txt_sDate.Text = sSDate;
+        }
+        else
+        {
+            //日期預設前三個月
+            this.txt_sDate.Text = DateTime.Now.AddMonths(-3).ToString("yyyy/MM/dd");
+            sSDate = txt_sDate.Text;
+        }
+
+        if (Request.QueryString["sEDate"] != null)
+        {
+            sEDate = Request.QueryString["sEDate"].ToString();
+            this.txt_eDate.Text = sEDate;
+        }
+        else
+        {
+            //日期預設前三個月
+            this.txt_eDate.Text = DateTime.Now.AddMonths(-1).ToString("yyyy/MM/dd");
+            sEDate = txt_eDate.Text;
+        }
+
+
+        if (Request.QueryString["sPartPN"] != null)
+        {
+            sPartPN = Request.QueryString["sPartPN"].ToString();
+            this.txt_PartsPN.Text = sPartPN;
+        }
+
+        if (Request.QueryString["sPartSN"] != null)
+        {
+            sPartSN = Request.QueryString["sPartSN"].ToString();
+            this.txt_PartsSN.Text = sPartSN;
+        }
+
+        if (Request.QueryString["sCustNO"] != null)
+        {
+            sCustNO = Request.QueryString["sCustNO"].ToString();
+            this.txt_CustNo.Text = sCustNO;
+        }
+
+        if (Request.QueryString["sPONO"] != null)
+        {
+            sPONO = Request.QueryString["sPONO"].ToString();
+            this.txt_POSN.Text = sPONO;
+        }
+
+        if (Request.QueryString["sSNNO"] != null)
+        {
+            sSNNO = Request.QueryString["sSNNO"].ToString();
+            this.txt_ShippingSN.Text = sSNNO;
+        }
+
+        if (Request.QueryString["sPKNO"] != null)
+        {
+            sPKNO = Request.QueryString["sPKNO"].ToString();
+            this.txt_PackingSN.Text = sPKNO;
+        }
+    }
+
+    protected void ExecuteQuery()
+    {
+        myCon.Open();
+
+        string sSQL = "";
+
+        sSQL = "select export_ordernumber, export_m_sn, b.expar_m_sn, expar_m_itemno, export_partno, export_serialno, export_custno, export_customername, export_salesnumber, to_char(export_shipping_time,'yyyy/mm/dd') as export_shipping_time , to_char(export_warranty_date,'yyyy/mm/dd') as export_warranty_date,  substr(expar_poid,0,14) as expar_poid " +
+                "from export a left join (select distinct expar_m_itemno, expar_m_sn, expar_poid from export_parts) b on a.export_serialno=b.expar_m_sn " +
+                "where 1=1 ";
+
+        //出貨時間過濾
+        if (sSDate != "")
+            sSQL = sSQL + " and export_shipping_time>=to_date('" + sSDate + "','yyyy/mm/dd') ";
+
+        if (sEDate != "")
+            sSQL = sSQL + " and export_shipping_time<=to_date('" + sEDate + "','yyyy/mm/dd') ";
+
+        //產品/零件序號過濾
+        if (sPartSN != "")
+            sSQL = sSQL + "and (export_serialno like '%" + sPartSN.Trim() + "%' or export_m_sn like '%" + sPartSN.Trim() + "%')";
+
+        //產品料號過濾
+        if (sPartPN != "")
+            sSQL = sSQL + " and (export_partno like '%" + sPartPN.Trim() + "%' or  expar_m_itemno like '%" + sPartPN.Trim() + "%') ";
+
+        //客戶編號過濾
+        if (sCustNO != "")
+            sSQL = sSQL + " and export_custno like '%" + sCustNO.Trim() + "%' ";
+
+        //訂單編號過濾
+        if (sPONO != "")
+            sSQL = sSQL + " and export_ordernumber like '%" + sPONO.Trim() + "%' ";
+
+        //出通單編號過濾
+        if (sSNNO != "")
+            sSQL = sSQL + " and export_salesnumber like '%" + sSNNO.Trim() + "%' ";
+
+        //工單編號過濾
+        if (sPKNO != "")
+            sSQL = sSQL + " and substr(expar_poid,0,14) like '%" + sPKNO.Trim() + "%' ";
+
+        //成品序號過濾
+        if (sPKNO != "")
+            sSQL = sSQL + " and substr(expar_poid,0,14) like '%" + sPKNO.Trim() + "%' ";
+
+
+        sSQL = sSQL + " order by export_m_sn ";
+
+        //Response.Write(sSQL);
+
+        myCmd = new OleDbCommand(sSQL, myCon);
+
+        myDr = myCmd.ExecuteReader();
+        
+        ds = new DataSet();
+        ds.Load(myDr, LoadOption.OverwriteChanges, "t1");
+
+
+        this.GridView1.DataSource = ds.Tables["t1"].DefaultView;
+        this.GridView1.DataBind();
+
+        this.lbl_TotalAmount.Text = "共 " + ds.Tables["t1"].Rows.Count.ToString() + " 筆";
+
+        //是否顯示筆數和Excel按鈕
+        this.btnExcel.Visible = (ds.Tables["t1"].Rows.Count > 0);
+
+        myCon.Close();
+
+    }
+
+    protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+    {
+        if (e.Row.RowType == DataControlRowType.DataRow)
+        {
+            //全條件過濾
+            //((HyperLink)e.Row.Cells[1].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=" + this.txt_PartsSN.Text + "&sPartPN=" + ((HyperLink)e.Row.Cells[1].Controls[0]).Text + "&sCustNO=" + this.txt_CustNo.Text + "&sPONO=" + this.txt_POSN.Text + "&sSNNO=" + this.txt_ShippingSN.Text + "&sPKNO=" + this.txt_PackingSN.Text;
+            //((HyperLink)e.Row.Cells[2].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=" + ((HyperLink)e.Row.Cells[2].Controls[0]).Text + "&sPartPN=" + this.txt_PartsPN.Text + "&sCustNO=" + this.txt_CustNo.Text + "&sPONO=" + this.txt_POSN.Text + "&sSNNO=" + this.txt_ShippingSN.Text + "&sPKNO=" + this.txt_PackingSN.Text;
+            //((HyperLink)e.Row.Cells[3].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=" + this.txt_PartsSN.Text + "&sPartPN=" + ((HyperLink)e.Row.Cells[3].Controls[0]).Text + "&sCustNO=" + this.txt_CustNo.Text + "&sPONO=" + this.txt_POSN.Text + "&sSNNO=" + this.txt_ShippingSN.Text + "&sPKNO=" + this.txt_PackingSN.Text;
+            //((HyperLink)e.Row.Cells[4].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=" + ((HyperLink)e.Row.Cells[4].Controls[0]).Text + "&sPartPN=" + this.txt_PartsPN.Text + "&sCustNO=" + this.txt_CustNo.Text + "&sPONO=" + this.txt_POSN.Text + "&sSNNO=" + this.txt_ShippingSN.Text + "&sPKNO=" + this.txt_PackingSN.Text;
+            //((HyperLink)e.Row.Cells[5].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=" + this.txt_PartsSN.Text + "&sPartPN=" + this.txt_PartsPN.Text + "&sCustNO=" + ((HyperLink)e.Row.Cells[5].Controls[0]).Text + "&sPONO=" + this.txt_POSN.Text + "&sSNNO=" + this.txt_ShippingSN.Text + "&sPKNO=" + this.txt_PackingSN.Text;
+            //((HyperLink)e.Row.Cells[7].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=" + this.txt_PartsSN.Text + "&sPartPN=" + this.txt_PartsPN.Text + "&sCustNO=" + this.txt_CustNo.Text + "&sPONO=" + this.txt_POSN.Text + "&sSNNO=" + ((HyperLink)e.Row.Cells[7].Controls[0]).Text + "&sPKNO=" + this.txt_PackingSN.Text;
+            //((HyperLink)e.Row.Cells[8].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + ((HyperLink)e.Row.Cells[8].Controls[0]).Text + "&sEDate=" + ((HyperLink)e.Row.Cells[8].Controls[0]).Text + "&sPartSN=" + this.txt_PartsSN.Text + "&sPartPN=" + this.txt_PartsPN.Text + "&sCustNO=" + this.txt_CustNo.Text + "&sPONO=" + this.txt_POSN.Text + "&sSNNO=" + this.txt_ShippingSN.Text + "&sPKNO=" + this.txt_PackingSN.Text;
+            //((HyperLink)e.Row.Cells[9].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=" + this.txt_PartsSN.Text + "&sPartPN=" + this.txt_PartsPN.Text + "&sCustNO=" + this.txt_CustNo.Text + "&sPONO=" + this.txt_POSN.Text + "&sSNNO=" + this.txt_ShippingSN.Text + "&sPKNO=" + ((HyperLink)e.Row.Cells[9].Controls[0]).Text;
+
+            //部份過濾
+            //((HyperLink)e.Row.Cells[1].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=&sPartPN=" + ((HyperLink)e.Row.Cells[1].Controls[0]).Text + "&sCustNO=&sPONO=&sSNNO=&sPKNO=";
+            //((HyperLink)e.Row.Cells[2].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=" + ((HyperLink)e.Row.Cells[2].Controls[0]).Text + "&sPartPN=&sCustNO=&sPONO=&sSNNO=&sPKNO=";
+
+            //編號
+            Label rownum = new Label();
+            rownum.Text = (e.Row.DataItemIndex+1).ToString();
+
+            e.Row.Cells[0].Controls.Add(rownum);
+
+
+        
+            //如果沒有expar_m_sn(虛半料號)沒有值則沒有key_parts資料,則不提供查詢key_parts drilldown連結
+            if (((HyperLink)e.Row.Cells[4].Controls[0]).Text != "")
+            {
+                //((HyperLink)e.Row.Cells[3].Controls[0]).NavigateUrl = "SNQueryDetail.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=&sPartPN=&sCustNO=&sPONO=&sSNNO=&sPKNO=&sSubPartSN=" + ((HyperLink)e.Row.Cells[3].Controls[0]).Text;
+                string sUrl="SNQueryDetail.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=&sPartPN=&sCustNO=&sPONO=&sSNNO=&sPKNO=&sSubPartSN=" + ((HyperLink)e.Row.Cells[3].Controls[0]).Text;
+
+                ((HyperLink)e.Row.Cells[3].Controls[0]).NavigateUrl = "#";
+                ((HyperLink)e.Row.Cells[3].Controls[0]).Attributes.Add("onClick", "window.open('" + sUrl + "', 'Parts', config='height=300,width=600'); return false");
+                ((HyperLink)e.Row.Cells[3].Controls[0]).Attributes.Add("style", "color:red");
+            }
+
+            ((HyperLink)e.Row.Cells[1].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=" + ((HyperLink)e.Row.Cells[1].Controls[0]).Text + "&sPartPN=&sCustNO=&sPONO=&sSNNO=&sPKNO=&sSubPartSN=";
+            ((HyperLink)e.Row.Cells[2].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=&sPartPN=" + ((HyperLink)e.Row.Cells[2].Controls[0]).Text + "&sCustNO=&sPONO=&sSNNO=&sPKNO=&sSubPartSN=";
+            ((HyperLink)e.Row.Cells[4].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=&sPartPN=" + ((HyperLink)e.Row.Cells[4].Controls[0]).Text + "&sCustNO=&sPONO=&sSNNO=&sPKNO=&sSubPartSN=";
+            ((HyperLink)e.Row.Cells[5].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=&sPartPN=&sCustNO=" + ((HyperLink)e.Row.Cells[5].Controls[0]).Text + "&sPONO=&sSNNO=&sPKNO=&sSubPartSN=";
+            ((HyperLink)e.Row.Cells[7].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=&sPartPN=&sCustNO=&sPONO=" + ((HyperLink)e.Row.Cells[7].Controls[0]).Text + "&sSNNO=&sPKNO=&sSubPartSN=";
+            ((HyperLink)e.Row.Cells[8].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=&sPartPN=&sCustNO=&sPONO=&sSNNO=" + ((HyperLink)e.Row.Cells[8].Controls[0]).Text + "&sPKNO=&sSubPartSN=";
+            ((HyperLink)e.Row.Cells[9].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=&sPartPN=&sCustNO=&sPONO=&sSNNO=&sPKNO=" + ((HyperLink)e.Row.Cells[9].Controls[0]).Text + "&sSubPartSN=";
+            ((HyperLink)e.Row.Cells[10].Controls[0]).NavigateUrl = "SNQueryList.aspx?sSDate=" + ((HyperLink)e.Row.Cells[10].Controls[0]).Text + "&sEDate=" + ((HyperLink)e.Row.Cells[10].Controls[0]).Text + "&sPartSN=&sPartPN=&sCustNO=&sPONO=&sSNNO=&sPKNO=&sSubPartSN=";
+        }
+    }
+
+    protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
+    {
+        CheckParameter();
+
+        ExecuteQuery();
+
+        this.GridView1.PageIndex = e.NewPageIndex;
+
+        this.GridView1.DataBind();
+    }
+
+    protected void btn_Reset_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("SNQueryList.aspx");
+    }
+
+
+     /**//// <summary> 
+     /// 傳入DataTable後，透過Response.Write將資料寫到client端，並指定為Excel格式 
+     /// </summary> 
+     /// <param name="pDataTable">資料來源</param> 
+     public void ExportDataTableToExcel(GridView exportGrid) 
+     {
+         int tRowCount = exportGrid.Rows.Count;
+         int tColumnCount = exportGrid.Columns.Count;
+         
+         Response.Expires = 0; 
+         Response.Clear(); 
+         Response.Buffer = true; 
+         Response.Charset = "utf-8"; 
+         Response.ContentEncoding = System.Text.Encoding.UTF8; 
+         Response.ContentType = "application/vnd.ms-excel"; 
+         Response.AddHeader("Content-Disposition", "attachment; filename=SNQueryList.xls"); 
+         Response.Write("<meta http-equiv=Content-Type content=text/html;charset=utf-8>"); 
+  
+         Response.Write("<Table borderColor=black border=1>"); 
+         Response.Write("\n <TR>"); 
+
+         for (int i = 0; i < tColumnCount; i++) 
+         {
+             Response.Write("\n <TD  bgcolor=\"#507CD1\" style= \"font-size:12px;color:#ffffff\"  align=\"center\">");
+             Response.Write(exportGrid.Columns[i].HeaderText); 
+             Response.Write("\n </TD>"); 
+         } 
+
+         Response.Write("\n </TR>");
+
+
+         for (int j = 0; j < tRowCount; j++)
+         {
+             Response.Write("\n <TR>");
+             for (int k = 0; k < tColumnCount; k++)
+             {
+                 Response.Write("\n <TD align=\"center\" x:num>");
+
+                 if (exportGrid.Rows[j].Cells[k].Controls[0].GetType().Name == "Label")
+                 {
+                     Response.Write(((Label)exportGrid.Rows[j].Cells[k].Controls[0]).Text);
+                 }
+                 else
+                 {
+                     Response.Write(((HyperLink)exportGrid.Rows[j].Cells[k].Controls[0]).Text);
+                 }
+
+                 Response.Write("\n </TD>");
+             }
+             Response.Write("\n </TR>");
+         }
+  
+         Response.Write("</Table>"); 
+  
+         Response.End(); 
+     }
+    
+
+    protected void btnExcel_Click(object sender, EventArgs e)
+    {
+        GridView1.AllowPaging = false;
+        GridView1.DataBind();
+
+        this.ExportDataTableToExcel(GridView1);
+
+        GridView1.AllowPaging = true;
+        GridView1.DataBind();
+    }
+
+    protected void btn_Query_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("SNQueryList.aspx?sSDate=" + this.txt_sDate.Text + "&sEDate=" + this.txt_eDate.Text + "&sPartSN=" + this.txt_PartsSN.Text + "&sPartPN=" + this.txt_PartsPN.Text + "&sCustNO=" + this.txt_CustNo.Text + "&sPONO=" + this.txt_POSN.Text + "&sSNNO=" + this.txt_ShippingSN.Text + "&sPKNO=" + this.txt_PackingSN.Text + "&sSubPartSN=");
+    }
+}

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OverTimeDTO" targetNamespace="http://tempuri.org/OverTimeDTO.xsd" xmlns:mstns="http://tempuri.org/OverTimeDTO.xsd" xmlns="http://tempuri.org/OverTimeDTO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (MySettings)" PropertyReference="ApplicationSettings.DataService.My.MySettings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OverTimeDTO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="OverTimeDTO" msprop:Generator_DataSetName="OverTimeDTO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtOverList" msprop:Generator_UserTableName="dtOverList" msprop:Generator_RowDeletedName="dtOverListRowDeleted" msprop:Generator_RowChangedName="dtOverListRowChanged" msprop:Generator_RowClassName="dtOverListRow" msprop:Generator_RowChangingName="dtOverListRowChanging" msprop:Generator_RowEvArgName="dtOverListRowChangeEvent" msprop:Generator_RowEvHandlerName="dtOverListRowChangeEventHandler" msprop:Generator_TableClassName="dtOverListDataTable" msprop:Generator_TableVarName="tabledtOverList" msprop:Generator_RowDeletingName="dtOverListRowDeleting" msprop:Generator_TablePropName="dtOverList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RMA_NO" msprop:Generator_UserColumnName="RMA_NO" msprop:Generator_ColumnVarNameInTable="columnRMA_NO" msprop:Generator_ColumnPropNameInRow="RMA_NO" msprop:Generator_ColumnPropNameInTable="RMA_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AD_ID" msprop:Generator_UserColumnName="AD_ID" msprop:Generator_ColumnVarNameInTable="columnAD_ID" msprop:Generator_ColumnPropNameInRow="AD_ID" msprop:Generator_ColumnPropNameInTable="AD_IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AD_Name" msprop:Generator_UserColumnName="AD_Name" msprop:Generator_ColumnVarNameInTable="columnAD_Name" msprop:Generator_ColumnPropNameInRow="AD_Name" msprop:Generator_ColumnPropNameInTable="AD_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AD_EMAIL" msprop:Generator_UserColumnName="AD_EMAIL" msprop:Generator_ColumnVarNameInTable="columnAD_EMAIL" msprop:Generator_ColumnPropNameInRow="AD_EMAIL" msprop:Generator_ColumnPropNameInTable="AD_EMAILColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LastComfirmDate" msprop:Generator_UserColumnName="LastComfirmDate" msprop:Generator_ColumnVarNameInTable="columnLastComfirmDate" msprop:Generator_ColumnPropNameInRow="LastComfirmDate" msprop:Generator_ColumnPropNameInTable="LastComfirmDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OverDays" msprop:Generator_UserColumnName="OverDays" msprop:Generator_ColumnVarNameInTable="columnOverDays" msprop:Generator_ColumnPropNameInRow="OverDays" msprop:Generator_ColumnPropNameInTable="OverDaysColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ConfigLimit" msprop:Generator_UserTableName="ConfigLimit" msprop:Generator_RowDeletedName="ConfigLimitRowDeleted" msprop:Generator_RowChangedName="ConfigLimitRowChanged" msprop:Generator_RowClassName="ConfigLimitRow" msprop:Generator_RowChangingName="ConfigLimitRowChanging" msprop:Generator_RowEvArgName="ConfigLimitRowChangeEvent" msprop:Generator_RowEvHandlerName="ConfigLimitRowChangeEventHandler" msprop:Generator_TableClassName="ConfigLimitDataTable" msprop:Generator_TableVarName="tableConfigLimit" msprop:Generator_RowDeletingName="ConfigLimitRowDeleting" msprop:Generator_TablePropName="ConfigLimit">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CLM_RFNBR" msprop:Generator_UserColumnName="CLM_RFNBR" msprop:Generator_ColumnVarNameInTable="columnCLM_RFNBR" msprop:Generator_ColumnPropNameInRow="CLM_RFNBR" msprop:Generator_ColumnPropNameInTable="CLM_RFNBRColumn" type="xs:decimal" />
+              <xs:element name="CLM_RECEIVERDAY" msprop:Generator_UserColumnName="CLM_RECEIVERDAY" msprop:Generator_ColumnVarNameInTable="columnCLM_RECEIVERDAY" msprop:Generator_ColumnPropNameInRow="CLM_RECEIVERDAY" msprop:Generator_ColumnPropNameInTable="CLM_RECEIVERDAYColumn" type="xs:decimal" />
+              <xs:element name="CLM_REPAIRQUOTE" msprop:Generator_UserColumnName="CLM_REPAIRQUOTE" msprop:Generator_ColumnVarNameInTable="columnCLM_REPAIRQUOTE" msprop:Generator_ColumnPropNameInRow="CLM_REPAIRQUOTE" msprop:Generator_ColumnPropNameInTable="CLM_REPAIRQUOTEColumn" type="xs:decimal" />
+              <xs:element name="CLM_SALESQUOTE" msprop:Generator_UserColumnName="CLM_SALESQUOTE" msprop:Generator_ColumnVarNameInTable="columnCLM_SALESQUOTE" msprop:Generator_ColumnPropNameInRow="CLM_SALESQUOTE" msprop:Generator_ColumnPropNameInTable="CLM_SALESQUOTEColumn" type="xs:decimal" />
+              <xs:element name="CLM_REPAIR" msprop:Generator_UserColumnName="CLM_REPAIR" msprop:Generator_ColumnVarNameInTable="columnCLM_REPAIR" msprop:Generator_ColumnPropNameInRow="CLM_REPAIR" msprop:Generator_ColumnPropNameInTable="CLM_REPAIRColumn" type="xs:decimal" />
+              <xs:element name="CLM_SHIPMENT" msprop:Generator_UserColumnName="CLM_SHIPMENT" msprop:Generator_ColumnVarNameInTable="columnCLM_SHIPMENT" msprop:Generator_ColumnPropNameInRow="CLM_SHIPMENT" msprop:Generator_ColumnPropNameInTable="CLM_SHIPMENTColumn" type="xs:decimal" />
+              <xs:element name="CLM_SHIPPING" msprop:Generator_UserColumnName="CLM_SHIPPING" msprop:Generator_ColumnVarNameInTable="columnCLM_SHIPPING" msprop:Generator_ColumnPropNameInRow="CLM_SHIPPING" msprop:Generator_ColumnPropNameInTable="CLM_SHIPPINGColumn" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ConfigLimit" />
+      <xs:field xpath="mstns:CLM_RFNBR" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

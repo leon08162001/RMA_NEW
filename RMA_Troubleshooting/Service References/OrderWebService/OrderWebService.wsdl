@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:intf="http://service.web.order" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://service.web.order" targetNamespace="http://service.web.order" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://service.web.order">
+      <xsd:element name="decode">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="url" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="decodeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="decodeReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderNo" type="xsd:string" />
+            <xsd:element name="serialNumber" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetailReturn" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="email" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetailReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkOrderNoCountFromUserOrderInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderNo" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkOrderNoCountFromUserOrderInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="checkOrderNoCountFromUserOrderInfoReturn" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkOrderNoSplitCountFromUserOrderInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderNo" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkOrderNoSplitCountFromUserOrderInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="checkOrderNoSplitCountFromUserOrderInfoReturn" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getMinOrderKeyEmailFromUserOrderKeyDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderNo" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getMinOrderKeyEmailFromUserOrderKeyDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="getMinOrderKeyEmailFromUserOrderKeyDetailReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getOrderNoSplitTotalQuantityFromUserOrderInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderNo" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getOrderNoSplitTotalQuantityFromUserOrderInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="getOrderNoSplitTotalQuantityFromUserOrderInfoReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateAccountDeviceQuantityAndValidityPeriod">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="account" type="xsd:string" />
+            <xsd:element name="deviceQuantity" type="xsd:string" />
+            <xsd:element name="validityPeriod" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateAccountDeviceQuantityAndValidityPeriodResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="checkOrderNoCountFromUserOrderKeyDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderNo" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkOrderNoCountFromUserOrderKeyDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="checkOrderNoCountFromUserOrderKeyDetailReturn" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getWarrantyEndDateUserOrderKeyDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderKey" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getWarrantyEndDateUserOrderKeyDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="getWarrantyEndDateUserOrderKeyDetailReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkOrderNoAndProductNoCountFromUserOrderInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderNo" type="xsd:string" />
+            <xsd:element name="productNo" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkOrderNoAndProductNoCountFromUserOrderInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="checkOrderNoAndProductNoCountFromUserOrderInfoReturn" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getMinOrderKeyFromUserOrderKeyDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderNo" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getMinOrderKeyFromUserOrderKeyDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="getMinOrderKeyFromUserOrderKeyDetailReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkOrderKeyCountFromUserOrderKeyDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderKey" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkOrderKeyCountFromUserOrderKeyDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="checkOrderKeyCountFromUserOrderKeyDetailReturn" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getSerialNumberFromUserOrderKeyDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderKey" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getSerialNumberFromUserOrderKeyDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="getSerialNumberFromUserOrderKeyDetailReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderNo" type="xsd:string" />
+            <xsd:element name="orderKey" type="xsd:string" />
+            <xsd:element name="serialNumber" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetailReturn" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderNo" type="xsd:string" />
+            <xsd:element name="email" type="xsd:string" />
+            <xsd:element name="serialNumber" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetailReturn" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderNo" type="xsd:string" />
+            <xsd:element name="email" type="xsd:string" />
+            <xsd:element name="serialNumber" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetailReturn" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderKey" type="xsd:string" />
+            <xsd:element name="orderNo" type="xsd:string" />
+            <xsd:element name="productNo" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetailReturn" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="isValidDate">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="str" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="isValidDateResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="isValidDateReturn" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="createAccount">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="account" type="xsd:string" />
+            <xsd:element name="userName" type="xsd:string" />
+            <xsd:element name="lastName" type="xsd:string" />
+            <xsd:element name="companyName" type="xsd:string" />
+            <xsd:element name="phone" type="xsd:string" />
+            <xsd:element name="country" type="xsd:string" />
+            <xsd:element name="deviceQuantity" type="xsd:string" />
+            <xsd:element name="validityPeriod" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="createAccountResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="createOrderKeyDetailString">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderKey" type="xsd:string" />
+            <xsd:element name="orderNo" type="xsd:string" />
+            <xsd:element name="productNo" type="xsd:string" />
+            <xsd:element name="companyName" type="xsd:string" />
+            <xsd:element name="email" type="xsd:string" />
+            <xsd:element name="contact" type="xsd:string" />
+            <xsd:element name="phone" type="xsd:string" />
+            <xsd:element name="shippingAddress" type="xsd:string" />
+            <xsd:element name="serialNumber" type="xsd:string" />
+            <xsd:element name="warrantyEndDate" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="createOrderKeyDetailStringResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="createOrderKeyDetailStringReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateAccountValidityPeriod">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="account" type="xsd:string" />
+            <xsd:element name="validityPeriod" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateAccountValidityPeriodResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="getOrderAllStringLog">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="allStr" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getOrderAllStringLogResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="createOrderInfoString">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderNo" type="xsd:string" />
+            <xsd:element name="productNo" type="xsd:string" />
+            <xsd:element name="invoiceNo" type="xsd:string" />
+            <xsd:element name="deliveryDate" type="xsd:string" />
+            <xsd:element name="quantity" type="xsd:string" />
+            <xsd:element name="customer" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="createOrderInfoStringResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="createOrderInfoStringReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkAccountCountFromUserAccount">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="email" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="checkAccountCountFromUserAccountResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="checkAccountCountFromUserAccountReturn" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateAccountDeviceQuantity">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="account" type="xsd:string" />
+            <xsd:element name="deviceQuantity" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateAccountDeviceQuantityResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="transferOrderKeyDetailString">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderKey" type="xsd:string" />
+            <xsd:element name="orderNo" type="xsd:string" />
+            <xsd:element name="productNo" type="xsd:string" />
+            <xsd:element name="companyName" type="xsd:string" />
+            <xsd:element name="email" type="xsd:string" />
+            <xsd:element name="contact" type="xsd:string" />
+            <xsd:element name="phone" type="xsd:string" />
+            <xsd:element name="shippingAddress" type="xsd:string" />
+            <xsd:element name="serialNumber" type="xsd:string" />
+            <xsd:element name="warrantyEndDate" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="transferOrderKeyDetailStringResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="transferOrderKeyDetailStringReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getEmailFromUserOrderKeyDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderKey" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getEmailFromUserOrderKeyDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="getEmailFromUserOrderKeyDetailReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateOrderKeyDetailString">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderKey" type="xsd:string" />
+            <xsd:element name="orderNo" type="xsd:string" />
+            <xsd:element name="productNo" type="xsd:string" />
+            <xsd:element name="serialNumber" type="xsd:string" />
+            <xsd:element name="warrantyEndDate" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateOrderKeyDetailStringResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="updateOrderKeyDetailStringReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getDeviceQuantityFromUserAccount">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="account" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getDeviceQuantityFromUserAccountResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="getDeviceQuantityFromUserAccountReturn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetailRequest">
+    <wsdl:part name="parameters" element="impl:getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetail" />
+  </wsdl:message>
+  <wsdl:message name="checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetailResponse">
+    <wsdl:part name="parameters" element="impl:checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkAccountCountFromUserAccountResponse">
+    <wsdl:part name="parameters" element="impl:checkAccountCountFromUserAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDeviceQuantityFromUserAccountResponse">
+    <wsdl:part name="parameters" element="impl:getDeviceQuantityFromUserAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateAccountValidityPeriodRequest">
+    <wsdl:part name="parameters" element="impl:updateAccountValidityPeriod" />
+  </wsdl:message>
+  <wsdl:message name="getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetailResponse">
+    <wsdl:part name="parameters" element="impl:getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="decodeRequest">
+    <wsdl:part name="parameters" element="impl:decode" />
+  </wsdl:message>
+  <wsdl:message name="checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetailRequest">
+    <wsdl:part name="parameters" element="impl:checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetail" />
+  </wsdl:message>
+  <wsdl:message name="checkOrderKeyCountFromUserOrderKeyDetailResponse">
+    <wsdl:part name="parameters" element="impl:checkOrderKeyCountFromUserOrderKeyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="createAccountResponse">
+    <wsdl:part name="parameters" element="impl:createAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetailResponse">
+    <wsdl:part name="parameters" element="impl:checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSerialNumberFromUserOrderKeyDetailRequest">
+    <wsdl:part name="parameters" element="impl:getSerialNumberFromUserOrderKeyDetail" />
+  </wsdl:message>
+  <wsdl:message name="checkAccountCountFromUserAccountRequest">
+    <wsdl:part name="parameters" element="impl:checkAccountCountFromUserAccount" />
+  </wsdl:message>
+  <wsdl:message name="createAccountRequest">
+    <wsdl:part name="parameters" element="impl:createAccount" />
+  </wsdl:message>
+  <wsdl:message name="updateAccountDeviceQuantityAndValidityPeriodResponse">
+    <wsdl:part name="parameters" element="impl:updateAccountDeviceQuantityAndValidityPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="transferOrderKeyDetailStringRequest">
+    <wsdl:part name="parameters" element="impl:transferOrderKeyDetailString" />
+  </wsdl:message>
+  <wsdl:message name="getEmailFromUserOrderKeyDetailResponse">
+    <wsdl:part name="parameters" element="impl:getEmailFromUserOrderKeyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMinOrderKeyFromUserOrderKeyDetailRequest">
+    <wsdl:part name="parameters" element="impl:getMinOrderKeyFromUserOrderKeyDetail" />
+  </wsdl:message>
+  <wsdl:message name="checkOrderNoCountFromUserOrderInfoResponse">
+    <wsdl:part name="parameters" element="impl:checkOrderNoCountFromUserOrderInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSerialNumberFromUserOrderKeyDetailResponse">
+    <wsdl:part name="parameters" element="impl:getSerialNumberFromUserOrderKeyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetailRequest">
+    <wsdl:part name="parameters" element="impl:checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetail" />
+  </wsdl:message>
+  <wsdl:message name="updateAccountDeviceQuantityRequest">
+    <wsdl:part name="parameters" element="impl:updateAccountDeviceQuantity" />
+  </wsdl:message>
+  <wsdl:message name="updateOrderKeyDetailStringRequest">
+    <wsdl:part name="parameters" element="impl:updateOrderKeyDetailString" />
+  </wsdl:message>
+  <wsdl:message name="createOrderInfoStringResponse">
+    <wsdl:part name="parameters" element="impl:createOrderInfoStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetailResponse">
+    <wsdl:part name="parameters" element="impl:checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="isValidDateRequest">
+    <wsdl:part name="parameters" element="impl:isValidDate" />
+  </wsdl:message>
+  <wsdl:message name="getOrderNoSplitTotalQuantityFromUserOrderInfoRequest">
+    <wsdl:part name="parameters" element="impl:getOrderNoSplitTotalQuantityFromUserOrderInfo" />
+  </wsdl:message>
+  <wsdl:message name="updateAccountDeviceQuantityAndValidityPeriodRequest">
+    <wsdl:part name="parameters" element="impl:updateAccountDeviceQuantityAndValidityPeriod" />
+  </wsdl:message>
+  <wsdl:message name="checkOrderNoCountFromUserOrderKeyDetailResponse">
+    <wsdl:part name="parameters" element="impl:checkOrderNoCountFromUserOrderKeyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkOrderNoCountFromUserOrderInfoRequest">
+    <wsdl:part name="parameters" element="impl:checkOrderNoCountFromUserOrderInfo" />
+  </wsdl:message>
+  <wsdl:message name="updateAccountDeviceQuantityResponse">
+    <wsdl:part name="parameters" element="impl:updateAccountDeviceQuantityResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDeviceQuantityFromUserAccountRequest">
+    <wsdl:part name="parameters" element="impl:getDeviceQuantityFromUserAccount" />
+  </wsdl:message>
+  <wsdl:message name="checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetailRequest">
+    <wsdl:part name="parameters" element="impl:checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetail" />
+  </wsdl:message>
+  <wsdl:message name="checkOrderNoSplitCountFromUserOrderInfoResponse">
+    <wsdl:part name="parameters" element="impl:checkOrderNoSplitCountFromUserOrderInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getEmailFromUserOrderKeyDetailRequest">
+    <wsdl:part name="parameters" element="impl:getEmailFromUserOrderKeyDetail" />
+  </wsdl:message>
+  <wsdl:message name="checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetailResponse">
+    <wsdl:part name="parameters" element="impl:checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="createOrderKeyDetailStringRequest">
+    <wsdl:part name="parameters" element="impl:createOrderKeyDetailString" />
+  </wsdl:message>
+  <wsdl:message name="decodeResponse">
+    <wsdl:part name="parameters" element="impl:decodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getWarrantyEndDateUserOrderKeyDetailResponse">
+    <wsdl:part name="parameters" element="impl:getWarrantyEndDateUserOrderKeyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOrderAllStringLogRequest">
+    <wsdl:part name="parameters" element="impl:getOrderAllStringLog" />
+  </wsdl:message>
+  <wsdl:message name="checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetailRequest">
+    <wsdl:part name="parameters" element="impl:checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetail" />
+  </wsdl:message>
+  <wsdl:message name="checkOrderNoAndProductNoCountFromUserOrderInfoRequest">
+    <wsdl:part name="parameters" element="impl:checkOrderNoAndProductNoCountFromUserOrderInfo" />
+  </wsdl:message>
+  <wsdl:message name="transferOrderKeyDetailStringResponse">
+    <wsdl:part name="parameters" element="impl:transferOrderKeyDetailStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOrderNoSplitTotalQuantityFromUserOrderInfoResponse">
+    <wsdl:part name="parameters" element="impl:getOrderNoSplitTotalQuantityFromUserOrderInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMinOrderKeyFromUserOrderKeyDetailResponse">
+    <wsdl:part name="parameters" element="impl:getMinOrderKeyFromUserOrderKeyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetailRequest">
+    <wsdl:part name="parameters" element="impl:checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetail" />
+  </wsdl:message>
+  <wsdl:message name="getMinOrderKeyEmailFromUserOrderKeyDetailRequest">
+    <wsdl:part name="parameters" element="impl:getMinOrderKeyEmailFromUserOrderKeyDetail" />
+  </wsdl:message>
+  <wsdl:message name="checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetailResponse">
+    <wsdl:part name="parameters" element="impl:checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateAccountValidityPeriodResponse">
+    <wsdl:part name="parameters" element="impl:updateAccountValidityPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="createOrderInfoStringRequest">
+    <wsdl:part name="parameters" element="impl:createOrderInfoString" />
+  </wsdl:message>
+  <wsdl:message name="updateOrderKeyDetailStringResponse">
+    <wsdl:part name="parameters" element="impl:updateOrderKeyDetailStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkOrderKeyCountFromUserOrderKeyDetailRequest">
+    <wsdl:part name="parameters" element="impl:checkOrderKeyCountFromUserOrderKeyDetail" />
+  </wsdl:message>
+  <wsdl:message name="checkOrderNoSplitCountFromUserOrderInfoRequest">
+    <wsdl:part name="parameters" element="impl:checkOrderNoSplitCountFromUserOrderInfo" />
+  </wsdl:message>
+  <wsdl:message name="checkOrderNoAndProductNoCountFromUserOrderInfoResponse">
+    <wsdl:part name="parameters" element="impl:checkOrderNoAndProductNoCountFromUserOrderInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getWarrantyEndDateUserOrderKeyDetailRequest">
+    <wsdl:part name="parameters" element="impl:getWarrantyEndDateUserOrderKeyDetail" />
+  </wsdl:message>
+  <wsdl:message name="isValidDateResponse">
+    <wsdl:part name="parameters" element="impl:isValidDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkOrderNoCountFromUserOrderKeyDetailRequest">
+    <wsdl:part name="parameters" element="impl:checkOrderNoCountFromUserOrderKeyDetail" />
+  </wsdl:message>
+  <wsdl:message name="getOrderAllStringLogResponse">
+    <wsdl:part name="parameters" element="impl:getOrderAllStringLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMinOrderKeyEmailFromUserOrderKeyDetailResponse">
+    <wsdl:part name="parameters" element="impl:getMinOrderKeyEmailFromUserOrderKeyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="createOrderKeyDetailStringResponse">
+    <wsdl:part name="parameters" element="impl:createOrderKeyDetailStringResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OrderWebService">
+    <wsdl:operation name="decode">
+      <wsdl:input name="decodeRequest" message="impl:decodeRequest" />
+      <wsdl:output name="decodeResponse" message="impl:decodeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetail">
+      <wsdl:input name="checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetailRequest" message="impl:checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetailRequest" />
+      <wsdl:output name="checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetailResponse" message="impl:checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetail">
+      <wsdl:input name="getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetailRequest" message="impl:getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetailRequest" />
+      <wsdl:output name="getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetailResponse" message="impl:getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="checkOrderNoCountFromUserOrderInfo">
+      <wsdl:input name="checkOrderNoCountFromUserOrderInfoRequest" message="impl:checkOrderNoCountFromUserOrderInfoRequest" />
+      <wsdl:output name="checkOrderNoCountFromUserOrderInfoResponse" message="impl:checkOrderNoCountFromUserOrderInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="checkOrderNoSplitCountFromUserOrderInfo">
+      <wsdl:input name="checkOrderNoSplitCountFromUserOrderInfoRequest" message="impl:checkOrderNoSplitCountFromUserOrderInfoRequest" />
+      <wsdl:output name="checkOrderNoSplitCountFromUserOrderInfoResponse" message="impl:checkOrderNoSplitCountFromUserOrderInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getMinOrderKeyEmailFromUserOrderKeyDetail">
+      <wsdl:input name="getMinOrderKeyEmailFromUserOrderKeyDetailRequest" message="impl:getMinOrderKeyEmailFromUserOrderKeyDetailRequest" />
+      <wsdl:output name="getMinOrderKeyEmailFromUserOrderKeyDetailResponse" message="impl:getMinOrderKeyEmailFromUserOrderKeyDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getOrderNoSplitTotalQuantityFromUserOrderInfo">
+      <wsdl:input name="getOrderNoSplitTotalQuantityFromUserOrderInfoRequest" message="impl:getOrderNoSplitTotalQuantityFromUserOrderInfoRequest" />
+      <wsdl:output name="getOrderNoSplitTotalQuantityFromUserOrderInfoResponse" message="impl:getOrderNoSplitTotalQuantityFromUserOrderInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAccountDeviceQuantityAndValidityPeriod">
+      <wsdl:input name="updateAccountDeviceQuantityAndValidityPeriodRequest" message="impl:updateAccountDeviceQuantityAndValidityPeriodRequest" />
+      <wsdl:output name="updateAccountDeviceQuantityAndValidityPeriodResponse" message="impl:updateAccountDeviceQuantityAndValidityPeriodResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="checkOrderNoCountFromUserOrderKeyDetail">
+      <wsdl:input name="checkOrderNoCountFromUserOrderKeyDetailRequest" message="impl:checkOrderNoCountFromUserOrderKeyDetailRequest" />
+      <wsdl:output name="checkOrderNoCountFromUserOrderKeyDetailResponse" message="impl:checkOrderNoCountFromUserOrderKeyDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getWarrantyEndDateUserOrderKeyDetail">
+      <wsdl:input name="getWarrantyEndDateUserOrderKeyDetailRequest" message="impl:getWarrantyEndDateUserOrderKeyDetailRequest" />
+      <wsdl:output name="getWarrantyEndDateUserOrderKeyDetailResponse" message="impl:getWarrantyEndDateUserOrderKeyDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="checkOrderNoAndProductNoCountFromUserOrderInfo">
+      <wsdl:input name="checkOrderNoAndProductNoCountFromUserOrderInfoRequest" message="impl:checkOrderNoAndProductNoCountFromUserOrderInfoRequest" />
+      <wsdl:output name="checkOrderNoAndProductNoCountFromUserOrderInfoResponse" message="impl:checkOrderNoAndProductNoCountFromUserOrderInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getMinOrderKeyFromUserOrderKeyDetail">
+      <wsdl:input name="getMinOrderKeyFromUserOrderKeyDetailRequest" message="impl:getMinOrderKeyFromUserOrderKeyDetailRequest" />
+      <wsdl:output name="getMinOrderKeyFromUserOrderKeyDetailResponse" message="impl:getMinOrderKeyFromUserOrderKeyDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="checkOrderKeyCountFromUserOrderKeyDetail">
+      <wsdl:input name="checkOrderKeyCountFromUserOrderKeyDetailRequest" message="impl:checkOrderKeyCountFromUserOrderKeyDetailRequest" />
+      <wsdl:output name="checkOrderKeyCountFromUserOrderKeyDetailResponse" message="impl:checkOrderKeyCountFromUserOrderKeyDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getSerialNumberFromUserOrderKeyDetail">
+      <wsdl:input name="getSerialNumberFromUserOrderKeyDetailRequest" message="impl:getSerialNumberFromUserOrderKeyDetailRequest" />
+      <wsdl:output name="getSerialNumberFromUserOrderKeyDetailResponse" message="impl:getSerialNumberFromUserOrderKeyDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetail">
+      <wsdl:input name="checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetailRequest" message="impl:checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetailRequest" />
+      <wsdl:output name="checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetailResponse" message="impl:checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetail">
+      <wsdl:input name="checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetailRequest" message="impl:checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetailRequest" />
+      <wsdl:output name="checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetailResponse" message="impl:checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetail">
+      <wsdl:input name="checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetailRequest" message="impl:checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetailRequest" />
+      <wsdl:output name="checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetailResponse" message="impl:checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetail">
+      <wsdl:input name="checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetailRequest" message="impl:checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetailRequest" />
+      <wsdl:output name="checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetailResponse" message="impl:checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="isValidDate">
+      <wsdl:input name="isValidDateRequest" message="impl:isValidDateRequest" />
+      <wsdl:output name="isValidDateResponse" message="impl:isValidDateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="createAccount">
+      <wsdl:input name="createAccountRequest" message="impl:createAccountRequest" />
+      <wsdl:output name="createAccountResponse" message="impl:createAccountResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="createOrderKeyDetailString">
+      <wsdl:input name="createOrderKeyDetailStringRequest" message="impl:createOrderKeyDetailStringRequest" />
+      <wsdl:output name="createOrderKeyDetailStringResponse" message="impl:createOrderKeyDetailStringResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAccountValidityPeriod">
+      <wsdl:input name="updateAccountValidityPeriodRequest" message="impl:updateAccountValidityPeriodRequest" />
+      <wsdl:output name="updateAccountValidityPeriodResponse" message="impl:updateAccountValidityPeriodResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getOrderAllStringLog">
+      <wsdl:input name="getOrderAllStringLogRequest" message="impl:getOrderAllStringLogRequest" />
+      <wsdl:output name="getOrderAllStringLogResponse" message="impl:getOrderAllStringLogResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="createOrderInfoString">
+      <wsdl:input name="createOrderInfoStringRequest" message="impl:createOrderInfoStringRequest" />
+      <wsdl:output name="createOrderInfoStringResponse" message="impl:createOrderInfoStringResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="checkAccountCountFromUserAccount">
+      <wsdl:input name="checkAccountCountFromUserAccountRequest" message="impl:checkAccountCountFromUserAccountRequest" />
+      <wsdl:output name="checkAccountCountFromUserAccountResponse" message="impl:checkAccountCountFromUserAccountResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAccountDeviceQuantity">
+      <wsdl:input name="updateAccountDeviceQuantityRequest" message="impl:updateAccountDeviceQuantityRequest" />
+      <wsdl:output name="updateAccountDeviceQuantityResponse" message="impl:updateAccountDeviceQuantityResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="transferOrderKeyDetailString">
+      <wsdl:input name="transferOrderKeyDetailStringRequest" message="impl:transferOrderKeyDetailStringRequest" />
+      <wsdl:output name="transferOrderKeyDetailStringResponse" message="impl:transferOrderKeyDetailStringResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getEmailFromUserOrderKeyDetail">
+      <wsdl:input name="getEmailFromUserOrderKeyDetailRequest" message="impl:getEmailFromUserOrderKeyDetailRequest" />
+      <wsdl:output name="getEmailFromUserOrderKeyDetailResponse" message="impl:getEmailFromUserOrderKeyDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateOrderKeyDetailString">
+      <wsdl:input name="updateOrderKeyDetailStringRequest" message="impl:updateOrderKeyDetailStringRequest" />
+      <wsdl:output name="updateOrderKeyDetailStringResponse" message="impl:updateOrderKeyDetailStringResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getDeviceQuantityFromUserAccount">
+      <wsdl:input name="getDeviceQuantityFromUserAccountRequest" message="impl:getDeviceQuantityFromUserAccountRequest" />
+      <wsdl:output name="getDeviceQuantityFromUserAccountResponse" message="impl:getDeviceQuantityFromUserAccountResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OrderWebServiceSoapBinding" type="impl:OrderWebService">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="decode">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="decodeRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="decodeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetail">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetailRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkSerialNumberCountInTheSameOrderNoFromUserOrderKeyDetailResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetail">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetailRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getMaxWarrantyEndDateOnlyEmailFromUserOrderKeyDetailResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkOrderNoCountFromUserOrderInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="checkOrderNoCountFromUserOrderInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkOrderNoCountFromUserOrderInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkOrderNoSplitCountFromUserOrderInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="checkOrderNoSplitCountFromUserOrderInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkOrderNoSplitCountFromUserOrderInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMinOrderKeyEmailFromUserOrderKeyDetail">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getMinOrderKeyEmailFromUserOrderKeyDetailRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getMinOrderKeyEmailFromUserOrderKeyDetailResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOrderNoSplitTotalQuantityFromUserOrderInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getOrderNoSplitTotalQuantityFromUserOrderInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getOrderNoSplitTotalQuantityFromUserOrderInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAccountDeviceQuantityAndValidityPeriod">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="updateAccountDeviceQuantityAndValidityPeriodRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateAccountDeviceQuantityAndValidityPeriodResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkOrderNoCountFromUserOrderKeyDetail">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="checkOrderNoCountFromUserOrderKeyDetailRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkOrderNoCountFromUserOrderKeyDetailResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWarrantyEndDateUserOrderKeyDetail">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getWarrantyEndDateUserOrderKeyDetailRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getWarrantyEndDateUserOrderKeyDetailResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkOrderNoAndProductNoCountFromUserOrderInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="checkOrderNoAndProductNoCountFromUserOrderInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkOrderNoAndProductNoCountFromUserOrderInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMinOrderKeyFromUserOrderKeyDetail">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getMinOrderKeyFromUserOrderKeyDetailRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getMinOrderKeyFromUserOrderKeyDetailResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkOrderKeyCountFromUserOrderKeyDetail">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="checkOrderKeyCountFromUserOrderKeyDetailRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkOrderKeyCountFromUserOrderKeyDetailResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSerialNumberFromUserOrderKeyDetail">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getSerialNumberFromUserOrderKeyDetailRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getSerialNumberFromUserOrderKeyDetailResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetail">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetailRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkSerialNumberCountInOtherOrderKeyOfTheSameOrderNoFromUserOrderKeyDetailResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetail">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetailRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkSerialNumberCountInOtherOrderNoOfOtherEmailFromUserOrderKeyDetailResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetail">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetailRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkSerialNumberCountInOtherOrderNoOfTheSameEmailFromUserOrderKeyDetailResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetail">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetailRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkOrderKeyAndOrderNoAndProductNoCountFromUserOrderKeyDetailResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isValidDate">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="isValidDateRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="isValidDateResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createAccount">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="createAccountRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="createAccountResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createOrderKeyDetailString">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="createOrderKeyDetailStringRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="createOrderKeyDetailStringResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAccountValidityPeriod">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="updateAccountValidityPeriodRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateAccountValidityPeriodResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOrderAllStringLog">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getOrderAllStringLogRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getOrderAllStringLogResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createOrderInfoString">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="createOrderInfoStringRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="createOrderInfoStringResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkAccountCountFromUserAccount">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="checkAccountCountFromUserAccountRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkAccountCountFromUserAccountResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAccountDeviceQuantity">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="updateAccountDeviceQuantityRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateAccountDeviceQuantityResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transferOrderKeyDetailString">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="transferOrderKeyDetailStringRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="transferOrderKeyDetailStringResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmailFromUserOrderKeyDetail">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getEmailFromUserOrderKeyDetailRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getEmailFromUserOrderKeyDetailResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateOrderKeyDetailString">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="updateOrderKeyDetailStringRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateOrderKeyDetailStringResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDeviceQuantityFromUserAccount">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getDeviceQuantityFromUserAccountRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDeviceQuantityFromUserAccountResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OrderWebServiceService">
+    <wsdl:port name="OrderWebService" binding="impl:OrderWebServiceSoapBinding">
+      <wsdlsoap:address location="http://192.168.8.52:8080/OrderWebService/services/OrderWebService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

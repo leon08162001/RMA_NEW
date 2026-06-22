@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FailureDTO" targetNamespace="http://tempuri.org/FailureDTO.xsd" xmlns:mstns="http://tempuri.org/FailureDTO.xsd" xmlns="http://tempuri.org/FailureDTO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (MySettings)" PropertyReference="ApplicationSettings.DataService.My.MySettings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vwFailureReasonsTableAdapter" GeneratorDataComponentClassName="vwFailureReasonsTableAdapter" Name="vwFailureReasons" UserDataComponentName="vwFailureReasonsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectName="CIPHERLAB.VWFAILUREREASONS" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT FAR_NO, FAR_FARCNO, FAR_REASON, FAR_VISIBLE, FAR_AD, FAR_ADNAME, FAR_CSTMP, FAR_LUAD, FAR_LUADNAME, FAR_LUSTMP, FARC_NAME, FARC_DFLNO FROM VWFAILUREREASONS</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FAR_NO" DataSetColumn="FAR_NO" />
+              <Mapping SourceColumn="FAR_FARCNO" DataSetColumn="FAR_FARCNO" />
+              <Mapping SourceColumn="FAR_REASON" DataSetColumn="FAR_REASON" />
+              <Mapping SourceColumn="FAR_VISIBLE" DataSetColumn="FAR_VISIBLE" />
+              <Mapping SourceColumn="FAR_AD" DataSetColumn="FAR_AD" />
+              <Mapping SourceColumn="FAR_ADNAME" DataSetColumn="FAR_ADNAME" />
+              <Mapping SourceColumn="FAR_CSTMP" DataSetColumn="FAR_CSTMP" />
+              <Mapping SourceColumn="FAR_LUAD" DataSetColumn="FAR_LUAD" />
+              <Mapping SourceColumn="FAR_LUADNAME" DataSetColumn="FAR_LUADNAME" />
+              <Mapping SourceColumn="FAR_LUSTMP" DataSetColumn="FAR_LUSTMP" />
+              <Mapping SourceColumn="FARC_NAME" DataSetColumn="FARC_NAME" />
+              <Mapping SourceColumn="FARC_DFLNO" DataSetColumn="FARC_DFLNO" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FailureReasonsClassTableAdapter" GeneratorDataComponentClassName="FailureReasonsClassTableAdapter" Name="FailureReasonsClass" UserDataComponentName="FailureReasonsClassTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectName="CIPHERLAB.FAILUREREASONSCLASS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="True" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>DELETE FROM "CIPHERLAB"."FAILUREREASONSCLASS" WHERE (("FARC_NO" = :Original_FARC_NO) AND ("FARC_NAME" = :Original_FARC_NAME) AND ("FARC_VISIBLE" = :Original_FARC_VISIBLE) AND ("FARC_AD" = :Original_FARC_AD) AND ("FARC_ADNAME" = :Original_FARC_ADNAME) AND ("FARC_CSTMP" = :Original_FARC_CSTMP) AND ("FARC_LUAD" = :Original_FARC_LUAD) AND ("FARC_LUADNAME" = :Original_FARC_LUADNAME) AND ("FARC_LUSTMP" = :Original_FARC_LUSTMP) AND ("FARC_DFLNO" = :Original_FARC_DFLNO))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_FARC_NO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FARC_NO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FARC_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_FARC_VISIBLE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FARC_VISIBLE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FARC_AD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_AD" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FARC_ADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_ADNAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_FARC_CSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FARC_CSTMP" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FARC_LUAD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_LUAD" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FARC_LUADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_LUADNAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_FARC_LUSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FARC_LUSTMP" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_FARC_DFLNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FARC_DFLNO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>INSERT INTO "CIPHERLAB"."FAILUREREASONSCLASS" ("FARC_NO", "FARC_NAME", "FARC_VISIBLE", "FARC_AD", "FARC_ADNAME", "FARC_CSTMP", "FARC_LUAD", "FARC_LUADNAME", "FARC_LUSTMP", "FARC_DFLNO") VALUES (:FARC_NO, :FARC_NAME, :FARC_VISIBLE, :FARC_AD, :FARC_ADNAME, :FARC_CSTMP, :FARC_LUAD, :FARC_LUADNAME, :FARC_LUSTMP, :FARC_DFLNO)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FARC_NO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FARC_NO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FARC_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FARC_VISIBLE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FARC_VISIBLE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FARC_AD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_AD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FARC_ADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_ADNAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="FARC_CSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FARC_CSTMP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FARC_LUAD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_LUAD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FARC_LUADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_LUADNAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="FARC_LUSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FARC_LUSTMP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FARC_DFLNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FARC_DFLNO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT FARC_NO, FARC_NAME, FARC_VISIBLE, FARC_AD, FARC_ADNAME, FARC_CSTMP, FARC_LUAD, FARC_LUADNAME, FARC_LUSTMP, FARC_DFLNO FROM CIPHERLAB.FAILUREREASONSCLASS</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>UPDATE "CIPHERLAB"."FAILUREREASONSCLASS" SET "FARC_NO" = :FARC_NO, "FARC_NAME" = :FARC_NAME, "FARC_VISIBLE" = :FARC_VISIBLE, "FARC_AD" = :FARC_AD, "FARC_ADNAME" = :FARC_ADNAME, "FARC_CSTMP" = :FARC_CSTMP, "FARC_LUAD" = :FARC_LUAD, "FARC_LUADNAME" = :FARC_LUADNAME, "FARC_LUSTMP" = :FARC_LUSTMP, "FARC_DFLNO" = :FARC_DFLNO WHERE (("FARC_NO" = :Original_FARC_NO) AND ("FARC_NAME" = :Original_FARC_NAME) AND ("FARC_VISIBLE" = :Original_FARC_VISIBLE) AND ("FARC_AD" = :Original_FARC_AD) AND ("FARC_ADNAME" = :Original_FARC_ADNAME) AND ("FARC_CSTMP" = :Original_FARC_CSTMP) AND ("FARC_LUAD" = :Original_FARC_LUAD) AND ("FARC_LUADNAME" = :Original_FARC_LUADNAME) AND ("FARC_LUSTMP" = :Original_FARC_LUSTMP) AND ("FARC_DFLNO" = :Original_FARC_DFLNO))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FARC_NO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FARC_NO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FARC_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_NAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FARC_VISIBLE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FARC_VISIBLE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FARC_AD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_AD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FARC_ADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_ADNAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="FARC_CSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FARC_CSTMP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FARC_LUAD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_LUAD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FARC_LUADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_LUADNAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="FARC_LUSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FARC_LUSTMP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FARC_DFLNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FARC_DFLNO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_FARC_NO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FARC_NO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FARC_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_NAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_FARC_VISIBLE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FARC_VISIBLE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FARC_AD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_AD" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FARC_ADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_ADNAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_FARC_CSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FARC_CSTMP" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FARC_LUAD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_LUAD" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FARC_LUADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FARC_LUADNAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_FARC_LUSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FARC_LUSTMP" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_FARC_DFLNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FARC_DFLNO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FARC_NO" DataSetColumn="FARC_NO" />
+              <Mapping SourceColumn="FARC_NAME" DataSetColumn="FARC_NAME" />
+              <Mapping SourceColumn="FARC_VISIBLE" DataSetColumn="FARC_VISIBLE" />
+              <Mapping SourceColumn="FARC_AD" DataSetColumn="FARC_AD" />
+              <Mapping SourceColumn="FARC_ADNAME" DataSetColumn="FARC_ADNAME" />
+              <Mapping SourceColumn="FARC_CSTMP" DataSetColumn="FARC_CSTMP" />
+              <Mapping SourceColumn="FARC_LUAD" DataSetColumn="FARC_LUAD" />
+              <Mapping SourceColumn="FARC_LUADNAME" DataSetColumn="FARC_LUADNAME" />
+              <Mapping SourceColumn="FARC_LUSTMP" DataSetColumn="FARC_LUSTMP" />
+              <Mapping SourceColumn="FARC_DFLNO" DataSetColumn="FARC_DFLNO" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FailureReasonsTableAdapter" GeneratorDataComponentClassName="FailureReasonsTableAdapter" Name="FailureReasons" UserDataComponentName="FailureReasonsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (MySettings)" DbObjectName="CIPHERLAB.FAILUREREASONS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="True" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>DELETE FROM "CIPHERLAB"."FAILUREREASONS" WHERE (("FAR_NO" = :Original_FAR_NO) AND ("FAR_FARCNO" = :Original_FAR_FARCNO) AND ("FAR_REASON" = :Original_FAR_REASON) AND ("FAR_VISIBLE" = :Original_FAR_VISIBLE) AND ("FAR_AD" = :Original_FAR_AD) AND ("FAR_ADNAME" = :Original_FAR_ADNAME) AND ("FAR_CSTMP" = :Original_FAR_CSTMP) AND ("FAR_LUAD" = :Original_FAR_LUAD) AND ("FAR_LUADNAME" = :Original_FAR_LUADNAME) AND ("FAR_LUSTMP" = :Original_FAR_LUSTMP))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_FAR_NO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FAR_NO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_FAR_FARCNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FAR_FARCNO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FAR_REASON" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_REASON" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_FAR_VISIBLE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FAR_VISIBLE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FAR_AD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_AD" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FAR_ADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_ADNAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_FAR_CSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FAR_CSTMP" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FAR_LUAD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_LUAD" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FAR_LUADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_LUADNAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_FAR_LUSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FAR_LUSTMP" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>INSERT INTO "CIPHERLAB"."FAILUREREASONS" ("FAR_NO", "FAR_FARCNO", "FAR_REASON", "FAR_VISIBLE", "FAR_AD", "FAR_ADNAME", "FAR_CSTMP", "FAR_LUAD", "FAR_LUADNAME", "FAR_LUSTMP") VALUES (:FAR_NO, :FAR_FARCNO, :FAR_REASON, :FAR_VISIBLE, :FAR_AD, :FAR_ADNAME, :FAR_CSTMP, :FAR_LUAD, :FAR_LUADNAME, :FAR_LUSTMP)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FAR_NO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FAR_NO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FAR_FARCNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FAR_FARCNO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FAR_REASON" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_REASON" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FAR_VISIBLE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FAR_VISIBLE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FAR_AD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_AD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FAR_ADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_ADNAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="FAR_CSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FAR_CSTMP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FAR_LUAD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_LUAD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FAR_LUADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_LUADNAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="FAR_LUSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FAR_LUSTMP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT FAR_NO, FAR_FARCNO, FAR_REASON, FAR_VISIBLE, FAR_AD, FAR_ADNAME, FAR_CSTMP, FAR_LUAD, FAR_LUADNAME, FAR_LUSTMP FROM FAILUREREASONS</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>UPDATE "CIPHERLAB"."FAILUREREASONS" SET "FAR_NO" = :FAR_NO, "FAR_FARCNO" = :FAR_FARCNO, "FAR_REASON" = :FAR_REASON, "FAR_VISIBLE" = :FAR_VISIBLE, "FAR_AD" = :FAR_AD, "FAR_ADNAME" = :FAR_ADNAME, "FAR_CSTMP" = :FAR_CSTMP, "FAR_LUAD" = :FAR_LUAD, "FAR_LUADNAME" = :FAR_LUADNAME, "FAR_LUSTMP" = :FAR_LUSTMP WHERE (("FAR_NO" = :Original_FAR_NO) AND ("FAR_FARCNO" = :Original_FAR_FARCNO) AND ("FAR_REASON" = :Original_FAR_REASON) AND ("FAR_VISIBLE" = :Original_FAR_VISIBLE) AND ("FAR_AD" = :Original_FAR_AD) AND ("FAR_ADNAME" = :Original_FAR_ADNAME) AND ("FAR_CSTMP" = :Original_FAR_CSTMP) AND ("FAR_LUAD" = :Original_FAR_LUAD) AND ("FAR_LUADNAME" = :Original_FAR_LUADNAME) AND ("FAR_LUSTMP" = :Original_FAR_LUSTMP))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FAR_NO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FAR_NO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="FAR_FARCNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FAR_FARCNO" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FAR_REASON" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_REASON" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="FAR_VISIBLE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FAR_VISIBLE" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FAR_AD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_AD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FAR_ADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_ADNAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="FAR_CSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FAR_CSTMP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FAR_LUAD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_LUAD" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="FAR_LUADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_LUADNAME" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="FAR_LUSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FAR_LUSTMP" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_FAR_NO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FAR_NO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_FAR_FARCNO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FAR_FARCNO" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FAR_REASON" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_REASON" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="VarNumeric" Direction="Input" ParameterName="Original_FAR_VISIBLE" Precision="0" ProviderType="Number" Scale="0" Size="0" SourceColumn="FAR_VISIBLE" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FAR_AD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_AD" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FAR_ADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_ADNAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_FAR_CSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FAR_CSTMP" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FAR_LUAD" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_LUAD" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_FAR_LUADNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="FAR_LUADNAME" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_FAR_LUSTMP" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FAR_LUSTMP" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FAR_NO" DataSetColumn="FAR_NO" />
+              <Mapping SourceColumn="FAR_FARCNO" DataSetColumn="FAR_FARCNO" />
+              <Mapping SourceColumn="FAR_REASON" DataSetColumn="FAR_REASON" />
+              <Mapping SourceColumn="FAR_VISIBLE" DataSetColumn="FAR_VISIBLE" />
+              <Mapping SourceColumn="FAR_AD" DataSetColumn="FAR_AD" />
+              <Mapping SourceColumn="FAR_ADNAME" DataSetColumn="FAR_ADNAME" />
+              <Mapping SourceColumn="FAR_CSTMP" DataSetColumn="FAR_CSTMP" />
+              <Mapping SourceColumn="FAR_LUAD" DataSetColumn="FAR_LUAD" />
+              <Mapping SourceColumn="FAR_LUADNAME" DataSetColumn="FAR_LUADNAME" />
+              <Mapping SourceColumn="FAR_LUSTMP" DataSetColumn="FAR_LUSTMP" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FailureDTO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="FailureDTO" msprop:Generator_DataSetName="FailureDTO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vwFailureReasons" msprop:Generator_UserTableName="vwFailureReasons" msprop:Generator_RowDeletedName="vwFailureReasonsRowDeleted" msprop:Generator_RowChangedName="vwFailureReasonsRowChanged" msprop:Generator_RowClassName="vwFailureReasonsRow" msprop:Generator_RowChangingName="vwFailureReasonsRowChanging" msprop:Generator_RowEvArgName="vwFailureReasonsRowChangeEvent" msprop:Generator_RowEvHandlerName="vwFailureReasonsRowChangeEventHandler" msprop:Generator_TableClassName="vwFailureReasonsDataTable" msprop:Generator_TableVarName="tablevwFailureReasons" msprop:Generator_RowDeletingName="vwFailureReasonsRowDeleting" msprop:Generator_TablePropName="vwFailureReasons">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FAR_NO" msprop:Generator_UserColumnName="FAR_NO" msprop:Generator_ColumnVarNameInTable="columnFAR_NO" msprop:Generator_ColumnPropNameInRow="FAR_NO" msprop:Generator_ColumnPropNameInTable="FAR_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_FARCNO" msprop:Generator_UserColumnName="FAR_FARCNO" msprop:Generator_ColumnVarNameInTable="columnFAR_FARCNO" msprop:Generator_ColumnPropNameInRow="FAR_FARCNO" msprop:Generator_ColumnPropNameInTable="FAR_FARCNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_REASON" msprop:Generator_UserColumnName="FAR_REASON" msprop:Generator_ColumnVarNameInTable="columnFAR_REASON" msprop:Generator_ColumnPropNameInRow="FAR_REASON" msprop:Generator_ColumnPropNameInTable="FAR_REASONColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_VISIBLE" msprop:Generator_UserColumnName="FAR_VISIBLE" msprop:Generator_ColumnVarNameInTable="columnFAR_VISIBLE" msprop:Generator_ColumnPropNameInRow="FAR_VISIBLE" msprop:Generator_ColumnPropNameInTable="FAR_VISIBLEColumn" type="xs:decimal" />
+              <xs:element name="FAR_AD" msprop:Generator_UserColumnName="FAR_AD" msprop:Generator_ColumnVarNameInTable="columnFAR_AD" msprop:Generator_ColumnPropNameInRow="FAR_AD" msprop:Generator_ColumnPropNameInTable="FAR_ADColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_ADNAME" msprop:Generator_UserColumnName="FAR_ADNAME" msprop:Generator_ColumnVarNameInTable="columnFAR_ADNAME" msprop:Generator_ColumnPropNameInRow="FAR_ADNAME" msprop:Generator_ColumnPropNameInTable="FAR_ADNAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_CSTMP" msprop:Generator_UserColumnName="FAR_CSTMP" msprop:Generator_ColumnVarNameInTable="columnFAR_CSTMP" msprop:Generator_ColumnPropNameInRow="FAR_CSTMP" msprop:Generator_ColumnPropNameInTable="FAR_CSTMPColumn" type="xs:dateTime" />
+              <xs:element name="FAR_LUAD" msprop:Generator_UserColumnName="FAR_LUAD" msprop:Generator_ColumnVarNameInTable="columnFAR_LUAD" msprop:Generator_ColumnPropNameInRow="FAR_LUAD" msprop:Generator_ColumnPropNameInTable="FAR_LUADColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_LUADNAME" msprop:Generator_UserColumnName="FAR_LUADNAME" msprop:Generator_ColumnVarNameInTable="columnFAR_LUADNAME" msprop:Generator_ColumnPropNameInRow="FAR_LUADNAME" msprop:Generator_ColumnPropNameInTable="FAR_LUADNAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_LUSTMP" msprop:Generator_UserColumnName="FAR_LUSTMP" msprop:Generator_ColumnVarNameInTable="columnFAR_LUSTMP" msprop:Generator_ColumnPropNameInRow="FAR_LUSTMP" msprop:Generator_ColumnPropNameInTable="FAR_LUSTMPColumn" type="xs:dateTime" />
+              <xs:element name="FARC_NAME" msprop:Generator_UserColumnName="FARC_NAME" msprop:Generator_ColumnVarNameInTable="columnFARC_NAME" msprop:Generator_ColumnPropNameInRow="FARC_NAME" msprop:Generator_ColumnPropNameInTable="FARC_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FARC_DFLNO" msprop:Generator_UserColumnName="FARC_DFLNO" msprop:Generator_ColumnVarNameInTable="columnFARC_DFLNO" msprop:Generator_ColumnPropNameInRow="FARC_DFLNO" msprop:Generator_ColumnPropNameInTable="FARC_DFLNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_oldNO" msprop:Generator_UserColumnName="FAR_oldNO" msprop:Generator_ColumnPropNameInRow="FAR_oldNO" msprop:Generator_ColumnVarNameInTable="columnFAR_oldNO" msprop:Generator_ColumnPropNameInTable="FAR_oldNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_DFLNO" msprop:Generator_UserColumnName="FAR_DFLNO" msprop:Generator_ColumnPropNameInRow="FAR_DFLNO" msprop:Generator_ColumnVarNameInTable="columnFAR_DFLNO" msprop:Generator_ColumnPropNameInTable="FAR_DFLNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FailureReasonsClass" msprop:Generator_UserTableName="FailureReasonsClass" msprop:Generator_RowDeletedName="FailureReasonsClassRowDeleted" msprop:Generator_RowChangedName="FailureReasonsClassRowChanged" msprop:Generator_RowClassName="FailureReasonsClassRow" msprop:Generator_RowChangingName="FailureReasonsClassRowChanging" msprop:Generator_RowEvArgName="FailureReasonsClassRowChangeEvent" msprop:Generator_RowEvHandlerName="FailureReasonsClassRowChangeEventHandler" msprop:Generator_TableClassName="FailureReasonsClassDataTable" msprop:Generator_TableVarName="tableFailureReasonsClass" msprop:Generator_RowDeletingName="FailureReasonsClassRowDeleting" msprop:Generator_TablePropName="FailureReasonsClass">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FARC_NO" msprop:Generator_UserColumnName="FARC_NO" msprop:Generator_ColumnPropNameInRow="FARC_NO" msprop:Generator_ColumnVarNameInTable="columnFARC_NO" msprop:Generator_ColumnPropNameInTable="FARC_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FARC_NAME" msprop:Generator_UserColumnName="FARC_NAME" msprop:Generator_ColumnPropNameInRow="FARC_NAME" msprop:Generator_ColumnVarNameInTable="columnFARC_NAME" msprop:Generator_ColumnPropNameInTable="FARC_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FARC_VISIBLE" msprop:Generator_UserColumnName="FARC_VISIBLE" msprop:Generator_ColumnPropNameInRow="FARC_VISIBLE" msprop:Generator_ColumnVarNameInTable="columnFARC_VISIBLE" msprop:Generator_ColumnPropNameInTable="FARC_VISIBLEColumn" type="xs:decimal" />
+              <xs:element name="FARC_AD" msprop:Generator_UserColumnName="FARC_AD" msprop:Generator_ColumnPropNameInRow="FARC_AD" msprop:Generator_ColumnVarNameInTable="columnFARC_AD" msprop:Generator_ColumnPropNameInTable="FARC_ADColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FARC_ADNAME" msprop:Generator_UserColumnName="FARC_ADNAME" msprop:Generator_ColumnPropNameInRow="FARC_ADNAME" msprop:Generator_ColumnVarNameInTable="columnFARC_ADNAME" msprop:Generator_ColumnPropNameInTable="FARC_ADNAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FARC_CSTMP" msprop:Generator_UserColumnName="FARC_CSTMP" msprop:Generator_ColumnPropNameInRow="FARC_CSTMP" msprop:Generator_ColumnVarNameInTable="columnFARC_CSTMP" msprop:Generator_ColumnPropNameInTable="FARC_CSTMPColumn" type="xs:dateTime" />
+              <xs:element name="FARC_LUAD" msprop:Generator_UserColumnName="FARC_LUAD" msprop:Generator_ColumnPropNameInRow="FARC_LUAD" msprop:Generator_ColumnVarNameInTable="columnFARC_LUAD" msprop:Generator_ColumnPropNameInTable="FARC_LUADColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FARC_LUADNAME" msprop:Generator_UserColumnName="FARC_LUADNAME" msprop:Generator_ColumnPropNameInRow="FARC_LUADNAME" msprop:Generator_ColumnVarNameInTable="columnFARC_LUADNAME" msprop:Generator_ColumnPropNameInTable="FARC_LUADNAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FARC_LUSTMP" msprop:Generator_UserColumnName="FARC_LUSTMP" msprop:Generator_ColumnPropNameInRow="FARC_LUSTMP" msprop:Generator_ColumnVarNameInTable="columnFARC_LUSTMP" msprop:Generator_ColumnPropNameInTable="FARC_LUSTMPColumn" type="xs:dateTime" />
+              <xs:element name="FARC_DFLNO" msprop:Generator_UserColumnName="FARC_DFLNO" msprop:Generator_ColumnPropNameInRow="FARC_DFLNO" msprop:Generator_ColumnVarNameInTable="columnFARC_DFLNO" msprop:Generator_ColumnPropNameInTable="FARC_DFLNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FailureReasons" msprop:Generator_UserTableName="FailureReasons" msprop:Generator_RowDeletedName="FailureReasonsRowDeleted" msprop:Generator_RowChangedName="FailureReasonsRowChanged" msprop:Generator_RowClassName="FailureReasonsRow" msprop:Generator_RowChangingName="FailureReasonsRowChanging" msprop:Generator_RowEvArgName="FailureReasonsRowChangeEvent" msprop:Generator_RowEvHandlerName="FailureReasonsRowChangeEventHandler" msprop:Generator_TableClassName="FailureReasonsDataTable" msprop:Generator_TableVarName="tableFailureReasons" msprop:Generator_RowDeletingName="FailureReasonsRowDeleting" msprop:Generator_TablePropName="FailureReasons">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FAR_NO" msprop:Generator_UserColumnName="FAR_NO" msprop:Generator_ColumnVarNameInTable="columnFAR_NO" msprop:Generator_ColumnPropNameInRow="FAR_NO" msprop:Generator_ColumnPropNameInTable="FAR_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_FARCNO" msprop:Generator_UserColumnName="FAR_FARCNO" msprop:Generator_ColumnVarNameInTable="columnFAR_FARCNO" msprop:Generator_ColumnPropNameInRow="FAR_FARCNO" msprop:Generator_ColumnPropNameInTable="FAR_FARCNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_REASON" msprop:Generator_UserColumnName="FAR_REASON" msprop:Generator_ColumnVarNameInTable="columnFAR_REASON" msprop:Generator_ColumnPropNameInRow="FAR_REASON" msprop:Generator_ColumnPropNameInTable="FAR_REASONColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_VISIBLE" msprop:Generator_UserColumnName="FAR_VISIBLE" msprop:Generator_ColumnVarNameInTable="columnFAR_VISIBLE" msprop:Generator_ColumnPropNameInRow="FAR_VISIBLE" msprop:Generator_ColumnPropNameInTable="FAR_VISIBLEColumn" type="xs:decimal" />
+              <xs:element name="FAR_AD" msprop:Generator_UserColumnName="FAR_AD" msprop:Generator_ColumnVarNameInTable="columnFAR_AD" msprop:Generator_ColumnPropNameInRow="FAR_AD" msprop:Generator_ColumnPropNameInTable="FAR_ADColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_ADNAME" msprop:Generator_UserColumnName="FAR_ADNAME" msprop:Generator_ColumnVarNameInTable="columnFAR_ADNAME" msprop:Generator_ColumnPropNameInRow="FAR_ADNAME" msprop:Generator_ColumnPropNameInTable="FAR_ADNAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_CSTMP" msprop:Generator_UserColumnName="FAR_CSTMP" msprop:Generator_ColumnVarNameInTable="columnFAR_CSTMP" msprop:Generator_ColumnPropNameInRow="FAR_CSTMP" msprop:Generator_ColumnPropNameInTable="FAR_CSTMPColumn" type="xs:dateTime" />
+              <xs:element name="FAR_LUAD" msprop:Generator_UserColumnName="FAR_LUAD" msprop:Generator_ColumnVarNameInTable="columnFAR_LUAD" msprop:Generator_ColumnPropNameInRow="FAR_LUAD" msprop:Generator_ColumnPropNameInTable="FAR_LUADColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_LUADNAME" msprop:Generator_UserColumnName="FAR_LUADNAME" msprop:Generator_ColumnVarNameInTable="columnFAR_LUADNAME" msprop:Generator_ColumnPropNameInRow="FAR_LUADNAME" msprop:Generator_ColumnPropNameInTable="FAR_LUADNAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAR_LUSTMP" msprop:Generator_UserColumnName="FAR_LUSTMP" msprop:Generator_ColumnVarNameInTable="columnFAR_LUSTMP" msprop:Generator_ColumnPropNameInRow="FAR_LUSTMP" msprop:Generator_ColumnPropNameInTable="FAR_LUSTMPColumn" type="xs:dateTime" />
+              <xs:element name="FAR_DFLNO" msprop:Generator_UserColumnName="FAR_DFLNO" msprop:Generator_ColumnVarNameInTable="columnFAR_DFLNO" msprop:Generator_ColumnPropNameInRow="FAR_DFLNO" msprop:Generator_ColumnPropNameInTable="FAR_DFLNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tmpFailureReasons" msprop:Generator_UserTableName="tmpFailureReasons" msprop:Generator_RowDeletedName="tmpFailureReasonsRowDeleted" msprop:Generator_RowChangedName="tmpFailureReasonsRowChanged" msprop:Generator_RowClassName="tmpFailureReasonsRow" msprop:Generator_RowChangingName="tmpFailureReasonsRowChanging" msprop:Generator_RowEvArgName="tmpFailureReasonsRowChangeEvent" msprop:Generator_RowEvHandlerName="tmpFailureReasonsRowChangeEventHandler" msprop:Generator_TableClassName="tmpFailureReasonsDataTable" msprop:Generator_TableVarName="tabletmpFailureReasons" msprop:Generator_RowDeletingName="tmpFailureReasonsRowDeleting" msprop:Generator_TablePropName="tmpFailureReasons">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FAR_NO" msprop:Generator_UserColumnName="FAR_NO" msprop:Generator_ColumnPropNameInRow="FAR_NO" msprop:Generator_ColumnVarNameInTable="columnFAR_NO" msprop:Generator_ColumnPropNameInTable="FAR_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FAR_FARCNO" msprop:Generator_UserColumnName="FAR_FARCNO" msprop:Generator_ColumnPropNameInRow="FAR_FARCNO" msprop:Generator_ColumnVarNameInTable="columnFAR_FARCNO" msprop:Generator_ColumnPropNameInTable="FAR_FARCNOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FAR_REASON" msprop:Generator_UserColumnName="FAR_REASON" msprop:Generator_ColumnPropNameInRow="FAR_REASON" msprop:Generator_ColumnVarNameInTable="columnFAR_REASON" msprop:Generator_ColumnPropNameInTable="FAR_REASONColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FAR_VISIBLE" msprop:Generator_UserColumnName="FAR_VISIBLE" msprop:Generator_ColumnPropNameInRow="FAR_VISIBLE" msprop:Generator_ColumnVarNameInTable="columnFAR_VISIBLE" msprop:Generator_ColumnPropNameInTable="FAR_VISIBLEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FAR_AD" msprop:Generator_UserColumnName="FAR_AD" msprop:Generator_ColumnPropNameInRow="FAR_AD" msprop:Generator_ColumnVarNameInTable="columnFAR_AD" msprop:Generator_ColumnPropNameInTable="FAR_ADColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FAR_ADNAME" msprop:Generator_UserColumnName="FAR_ADNAME" msprop:Generator_ColumnPropNameInRow="FAR_ADNAME" msprop:Generator_ColumnVarNameInTable="columnFAR_ADNAME" msprop:Generator_ColumnPropNameInTable="FAR_ADNAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FAR_CSTMP" msprop:Generator_UserColumnName="FAR_CSTMP" msprop:Generator_ColumnPropNameInRow="FAR_CSTMP" msprop:Generator_ColumnVarNameInTable="columnFAR_CSTMP" msprop:Generator_ColumnPropNameInTable="FAR_CSTMPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FAR_LUAD" msprop:Generator_UserColumnName="FAR_LUAD" msprop:Generator_ColumnPropNameInRow="FAR_LUAD" msprop:Generator_ColumnVarNameInTable="columnFAR_LUAD" msprop:Generator_ColumnPropNameInTable="FAR_LUADColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FAR_LUADNAME" msprop:Generator_UserColumnName="FAR_LUADNAME" msprop:Generator_ColumnPropNameInRow="FAR_LUADNAME" msprop:Generator_ColumnVarNameInTable="columnFAR_LUADNAME" msprop:Generator_ColumnPropNameInTable="FAR_LUADNAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FAR_LUSTMP" msprop:Generator_UserColumnName="FAR_LUSTMP" msprop:Generator_ColumnPropNameInRow="FAR_LUSTMP" msprop:Generator_ColumnVarNameInTable="columnFAR_LUSTMP" msprop:Generator_ColumnPropNameInTable="FAR_LUSTMPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FARC_DFLNO" msprop:Generator_UserColumnName="FARC_DFLNO" msprop:Generator_ColumnPropNameInRow="FARC_DFLNO" msprop:Generator_ColumnVarNameInTable="columnFARC_DFLNO" msprop:Generator_ColumnPropNameInTable="FARC_DFLNOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FARC_NO" msprop:Generator_UserColumnName="FARC_NO" msprop:Generator_ColumnPropNameInRow="FARC_NO" msprop:Generator_ColumnVarNameInTable="columnFARC_NO" msprop:Generator_ColumnPropNameInTable="FARC_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FARC_NAME" msprop:Generator_UserColumnName="FARC_NAME" msprop:Generator_ColumnPropNameInRow="FARC_NAME" msprop:Generator_ColumnVarNameInTable="columnFARC_NAME" msprop:Generator_ColumnPropNameInTable="FARC_NAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FARC_VISIBLE" msprop:Generator_UserColumnName="FARC_VISIBLE" msprop:Generator_ColumnPropNameInRow="FARC_VISIBLE" msprop:Generator_ColumnVarNameInTable="columnFARC_VISIBLE" msprop:Generator_ColumnPropNameInTable="FARC_VISIBLEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FARC_LUAD" msprop:Generator_UserColumnName="FARC_LUAD" msprop:Generator_ColumnPropNameInRow="FARC_LUAD" msprop:Generator_ColumnVarNameInTable="columnFARC_LUAD" msprop:Generator_ColumnPropNameInTable="FARC_LUADColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FARC_LUADNAME" msprop:Generator_UserColumnName="FARC_LUADNAME" msprop:Generator_ColumnPropNameInRow="FARC_LUADNAME" msprop:Generator_ColumnVarNameInTable="columnFARC_LUADNAME" msprop:Generator_ColumnPropNameInTable="FARC_LUADNAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FARC_LUSTMP" msprop:Generator_UserColumnName="FARC_LUSTMP" msprop:Generator_ColumnPropNameInRow="FARC_LUSTMP" msprop:Generator_ColumnVarNameInTable="columnFARC_LUSTMP" msprop:Generator_ColumnPropNameInTable="FARC_LUSTMPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DFL_NAME" msprop:Generator_UserColumnName="DFL_NAME" msprop:Generator_ColumnPropNameInRow="DFL_NAME" msprop:Generator_ColumnVarNameInTable="columnDFL_NAME" msprop:Generator_ColumnPropNameInTable="DFL_NAMEColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FailureReasonsClass" />
+      <xs:field xpath="mstns:FARC_NO" />
+      <xs:field xpath="mstns:FARC_DFLNO" />
+    </xs:unique>
+    <xs:unique name="FailureReasons_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FailureReasons" />
+      <xs:field xpath="mstns:FAR_NO" />
+      <xs:field xpath="mstns:FAR_FARCNO" />
+      <xs:field xpath="mstns:FAR_DFLNO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

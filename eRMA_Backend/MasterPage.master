@@ -1,0 +1,116 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<%@ Register Src="ascx/TopBanner.ascx" TagName="TopBanner" TagPrefix="uc1" %>
+<%@ Register Src="ascx/MainMenu.ascx" TagName="MainMenu" TagPrefix="uc2" %>
+<%@ Register Src="ascx/SubMenu.ascx" TagName="SubMenu" TagPrefix="uc3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%=Session("_Title")%></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="script/rma.css" type="text/css" rel="stylesheet">
+    <link href="script/styleDate.css" type="text/css" rel="stylesheet">
+    <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <script>
+        var akkToken = '<%=Session("_LanguageID")%>';
+    </script>
+    <script src="Script/mouseover.js"></script>
+    <script type="text/javascript" src="script/jsUpdateProgress.js"></script>
+    <script type="text/javascript" src="script/CommonFunction.js"></script>
+    <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
+    
+    <script type="text/javascript" language="javascript">
+        function clickButton(e, buttonid) {
+            var evt = e ? e : window.event;
+            var bt = document.getElementById(buttonid);
+            if (bt) {
+                if (evt.keyCode == 13) {
+                    bt.click();
+                    return false;
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body leftmargin="0" topmargin="0">
+    <form id="oForm" runat="server">
+        <asp:ScriptManager ID="ScriptManager" runat="server" EnablePageMethods="true" EnableScriptGlobalization="true"></asp:ScriptManager>
+
+        <table border="0" width="100%" id="table1" cellspacing="0" cellpadding="0">
+            <tr>
+                <!-- TOP START -->
+                <uc1:TopBanner ID="TopBanner" runat="server" />
+                <!-- TOP END -->
+            </tr>
+            <tr>
+                <!-- Top Menu START -->
+                <uc2:MainMenu ID="MainMenu" runat="server" />
+                <!-- Top Menu END -->
+            </tr>
+            <!-- Customer User START -->
+            <tr>
+                <td background="images/pic_10.gif" height="34" class="Text_login" colspan="2">
+                    <table border="0" width="100%" id="table3" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <!--<img border="0" src="Images/login.gif" width="17" height="16" align="absmiddle">-->
+                                <asp:Label runat="server" ID="UI_LoginRole" Text="065_036_LogintRole" Visible="false"></asp:Label>
+                                <asp:Label runat="server" ID="UI_LoginName" Visible="false"></asp:Label>
+                                <asp:Label runat="server" ID="UI_Model" Visible="true" Text=""></asp:Label>
+                            </td>
+                            <td width="40%" align="right">
+                                <asp:Button ID="UI_butReceive_WorkList" runat="server" Text="057_worklist" />&nbsp;
+                            <asp:Button ID="UI_butRepair_WorkList" runat="server" Text="058_worklist" />&nbsp;
+                            <asp:Button ID="UI_butSale_WorkList" runat="server" Text="059_worklist" />
+                                <asp:Button ID="UI_butShip_ShippingList" runat="server" Text="080_worklist" />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Customer User END -->
+            <tr>
+                <td background="images/pic_10.gif" colspan="2">
+                    <!--left menu and content-->
+                    <table border="0" width="100%" id="table2" cellspacing="0" cellpadding="0" height="100%">
+                        <tr>
+                            <!-- Left Menu START -->
+                            <uc3:SubMenu ID="SubMenu" runat="server" />
+                            <!-- Left Menu END -->
+                            <td height="420px" rowspan="2" bgcolor="#EFE9D9" valign="top" align="center" colspan="2">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="57" valign="bottom" background="images/pic_11.gif">
+                                <img border="0" src="Images/pic_19.gif"></td>
+                        </tr>
+                        <tr>
+                            <td width="186" height="24"><a href="mailto:e-rma@cipherlab.com.tw">
+                                <asp:Image ID="Image21" runat="server" ImageUrl="Images/pic_21.gif" /></a></td>
+                            <td background="Images/pic_23.gif" width="24">
+                                <img border="0" src="Images/pic_22.gif"></td>
+                            <td background="Images/pic_23.gif" height="24">&nbsp;</td>
+                        </tr>
+                    </table>
+                    <!--end of left menu and content-->
+                </td>
+            </tr>
+            <!-- bottom START  -->
+            <tr>
+                <td height="34" colspan="2">&nbsp;</td>
+            </tr>
+            <!-- bottom END  -->
+
+        </table>
+    </form>
+</body>
+</html>

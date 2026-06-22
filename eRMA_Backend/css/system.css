@@ -1,0 +1,1932 @@
+body {
+    background: #F4F4F7;
+}
+
+.erma-background-marketing {
+    width: 100%;
+    height: 12vh;
+    background-image: url(../images/w-200922-09662.jpg);
+    background-position: 50% 30%;
+    background-size: cover;
+    position: relative;
+}
+
+.erma-background-marketing a {
+    display: table;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 3%;
+    margin: auto;
+}
+
+    .erma-background-marketing button {
+        border: 2px solid #fff;
+        background: none;
+        padding: 9px 25px;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+.erma-personal-information {
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+
+.erma-personal-information {
+    width: 23%;
+    height: 85%;
+    background: #ffffff;
+    box-shadow: 0 0 5px #63636382;
+    border-radius: 5px;
+    position: fixed;
+    top: 12%;
+    bottom: 0;
+    left: 3%;
+    z-index: 99;
+}
+
+.erma-user-card img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.erma-user-card .erma-nameContent {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+
+.erma-nameContent .erma-company,
+.erma-nameContent .erma-name {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.erma-nameContent .erma-name {
+    color: #1C218C;
+}
+
+.erma-nameContent .erma-level {
+    font-size: 14px;
+}
+
+.erma-personal-box .erma-buttons{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.erma-personal-box .erma-buttons a {
+    display: block;
+}
+
+    .erma-personal-box .erma-buttons button {
+        width: 100%;
+        padding: 14px;
+        background: #FFF;
+        border-radius: 25px;
+        margin-top: 10px;
+        border: 1px solid #000;
+        cursor: pointer;
+    }
+
+.erma-personal-box .erma-request button {
+    color: #496FF2;
+    border: 2px solid #496FF2;
+    background: #496FF2;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.erma-repairCenter-card {
+    padding: 15px;
+    box-sizing: border-box;
+    background: #F4F4F6;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+    .erma-repairCenter-card h6 {
+        color: #4F4F4F;
+        font-size: 12px;
+        display: table;
+    }
+
+.erma-repairCenter-card .erma-repair-block{
+    margin-top: 10px;
+}
+
+.erma-repairCenter-card .erma-repair-block img{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+.erma-repairCenter-card .erma-repair-text{
+    font-size: 12px;
+    color: #4F4F4F;
+}
+
+.erma-repair-block .erma-repair-item{
+
+}
+
+
+/* 連到外面的link */
+.erma-outlink-items{
+    margin-top: 15px;
+}
+
+.erma-outlink-items li{
+    padding: 10px;
+    border-bottom: 1px solid #E5E9EB;
+}
+
+.erma-outlink-items li a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* 左側的view */
+
+.erma-information-view {
+    width: 74%;
+    height: 80vh;
+    float: right;
+    overflow: auto;
+}
+
+    .erma-information-view .erma-tabs {
+        position: sticky;
+        top: 0;
+    }
+
+.erma-information-view .erma-tabs ul {
+    font-size: 0;
+}
+
+.erma-information-view .erma-tabs li {
+    background: #ffffff;
+    display: inline-block;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-bottom: #a0a0a000;
+    position: relative;
+    font-size: 16px;
+    position:relative;
+}
+    .erma-information-view .erma-tabs li a {
+        font-size: 16px;
+        text-decoration:none;
+    }
+
+    .erma-information-view .erma-tabs li .erma-tab-query {
+        position: absolute;
+        padding: 5px;
+        left: 0;
+        top: 92%;
+        display: none;
+    }
+
+    .erma-information-view .erma-tabs li:hover .erma-tab-query {
+        display: block;
+    }
+
+
+
+        .erma-information-view .erma-tabs li .erma-tab-query .erma-query-li {
+            width: 100%;
+            padding: 10px 20px;
+        }
+
+
+            .erma-information-view .erma-tabs li .erma-tab-query .erma-query-li:hover {
+                background: #F1F3FF;
+            }
+
+                .erma-information-view .erma-tabs li .erma-tab-query .erma-query-li:hover a {
+                    color: #496FF2;
+                }
+
+
+                .erma-information-view .erma-tabs li .erma-tab-query li a {
+                    text-decoration: none;
+                    color: #000000;
+                    font-size: 14px;
+                }
+
+
+    .erma-information-view .erma-tabs li.active a {
+        color: #000000;
+    }
+
+
+.erma-tabs {
+    background: #fff;
+    border-bottom: 2px solid #E5E9EB;
+}
+
+
+.erma-information-view .erma-infomation-text img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.erma-information-view .erma-infomation-text p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.erma-infomation-area {
+    padding: 15px 25px;
+    box-sizing: border-box;
+}
+
+.erma-infomation-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .erma-infomation-text .erma-infomation-block span {
+        font-size: 18px;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+
+    .erma-date-block {
+    }
+
+.erma-calendar-component span {
+    display: inline-block;
+}
+
+.erma-calendar-component .erma-calendar-input {
+    display:inline-block;
+}
+
+
+.erma-infomation-number-area {
+    display: flex;
+    margin-top: 10px;
+}
+
+.erma-number-buttons {
+    display: flex;
+}
+
+.erma-infomation-number-area button {
+    background: #EAEAEA;
+    /* 選取框 */
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+}
+
+.erma-infomation-number-area .erma-search-button {
+    background: #4F4F4F;
+    border: 1px solid #4F4F4F;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.erma-infomation-number-area .erma-combobox-control {
+    margin-right: 10px;
+    width: 15vw;
+}
+
+.erma-infomation-number-area .erma-combobox-control .erma-combobox-choose {
+    height: 100%;
+    margin-left: 0px;
+}
+
+    .erma-infomation-number-area .erma-combobox-control span {
+        padding-top: 0px;
+        width: 100%;
+    }
+
+.erma-number-buttons button {
+    margin: 0 0 0 10px;
+    padding: 5px 24px;
+    cursor: pointer;
+}
+
+
+
+.erma-infomation-resultView .erma-number-view, .erma-infomation-resultView .erma-noData-view,
+.erma-information-status-view .erma-infomation-resultView,
+.erma-information-warranty-view .erma-information-block,
+.erma-information-wait-view .erma-information-block {
+    margin-top: 1.5vh;
+}
+
+    .erma-infomation-resultView .erma-infomation-text {
+        font-size: 18px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .erma-infomation-resultView .erma-information-block .erma-infomation-number {
+        padding: 3px 6px;
+        display: inline-block;
+        vertical-align: middle;
+        background: #F96C4D;
+        border-radius: 15px;
+        color: #fff;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .erma-infomation-resultView .erma-information-block {
+        margin-bottom: 1vh;
+        display: flex;
+        justify-content: space-between;
+        z-index:1000;
+    }
+
+
+/*換頁*/
+.erma-right-block {
+    display: flex;
+}
+
+    .erma-right-block .erma-combobox-control {
+        margin-right: 15px;
+        align-items: center;
+    }
+
+
+
+.erma-information-status-view .erma-table-components .erma-table-header td,
+.erma-information-parts-view .erma-table-components .erma-table-header td,
+.erma-information-warranty-view .erma-table-components,
+.erma-information-warranty-view .erma-table-components .erma-table-header td {
+    background: none;
+    /*    border: none;*/
+}
+
+.erma-information-warranty-view .erma-table-components {
+    margin-bottom:15px;
+    height: auto;
+    border: none;
+}
+
+    .erma-information-warranty-view .erma-table-components td {
+    }
+
+        .erma-information-warranty-view .erma-table-components td span {
+            font-size:12px;
+        }
+
+    .erma-information-warranty-view .erma-table-components .erma-table-header div {
+        border-bottom: 1px solid #D8D8D8;
+        background: #F4F4F7;
+    }
+
+    .erma-information-warranty-view .erma-table-components td {
+        width: 15%;
+        padding: 10px 20px 10px 15px;
+    }
+
+
+    .erma-information-warranty-view .erma-table-components .erma-table-pODate {
+        width: 15%;
+    }
+
+    .erma-information-warranty-view .erma-table-components .erma-table-content {
+        width: 25%;
+    }
+
+    .erma-information-warranty-view .erma-table-components .erma-table-month {
+        width: 5%;
+    }
+
+    .erma-information-warranty-view .erma-table-components .erma-table-extra {
+        width: 5%;
+    }
+
+    .erma-information-warranty-view .erma-table-components .erma-table-memo {
+        width: 5%;
+    }
+
+    .erma-information-warranty-view .erma-table-components .erma-table-endDate {
+        width: 45%;
+    }
+
+
+
+.erma-information-warranty-view .erma-table-components tbody td:first-child {
+    border-left: 1px solid #D8D8D8;
+}
+    .erma-information-warranty-view .erma-table-components tbody td:last-child {
+        border-right: 1px solid #D8D8D8;
+    }
+
+    .erma-information-warranty-view .erma-table-components .erma-table-listCard:last-child td {
+        border-bottom: 1px solid #D8D8D8;
+    }
+
+    .erma-information-warranty-view .erma-table-components tbody tr:nth-child(even) td {
+        background: #F1F3FF;
+    }
+
+    .erma-information-status-view .erma-table-components td {
+    }
+
+.erma-information-status-view .erma-table-components {
+    width:100%;
+}
+
+.erma-information-status-view .erma-status-block .erma-combobox-control span {
+    margin-right: 10px;
+}
+
+
+.erma-versionModification-table-block {
+}
+
+
+
+
+.erma-table-components .erma-button {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 3px 10px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.erma-information-status-view .erma-table-components .erma-table-header {
+    display: block;
+    position: sticky;
+    top: 0;
+    font-size: 0;
+}
+
+    .erma-information-status-view .erma-table-components .erma-table-header div {
+        display: inline-block;
+    }
+
+.erma-information-status-view .erma-table-components .erma-table-listCard {
+    display: block;
+    font-size: 0;
+    border: 1px solid #E5E9EB;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+    .erma-information-status-view .erma-table-components .erma-table-listCard:first-child {
+        margin-top:0;
+    }
+
+    .erma-information-status-view .erma-table-components .erma-table-listCard div, .erma-information-status-view .erma-table-header div {
+        vertical-align: middle;
+    }
+
+    .erma-information-status-view .erma-table-components .erma-first-div {
+        display: inline-block;
+        border-bottom: 1px solid #E5E9EB;
+    }
+
+
+.erma-table-listCard .erma-second-div {
+}
+
+.erma-table-components tr.erma-table-listCard, .erma-table-components .erma-table-listCard, .erma-table-components .erma-table-listCard-second {
+    background: #fff;
+    position: relative;
+    display: flex;
+    border-radius: 5px;
+}
+
+.erma-table-components tr.erma-table-listCard {
+    display: revert;
+}
+
+
+    .erma-information-status-view .erma-table-components .erma-rmaNo {
+        width: 13%;
+        padding: 10px 1%;
+    }
+
+.erma-information-status-view .erma-table-components .erma-date {
+    width: 11%;
+    padding: 10px 1%;
+}
+
+.erma-information-status-view .erma-table-components .erma-person {
+    width: 11%;
+    padding: 10px 1%;
+}
+
+.erma-information-status-view .erma-table-components .erma-null {
+    width: 10%;
+    padding: 10px 1%;
+}
+
+.erma-information-status-view .erma-table-components .erma-original {
+    width: 13%;
+    padding: 10px 1%;
+}
+
+.erma-information-status-view .erma-table-components .erma-content {
+    width: 10%;
+    padding: 10px 1%;
+}
+
+    .erma-information-status-view .erma-table-components .erma-content a {
+        color: #1C218C;
+    }
+
+    .erma-information-status-view .erma-table-components .erma-print {
+        width: 18%;
+        padding: 6px 1%;
+    }
+
+.erma-table-listCard .erma-print > table {
+    width:100%;
+}
+
+
+.erma-table-components .erma-table-listCard-second {
+    width: 98%;
+    padding: 10px 1%;
+}
+
+    .erma-table-components .erma-table-listCard-second > div {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .erma-table-components .erma-table-listCard-second .erma-status-blcok {
+        width: 10%;
+    }
+
+    .erma-table-components .erma-table-listCard-second .erma-qty-blcok {
+        width: 45%;
+    }
+
+    .erma-table-components .erma-table-listCard-second .erma-description-blcok {
+        border-left: 1px solid #E5E9EB;
+        padding-left: 1.5%;
+        width: 50%;
+    }
+
+    .erma-table-components .erma-table-listCard-second .erma-qty-blcok .erma-key {
+        color: #888888;
+    }
+
+    .erma-table-components .erma-table-listCard td {
+        width: auto;
+        padding: 6px;
+    }
+
+    .erma-table-components .erma-first-div td {
+
+    }
+
+.erma-table-components .erma-table-listCard-second .erma-button-status {
+    display: table;
+    margin: auto;
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: #fff;
+}
+
+.erma-table-listCard-second .status-unprocessed {
+    background: #FF8181;
+}
+
+.erma-table-listCard-second .status-processing {
+    background: #4F4F4F;
+}
+
+.erma-table-listCard-second .status-closed {
+    background: #4FC26F;
+}
+
+.erma-table-components .erma-table-listCard-second .erma-RMAQty {
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.erma-table-components .erma-table-listCard-second .erma-ProcessQty {
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.erma-table-components .erma-table-listCard-second .erma-ShippedQty {
+    display: inline-block;
+    margin-right: 5%;
+}
+
+
+    .erma-information-parts-view .erma-table-components img {
+        width: 100px;
+    }
+
+.erma-information-parts-view .erma-table-components .erma-table-pic {
+    width: 10%;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.erma-information-parts-view .erma-table-components .erma-table-serialNo {
+    width: 20%;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.erma-information-parts-view .erma-table-components .erma-table-description {
+    width: 35%;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.erma-information-parts-view .erma-table-components .erma-table-listPrice {
+    width: 10%;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.erma-information-parts-view .erma-table-components .erma-table-replacement {
+    width: 25%;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.erma-information-parts-view .erma-table-components .erma-table-listCard .erma-table-pic {
+    border-left: 1px solid #D8D8D8;
+}
+
+.erma-information-parts-view .erma-table-components .erma-table-listCard .erma-table-serialNo {
+}
+
+.erma-information-parts-view .erma-table-components .erma-table-listCard .erma-table-description {
+}
+
+.erma-information-parts-view .erma-table-components .erma-table-listCard .erma-table-listPrice {
+}
+
+.erma-information-parts-view .erma-table-components .erma-table-listCard .erma-table-replacement {
+    border-right: 1px solid #D8D8D8;
+}
+
+.erma-table-image-block {
+    position: relative;
+    cursor: pointer;
+}
+
+.erma-image-search {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #0000007d;
+}
+
+.erma-information-parts-view .erma-table-listCard .erma-image-search {
+    display:none;
+}
+
+.erma-information-parts-view .erma-table-listCard .erma-table-image-block:hover .erma-image-search {
+    display: block;
+}
+
+    .erma-information-parts-view .erma-table-listCard .erma-image-search img {
+        width: 32px;
+        height: 32px;
+        margin: auto;
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+    }
+
+
+.erma-window-image-background, .erma-window-newRequest-productInfo-background,
+.erma-window-image-background, .erma-window-newRequest-problem-background,
+.erma-window-newRequest-problem-background, .erma-window-newRequest-addProduct-background,
+.erma-window-newRequest-cancel-background, .erma-window-newRequest-save-background,
+.erma-window-newRequest-clientInfo-background, .erma-window-newRequest-toHelpEndUser-background,
+.erma-window-newRequest-printRepair-background, .erma-window-quotation-background,
+.erma-window-quotationDetail-background, .erma-window-repairDetail-background,
+.erma-window-statusQueryQuotation-background, .erma-window-warrantySend-background,
+.erma-window-announcements-background {
+    background: #0000004a;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+    .erma-window-warrantySend-background .erma-quotation-box {
+        display: table;
+        background: #fff;
+        padding: 0;
+        border-radius: 10px;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        padding: 40px 100px 30px;
+        text-align: center;
+    }
+
+        .erma-window-warrantySend-background .erma-quotation-box .erma-warrantySend-block p {
+            margin-top: 30px;
+            margin-bottom: 70px;
+            font-size: 16px;
+        }
+
+    .erma-window-announcements-background .erma-window-box {
+        display: table;
+        background: #fff;
+        padding: 0;
+        border-radius: 10px;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        padding: 20px 25px;
+        width: 65vh;
+    }
+
+        .erma-window-newRequest-addProduct-background .erma-addBar-div {
+        }
+
+        .erma-window-newRequest-addProduct-background .erma-addBar-div button {
+            border-radius: 20px;
+            border: 1px solid #496FF2;
+            color: #496FF2;
+            padding: 8px 24px;
+            background: #fff;
+            margin-top: 15px;
+            margin-right: 1%;
+            cursor:pointer;
+        }
+
+        .erma-zoom-image-block {
+            margin: auto;
+            width: 35vw;
+            margin-top: 15%;
+            position: relative;
+        }
+
+.erma-list-left .erma-list-ranking {
+    padding: 5px 2vw;
+}
+
+.erma-list-left .erma-list-key,
+.erma-list-left .erma-list-value,
+.erma-list-right .erma-list-key,
+.erma-list-right .erma-list-value {
+    padding: 5px 1vw;
+}
+
+.erma-list-left .erma-list-key,
+.erma-list-right .erma-list-key {
+    font-size:12px;
+    color: #888888;
+}
+
+
+    .erma-list-right table .erma-list-delete {
+        padding: 5px 2vw;
+    }
+
+        .erma-list-right table .erma-list-delete img {
+
+            cursor:pointer;
+        }
+
+        .erma-window-image-background .erma-zoom-image-block img {
+            width: 100%;
+        }
+
+
+.erma-window-image-background .erma-cancle-block {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    background: #ffffff8c;
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.erma-window-image-background img.erma-cancelIcon {
+    width: 100%;
+}
+
+
+.erma-window-newRequest-productInfo-background .erma-window-box {
+    display: table;
+    width: 95vh;
+    height: 550px;
+    background: #fff;
+    padding: 30px 60px;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.erma-window-warrantySend-background .erma-window-box {
+    display:table;
+    background: #fff;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.erma-window-newRequest-clientInfo-background .erma-window-box {
+    width: 130vh;
+    height: auto;
+    display: table;
+    padding: 10px 15px 20px;
+}
+
+
+.erma-window-newRequest-productInfo-background .erma-box-div {
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+
+.erma-window-newRequest-problem-background .erma-window-box, .erma-window-newRequest-addProduct-background .erma-window-box{
+    display: table;
+    width: 95vh;
+    height: 550px;
+    background: #fff;
+    padding: 0;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.erma-window-newRequest-clientInfo-background .erma-window-box,
+.erma-window-newRequest-toHelpEndUser-background .erma-window-box,
+.erma-window-newRequest-printRepair-background .erma-window-box {
+    display: table;
+    background: #fff;
+    padding: 0;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+    .erma-window-newRequest-clientInfo-background .erma-window-box .erma-box-content,
+    .erma-window-newRequest-toHelpEndUser-background .erma-window-box .erma-box-content {
+        width: 65%;
+        margin: auto;
+    }
+
+    .erma-window-newRequest-clientInfo-background .erma-window-box .erma-warranty-divtop button,
+    .erma-window-newRequest-toHelpEndUser-background .erma-window-box .erma-warranty-divtop button {
+        border: 1px solid #000000;
+        background: #fff;
+        color: #000000;
+        border-radius: 5px;
+        margin-left: 5px;
+        padding: 9px 25px;
+        position: absolute;
+        top: 0;
+        display: table;
+        cursor: pointer;
+    }
+
+    .erma-window-newRequest-clientInfo-background .erma-window-box .erma-warranty-divtop p,
+    .erma-window-newRequest-toHelpEndUser-background .erma-window-box .erma-warranty-divtop p {
+        font-size: 24px;
+        text-align: center;
+    }
+
+
+    .erma-window-newRequest-clientInfo-background .erma-window-box .erma-warranty-divtop,
+    .erma-window-newRequest-toHelpEndUser-background .erma-window-box .erma-warranty-divtop {
+        margin-top: 20px;
+        position: relative;
+        text-align: center;
+    }
+
+
+    .erma-window-newRequest-clientInfo-background .erma-window-box .erma-box-div,
+    .erma-window-newRequest-toHelpEndUser-background .erma-window-box .erma-box-div {
+    }
+
+
+    .erma-window-newRequest-clientInfo-background .erma-window-box .erma-warranty-divcontent,
+    .erma-window-newRequest-toHelpEndUser-background .erma-window-box .erma-warranty-divcontent {
+        border: 1px solid #D8D8D8;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+.erma-warranty-divcontent .erma-newRequest-combobox .erma-combobox-choose {
+    margin-left:0;
+}
+
+.erma-window-newRequest-clientInfo-background .erma-window-box .erma-warranty-divcontent>table,
+.erma-window-newRequest-toHelpEndUser-background .erma-window-box .erma-warranty-divcontent>table {
+    padding: 10px 60px;
+}
+
+.erma-window-newRequest-clientInfo-background .erma-window-box .erma-warranty-divcontent table td,
+.erma-window-newRequest-toHelpEndUser-background .erma-window-box .erma-warranty-divcontent table td {
+    height: 43px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.erma-window-newRequest-toHelpEndUser-background .erma-window-box .erma-warranty-divcontent table td {
+    width:33%;
+}
+
+    .erma-window-newRequest-clientInfo-background .erma-window-box .erma-warranty-divcontent table td:first-child,
+    .erma-window-newRequest-toHelpEndUser-background .erma-window-box .erma-warranty-divcontent table td:first-child {
+        width: 30%;
+    }
+
+    .erma-window-newRequest-clientInfo-background .erma-window-box .erma-warranty-divcontent table td:last-child,
+    .erma-window-newRequest-toHelpEndUser-background .erma-window-box .erma-warranty-divcontent table td:last-child {
+        width: 70%;
+    }
+
+        .erma-window-newRequest-clientInfo-background .erma-window-box .erma-warranty-divcontent textarea,
+        .erma-window-newRequest-toHelpEndUser-background .erma-window-box .erma-warranty-divcontent textarea {
+            width: 100%;
+            min-height: 10vh;
+            border-radius: 5px;
+            border: 1px solid #D8D8D8;
+        }
+
+.erma-window-newRequest-toHelpEndUser-background .erma-window-box .erma-warranty-divcontent textarea {
+    min-height: 5vh;
+}
+
+
+            .erma-window-newRequest-addProduct-background .erma-window-box,
+            .erma-window-newRequest-clientInfo-background .erma-window-box,
+            .erma-window-newRequest-toHelpEndUser-background .erma-window-box {
+                width: 130vh;
+                height: auto;
+                display: table;
+                padding: 10px 15px 20px;
+            }
+
+.erma-window-newRequest-printRepair-background .erma-window-box {
+    width: 130vh;
+    height: auto;
+    display: table;
+    padding: 10px 0px 20px;
+}
+
+
+    .erma-window-newRequest-printRepair-background .erma-window-box .erma-serviceCenter-content {
+        width:75%;
+        margin:auto;
+        display:table;
+    }
+
+        .erma-window-newRequest-printRepair-background .erma-window-box .erma-serviceCenter-content td {
+            font-size:12px;
+        }
+
+            .erma-window-newRequest-printRepair-background .erma-window-box .erma-serviceCenter-content td img {
+                margin-right: 10px;
+            }
+
+            .erma-window-newRequest-printRepair-background .erma-note-serviceCenter {
+                display: block;
+                margin-top: 20px;
+                background: #F1F3FF;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+
+.erma-window-newRequest-printRepair-background .erma-window-box .erma-success-contacting-content {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15vh 0;
+}
+
+.erma-window-newRequest-printRepair-background .erma-window-box .erma-success-contacting-content h6 {
+    text-align: center;
+    color: #5EDA81;
+    font-size: 30px;
+}
+
+.erma-window-newRequest-printRepair-background .erma-window-box .erma-success-contacting-content p {
+    text-align: center;
+    color: #5EDA81;
+}
+
+    .erma-window-newRequest-printRepair-background .erma-window-box .erma-success-contacting-content button {
+        /* 藍紫色-深 */
+        background: #fff;
+        /* 藍紫色-深 */
+        border: 1px solid #496FF2;
+        color: #496FF2;
+        border-radius: 20px;
+        display: table;
+        margin: 20px auto 0;
+    }
+
+    .erma-window-newRequest-printRepair-background .erma-window-box .erma-success-contacting-content .erma-printRepair-button {
+        /* 藍紫色-深 */
+        background: #1C218C;
+        /* 藍紫色-深 */
+        border: 1px solid #1C218C;
+        border-radius: 20px;
+        color: #fff;
+        display: table;
+        margin: 20px auto 0;
+    }
+
+.erma-window-newRequest-printRepair-background .erma-window-box .erma-success-contacting-content table {
+    margin: 20px auto;
+}
+
+    .erma-window-newRequest-printRepair-background .erma-window-box .erma-success-contacting-content table button {
+        width: 100%;
+        padding: 9px 68px;
+        cursor: pointer;
+    }
+
+
+
+        .erma-window-newRequest-cancel-background .erma-window-box {
+            padding: 40px 55px 30px;
+            display: table;
+            background: #fff;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            border-radius: 5px;
+        }
+
+.erma-window-newRequest-save-background .erma-window-box {
+    display: table;
+    background: #fff;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 10px;
+    padding: 50px 125px;
+    text-align: center;
+}
+
+    .erma-window-newRequest-save-background .erma-window-box img {
+        width:100px;
+    }
+
+    .erma-window-newRequest-save-background .erma-window-box p {
+        margin-top:25px;
+    }
+
+
+        .erma-window-newRequest-cancel-background .erma-window-box .erma-alert-div {
+            font-size: 16px;
+        }
+
+        .erma-window-newRequest-cancel-background .erma-window-box .erma-alert-div img {
+            width: 64px;
+            margin: auto;
+            display: block;
+        }
+
+        .erma-window-newRequest-cancel-background .erma-window-box .erma-alert-div p {
+            margin-top: 20px;
+            font-size: 16px;
+            margin-bottom:80px;
+        }
+
+    .erma-window-newRequest-cancel-background .erma-window-box .erma-buttons-div button {
+
+    }
+
+    .erma-window-box .erma-list-left {
+        float: left;
+    }
+
+.erma-window-box .erma-list-right {
+    float: right;
+}
+
+.erma-window-newRequest-addProduct-background .erma-addBar-div {
+    position: relative;
+    text-align: end;
+}
+
+.erma-window-newRequest-problem-background .erma-box-div{
+    display: block;
+    padding: 10px 15px;
+}
+
+
+.erma-window-newRequest-addProduct-background .erma-addList-box {
+    width: 100%;
+    height: 70vh;
+}
+
+.erma-window-newRequest-addProduct-background .erma-buttons-div {
+    text-align:end;
+}
+
+.erma-buttons-div button {
+    padding: 10px 30px;
+}
+
+.erma-window-box .erma-buttons-div {
+    text-align: right;
+    margin-top: 30px;
+}
+
+    .erma-buttons-div .erma-button-understand {
+        padding: 10px 13px;
+    }
+
+.erma-buttons-div .erma-button-cancel, .erma-buttons-div .erma-button-understand {
+    border: 1px solid #000000;
+    background: #fff;
+    color: #000000;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.erma-buttons-div .erma-button-save {
+    border: 1px solid #000000;
+    background: #fff;
+    color: #000000;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor:pointer;
+}
+
+
+
+
+.erma-buttons-div .erma-button-next {
+    border: 1px solid #496FF2;
+    background: #496FF2;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+    .erma-buttons-div .erma-button-back {
+        border: 1px solid #000000;
+        background: #fff;
+        color: #000000;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+
+
+    .erma-window-newRequest-addProduct-background .erma-window-box .erma-addList-box li {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        margin: 5px 10px;
+        background: #F1F3FF;
+        border-radius: 5px;
+    }
+
+    .erma-window-newRequest-problem-background .erma-problem-content {
+        padding: 20px 80px 30px;
+    }
+
+    .erma-window-newRequest-problem-background .erma-problem-content p {
+        font-size:16px;
+    }
+
+    .erma-window-newRequest-problem-background .erma-problem-content .erma-title {
+        font-size: 12px;
+        position: relative;
+    }
+
+.erma-image-cancel {
+    width: 16px;
+    padding: 5px;
+    position: absolute;
+    display: table;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.erma-problemDescription-block .erma-title-block {
+
+}
+
+.erma-uploadFile-selectFileDiv {
+    display:table;
+}
+
+.erma-uploadFile-selectFileDiv .erma-number-box .erma-selectFile-button {
+    border: 1px solid #4F4F4F;
+}
+
+    .erma-uploadFile-selectFileDiv .erma-selectFile-button {
+        padding: 9px 25px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        margin-right: 5px;
+        display: table-cell;
+        width: 76%;
+        text-align: center;
+    }
+
+.erma-number-undefined .erma-title span {
+    font-size: 12px;
+}
+
+    .erma-number-undefined .erma-title span:hover .erma-info-uploadFile-message {
+        display: block;
+    }
+
+
+.erma-number-undefined .erma-title .erma-info-uploadFile-message {
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 5px 0 #47474761;
+    padding: 15px 30px;
+    border-radius: 10px;
+    z-index: 100;
+    display: none;
+    left: 10%;
+    top: 110%;
+}
+
+.erma-number-undefined .erma-title .erma-info-uploadFile-message li {
+    list-style:disc;
+}
+
+.erma-uploadFile-selectFileDiv .erma-upload-button {
+    border: 1px solid #1C218C;
+    background: #1C218C;
+    color: #fff;
+    padding: 9px 25px;
+    border-radius: 5px;
+    display: table-cell;
+    margin: 0 5px;
+}
+
+    .erma-uploadFile-selectFileDiv .erma-upload-clear {
+        border: 1px solid #496FF2;
+        color: #496FF2;
+        background: #ffffff;
+        padding: 9px 25px;
+        border-radius: 5px;
+        display: table-cell;
+    }
+
+.erma-window-newRequest-problem-background .erma-uploadFile-input .erma-selectFile-button p {
+    font-size: 12px;
+}
+
+
+.erma-problemDescription-block .erma-uploadFile-selectFileDiv {
+
+}
+
+.erma-problemDescription-block .erma-description-block .erma-form-control {
+}
+
+.erma-description-block p {
+    font-size:12px;
+}
+
+.erma-problemDescription-block .erma-description-block .erma-form-control {
+    width: 100%;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    margin-top: 5px;
+    height:140px;
+}
+
+
+.erma-list-right td.erma-list-warrantyDetail a{
+    color: #000000;
+}
+
+.erma-list-right td.erma-list-warrantyDetail:hover .erma-warrantyDetail-content {
+    display: block !important;
+    width: max-content;
+}
+
+.erma-warrantyDetail-content tbody {
+
+}
+
+.erma-warrantyDetail-content thead td {
+    border-bottom: 1px solid #a0a0a0;
+}
+
+.erma-warrantyDetail-content td {
+    padding: 9px 12px;
+}
+
+    .erma-list-right .erma-list-key.erma-list-warrantyDetail {
+        position: relative;
+    }
+
+.erma-list-warrantyDetail .erma-warrantyDetail-content {
+    position: absolute;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 25%);
+    right: 0;
+}
+
+    .erma-list-warrantyDetail .erma-warrantyDetail-content table {
+        border: 1px solid #D8D8D8;
+        color: #000;
+    }
+
+.erma-list-warrantyDetail .erma-warrantyDetail-content table td{
+
+}
+
+
+.erma-list-right td .erma-list-edit {
+    color: #496FF2;
+    text-decoration: none;
+}
+
+.erma-description-block textarea {
+    height: 15vh;
+}
+
+
+.erma-fault-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.erma-fault-block .erma-number-box {
+    display: flex;
+}
+
+    .erma-number-box .erma-fault-left {
+
+    }
+
+.erma-fault-block .erma-fault-left {
+    width: 75%;
+}
+
+    .erma-fault-block .erma-fault-left .erma-combobox-control {
+        display: inline-block;
+        width: 30%;
+    }
+
+.erma-fault-block .erma-fault-right {
+    width: 25%;
+}
+
+.erma-fault-block .erma-fault-right .erma-combobox-control {
+}
+
+.erma-fault-block .erma-combobox-choose {
+    margin-left:0;
+}
+
+
+.erma-image-cancel img {
+    width: 100%;
+}
+
+.erma-window-newRequest-productInfo-background .erma-box-div h5 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.erma-window-announcements-background .erma-box-div h5 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #496FF2;
+}
+
+.erma-window-announcements-background .erma-announcements-content {
+
+}
+
+    .erma-window-announcements-background .erma-announcements-content h6 {
+        font-size: 16px;
+    }
+
+    .erma-window-announcements-background .erma-announcements-content p {
+        font-size: 16px;
+    }
+
+
+    .erma-window-announcements-background .erma-announcements-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+.erma-announcements-bottom img {
+    width:84px;
+}
+
+.erma-announcements-bottom button {
+    border: 1px solid #496FF2;
+    border-radius: 30px;
+    color: #496FF2;
+    background: #fff;
+    padding: 6px 36px;
+    cursor: pointer;
+}
+
+.erma-window-announcements-background .erma-announcements-bottom
+
+.erma-window-newRequest-productInfo-background .erma-box-div p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.erma-window-newRequest-productInfo-background .erma-number-input {
+    position: relative;
+    margin: 10px 0;
+    border: 1px solid #ffffff;
+}
+
+    .erma-window-newRequest-productInfo-background .erma-number-input.select {
+        background: #F1F3FF;
+        border: 1px solid #1C218C;
+        border-radius: 5px;
+    }
+
+    .erma-window-newRequest-productInfo-background .erma-number-input .erma-number-box {
+        padding: 15px 20px 30px;
+        margin: 5px 0;
+    }
+
+.erma-problem-content .erma-title {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.erma-problem-content .erma-number-input {
+    margin-top: 5px;
+    width: 100%;
+    display: block;
+}
+
+.erma-window-newRequest-problem-background .erma-number-undefined .erma-number-box img {
+    width: 16px;
+    vertical-align: top;
+}
+
+        .erma-window-newRequest-productInfo-background .erma-number-undefined::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            top: 0;
+            background: #f7f7f7c7;
+        }
+
+.erma-window-newRequest-productInfo-background .erma-number-input span {
+    vertical-align: middle;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+    .erma-window-newRequest-productInfo-background .erma-number-input span img {
+        width: 16px;
+        vertical-align: top;
+        margin-left: 5px;
+        display: block;
+
+    }
+
+
+
+.erma-window-box .erma-infomation-addButton, .erma-window-box .erma-infomation-notButton, .erma-window-box .erma-infomation-submitButton {
+    padding: 9px 25px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.erma-window-box .erma-infomation-addButton, .erma-window-box .erma-infomation-submitButton {
+    border: 1px solid #496FF2;
+    background: #496FF2;
+    color: #ffffff;
+    display: block;
+    cursor:pointer;
+}
+
+.erma-window-box .erma-infomation-addButton, .erma-window-box .erma-infomation-submitButton:hover {
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    display: block;
+    cursor: pointer;
+}
+
+
+
+.erma-window-box .erma-infomation-notButton {
+    background: #D8D8D8;
+    border: 1px solid #D8D8D8;
+    color:#ffffff;
+}
+
+
+.erma-infomation-resultView .erma-right-block button {
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #fff;
+    font-size: 12px;
+}
+
+
+/*alrty*/
+.erma-alert-block {
+    position: relative;
+    width: 400px;
+    height: 690px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+
+
+.erma-warrantyQuery-block {
+    border-radius: 5px;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 2px #a0a0a0;
+    margin-bottom: 10px;
+}
+
+    .erma-warrantyQuery-block .erma-query-cards td {
+        width: 10%;
+    }
+
+    .erma-warrantyQuery-block .erma-query-cards .erma-query-text {
+        padding:0.5%;
+        width: 20%;
+    }
+
+
+.erma-query-cards .erma-query-text .erma-query-title {
+    font-size:12px;
+    color: #1C218C;
+}
+
+.erma-warrantyQuery-block .erma-cards-table {
+    width: 100%;
+}
+
+.erma-warrantyQuery-block .erma-query-cards .erma-more {
+    text-align: end;
+    padding-right: 10%;
+    position: relative;
+}
+
+    .erma-warrantyQuery-block .erma-query-cards .erma-more a {
+        color: #888888;
+    }
+
+
+.erma-more .erma-more-area {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    right: 10%;
+}
+
+.erma-more-area table {
+    padding: 15px;
+    text-align: start;
+    display: grid;
+}
+
+.erma-more-area thead td {
+    border-bottom: 1px solid;
+}
+
+.erma-warrantyQuery-block .erma-more-area td {
+    padding: 5px 10px;
+}
+
+.erma-more-area tbody {
+}
+
+
+.erma-versionModification-table-block table {
+    margin-top: 5px;
+    border: 1px solid #a0a0a0;
+    background: #fff;
+}
+
+.erma-versionModification-table-block .erma-table-field {
+    padding: 5px 10px;
+    min-width: 150px;
+}
+
+.erma-versionModification-table-block .erma-table-versionName {
+    padding: 5px 10px;
+    min-width: 175px;
+}
+
+.erma-versionModification-table-block .erma-table-versionSerial {
+    padding: 5px 10px;
+    min-width: 225px;
+}
+
+.erma-versionModification-table-block .erma-table-modelSerial {
+    padding: 5px 10px;
+    min-width: 225px;
+}
+
+
+
+.erma-alert-position {
+    position: absolute;
+    top: 80vh;
+    right: 0;
+    z-index: 1000;
+    display: table;
+}
+
+.erma-alert-div {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+    .erma-alert-div.action::after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #F96C4D;
+        position: absolute;
+        right: 6px;
+        top: 0;
+    }
+
+
+.erma-window-quotation-background .erma-quotation-box, .erma-window-quotationDetail-background .erma-quotation-box, .erma-window-statusQueryQuotation-background .erma-quotation-box {
+    display: table;
+    width: 150vh;
+    background: #fff;
+    padding: 0;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.erma-window-repairDetail-background .erma-quotation-box {
+    display: table;
+    width: 80vh;
+    background: #fff;
+    padding: 0;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    padding: 20px 40px 30px;
+    box-sizing: border-box;
+}
+
+
+    .erma-window-repairDetail-background .erma-quotation-box h5 {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-weight: normal;
+    }
+
+
+    .erma-window-repairDetail-background .erma-quotation-box .erma-repairDetail-table {
+        margin: auto;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    .erma-window-repairDetail-background .erma-quotation-box td {
+        padding:5px;
+    }
+
+    .erma-window-repairDetail-background .erma-quotation-box .erma-repairDetail-td-key {
+        width: 30%;
+        text-align: end;
+        vertical-align: top;
+    }
+
+    .erma-window-repairDetail-background .erma-quotation-box .erma-repairDetail-td-value {
+        width:70%;
+    }
+
+.erma-window-quotation-background .erma-box-div, .erma-window-quotationDetail-background .erma-box-div,
+.erma-window-statusQueryQuotation-background .erma-box-div {
+    display: block;
+    padding: 10px 15px;
+}
+
+.erma-window-quotation-background .erma-quotation-topInfo, .erma-window-quotationDetail-background .erma-quotation-topInfo,
+.erma-window-statusQueryQuotation-background .erma-quotation-topInfo {
+    padding: 5px 15px 10px;
+}
+
+
+.erma-window-quotation-background .erma-warrantyRepair-content, .erma-window-quotationDetail-background .erma-warrantyRepair-content,
+.erma-window-statusQueryQuotation-background .erma-warrantyRepair-content {
+    padding: 0px 15px 15px;
+}
+
+.erma-warrantyRepair-content tbody tr, .erma-warrantyRepair-content tbody tr,
+.erma-window-statusQueryQuotation-background tbody tr {
+    vertical-align: top;
+}
+
+.erma-window-quotation-background .erma-warrantyRepair-content table, .erma-window-quotationDetail-background .erma-warrantyRepair-content table,
+.erma-window-statusQueryQuotation-background .erma-warrantyRepair-content table{
+    width: 100%;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 55vh;
+}
+
+    .erma-window-quotation-background .erma-warrantyRepair-content table td, .erma-window-quotationDetail-background .erma-warrantyRepair-content table td,
+    .erma-window-statusQueryQuotation-background .erma-warrantyRepair-content table td {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+        .erma-window-quotation-background .erma-warrantyRepair-content table td a, .erma-window-quotationDetail-background .erma-warrantyRepair-content table td a,
+        .erma-window-statusQueryQuotation-background .erma-warrantyRepair-content table td a {
+            color: #1C218C;
+        }
+
+    .erma-window-quotation-background .erma-warrantyRepair-content table thead td, .erma-window-quotationDetail-background .erma-warrantyRepair-content table thead td,
+    .erma-window-statusQueryQuotation-background .erma-warrantyRepair-content table thead td {
+        border-bottom: 1px solid #000000;
+    }
+
+
+.erma-reportAttachment-box {
+    border: 1px solid #D8D8D8;
+    height: 15vh;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+    .erma-reportAttachment-box .erma-reportAttachment-list {
+        background: #F1F3FF;
+        border-radius: 15px;
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 5px;
+    }
+
+        .erma-reportAttachment-box .erma-reportAttachment-list p {
+            font-size: 14px;
+            color: #000000;
+        }
+
+
+.erma-window-repairDetail-background .erma-quotation-box .erma-close-button {
+    background: #1C218C;
+    padding: 9px 25px;
+    border-radius: 5px;
+    margin: auto;
+    border: none;
+    color: #fff;
+    margin-top: 25px;
+    display: table;
+    cursor: pointer;
+}
+
+.erma-quotation-box .erma-reportAttachment-p {
+    margin-top: 5px;
+}
+
+
+    .erma-warrantyRepair-calc-content .erma-calc-number {
+        display:block;
+        position:relative;
+    }
+
+.erma-warrantyRepair-calc-content {
+    display: flex;
+    justify-content: flex-end;
+}
+        .erma-warrantyRepair-calc-content .erma-calc-number img {
+            vertical-align: middle;
+        }
+
+    .erma-warrantyRepair-calc-content .erma-total-content {
+        position: absolute;
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #E4E8F0;
+        box-shadow: 4px 3px 11px 2px rgb(210 199 199 / 16%);
+        border-radius: 10px;
+        width: 25vh;
+        right: 80%;
+        bottom: 100%;
+    }
+
+
+    .erma-warrantyRepair-calc-content .erma-calc-number span {
+        vertical-align: middle;
+    }
+
+    .erma-warrantyRepair-calc-content .erma-calc-number span {
+
+    }
+
+    .erma-buttons-div .erma-button-repairDetail {
+        float: left;
+    }
+
+.erma-buttons-div .erma-button-cancel, .erma-buttons-div .erma-button-repairDetail {
+    border: 1px solid #000000;
+    background: #fff;
+    color: #000000;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.erma-buttons-div .erma-button-next {
+    border: 1px solid #496FF2;
+    background: #496FF2;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.erma-warrantyRepair-content .erma-buttons-div {
+    text-align: end;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AccountDTO" targetNamespace="http://tempuri.org/AccountDTO.xsd" xmlns:mstns="http://tempuri.org/AccountDTO.xsd" xmlns="http://tempuri.org/AccountDTO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" PropertyReference="ApplicationSettings.DataService.My.MySettings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AccountDTO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="AccountDTO" msprop:Generator_UserDSName="AccountDTO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Admin" msprop:Generator_UserTableName="Admin" msprop:Generator_RowEvArgName="ADMINRowChangeEvent" msprop:Generator_TableVarName="tableADMIN" msprop:Generator_TablePropName="ADMIN" msprop:Generator_RowDeletingName="ADMINRowDeleting" msprop:Generator_RowChangingName="ADMINRowChanging" msprop:Generator_RowDeletedName="ADMINRowDeleted" msprop:Generator_RowEvHandlerName="ADMINRowChangeEventHandler" msprop:Generator_TableClassName="ADMINDataTable" msprop:Generator_RowChangedName="ADMINRowChanged" msprop:Generator_RowClassName="ADMINRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AD_ID" msprop:Generator_ColumnVarNameInTable="columnAD_ID" msprop:Generator_ColumnPropNameInRow="AD_ID" msprop:Generator_ColumnPropNameInTable="AD_IDColumn" msprop:Generator_UserColumnName="AD_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AD_NAME" msprop:Generator_ColumnVarNameInTable="columnAD_NAME" msprop:Generator_ColumnPropNameInRow="AD_NAME" msprop:Generator_ColumnPropNameInTable="AD_NAMEColumn" msprop:Generator_UserColumnName="AD_NAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AD_PASSWORD" msprop:Generator_ColumnVarNameInTable="columnAD_PASSWORD" msprop:Generator_ColumnPropNameInRow="AD_PASSWORD" msprop:Generator_ColumnPropNameInTable="AD_PASSWORDColumn" msprop:Generator_UserColumnName="AD_PASSWORD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AD_REPAIRCENTER" msprop:Generator_ColumnVarNameInTable="columnAD_REPAIRCENTER" msprop:Generator_ColumnPropNameInRow="AD_REPAIRCENTER" msprop:Generator_ColumnPropNameInTable="AD_REPAIRCENTERColumn" msprop:Generator_UserColumnName="AD_REPAIRCENTER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AD_ROLE" msprop:Generator_ColumnVarNameInTable="columnAD_ROLE" msprop:Generator_ColumnPropNameInRow="AD_ROLE" msprop:Generator_ColumnPropNameInTable="AD_ROLEColumn" msprop:Generator_UserColumnName="AD_ROLE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AD_VISIBLE" msprop:Generator_ColumnVarNameInTable="columnAD_VISIBLE" msprop:Generator_ColumnPropNameInRow="AD_VISIBLE" msprop:Generator_ColumnPropNameInTable="AD_VISIBLEColumn" msprop:Generator_UserColumnName="AD_VISIBLE" type="xs:decimal" />
+              <xs:element name="AD_AUTHORITYLEVEL" msprop:Generator_ColumnVarNameInTable="columnAD_AUTHORITYLEVEL" msprop:Generator_ColumnPropNameInRow="AD_AUTHORITYLEVEL" msprop:Generator_ColumnPropNameInTable="AD_AUTHORITYLEVELColumn" msprop:Generator_UserColumnName="AD_AUTHORITYLEVEL" type="xs:decimal" />
+              <xs:element name="AD_UPPERSUPERMIAL" msprop:Generator_ColumnVarNameInTable="columnAD_UPPERSUPERMIAL" msprop:Generator_ColumnPropNameInRow="AD_UPPERSUPERMIAL" msprop:Generator_ColumnPropNameInTable="AD_UPPERSUPERMIALColumn" msprop:Generator_UserColumnName="AD_UPPERSUPERMIAL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AD_AD" msprop:Generator_ColumnVarNameInTable="columnAD_AD" msprop:Generator_ColumnPropNameInRow="AD_AD" msprop:Generator_ColumnPropNameInTable="AD_ADColumn" msprop:Generator_UserColumnName="AD_AD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AD_ADNAME" msprop:Generator_ColumnVarNameInTable="columnAD_ADNAME" msprop:Generator_ColumnPropNameInRow="AD_ADNAME" msprop:Generator_ColumnPropNameInTable="AD_ADNAMEColumn" msprop:Generator_UserColumnName="AD_ADNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AD_CSTMP" msprop:Generator_ColumnVarNameInTable="columnAD_CSTMP" msprop:Generator_ColumnPropNameInRow="AD_CSTMP" msprop:Generator_ColumnPropNameInTable="AD_CSTMPColumn" msprop:Generator_UserColumnName="AD_CSTMP" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AD_LUAD" msprop:Generator_ColumnVarNameInTable="columnAD_LUAD" msprop:Generator_ColumnPropNameInRow="AD_LUAD" msprop:Generator_ColumnPropNameInTable="AD_LUADColumn" msprop:Generator_UserColumnName="AD_LUAD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AD_LUADNAME" msprop:Generator_ColumnVarNameInTable="columnAD_LUADNAME" msprop:Generator_ColumnPropNameInRow="AD_LUADNAME" msprop:Generator_ColumnPropNameInTable="AD_LUADNAMEColumn" msprop:Generator_UserColumnName="AD_LUADNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AD_LUSTMP" msprop:Generator_ColumnVarNameInTable="columnAD_LUSTMP" msprop:Generator_ColumnPropNameInRow="AD_LUSTMP" msprop:Generator_ColumnPropNameInTable="AD_LUSTMPColumn" msprop:Generator_UserColumnName="AD_LUSTMP" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AD_EMAIL" msprop:Generator_ColumnVarNameInTable="columnAD_EMAIL" msprop:Generator_ColumnPropNameInRow="AD_EMAIL" msprop:Generator_ColumnPropNameInTable="AD_EMAILColumn" msprop:Generator_UserColumnName="AD_EMAIL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LoginInfo" msprop:Generator_UserTableName="LoginInfo" msprop:Generator_RowEvArgName="LoginInfoRowChangeEvent" msprop:Generator_TableVarName="tableLoginInfo" msprop:Generator_TablePropName="LoginInfo" msprop:Generator_RowDeletingName="LoginInfoRowDeleting" msprop:Generator_RowChangingName="LoginInfoRowChanging" msprop:Generator_RowDeletedName="LoginInfoRowDeleted" msprop:Generator_RowEvHandlerName="LoginInfoRowChangeEventHandler" msprop:Generator_TableClassName="LoginInfoDataTable" msprop:Generator_RowChangedName="LoginInfoRowChanged" msprop:Generator_RowClassName="LoginInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LOGIN_CUNO" msprop:Generator_ColumnVarNameInTable="columnLOGIN_CUNO" msprop:Generator_ColumnPropNameInRow="LOGIN_CUNO" msprop:Generator_ColumnPropNameInTable="LOGIN_CUNOColumn" msprop:Generator_UserColumnName="LOGIN_CUNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOGIN_ACCOUNTID" msprop:Generator_ColumnVarNameInTable="columnLOGIN_ACCOUNTID" msprop:Generator_ColumnPropNameInRow="LOGIN_ACCOUNTID" msprop:Generator_ColumnPropNameInTable="LOGIN_ACCOUNTIDColumn" msprop:Generator_UserColumnName="LOGIN_ACCOUNTID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOGIN_DFLNO" msprop:Generator_ColumnVarNameInTable="columnLOGIN_DFLNO" msprop:Generator_ColumnPropNameInRow="LOGIN_DFLNO" msprop:Generator_ColumnPropNameInTable="LOGIN_DFLNOColumn" msprop:Generator_UserColumnName="LOGIN_DFLNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOGIN_CSTMP" msprop:Generator_ColumnVarNameInTable="columnLOGIN_CSTMP" msprop:Generator_ColumnPropNameInRow="LOGIN_CSTMP" msprop:Generator_ColumnPropNameInTable="LOGIN_CSTMPColumn" msprop:Generator_UserColumnName="LOGIN_CSTMP" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MailSet" msprop:Generator_TableClassName="MailSetDataTable" msprop:Generator_TableVarName="tableMailSet" msprop:Generator_RowChangedName="MailSetRowChanged" msprop:Generator_TablePropName="MailSet" msprop:Generator_RowDeletingName="MailSetRowDeleting" msprop:Generator_RowChangingName="MailSetRowChanging" msprop:Generator_RowEvHandlerName="MailSetRowChangeEventHandler" msprop:Generator_RowDeletedName="MailSetRowDeleted" msprop:Generator_RowClassName="MailSetRow" msprop:Generator_UserTableName="MailSet" msprop:Generator_RowEvArgName="MailSetRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mail_ID" msprop:Generator_ColumnVarNameInTable="columnMail_ID" msprop:Generator_ColumnPropNameInRow="Mail_ID" msprop:Generator_ColumnPropNameInTable="Mail_IDColumn" msprop:Generator_UserColumnName="Mail_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Mail_Address" msprop:Generator_ColumnVarNameInTable="columnMail_Address" msprop:Generator_ColumnPropNameInRow="Mail_Address" msprop:Generator_ColumnPropNameInTable="Mail_AddressColumn" msprop:Generator_UserColumnName="Mail_Address" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Admin" />
+      <xs:field xpath="mstns:AD_ID" />
+    </xs:unique>
+    <xs:unique name="LoginInfo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LoginInfo" />
+      <xs:field xpath="mstns:LOGIN_CUNO" />
+      <xs:field xpath="mstns:LOGIN_ACCOUNTID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

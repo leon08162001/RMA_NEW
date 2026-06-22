@@ -1,0 +1,62 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="ExpRMAData4, App_Web_guyaruol" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+    <div>
+        <asp:Label ID="Label1" runat="server" Text="RMA NO : "></asp:Label>
+        <asp:TextBox ID="txtRMAID" runat="server"></asp:TextBox>
+        <asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" />
+        <asp:Button ID="btnExp" runat="server" OnClick="btnExp_Click" Text="Export" /><br />
+        <br />
+        <asp:GridView ID="GridView1" runat="server" CellPadding="4"
+            DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Font-Size="Small">
+            <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />          
+            <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+            <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+            <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+            <EditRowStyle BackColor="#999999" />
+            <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+        </asp:GridView>
+<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>"
+            ProviderName="<%$ ConnectionStrings:ConnectionString2.ProviderName %>" 
+            SelectCommand="SELECT  RMA.RMA_NO RMA_NO, CUSTOMER.CU_NAME CUSTOMER_NAME, RMADETAIL.RMAD_SERIALNO SERIAL_NO ,  
+                            RMADETAIL.RMAD_MODELNO MODEL_NO , 
+                            to_char(RMADETAIL.RMAD_WARRANTY,'yyyy/MM/dd') WARRANTY,
+                        case RMADETAIL.RMAD_ISWARRANTY when 0 then 'No' when 1 then 'Yes' end IS_WARRANTY, 
+                        case when RMARQ_IMPROPERUSAGE = 1 then 'Y' when RMARQ_IMPROPERUSAGE = 0 then 'N' end IMPROPERUSAGE,
+                            RMAR_PROBLEMDESC PROBLEM_DESC,
+                            RMAR_REPAIRDESC AS REPAIR_DESC, 
+    RMARQ_MATERIALCOST MATERIAL_COST, 
+    RMARQ_LABORHOUR LABOR_HOUR, 
+    RMARQ_LABORPRICE LABOR_HOURLY_RATE, 
+    RMARQ_LABORHOUR*RMARQ_LABORPRICE LABOR_COST, 
+    RMARQ_QUOTE REPAIR_QUOTE 
+    ,RMASQ_LABORCOST SALESQUOT_LABOR_COST,RMASQ_MATERIALCOST SALESQUOT_MATERIAL_COST,RMASQ_QUOTE SALESQUOT_REPAIR_QUOTE
+    FROM
+    CUSTOMER RIGHT OUTER JOIN RMA ON (RMA.RMA_CUNO=CUSTOMER.CU_NO)
+    LEFT OUTER JOIN ( select * from rmadetail where rmadetail.rmad_mark=0 and RMAD_STATUS <> 91)  RMADETAIL ON (RMA.RMA_NO=RMADETAIL.RMAD_RMANO)
+                               LEFT OUTER JOIN RMAREPAIR ON (RMADETAIL.RMAD_ID=RMAREPAIR.RMAR_RMADID)
+                               LEFT OUTER JOIN ( select * from RMAREPAIR_DETAIL where RMARED_MARK=0 )  RMAREPAIR_DETAIL ON (RMADETAIL.RMAD_ID=RMAREPAIR_DETAIL.RMARED_RMADID)
+                               LEFT OUTER JOIN RMAREPAIR_QUOTED on RMAD_ID = RMARQ_RMADID  
+                               LEFT OUTER JOIN RMASALE_QUOTED ON RMAD_ID = RMASQ_RMADID
+				   
+			WHERE  (RMAD_RMANO = ?)">
+            <SelectParameters>
+                <asp:SessionParameter Name="RMAD_RMANO" SessionField="sRMAID" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
+    </div>
+    
+    </div>
+    </form>
+</body>
+</html>

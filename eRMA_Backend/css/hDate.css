@@ -1,0 +1,90 @@
+ul {
+	list-style: none; margin: 0px; padding: 0px; font-style: normal; text-decoration: none;
+}
+li {
+	list-style: none; margin: 0px; padding: 0px; font-style: normal; text-decoration: none;
+}
+a {
+	list-style: none; margin: 0px; padding: 0px; font-style: normal; text-decoration: none;
+}
+dd {
+	list-style: none; margin: 0px; padding: 0px; font-style: normal; text-decoration: none;
+}
+dt {
+	list-style: none; margin: 0px; padding: 0px; font-style: normal; text-decoration: none;
+}
+dl {
+	list-style: none; margin: 0px; padding: 0px; font-style: normal; text-decoration: none;
+}
+i {
+	list-style: none; margin: 0px; padding: 0px; font-style: normal; text-decoration: none;
+}
+em {
+	list-style: none; margin: 0px; padding: 0px; font-style: normal; text-decoration: none;
+}
+.calendar {
+	border: 1px solid #486ff261; border-image: none; width: 210px; color: rgb(51, 51, 51) !important; font-size: 12px; position: absolute; background-color: rgb(255, 255, 255); padding: 10px;border-radius: 5px;
+}
+.calendar_head {
+	width: 100%; line-height: 25px; margin-top: 3px; float: left; position: relative;
+}
+.calendar_head input {
+	border: 0px currentColor; border-image: none; width: 35%; text-align: center; line-height: 18px; font-family: Arial; margin-left: 5%; background-color: rgb(255, 255, 255);
+}
+.calendaremL {
+	padding: 0px 5px; font-family: Arial; font-weight: bold; margin-top: -2px; float: left; cursor: pointer;
+}
+.calendaremR {
+	padding: 0px 5px; font-family: Arial; font-weight: bold; margin-top: -2px; float: right; cursor: pointer;
+}
+.calendar_boy {
+	width: 100%; float: left; position: relative;
+}
+.calendar_boy i {
+	left: 0px; top: 25px; text-align: center; right: 0px; bottom: 0px; color: rgb(238, 238, 238); font-family: Arial; font-size: 150px; position: absolute; z-index: 0;
+}
+._caltable {
+	width: 100%; float: left; border-collapse: collapse; position: relative;
+}
+._caltable tr td {
+	width: 25px; text-align: center; line-height: 25px; font-family: Arial; border-right-color: rgb(241, 241, 241); border-bottom-color: rgb(241, 241, 241); border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; cursor: pointer;
+}
+._caltable tr:first-child td {
+	border-right-color: currentColor; border-bottom-color: rgb(238, 238, 238); border-right-width: 0px; border-bottom-width: 1px; border-right-style: none; border-bottom-style: solid; cursor: default;
+}
+._caltable tr td:last-child {
+	border-right-color: currentColor; border-right-width: 0px; border-right-style: none;
+}
+._sday {
+	color: rgb(255, 106, 0); font-family: "Microsoft YaHei";
+}
+.festival {
+	color: rgb(255, 106, 0) !important;
+}
+._selDay {
+	color: rgb(255, 255, 255); font-family: "Microsoft YaHei"; background-color: rgb(72, 111, 242);
+}
+.calYear {
+	border: 1px solid rgb(245, 210, 186); border-image: none; left: 5%; width: 80%; border-collapse: collapse; position: absolute; z-index: 2000; background-color: rgb(238, 238, 238);
+}
+.calYear td {
+	text-align: center; cursor: pointer;
+}
+.calYear td:hover {
+	color: rgb(255, 106, 0);
+}
+.calMonth {
+	border: 1px solid rgb(245, 210, 186); border-image: none; width: 70%; right: 10%; border-collapse: collapse; position: absolute; z-index: 2000; background-color: rgb(238, 238, 238);
+}
+.calMonth td {
+	text-align: center; cursor: pointer;
+}
+.calMonth td:hover {
+	color: rgb(255, 106, 0);
+}
+.disDay {
+	color: rgb(153, 153, 153); cursor: text !important;
+}
+._calcolse {
+	border-radius: 10px; width: 10px; height: 10px; color: red; position: relative;
+}

@@ -1,0 +1,160 @@
+.erma-personalInformation-block {
+    width: 60%;
+    min-width: 600px;
+    height: 85vh;
+    margin: auto;
+    border-radius: 5px;
+    right: 0;
+    left: 0;
+    top: 10.5%;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 5px #2828284f;
+    box-sizing:border-box;
+    padding:15px;
+}
+
+.erma-top-bar a {
+    text-decoration: none;
+    display: table;
+    z-index: 1000;
+    position: relative;
+}
+
+.erma-top-bar .erma-button-back img {
+    vertical-align:middle;
+    width: 16px;
+    height: 16px;
+}
+
+.erma-top-bar .erma-button-back span {
+    vertical-align: middle;
+}
+
+
+.erma-top-bar .erma-button-back:hover {
+    border: 1px solid #496FF2;
+    background: #496FF2;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+
+.erma-top-bar .erma-button-back {
+    border: 1px solid #000000;
+    background: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: #000000;
+}
+
+
+    .erma-top-bar button img {
+        vertical-align:middle;
+    }
+
+    .erma-top-bar button span {
+        vertical-align: middle;
+    }
+
+.erma-personalInformation-title {
+    position: absolute;
+    display: block;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 3%;
+    font-size: 24px;
+}
+
+    .erma-personalInformation-title h3 {
+        font-size: 24px;
+        font-weight:normal;
+        line-height: 30px;
+        text-align: center;
+        color: #000000;
+    }
+
+
+.erma-personalInformation-content .erma-user-icon {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.erma-personalInformation-content table {
+    margin: 5% auto;
+}
+
+    .erma-personalInformation-content table tr td {
+        padding: 5px;
+    }
+
+        .erma-personalInformation-content table tr td .erma-password-click {
+            color: #1C218C;
+            font-size: 16px;
+            margin-left: 15px;
+            border: 1px solid #ffffff00;
+            background: none;
+            cursor: pointer;
+        }
+
+
+        .erma-personalInformation-content .erma-user-icon img {
+        }
+
+
+.erma-window-image-background .erma-window-box {
+    display: table;
+    min-width: 300px;
+    background: #fff;
+    padding: 20px 40px 30px;;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.erma-window-box h5 {
+    text-align: center;
+}
+
+.erma-window-box h5 span{
+    font-size: 24px;
+    font-weight: normal;
+
+}
+
+.erma-password-input {
+    display: table;
+    margin: 30px auto;
+}
+
+.erma-password-input span {
+}
+
+    .erma-password-input input {
+        width: 200px;
+        margin-left: 10px;
+    }
+
+
+.erma-window-box .erma-buttons {
+    text-align: center;
+    display: table;
+    margin: auto;
+}
+
+.erma-buttons button {
+    background: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 70px;
+    margin: 0 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+}

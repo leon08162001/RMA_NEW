@@ -1,0 +1,6 @@
+﻿<configure>
+    <SourceExcelPath>D:\ERMANEW\ExcelImport\SourceExcel</SourceExcelPath>
+    <TargetExcelPath>D:\ERMANEW\UploadFile</TargetExcelPath>
+    <ErrorExcelPath>D:\ERMANEW\ExcelImport\ErrorExcelPath</ErrorExcelPath>
+    <LanguageCode>002</LanguageCode>
+</configure>

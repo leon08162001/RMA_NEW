@@ -1,0 +1,10 @@
+<configure>
+  <Server ID="0" TYPE="default" DEBUG="1">	
+    <ServerName>192.168.7.20:1521/topprod</ServerName>
+    <DBName></DBName>
+    <LoginID>rma</LoginID>    
+    <Password>4321rma</Password>
+    <Provider>2</Provider>	
+    <log>0</log>    
+  </Server> 
+</configure>

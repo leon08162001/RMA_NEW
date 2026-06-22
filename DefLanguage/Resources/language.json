@@ -1,0 +1,358 @@
+{
+  "MainMenu": {
+    "UI": {
+      "Label": {
+        "Top": {
+          "UI_lblLanguage": {
+            "zh": "語系",
+            "en": "Language",
+            "jp": "Language"
+          },
+          "UI_cboLanguage": {
+            "zh": "Chinese",
+            "en": "English",
+            "jp": "Japan"
+          }
+        }
+      }
+    }
+  },
+  "Report3_Search": {
+    "UI": {
+      "GRID": {
+        "WARRANTY_BI": {
+          "Order_No": {
+            "zh": "訂單編號",
+            "en": "Order No",
+            "jp": "注文番号"
+          },
+          "Order_Qty": {
+            "zh": "訂單數量",
+            "en": "Order Q'ty",
+            "jp": "注文数量"
+          },
+          "BI_Year": {
+            "zh": "電池保險年限",
+            "en": "Battery Insurance Year",
+            "jp": "バッテリー保険年数"
+          },
+          "Replaceable_Qty": {
+            "zh": "可更換數量",
+            "en": "Replaceable Q’ty",
+            "jp": "交換可能数量"
+          },
+          "Qty_replaced": {
+            "zh": "已更換數量",
+            "en": "Q’ty replaced",
+            "jp": "交換済数量"
+          }
+        },
+        "TotalLoss": {
+          "Project_No": {
+            "zh": "專案編號",
+            "en": "Project No.",
+            "jp": "Project No."
+          },
+          "Project_Qty": {
+            "zh": "專案數量",
+            "en": "Project Q'ty",
+            "jp": "Project Q'ty"
+          },
+          "Order_No": {
+            "zh": "訂單編號",
+            "en": "Order No.",
+            "jp": "Order No."
+          },
+          "Order_Qty": {
+            "zh": "訂單數量",
+            "en": "Order Q'ty",
+            "jp": "Order Q'ty"
+          },
+          "Total_Loss_Insurance": {
+            "zh": "全損保險",
+            "en": "Total Loss Insurance",
+            "jp": "Total Loss Insurance"
+          },
+          "Replaceable_quantity": {
+            "zh": "可更換數量",
+            "en": "Replaceable quantity",
+            "jp": "Replaceable quantity"
+          },
+          "Quantity_replaced": {
+            "zh": "已更換數量",
+            "en": "Quantity replaced",
+            "jp": "Quantity replaced"
+          }
+        },
+        "Report": {
+          "EXPORT_PARTNO": {
+            "zh": "料號",
+            "en": "Part’s No",
+            "jp": "パッツナンバー"
+          },
+          "EXPORT_SERIALNO": {
+            "zh": "序號",
+            "en": "Serial No",
+            "jp": "シリアルナンバー"
+          },
+          "EXPORT_CUSTOMERNAME": {
+            "zh": "客戶名稱",
+            "en": "Customer Name",
+            "jp": "カスタマー名称"
+          },
+          "EXPORT_SHIPPING_TIME": {
+            "zh": "出貨日",
+            "en": "Shipped date",
+            "jp": "シッぺド発生日"
+          },
+          "EXPORT_WARRANTY_DATE": {
+            "zh": "保固日",
+            "en": "Warranty date",
+            "jp": "保証発生日"
+          },
+          "CW_EDATE": {
+            "zh": "CW/EW 保固日",
+            "en": "CW/EW Warranty date",
+            "jp": "CW/EW 保証発生日"
+          }
+        }
+      },
+      "BUTTON": {
+        "SAVE": {
+          "Save": {
+            "zh": "儲存",
+            "en": "Save",
+            "jp": ""
+          },
+          "Cancel": {
+            "zh": "取消",
+            "en": "Cancel",
+            "jp": ""
+          }
+        }
+      }
+    },
+    "MESSAGE": {
+      "ERROR": {
+        "WARRANTY": {
+          "DataNotFound": {
+            "zh": "資料不存在",
+            "en": "Data Not Found",
+            "jp": ""
+          },
+          "PermissionDenied": {
+            "zh": "無權限操作",
+            "en": "Permission Denied",
+            "jp": ""
+          }
+        }
+      },
+      "INFO": {
+        "ORDER": {
+          "OperationSuccessful": {
+            "zh": "操作成功",
+            "en": "Operation Successful",
+            "jp": ""
+          }
+        }
+      }
+    }
+  },
+  "ExpiredQuery": {
+    "UI": {
+      "Label": {
+        "Top": {
+          "UI_lblTittle": {
+            "zh": "逾期狀態查詢",
+            "en": "Expired Query",
+            "jp": "Expired Query"
+          },
+          "UI_lblRequestInformation": {
+            "zh": "以下列查詢條件查詢送修項目狀態",
+            "en": "Search for Request Items Information",
+            "jp": "Search for Request Items Information"
+          },
+          "UI_lblRMANo": {
+            "zh": "RMA 單號",
+            "en": "RMA No",
+            "jp": "RMA No"
+          },
+          "UI_lblCustomer": {
+            "zh": "客戶",
+            "en": "Customer",
+            "jp": "Customer"
+          },
+          "UI_lblModelNo": {
+            "zh": "型號",
+            "en": "Model No",
+            "jp": "Model No"
+          },
+          "UI_lblSerialNumber": {
+            "zh": "序號",
+            "en": "Serial Number",
+            "jp": "Serial Number"
+          },
+          "UI_lblRepairCenter": {
+            "zh": "維修中心",
+            "en": "Repair Center",
+            "jp": "Repair Center"
+          },
+          "UI_lblStatus": {
+            "zh": "狀態",
+            "en": "Status",
+            "jp": "Status"
+          },
+          "UI_lblRequestDate": {
+            "zh": "需求建立日期",
+            "en": "Request Date",
+            "jp": "Request Date"
+          },
+          "UI_lblExpired": {
+            "zh": "逾期",
+            "en": "Expired",
+            "jp": "Expired"
+          },
+          "UI_cbolsExpireStatus00": {
+            "zh": "--請選擇--",
+            "en": "--SELECT--",
+            "jp": "--SELECT--"
+          },
+          "ExpireStatus01": {
+            "zh": "未過期",
+            "en": "Not Expired",
+            "jp": "Not Expired"
+          },
+          "ExpireStatus02": {
+            "zh": "已過期",
+            "en": "Expired",
+            "jp": "Expired"
+          }
+        },
+        "Body": {
+          "UI_lblRequestedTittle": {
+            "zh": "維修需求內容",
+            "en": "Requested Information",
+            "jp": "Requested Information"
+          }
+        }
+      },
+      "BUTTON": {
+        "Top": {
+          "UI_btnSearch": {
+            "zh": "搜尋",
+            "en": "Search",
+            "jp": "Search"
+          },
+          "UI_btnReject": {
+            "zh": "拒絕",
+            "en": "Reject",
+            "jp": "Reject"
+          }
+        }
+      },
+      "GRID": {
+        "Request": {
+          "RMANo": {
+            "zh": "RMA單號",
+            "en": "RMA No.",
+            "jp": "RMA No."
+          },
+          "SerialNumbe": {
+            "zh": "序號",
+            "en": "Serial Number",
+            "jp": "Serial Number"
+          },
+          "RMAD_MODELNO": {
+            "zh": "型號",
+            "en": "Model",
+            "jp": "Model"
+          },
+          "Warranty": {
+            "zh": "保固日",
+            "en": "Warranty",
+            "jp": "Warranty"
+          },
+          "RequestDate": {
+            "zh": "需求建立日期",
+            "en": "Request Date",
+            "jp": "Request Date"
+          },
+          "CU_NAME": {
+            "zh": "客戶",
+            "en": "Company Name",
+            "jp": "Company Name"
+          },
+          "gvQuoted": {
+            "zh": "維修報價",
+            "en": "Estimated Amount",
+            "jp": "Estimated Amount"
+          },
+          "Amount": {
+            "zh": "業務報價總和",
+            "en": "Sales quote Amount",
+            "jp": "Sales quote Amount"
+          },
+          "Status": {
+            "zh": "狀態",
+            "en": "Status",
+            "jp": "Status"
+          },
+          "Detail": {
+            "zh": "內容",
+            "en": "Detail",
+            "jp": "Detail"
+          }
+        }
+      },
+      "MESSAGE": {
+        "ERROR": {
+          "USER": {
+            "001": {
+              "zh": "帳號不存在",
+              "en": "Account Not Found"
+            }
+          }
+        }
+      }
+    },
+    "MyWebAppAdmin": {
+      "UI": {
+        "GRID": {
+          "USER": {
+            "101": {
+              "zh": "使用者編號",
+              "en": "User ID"
+            },
+            "102": {
+              "zh": "使用者名稱",
+              "en": "User Name"
+            }
+          }
+        }
+      },
+      "MESSAGE": {
+        "ERROR": {
+          "USER": {
+            "001": {
+              "zh": "帳號不存在",
+              "en": "Account Not Found"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Warranty_TypeSetting_add": {
+    "UI": {
+      "Label": {
+        "Top": {
+          "UI_lblWarCardContent": {
+            "zh": "Warranty Card Content",
+            "en": "Warranty Card Content",
+            "jp": "Warranty Card Content"
+          }
+        }
+      }
+    }
+  }
+}

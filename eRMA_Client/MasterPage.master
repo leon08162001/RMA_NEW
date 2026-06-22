@@ -1,0 +1,709 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<%@ Register Src="ascx/TopBanner.ascx" TagName="TopBanner" TagPrefix="uc1" %>
+<%@ Register Src="ascx/MainMenu.ascx" TagName="MainMenu" TagPrefix="uc2" %>
+<%@ Register Src="ascx/SubMenu.ascx" TagName="SubMenu" TagPrefix="uc3" %>
+<%@ Register Src="~/ascx/uc_Wait.ascx" TagPrefix="uc1" TagName="uc_Wait" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+
+    <%--網頁標題--%>
+    <title><%=Session("_Title")%></title>
+    <%--網頁標題--%>
+
+    <%--新版 head--%>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        
+    <link rel="stylesheet" href="~/css/system.css">
+    <link rel="stylesheet" href="~/css/commonStyle.css">
+    <link rel="stylesheet" href="~/css/system-header.css">
+    <link rel="stylesheet" href="~/css/hDate.css">
+
+    <!-- 載入JQuery的 -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="/js/system.js"></script>
+    <script src="js/datepicker.js"></script> <%--RMA 前端日曆選項故障 by buck modify 20250925--%>
+    <%= _oLanguage_js %>
+
+    <style>
+        .Modal {
+            background-color: black;
+            opacity: 0.5;
+        }
+
+        .Cancel {
+            visibility: hidden;
+            background: transparent;
+            border: 0px solid #FFF;
+            z-index: 500000;
+        }
+
+        .UI_Add_RMA_panel_iframe_Small {
+            width: 940px;
+            height: 550px;
+            border: 0px solid #FFF;
+            border-radius: 10px;
+        }
+
+        .erma-fly-panel {
+            display: table;
+            inset: 0 !important;
+            margin: auto;
+        }
+
+        .UI_Alert_Show_Windows {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+
+        @media screen and (max-width: 1400px) {
+            .UI_Add_RMA_panel_iframe_Small_Query {
+                height: 95vh !important;
+            }
+        }
+
+        @media screen and (max-width: 1280px) {
+            .UI_Add_RMA_panel_iframe_Small {
+                width: 95vw !important;
+                height: 95vh !important;
+            }
+        }
+    </style>
+
+    <style>
+        .anchor_open {
+            width: 1800px;
+            min-width: 1600px;
+        }
+
+        .anchor_close {
+        }
+    </style>
+
+
+    <script type="text/javascript">
+
+        var akkToken = '<%=Session("_LanguageID")%>';
+
+        $(function () {
+            var previousDimensions = {
+                width: $(window).width(),
+                height: $(window).height()
+            }
+
+            $(window).resize(function () {
+                var newDimensions = {
+                    width: $(window).width(),
+                    height: $(window).height()
+                }
+
+                if (newDimensions.width > previousDimensions.width) {
+                    // resize UP event
+                    if ($(window).width() > 1500) {
+                        $("body").attr('class', 'anchor_close');
+                        $("#Show_Close_Btn_Left").attr('class', 'Show_Close_Btn_Left_Close');
+                    }
+                    else {
+                        $("body").attr('class', 'anchor_open');
+                        $("#Show_Close_Btn_Left").attr('class', 'Show_Close_Btn_Left_Open');
+                    }
+                } else {
+                    // resize Down event
+                    if ($(window).width() > 1500) {
+                        $("body").attr('class', 'anchor_close');
+                        $("#Show_Close_Btn_Left").attr('class', 'Show_Close_Btn_Left_Close');
+                    }
+                    else {
+                        $("body").attr('class', 'anchor_open');
+                        $("#Show_Close_Btn_Left").attr('class', 'Show_Close_Btn_Left_Open');
+                    }
+
+                }
+
+                previousDimensions = newDimensions
+            })
+        });
+
+        function clickButton(e, buttonid) {
+            var evt = e ? e : window.event;
+            var bt = document.getElementById(buttonid);
+            if (bt) {
+                if (evt.keyCode == 13) {
+                    bt.click();
+                    return false;
+                }
+            }
+        }
+
+        function Close_Client_Status_List() {
+            $find("Alert_mpe").hide();
+        }
+
+        function Serch_RMAD_RMANO(myObj) {
+            $('#Alert_iframe').hide();
+            $('#Alert_iframe_Null').html("<img src='images/loading-7528_256.gif' style=' width: 48px;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);' />");
+            $('#Alert_iframe_Null').show();
+
+            const words = myObj.id.split('_');
+            $.ajax({
+                type: 'post',
+                /*url: 'Default.aspx/GetSnData',*/
+                url: 'ashx/GetAlertRMADataHandlerRead.ashx', //請求的目標頁面
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify({ id: words[0] + "_" + words[1] }),
+
+
+                success: function (result) {
+
+                }
+            });
+
+            $("#Alert_iframe").attr('src', "Client_Status_New_Item.aspx?RMANO=" + words[0]);
+            $find('Alert_mpe').show();
+            setTimeout(load_iframe_Show, 4000);
+        }
+
+        function load_iframe_Show() {
+            $('#Alert_iframe_Null').hide();
+            $('#Alert_iframe').show();
+        }
+
+        function load_iframe() {
+            document.getElementById("UI_Add_RMA_panel_iframe").src = "ProductInformation_01.aspx";
+            $find('mpe').show();
+        }
+
+        function UI_Add_RMA_panel_iframe_RMA_Small_Function() {
+            $('#UI_Add_RMA_panel_iframe').width("1400px");
+            $('#UI_Add_RMA_panel_iframe').height("900px");
+            document.getElementById("UI_Add_RMA_panel_iframe").style.minWidth = "1400px";
+            document.getElementById("UI_Add_RMA_panel_iframe").style.minheight = "900px";
+            document.getElementById("UI_Add_RMA_panel_iframe").style.maxWidth = "1400px";
+            document.getElementById("UI_Add_RMA_panel_iframe").style.maxheight = "900px";
+            centerHandler();
+        }
+
+        function UI_Add_RMA_panel_iframe_Small_Function() {
+            $('#UI_Add_RMA_panel_iframe').width("940px");
+            $('#UI_Add_RMA_panel_iframe').height("520px");
+            document.getElementById("UI_Add_RMA_panel_iframe").style.minWidth = "940px";
+            document.getElementById("UI_Add_RMA_panel_iframe").style.minheight = "520px";
+            document.getElementById("UI_Add_RMA_panel_iframe").style.maxWidth = "940px";
+            document.getElementById("UI_Add_RMA_panel_iframe").style.maxheight = "520px";
+            centerHandler();
+        }
+
+        function UI_Add_RMA_panel_iframe_Big_Function() {
+
+            $('#UI_Add_RMA_panel_iframe').width("1300px");
+            $('#UI_Add_RMA_panel_iframe').height("880px");
+            document.getElementById("UI_Add_RMA_panel_iframe").style.minWidth = "1300px";
+            document.getElementById("UI_Add_RMA_panel_iframe").style.minheight = "780px";
+            document.getElementById("UI_Add_RMA_panel_iframe").style.maxWidth = "1300px";
+            document.getElementById("UI_Add_RMA_panel_iframe").style.maxheight = "780px";
+            centerHandler();
+        }
+
+        function Show_windows() {
+
+            let div = document.getElementById('<%= UI_Add_RMA_Fly_panel.ClientID %>');
+            $(div).addClass("erma-fly-panel");
+            div.replaceChildren();
+            //所有視窗程式 關閉
+            $find("Flympe").show();
+
+            var iframe = document.createElement('iframe');
+            iframe.width = "1300";
+            iframe.height = "780";
+            iframe.id = "ProductInformation_03_iframe";
+            iframe.setAttribute("src", "ProductInformation_03.aspx");
+
+            iframe.setAttribute("style", " border: none;border-radius: 10px;");
+            var UI_Add_RMA_Fly_div = document.getElementById('<%= UI_Add_RMA_Fly_panel.ClientID %>');
+            UI_Add_RMA_Fly_div.appendChild(iframe);
+
+            ProductInformation_03_iframeFun();
+
+            $find("Flympe").hide();
+            $find("Flympe").show();
+
+            return false;
+        }
+
+        function ProductInformation_03_iframeFun() {
+            if ($(window).height() <= 768) {
+                $("#ProductInformation_03_iframe").animate({ 'margin': 'auto', height: $(window).height() * 0.96, width: $(window).width() * 0.95 });
+                //$("#ProductInformation_03_iframe").offset({ top: myTop, left: myLeft });
+            }
+        }
+
+
+        function Close_windows() {
+            //所有視窗程式 關閉
+            $find("mpe").hide();
+            $find("UI_Up_RMA_panel_ModalPopupExtender").hide();
+            $find("Flympe").hide();
+            return false;
+        }
+
+        function Reload_windows() {
+            $find("mpe").hide();
+            $find("UI_Up_RMA_panel_ModalPopupExtender").hide();
+            $find("Flympe").hide();
+            document.URL = location.href;
+        }
+
+        function Location_Reload_windows() {
+            window.location = window.location.href;
+        }
+
+        function centerHandler() {/*設定置中的函式*/
+            var scrollDist = $(window).scrollTop();/*取得捲動長度*/
+            var myTop = ($(window).height() - $("#UI_Add_RMA_panel_iframe").height()) / 2 + scrollDist;
+            /*取得垂直中央位置*/
+            var myLeft = ($(window).width() - $("#UI_Add_RMA_panel_iframe").width()) / 2;
+            /*取得水平中央位置*/
+            $("#UI_Add_RMA_panel_iframe").offset({ top: myTop, left: myLeft });
+            /*設定區塊於水平與垂直置中*/
+        }
+
+        function Post_New_EC(url) {
+
+            window.open(url);
+        }
+
+        function GetAlertRMAData() {
+            $('#MasterPage_Alert').html("<img src='images/loading-7528_256.gif' style=' width: 48px;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);' />");
+
+            $.ajax({
+                type: 'post',
+                /*url: 'Default.aspx/GetSnData',*/
+                url: 'ashx/GetAlertRMADataHandler.ashx', //請求ALERT 歷史資料
+                contentType: 'application/json; charset=utf-8',
+                success: function (result) {
+
+                    $('#MasterPage_Alert').html(result);
+
+                    var ErmaAlertDiv = document.getElementById("erma-alert-div-out");
+                    var Contextes = result.replace("erma-circle", '');
+
+                    if (Contextes.length < result.length) {
+                        ErmaAlertDiv.className = "erma-alert-div action";
+                    }
+                    else {
+                        ErmaAlertDiv.className = "erma-alert-div";
+                    }
+
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert('查無資料' + errorThrown);
+                    var Warhtml = "";
+
+                }
+            });
+        }
+
+        if ($(window).width() > 1500) {
+            $("body").attr('class', 'anchor_close');
+            $("#Show_Close_Btn_Left").attr('class', 'Show_Close_Btn_Left_Close');
+        }
+        else {
+            $("body").attr('class', 'anchor_open');
+            $("#Show_Close_Btn_Left").attr('class', 'Show_Close_Btn_Left_Open');
+        }
+
+    </script>
+
+    <!--新版 head-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8">-->
+
+    <!--保留 javascript-->
+    <script src="Script/mouseover.js"></script>
+    <script type="text/javascript" src="script/jsUpdateProgress.js"></script>
+    <script type="text/javascript" src="script/CommonFunction.js"></script>
+    <!--保留 javascript-->
+
+</head>
+
+<body>
+
+    <form id="oForm" runat="server">
+        <asp:ScriptManager ID="ScriptManager" runat="server" EnablePageMethods="true" EnableScriptGlobalization="true"></asp:ScriptManager>
+
+        <!--新版-->
+
+        <div class="">
+            <main role="main" class="pb-3">
+                <header class="ermaSys-menu">
+                    <div class="ermaSys-header">
+                        <div class="ermaSys-system-logo">
+
+                            <a href="Client_FlowCase01_Worklist.aspx">
+                                <img src="./images/CipherLab-logo.svg" alt="" class="erma-cipherLab-logo">
+                            </a>
+
+                        </div>
+                        <div class="ermaSys-tools">
+
+                            <div class="erma-line">
+                                <div style="width: 190px; position: relative;">
+
+                                    <div style="display: table-cell; position: absolute; top: 10px; bottom: 0; margin: auto; left: 10px;">
+                                        <asp:ImageButton ID="UI_imgSearch" runat="server" CssClass="btn btn-light" Width="16" ImageUrl="~/images_new/magnifier.png" BackColor="#ffffff"></asp:ImageButton>
+                                    </div>
+
+                                    <div style="display: table-cell; vertical-align: middle;">
+                                        <asp:TextBox runat="server" ID="UI_globalRMAID" CssClass="erma-input-input" Width="100%" placeholder="RMA Status Query" Style="padding-left: 40px;"></asp:TextBox>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="erma-line">
+                                <div class="erma-login-language erma-language erma-combobox-control">
+                                    <img src="./images/language.svg" alt="">
+                                    <asp:DropDownList ID="UI_cboLanguage" runat="server" AutoPostBack="true" class="erma-combobox-choose" />
+                                </div>
+
+                            </div>
+
+                            <div class="ermaSys-functionClass">
+                                <a href="FAQ_List.aspx" onclick="ShowProgressBar();">
+                                    <img src="./images/question-circle.svg" alt="">
+                                </a>
+                                <div onclick="displayFun(&#39;.erma-alert-block&#39;);GetAlertRMAData();" class="erma-alert-div" id="erma-alert-div-out">
+                                    <img src="./images/alert.svg" alt="">
+                                    <div class="erma-alert-position"></div>
+                                    <div class="erma-alert-block" style="display: none;">
+
+                                        <h1>
+                                            <asp:Label ID="AlertLabel" runat="server" Text="Label" Font-Size="Larger"></asp:Label></h1>
+                                        <div class="erma-alert-list" id="MasterPage_Alert">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="nav-link text-dark" href="javascript:__doPostBack('ctl00$TopBanner$UI_hrefLogout','')">
+                                    <img src="./images/logout.svg" alt="Logout">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="erma-background-marketing">
+                    <a onclick="Post_New_EC('https://www.cipherlab.com/zh-tw')" target="_blank">
+                        <button>
+                            <asp:Label ID="Official_Website_Label" runat="server" Text=""></asp:Label>
+                            <span>
+                                <img class="erma-marketing-arrow-image" src="./images/arrow-right.svg" alt=""></span>
+                        </button>
+                    </a>
+                </div>
+
+                <div id="Show_Close_Window_Left" class="erma-personal-information">
+                    <div class="erma-personal-box">
+                        <div class="erma-user-card" style="display: none;">
+                            <img src="./images/big-user.svg" alt="">
+                            <div class="erma-nameContent">
+                            </div>
+                        </div>
+                        <div class="erma-buttons" style="display: none;">
+                        </div>
+
+                        <!--left menu and content-->
+                        <!-- Left Menu START -->
+                        <div class="erma-user-card">
+
+
+
+
+                            <img src="./images/big-user.svg" alt="">
+                            <div class="erma-nameContent">
+
+                                <p class="erma-company">
+                                    <asp:Label runat="server" ID="UI_lblAccount_ID_Text" Text=""></asp:Label>
+                                </p>
+                                <p class="erma-name">
+                                    <asp:Label runat="server" ID="UI_lblAccountText" Text="035_Account"></asp:Label>
+                                </p>
+                                <p>&nbsp;</p>
+
+                                <p class="erma-level" id="UI_tr_butReceive_Drop" runat="server">
+                                    <asp:Label runat="server" ID="UI_lblRoleNameText" Text="067_RoleName" CssClass="default" Visible="false"></asp:Label>
+                                    <table style="padding: 5px;">
+                                        <tr>
+                                            <td style="width: 45px; font-weight: bold;">
+                                                <asp:Label runat="server" ID="UI_lblRole_Master_Text" Text="067_Role"></asp:Label>
+                                                :</td>
+                                            <td>
+                                                <asp:DropDownList ID="UI_butReceive_Drop" runat="server" CssClass="erma-combobox-choose-rol" AutoPostBack="true" OnSelectedIndexChanged="UI_butReceive_Drop_SelectedIndexChanged"></asp:DropDownList>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </p>
+
+                            </div>
+
+                            <style>
+                                .Show_Close_Btn_Left_Open {
+                                    visibility: visible;
+                                    max-width: 15px;
+                                    width: 15px;
+                                    height: auto;
+                                    float: right;
+                                }
+
+                                .Show_Close_Btn_Left_Close {
+                                    visibility: hidden;
+                                    max-width: 15px;
+                                    width: 15px;
+                                    height: auto;
+                                    float: right;
+                                }
+                            </style>
+
+                            <img id='Show_Close_Btn_Left' class="Show_Close_Btn_Left_Close" style="max-width: 15px; max-width: 15px; width: 15px; height: 15px; min-height: 15px; min-width: 15px;" src='../images/kisspng-hamburger-button-computer-icons-menu-ios-7-5aebaafc34d670.2160278215253941722164.png' />
+
+
+
+                        </div>
+
+                        <div class="erma-buttons" id="UI_NewRequestPanel" runat="server">
+                            <a>
+                                <asp:Button ID="CustomerBtn" runat="server" Text="Personal Information" OnClick="CustomerBtn_Click" ForeColor="Black"></asp:Button>
+                            </a>
+                            <a class="erma-request">
+                                <asp:Button ID="New_Request_Btn" runat="server" Text="New Request" />
+                            </a>
+
+
+                            <asp:Button ID="New_Fly_Request_Btn" runat="server" Text="" Style="display: none;" />
+
+                            <!--飛翔的對話框 RMA 開始-->
+                            <asp:Panel ID="UI_Add_RMA_Fly_panel" class="erma-fly-panel" runat="server" Style="display: none;">
+                                <asp:Button ID="UI_Add_Fly_cmdCancel" runat="server" Text="test" />
+                            </asp:Panel>
+
+                            <ajaxToolkit:ModalPopupExtender ID="ModalPopupExtender1" TargetControlID="New_Fly_Request_Btn" BehaviorID="Flympe" PopupControlID="UI_Add_RMA_Fly_panel"
+                                CancelControlID="UI_Add_Fly_cmdCancel"
+                                BackgroundCssClass="Modal"
+                                runat="server">
+                            </ajaxToolkit:ModalPopupExtender>
+                            <!--飛翔的對話框 RMA 結束-->
+
+                            </a>
+                        </div>
+
+                        <div class="erma-repairCenter-card">
+                            <h6>
+                                <asp:Label runat="server" ID="UI_lblRepair" Text="036_Repair Center"></asp:Label></h6>
+                            <div class="erma-repair-item-div">
+                                <table class="erma-repair-block">
+                                    <tr>
+                                        <td>
+                                            <table class="erma-repair-item">
+                                                <tr>
+                                                    <td>
+                                                        <img src="./images/location.svg" /></td>
+                                                    <td><span>Address :</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="erma-repair-text">
+                                                        <asp:Label runat="server" ID="UI_lblCUNAME"></asp:Label>
+                                                    </td>
+                                                </tr>
+                                                <asp:Panel ID="AddressPanel1" runat="server" Visible="false">
+                                                    <tr>
+                                                        <td></td>
+                                                        <td class="erma-repair-text">新北市汐止區大同路3段196-3號5樓
+                                                        </td>
+                                                    </tr>
+                                                </asp:Panel>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table class="erma-repair-item">
+                                                <tr>
+                                                    <td>
+                                                        <img src="./images/phone.svg" alt=""></td>
+                                                    <td>
+                                                        <span>Phone :</span>
+                                                        <asp:Label runat="server" ID="UI_lblCUTEL">
+                                                        </asp:Label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="erma-outlink-items">
+                            <uc3:SubMenu ID="SubMenu1" runat="server" />
+                        </div>
+                        <asp:Button ID="New_Request_Clear_Btn" runat="server" Text="" BackColor="Transparent" BorderColor="Transparent" Width="0" Height="0" />
+                        <!-- Left Menu END -->
+                        <!--end of left menu and content-->
+                    </div>
+                </div>
+
+                <div id="Show_Close_Window_Right" class="erma-information-view erma-information-wait-view">
+                    <!-- tabs -->
+                    <div class="erma-tabs">
+                        <!-- TOP START -->
+                        <div style="display: none;">
+                            <uc1:TopBanner ID="TopBanner" runat="server" />
+                        </div>
+                        <!-- TOP END -->
+
+                        <!-- Top Menu START -->
+                        <uc2:MainMenu ID="MainMenu" runat="server" />
+                        <!-- Top Menu END -->
+                    </div>
+
+                    <div class="erma-infomation-area" style="display: none">
+                        <div class="erma-infomation-text">
+                            <div class="erma-date-block">
+                                <div class="erma-calendar-component"></div>
+                            </div>
+                        </div>
+                        <div class="erma-infomation-resultView">
+                            <div class="erma-information-block">
+                                <div class="erma-left-block">
+                                    <!-- Customer User START -->
+                                    <!--<img border="0" src="Images/login.gif" width="17" height="16" align="absmiddle">-->
+                                    <asp:Label runat="server" ID="UI_LoginRole" Text="065_036_LogintRole" Visible="false" />
+                                    <asp:Label runat="server" ID="UI_LoginName" Visible="false" />
+                                    <!-- Customer User END -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="erma-infomation-area">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+        <script src="js/site.js"></script>
+        <%--RMA 前端日曆選項故障 by buck modify 20250925 begin--%>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- jQuery UI -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <!-- jQuery UI CSS -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.css">
+        <%--RMA 前端日曆選項故障 by buck modify 20250925 end--%>
+        <!-- Visual Studio Browser Link, Marked by Hugh 20250612-->
+        <!-- <script type="text/javascript" src="./js/browserLink" async="async" id="__browserLink_initializationData" data-requestid="b7085926e51c43eeb764b2b432e52969" data-requestmappingfromserver="false" data-connecturl="http://localhost:49781/7e424d90d4744b5987628994b3761634/browserLink"></script> -->
+        <!-- End Browser Link -->
+
+        <%--Marked by Hugh 20250612--%>
+        <!-- <script src="./js/aspnetcore-browser-refresh.js"></script> -->
+
+        <live-preview-root>
+            <template shadowrootmode="open"></template>
+        </live-preview-root>
+        <%--新版--%>
+
+        <!--left menu and content-->
+        <!--end of left menu and content-->
+        <!-- bottom START  -->
+        <!-- bottom END  -->
+
+        <div style="display: none;">
+            <!-- Left Menu START -->
+            <uc3:SubMenu ID="SubMenu" runat="server" />
+            <!-- Left Menu END -->
+            <%--未知--%>
+            <asp:Image ID="Image21" runat="server" ImageUrl="Images/pic_21.gif" />
+            <%--未知--%>
+        </div>
+        <%--未知--%>
+
+        <%--舊網站用不到的UI 開始--%>
+        <asp:Panel ID="Admin_Server" runat="server" Visible="false">
+            <table class="table" style="background: transparent; border: none;">
+                <tr style="background: transparent; border: none; float: right; margin-bottom: 25px;">
+                    <td style="background: transparent; border: none;">
+                        <asp:Button ID="UI_butReceive_WorkList" runat="server" Text="057_worklist" CssClass="erma-request" />
+                    </td>
+                    <td style="background: transparent; border: none;">
+                        <asp:Button ID="UI_butRepair_WorkList" runat="server" Text="058_worklist" CssClass="erma-request" />
+                    </td>
+                    <td style="background: transparent; border: none;">
+                        <asp:Button ID="UI_butSale_WorkList" runat="server" Text="059_worklist" CssClass="erma-request" />
+                    </td>
+                    <td style="background: transparent; border: none;">
+                        <asp:Button ID="UI_butShip_ShippingList" runat="server" Text="080_worklist" CssClass="erma-request" />
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel>
+        <%--舊網站用不到的UI 結束--%>
+
+        <%--Alert--%>
+        <div style="visibility: hidden;">
+            <asp:Button ID="Alert_Btn" runat="server" Text="" />
+            <asp:Button ID="UI_Add_cmdCancel" runat="server" Text="" />
+        </div>
+
+        <asp:Panel ID="Alert_panel" runat="server" CssClass="ucSubstitute_div" Style="display: none;">
+            <asp:ImageButton ID="Alert_cmdCancel" runat="server" ImageUrl="../images/cancel.svg" CssClass="UI_Alert_Show_Windows" />
+            <div id="Alert_iframe_Null" class="UI_Add_RMA_panel_iframe_Small UI_Add_RMA_panel_iframe_Small_Query" src="Load_from_alert.html" style='width: 1300px; height: 650px; background: #fff;'></div>
+            <iframe id="Alert_iframe" class="UI_Add_RMA_panel_iframe_Small UI_Add_RMA_panel_iframe_Small_Query" src="" style='width: 1300px; height: 650px; background: #fff; display: none;'></iframe>
+        </asp:Panel>
+        <ajaxToolkit:ModalPopupExtender
+            ID="Alert_panel_ModalPopupExtender"
+            TargetControlID="Alert_Btn"
+            BehaviorID="Alert_mpe"
+            PopupControlID="Alert_panel"
+            CancelControlID="Alert_cmdCancel"
+            BackgroundCssClass="Modal"
+            runat="server">
+        </ajaxToolkit:ModalPopupExtender>
+        <%--Alert--%>
+
+        <uc1:uc_Wait runat="server" ID="uc_Wait" />
+        <script>
+            GetAlertRMAData();
+        </script>
+
+        <!--新增RMA 開始-->
+        <asp:Panel ID="UI_Add_RMA_panel" runat="server" Style="display: none;">
+
+            <iframe id="UI_Add_RMA_panel_iframe" src="ProductInformation_01.aspx" class="UI_Add_RMA_panel_iframe_Small UI_Add_RMA_panel_iframe_Small" align="middle" runat="server"></iframe>
+        </asp:Panel>
+
+        <ajaxToolkit:ModalPopupExtender ID="UI_Add_RMA_panel_ModalPopupExtender" TargetControlID="New_Request_Clear_Btn" BehaviorID="mpe"
+            PopupControlID="UI_Add_RMA_panel"
+            CancelControlID="UI_Add_cmdCancel"
+            BackgroundCssClass="Modal"
+            runat="server">
+        </ajaxToolkit:ModalPopupExtender>
+        <!--新增RMA 結束-->
+    </form>
+
+    <div id="anchor"></div>
+
+</body>
+</html>

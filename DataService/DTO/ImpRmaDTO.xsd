@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ImpRmaDTO" targetNamespace="http://tempuri.org/ImpRmaDTO.xsd" xmlns:mstns="http://tempuri.org/ImpRmaDTO.xsd" xmlns="http://tempuri.org/ImpRmaDTO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (MySettings)" PropertyReference="ApplicationSettings.DataService.My.MySettings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ImpRmaDTO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ImpRmaDTO" msprop:Generator_DataSetName="ImpRmaDTO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtImpRma" msprop:Generator_UserTableName="dtImpRma" msprop:Generator_RowDeletedName="dtImpRmaRowDeleted" msprop:Generator_RowChangedName="dtImpRmaRowChanged" msprop:Generator_RowClassName="dtImpRmaRow" msprop:Generator_RowChangingName="dtImpRmaRowChanging" msprop:Generator_RowEvArgName="dtImpRmaRowChangeEvent" msprop:Generator_RowEvHandlerName="dtImpRmaRowChangeEventHandler" msprop:Generator_TableClassName="dtImpRmaDataTable" msprop:Generator_TableVarName="tabledtImpRma" msprop:Generator_RowDeletingName="dtImpRmaRowDeleting" msprop:Generator_TablePropName="dtImpRma">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IRMA_ID" msdata:Caption="SR" msprop:Generator_UserColumnName="IRMA_ID" msprop:Generator_ColumnVarNameInTable="columnIRMA_ID" msprop:Generator_ColumnPropNameInRow="IRMA_ID" msprop:Generator_ColumnPropNameInTable="IRMA_IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_NO" msdata:Caption="FD_01" msprop:Generator_UserColumnName="IRMA_NO" msprop:Generator_ColumnVarNameInTable="columnIRMA_NO" msprop:Generator_ColumnPropNameInRow="IRMA_NO" msprop:Generator_ColumnPropNameInTable="IRMA_NOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_CUNO" msdata:Caption="FD_02" msprop:Generator_UserColumnName="IRMA_CUNO" msprop:Generator_ColumnVarNameInTable="columnIRMA_CUNO" msprop:Generator_ColumnPropNameInRow="IRMA_CUNO" msprop:Generator_ColumnPropNameInTable="IRMA_CUNOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_ACCOUNTID" msdata:Caption="FD_03" msprop:Generator_UserColumnName="IRMA_ACCOUNTID" msprop:Generator_ColumnVarNameInTable="columnIRMA_ACCOUNTID" msprop:Generator_ColumnPropNameInRow="IRMA_ACCOUNTID" msprop:Generator_ColumnPropNameInTable="IRMA_ACCOUNTIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_APPLICANT" msdata:Caption="FD_04" msprop:Generator_UserColumnName="IRMA_APPLICANT" msprop:Generator_ColumnVarNameInTable="columnIRMA_APPLICANT" msprop:Generator_ColumnPropNameInRow="IRMA_APPLICANT" msprop:Generator_ColumnPropNameInTable="IRMA_APPLICANTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_TEL" msdata:Caption="FD_05" msprop:Generator_UserColumnName="IRMA_TEL" msprop:Generator_ColumnVarNameInTable="columnIRMA_TEL" msprop:Generator_ColumnPropNameInRow="IRMA_TEL" msprop:Generator_ColumnPropNameInTable="IRMA_TELColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_ADDRESS" msdata:Caption="FD_06" msprop:Generator_UserColumnName="IRMA_ADDRESS" msprop:Generator_ColumnVarNameInTable="columnIRMA_ADDRESS" msprop:Generator_ColumnPropNameInRow="IRMA_ADDRESS" msprop:Generator_ColumnPropNameInTable="IRMA_ADDRESSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_COMPNO" msdata:Caption="FD_07" msprop:Generator_UserColumnName="IRMA_COMPNO" msprop:Generator_ColumnVarNameInTable="columnIRMA_COMPNO" msprop:Generator_ColumnPropNameInRow="IRMA_COMPNO" msprop:Generator_ColumnPropNameInTable="IRMA_COMPNOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_MAIL" msdata:Caption="FD_08" msprop:Generator_UserColumnName="IRMA_MAIL" msprop:Generator_ColumnVarNameInTable="columnIRMA_MAIL" msprop:Generator_ColumnPropNameInRow="IRMA_MAIL" msprop:Generator_ColumnPropNameInTable="IRMA_MAILColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_FILE" msprop:Generator_UserColumnName="IRMA_FILE" msprop:Generator_ColumnPropNameInRow="IRMA_FILE" msprop:Generator_ColumnVarNameInTable="columnIRMA_FILE" msprop:Generator_ColumnPropNameInTable="IRMA_FILEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_FILE_ST" msdata:Caption="FD_09" msprop:Generator_UserColumnName="IRMA_FILE_ST" msprop:Generator_ColumnVarNameInTable="columnIRMA_FILE_ST" msprop:Generator_ColumnPropNameInRow="IRMA_FILE_ST" msprop:Generator_ColumnPropNameInTable="IRMA_FILE_STColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_ERROR" msdata:Caption="FD_10" msprop:Generator_UserColumnName="IRMA_ERROR" msprop:Generator_ColumnVarNameInTable="columnIRMA_ERROR" msprop:Generator_ColumnPropNameInRow="IRMA_ERROR" msprop:Generator_ColumnPropNameInTable="IRMA_ERRORColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_ERROR_ST" msprop:Generator_UserColumnName="IRMA_ERROR_ST" msprop:Generator_ColumnPropNameInRow="IRMA_ERROR_ST" msprop:Generator_ColumnVarNameInTable="columnIRMA_ERROR_ST" msprop:Generator_ColumnPropNameInTable="IRMA_ERROR_STColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_STATUS" msdata:Caption="e_10" msprop:Generator_UserColumnName="IRMA_STATUS" msprop:Generator_ColumnVarNameInTable="columnIRMA_STATUS" msprop:Generator_ColumnPropNameInRow="IRMA_STATUS" msprop:Generator_ColumnPropNameInTable="IRMA_STATUSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_AD" msdata:Caption="FD_11" msprop:Generator_UserColumnName="IRMA_AD" msprop:Generator_ColumnVarNameInTable="columnIRMA_AD" msprop:Generator_ColumnPropNameInRow="IRMA_AD" msprop:Generator_ColumnPropNameInTable="IRMA_ADColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_ADNAME" msdata:Caption="FD_12" msprop:Generator_UserColumnName="IRMA_ADNAME" msprop:Generator_ColumnVarNameInTable="columnIRMA_ADNAME" msprop:Generator_ColumnPropNameInRow="IRMA_ADNAME" msprop:Generator_ColumnPropNameInTable="IRMA_ADNAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_CSTMP" msdata:Caption="FD_13" msprop:Generator_UserColumnName="IRMA_CSTMP" msprop:Generator_ColumnVarNameInTable="columnIRMA_CSTMP" msprop:Generator_ColumnPropNameInRow="IRMA_CSTMP" msprop:Generator_ColumnPropNameInTable="IRMA_CSTMPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_LUAD" msdata:Caption="FD_14" msprop:Generator_UserColumnName="IRMA_LUAD" msprop:Generator_ColumnVarNameInTable="columnIRMA_LUAD" msprop:Generator_ColumnPropNameInRow="IRMA_LUAD" msprop:Generator_ColumnPropNameInTable="IRMA_LUADColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_LUADNAME" msdata:Caption="FD_15" msprop:Generator_UserColumnName="IRMA_LUADNAME" msprop:Generator_ColumnVarNameInTable="columnIRMA_LUADNAME" msprop:Generator_ColumnPropNameInRow="IRMA_LUADNAME" msprop:Generator_ColumnPropNameInTable="IRMA_LUADNAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_LUSTMP" msdata:Caption="FD_16" msprop:Generator_UserColumnName="IRMA_LUSTMP" msprop:Generator_ColumnVarNameInTable="columnIRMA_LUSTMP" msprop:Generator_ColumnPropNameInRow="IRMA_LUSTMP" msprop:Generator_ColumnPropNameInTable="IRMA_LUSTMPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_MARK" msprop:Generator_UserColumnName="IRMA_MARK" msprop:Generator_ColumnVarNameInTable="columnIRMA_MARK" msprop:Generator_ColumnPropNameInRow="IRMA_MARK" msprop:Generator_ColumnPropNameInTable="IRMA_MARKColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMA_REMARK" msprop:Generator_UserColumnName="IRMA_REMARK" msprop:Generator_ColumnVarNameInTable="columnIRMA_REMARK" msprop:Generator_ColumnPropNameInRow="IRMA_REMARK" msprop:Generator_ColumnPropNameInTable="IRMA_REMARKColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cu_name" msprop:Generator_UserColumnName="cu_name" msprop:Generator_ColumnVarNameInTable="columncu_name" msprop:Generator_ColumnPropNameInRow="cu_name" msprop:Generator_ColumnPropNameInTable="cu_nameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtImpRmaDetailQry" msprop:Generator_UserTableName="dtImpRmaDetailQry" msprop:Generator_RowDeletedName="dtImpRmaDetailQryRowDeleted" msprop:Generator_RowChangedName="dtImpRmaDetailQryRowChanged" msprop:Generator_RowClassName="dtImpRmaDetailQryRow" msprop:Generator_RowChangingName="dtImpRmaDetailQryRowChanging" msprop:Generator_RowEvArgName="dtImpRmaDetailQryRowChangeEvent" msprop:Generator_RowEvHandlerName="dtImpRmaDetailQryRowChangeEventHandler" msprop:Generator_TableClassName="dtImpRmaDetailQryDataTable" msprop:Generator_TableVarName="tabledtImpRmaDetailQry" msprop:Generator_RowDeletingName="dtImpRmaDetailQryRowDeleting" msprop:Generator_TablePropName="dtImpRmaDetailQry">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IRMAD_ID" msdata:Caption="SR" msprop:Generator_UserColumnName="IRMAD_ID" msprop:Generator_ColumnVarNameInTable="columnIRMAD_ID" msprop:Generator_ColumnPropNameInRow="IRMAD_ID" msprop:Generator_ColumnPropNameInTable="IRMAD_IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_SEQ" msdata:Caption="FD_01" msprop:Generator_UserColumnName="IRMAD_SEQ" msprop:Generator_ColumnVarNameInTable="columnIRMAD_SEQ" msprop:Generator_ColumnPropNameInRow="IRMAD_SEQ" msprop:Generator_ColumnPropNameInTable="IRMAD_SEQColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_RMANO" msdata:Caption="FD_02" msprop:Generator_UserColumnName="IRMAD_RMANO" msprop:Generator_ColumnVarNameInTable="columnIRMAD_RMANO" msprop:Generator_ColumnPropNameInRow="IRMAD_RMANO" msprop:Generator_ColumnPropNameInTable="IRMAD_RMANOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_MODELNO" msdata:Caption="FD_03" msprop:Generator_UserColumnName="IRMAD_MODELNO" msprop:Generator_ColumnVarNameInTable="columnIRMAD_MODELNO" msprop:Generator_ColumnPropNameInRow="IRMAD_MODELNO" msprop:Generator_ColumnPropNameInTable="IRMAD_MODELNOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_SERIALNO" msdata:Caption="FD_04" msprop:Generator_UserColumnName="IRMAD_SERIALNO" msprop:Generator_ColumnVarNameInTable="columnIRMAD_SERIALNO" msprop:Generator_ColumnPropNameInRow="IRMAD_SERIALNO" msprop:Generator_ColumnPropNameInTable="IRMAD_SERIALNOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_CUSNAME" msdata:Caption="FD_05" msprop:Generator_UserColumnName="IRMAD_CUSNAME" msprop:Generator_ColumnVarNameInTable="columnIRMAD_CUSNAME" msprop:Generator_ColumnPropNameInRow="IRMAD_CUSNAME" msprop:Generator_ColumnPropNameInTable="IRMAD_CUSNAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_WARRANTY" msdata:Caption="FD_06" msprop:Generator_UserColumnName="IRMAD_WARRANTY" msprop:Generator_ColumnVarNameInTable="columnIRMAD_WARRANTY" msprop:Generator_ColumnPropNameInRow="IRMAD_WARRANTY" msprop:Generator_ColumnPropNameInTable="IRMAD_WARRANTYColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IRMAD_FARFARCNO" msdata:Caption="FD_07" msprop:Generator_UserColumnName="IRMAD_FARFARCNO" msprop:Generator_ColumnVarNameInTable="columnIRMAD_FARFARCNO" msprop:Generator_ColumnPropNameInRow="IRMAD_FARFARCNO" msprop:Generator_ColumnPropNameInTable="IRMAD_FARFARCNOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_FARNO" msdata:Caption="FD_08" msprop:Generator_UserColumnName="IRMAD_FARNO" msprop:Generator_ColumnVarNameInTable="columnIRMAD_FARNO" msprop:Generator_ColumnPropNameInRow="IRMAD_FARNO" msprop:Generator_ColumnPropNameInTable="IRMAD_FARNOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_UPLOADFILE" msdata:Caption="IRMA_FILE" msprop:Generator_UserColumnName="IRMAD_UPLOADFILE" msprop:Generator_ColumnVarNameInTable="columnIRMAD_UPLOADFILE" msprop:Generator_ColumnPropNameInRow="IRMAD_UPLOADFILE" msprop:Generator_ColumnPropNameInTable="IRMAD_UPLOADFILEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_PROBLEMDESC" msdata:Caption="FD_09" msprop:Generator_UserColumnName="IRMAD_PROBLEMDESC" msprop:Generator_ColumnVarNameInTable="columnIRMAD_PROBLEMDESC" msprop:Generator_ColumnPropNameInRow="IRMAD_PROBLEMDESC" msprop:Generator_ColumnPropNameInTable="IRMAD_PROBLEMDESCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_STATUS" msdata:Caption="FD_10" msprop:Generator_UserColumnName="IRMAD_STATUS" msprop:Generator_ColumnVarNameInTable="columnIRMAD_STATUS" msprop:Generator_ColumnPropNameInRow="IRMAD_STATUS" msprop:Generator_ColumnPropNameInTable="IRMAD_STATUSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="irmad_status_name" msprop:Generator_UserColumnName="irmad_status_name" msprop:Generator_ColumnVarNameInTable="columnirmad_status_name" msprop:Generator_ColumnPropNameInRow="irmad_status_name" msprop:Generator_ColumnPropNameInTable="irmad_status_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_ISFILL" msdata:Caption="IRMA_ERROR_ST" msprop:Generator_UserColumnName="IRMAD_ISFILL" msprop:Generator_ColumnVarNameInTable="columnIRMAD_ISFILL" msprop:Generator_ColumnPropNameInRow="IRMAD_ISFILL" msprop:Generator_ColumnPropNameInTable="IRMAD_ISFILLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_RECVAD" msdata:Caption="e_10" msprop:Generator_UserColumnName="IRMAD_RECVAD" msprop:Generator_ColumnVarNameInTable="columnIRMAD_RECVAD" msprop:Generator_ColumnPropNameInRow="IRMAD_RECVAD" msprop:Generator_ColumnPropNameInTable="IRMAD_RECVADColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_RECVADNAME" msdata:Caption="FD_11" msprop:Generator_UserColumnName="IRMAD_RECVADNAME" msprop:Generator_ColumnVarNameInTable="columnIRMAD_RECVADNAME" msprop:Generator_ColumnPropNameInRow="IRMAD_RECVADNAME" msprop:Generator_ColumnPropNameInTable="IRMAD_RECVADNAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_RECVDATE" msdata:Caption="FD_12" msprop:Generator_UserColumnName="IRMAD_RECVDATE" msprop:Generator_ColumnVarNameInTable="columnIRMAD_RECVDATE" msprop:Generator_ColumnPropNameInRow="IRMAD_RECVDATE" msprop:Generator_ColumnPropNameInTable="IRMAD_RECVDATEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_RECEVSTATUS" msdata:Caption="FD_13" msprop:Generator_UserColumnName="IRMAD_RECEVSTATUS" msprop:Generator_ColumnVarNameInTable="columnIRMAD_RECEVSTATUS" msprop:Generator_ColumnPropNameInRow="IRMAD_RECEVSTATUS" msprop:Generator_ColumnPropNameInTable="IRMAD_RECEVSTATUSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_AD" msdata:Caption="FD_14" msprop:Generator_UserColumnName="IRMAD_AD" msprop:Generator_ColumnVarNameInTable="columnIRMAD_AD" msprop:Generator_ColumnPropNameInRow="IRMAD_AD" msprop:Generator_ColumnPropNameInTable="IRMAD_ADColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_ADNAME" msdata:Caption="FD_15" msprop:Generator_UserColumnName="IRMAD_ADNAME" msprop:Generator_ColumnVarNameInTable="columnIRMAD_ADNAME" msprop:Generator_ColumnPropNameInRow="IRMAD_ADNAME" msprop:Generator_ColumnPropNameInTable="IRMAD_ADNAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_CSTMP" msdata:Caption="FD_16" msprop:Generator_UserColumnName="IRMAD_CSTMP" msprop:Generator_ColumnVarNameInTable="columnIRMAD_CSTMP" msprop:Generator_ColumnPropNameInRow="IRMAD_CSTMP" msprop:Generator_ColumnPropNameInTable="IRMAD_CSTMPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_LUAD" msdata:Caption="IRMA_MARK" msprop:Generator_UserColumnName="IRMAD_LUAD" msprop:Generator_ColumnVarNameInTable="columnIRMAD_LUAD" msprop:Generator_ColumnPropNameInRow="IRMAD_LUAD" msprop:Generator_ColumnPropNameInTable="IRMAD_LUADColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_LUADNAME" msdata:Caption="IRMA_REMARK" msprop:Generator_UserColumnName="IRMAD_LUADNAME" msprop:Generator_ColumnVarNameInTable="columnIRMAD_LUADNAME" msprop:Generator_ColumnPropNameInRow="IRMAD_LUADNAME" msprop:Generator_ColumnPropNameInTable="IRMAD_LUADNAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_LUSTMP" msprop:Generator_UserColumnName="IRMAD_LUSTMP" msprop:Generator_ColumnVarNameInTable="columnIRMAD_LUSTMP" msprop:Generator_ColumnPropNameInRow="IRMAD_LUSTMP" msprop:Generator_ColumnPropNameInTable="IRMAD_LUSTMPColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IRMAD_MARK" msprop:Generator_UserColumnName="IRMAD_MARK" msprop:Generator_ColumnVarNameInTable="columnIRMAD_MARK" msprop:Generator_ColumnPropNameInRow="IRMAD_MARK" msprop:Generator_ColumnPropNameInTable="IRMAD_MARKColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_PRODUCTDESC" msprop:Generator_UserColumnName="IRMAD_PRODUCTDESC" msprop:Generator_ColumnVarNameInTable="columnIRMAD_PRODUCTDESC" msprop:Generator_ColumnPropNameInRow="IRMAD_PRODUCTDESC" msprop:Generator_ColumnPropNameInTable="IRMAD_PRODUCTDESCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMAD_ISWARRANTY" msprop:Generator_UserColumnName="IRMAD_ISWARRANTY" msprop:Generator_ColumnVarNameInTable="columnIRMAD_ISWARRANTY" msprop:Generator_ColumnPropNameInRow="IRMAD_ISWARRANTY" msprop:Generator_ColumnPropNameInTable="IRMAD_ISWARRANTYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="export_modelno" msprop:Generator_UserColumnName="export_modelno" msprop:Generator_ColumnVarNameInTable="columnexport_modelno" msprop:Generator_ColumnPropNameInRow="export_modelno" msprop:Generator_ColumnPropNameInTable="export_modelnoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="export_warranty_date" msprop:Generator_UserColumnName="export_warranty_date" msprop:Generator_ColumnVarNameInTable="columnexport_warranty_date" msprop:Generator_ColumnPropNameInRow="export_warranty_date" msprop:Generator_ColumnPropNameInTable="export_warranty_dateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="farc_name" msprop:Generator_UserColumnName="farc_name" msprop:Generator_ColumnVarNameInTable="columnfarc_name" msprop:Generator_ColumnPropNameInRow="farc_name" msprop:Generator_ColumnPropNameInTable="farc_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="far_reason" msprop:Generator_UserColumnName="far_reason" msprop:Generator_ColumnVarNameInTable="columnfar_reason" msprop:Generator_ColumnPropNameInRow="far_reason" msprop:Generator_ColumnPropNameInTable="far_reasonColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IRMARepair_Detail" msprop:Generator_UserTableName="IRMARepair_Detail" msprop:Generator_RowDeletedName="IRMARepair_DetailRowDeleted" msprop:Generator_RowChangedName="IRMARepair_DetailRowChanged" msprop:Generator_RowClassName="IRMARepair_DetailRow" msprop:Generator_RowChangingName="IRMARepair_DetailRowChanging" msprop:Generator_RowEvArgName="IRMARepair_DetailRowChangeEvent" msprop:Generator_RowEvHandlerName="IRMARepair_DetailRowChangeEventHandler" msprop:Generator_TableClassName="IRMARepair_DetailDataTable" msprop:Generator_TableVarName="tableIRMARepair_Detail" msprop:Generator_RowDeletingName="IRMARepair_DetailRowDeleting" msprop:Generator_TablePropName="IRMARepair_Detail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IRMARED_ID" msdata:Caption="RMARED_ID" msprop:Generator_UserColumnName="IRMARED_ID" msprop:Generator_ColumnPropNameInRow="IRMARED_ID" msprop:Generator_ColumnVarNameInTable="columnIRMARED_ID" msprop:Generator_ColumnPropNameInTable="IRMARED_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_RMADID" msdata:Caption="RMARED_RMADID" msprop:Generator_UserColumnName="IRMARED_RMADID" msprop:Generator_ColumnPropNameInRow="IRMARED_RMADID" msprop:Generator_ColumnVarNameInTable="columnIRMARED_RMADID" msprop:Generator_ColumnPropNameInTable="IRMARED_RMADIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_NPARTNO" msdata:Caption="RMARED_NPARTNO" msprop:Generator_UserColumnName="IRMARED_NPARTNO" msprop:Generator_ColumnPropNameInRow="IRMARED_NPARTNO" msprop:Generator_ColumnVarNameInTable="columnIRMARED_NPARTNO" msprop:Generator_ColumnPropNameInTable="IRMARED_NPARTNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_NSERIALNO" msdata:Caption="RMARED_NSERIALNO" msprop:Generator_UserColumnName="IRMARED_NSERIALNO" msprop:Generator_ColumnPropNameInRow="IRMARED_NSERIALNO" msprop:Generator_ColumnVarNameInTable="columnIRMARED_NSERIALNO" msprop:Generator_ColumnPropNameInTable="IRMARED_NSERIALNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_NWARRANTY" msdata:Caption="RMARED_NWARRANTY" msprop:Generator_UserColumnName="IRMARED_NWARRANTY" msprop:Generator_ColumnPropNameInRow="IRMARED_NWARRANTY" msprop:Generator_ColumnVarNameInTable="columnIRMARED_NWARRANTY" msprop:Generator_ColumnPropNameInTable="IRMARED_NWARRANTYColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IRMARED_OPARTNO" msdata:Caption="RMARED_OPARTNO" msprop:Generator_UserColumnName="IRMARED_OPARTNO" msprop:Generator_ColumnPropNameInRow="IRMARED_OPARTNO" msprop:Generator_ColumnVarNameInTable="columnIRMARED_OPARTNO" msprop:Generator_ColumnPropNameInTable="IRMARED_OPARTNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_OSERIALNO" msdata:Caption="RMARED_OSERIALNO" msprop:Generator_UserColumnName="IRMARED_OSERIALNO" msprop:Generator_ColumnPropNameInRow="IRMARED_OSERIALNO" msprop:Generator_ColumnVarNameInTable="columnIRMARED_OSERIALNO" msprop:Generator_ColumnPropNameInTable="IRMARED_OSERIALNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_OWARRANTY" msdata:Caption="RMARED_OWARRANTY" msprop:Generator_UserColumnName="IRMARED_OWARRANTY" msprop:Generator_ColumnPropNameInRow="IRMARED_OWARRANTY" msprop:Generator_ColumnVarNameInTable="columnIRMARED_OWARRANTY" msprop:Generator_ColumnPropNameInTable="IRMARED_OWARRANTYColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IRMARED_DESC" msdata:Caption="RMARED_DESC" msprop:Generator_UserColumnName="IRMARED_DESC" msprop:Generator_ColumnPropNameInRow="IRMARED_DESC" msprop:Generator_ColumnVarNameInTable="columnIRMARED_DESC" msprop:Generator_ColumnPropNameInTable="IRMARED_DESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_LOCATION" msdata:Caption="RMARED_LOCATION" msprop:Generator_UserColumnName="IRMARED_LOCATION" msprop:Generator_ColumnPropNameInRow="IRMARED_LOCATION" msprop:Generator_ColumnVarNameInTable="columnIRMARED_LOCATION" msprop:Generator_ColumnPropNameInTable="IRMARED_LOCATIONColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_IMPROPERUSAGE" msdata:Caption="RMARED_IMPROPERUSAGE" msprop:Generator_UserColumnName="IRMARED_IMPROPERUSAGE" msprop:Generator_ColumnPropNameInRow="IRMARED_IMPROPERUSAGE" msprop:Generator_ColumnVarNameInTable="columnIRMARED_IMPROPERUSAGE" msprop:Generator_ColumnPropNameInTable="IRMARED_IMPROPERUSAGEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMARED_DEFECTIVE" msdata:Caption="RMARED_DEFECTIVE" msprop:Generator_UserColumnName="IRMARED_DEFECTIVE" msprop:Generator_ColumnPropNameInRow="IRMARED_DEFECTIVE" msprop:Generator_ColumnVarNameInTable="columnIRMARED_DEFECTIVE" msprop:Generator_ColumnPropNameInTable="IRMARED_DEFECTIVEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_QTY" msdata:Caption="RMARED_QTY" msprop:Generator_UserColumnName="IRMARED_QTY" msprop:Generator_ColumnPropNameInRow="IRMARED_QTY" msprop:Generator_ColumnVarNameInTable="columnIRMARED_QTY" msprop:Generator_ColumnPropNameInTable="IRMARED_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMARED_MATERIALCOST" msdata:Caption="RMARED_MATERIALCOST" msprop:Generator_UserColumnName="IRMARED_MATERIALCOST" msprop:Generator_ColumnPropNameInRow="IRMARED_MATERIALCOST" msprop:Generator_ColumnVarNameInTable="columnIRMARED_MATERIALCOST" msprop:Generator_ColumnPropNameInTable="IRMARED_MATERIALCOSTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMARED_PRICE" msdata:Caption="RMARED_PRICE" msprop:Generator_UserColumnName="IRMARED_PRICE" msprop:Generator_ColumnPropNameInRow="IRMARED_PRICE" msprop:Generator_ColumnVarNameInTable="columnIRMARED_PRICE" msprop:Generator_ColumnPropNameInTable="IRMARED_PRICEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMARED_CURRENCYCODE" msdata:Caption="RMARED_CURRENCYCODE" msprop:Generator_UserColumnName="IRMARED_CURRENCYCODE" msprop:Generator_ColumnPropNameInRow="IRMARED_CURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnIRMARED_CURRENCYCODE" msprop:Generator_ColumnPropNameInTable="IRMARED_CURRENCYCODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_CURRENCYRATE" msdata:Caption="RMARED_CURRENCYRATE" msprop:Generator_UserColumnName="IRMARED_CURRENCYRATE" msprop:Generator_ColumnPropNameInRow="IRMARED_CURRENCYRATE" msprop:Generator_ColumnVarNameInTable="columnIRMARED_CURRENCYRATE" msprop:Generator_ColumnPropNameInTable="IRMARED_CURRENCYRATEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMARED_ASSIGEPRICE" msdata:Caption="RMARED_ASSIGEPRICE" msprop:Generator_UserColumnName="IRMARED_ASSIGEPRICE" msprop:Generator_ColumnPropNameInRow="IRMARED_ASSIGEPRICE" msprop:Generator_ColumnVarNameInTable="columnIRMARED_ASSIGEPRICE" msprop:Generator_ColumnPropNameInTable="IRMARED_ASSIGEPRICEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMARED_ASSIGECURRENCYCODE" msdata:Caption="RMARED_ASSIGECURRENCYCODE" msprop:Generator_UserColumnName="IRMARED_ASSIGECURRENCYCODE" msprop:Generator_ColumnPropNameInRow="IRMARED_ASSIGECURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnIRMARED_ASSIGECURRENCYCODE" msprop:Generator_ColumnPropNameInTable="IRMARED_ASSIGECURRENCYCODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_ASSIGECURRENCYRATE" msdata:Caption="RMARED_ASSIGECURRENCYRATE" msprop:Generator_UserColumnName="IRMARED_ASSIGECURRENCYRATE" msprop:Generator_ColumnPropNameInRow="IRMARED_ASSIGECURRENCYRATE" msprop:Generator_ColumnVarNameInTable="columnIRMARED_ASSIGECURRENCYRATE" msprop:Generator_ColumnPropNameInTable="IRMARED_ASSIGECURRENCYRATEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMARED_AD" msdata:Caption="RMARED_AD" msprop:Generator_UserColumnName="IRMARED_AD" msprop:Generator_ColumnPropNameInRow="IRMARED_AD" msprop:Generator_ColumnVarNameInTable="columnIRMARED_AD" msprop:Generator_ColumnPropNameInTable="IRMARED_ADColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_ADNAME" msdata:Caption="RMARED_ADNAME" msprop:Generator_UserColumnName="IRMARED_ADNAME" msprop:Generator_ColumnPropNameInRow="IRMARED_ADNAME" msprop:Generator_ColumnVarNameInTable="columnIRMARED_ADNAME" msprop:Generator_ColumnPropNameInTable="IRMARED_ADNAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_CSTMP" msdata:Caption="RMARED_CSTMP" msprop:Generator_UserColumnName="IRMARED_CSTMP" msprop:Generator_ColumnPropNameInRow="IRMARED_CSTMP" msprop:Generator_ColumnVarNameInTable="columnIRMARED_CSTMP" msprop:Generator_ColumnPropNameInTable="IRMARED_CSTMPColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IRMARED_LUAD" msdata:Caption="RMARED_LUAD" msprop:Generator_UserColumnName="IRMARED_LUAD" msprop:Generator_ColumnPropNameInRow="IRMARED_LUAD" msprop:Generator_ColumnVarNameInTable="columnIRMARED_LUAD" msprop:Generator_ColumnPropNameInTable="IRMARED_LUADColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_LUADNAME" msdata:Caption="RMARED_LUADNAME" msprop:Generator_UserColumnName="IRMARED_LUADNAME" msprop:Generator_ColumnPropNameInRow="IRMARED_LUADNAME" msprop:Generator_ColumnVarNameInTable="columnIRMARED_LUADNAME" msprop:Generator_ColumnPropNameInTable="IRMARED_LUADNAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMARED_LUSTMP" msdata:Caption="RMARED_LUSTMP" msprop:Generator_UserColumnName="IRMARED_LUSTMP" msprop:Generator_ColumnPropNameInRow="IRMARED_LUSTMP" msprop:Generator_ColumnVarNameInTable="columnIRMARED_LUSTMP" msprop:Generator_ColumnPropNameInTable="IRMARED_LUSTMPColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IRMARED_MARK" msdata:Caption="RMARED_MARK" msprop:Generator_UserColumnName="IRMARED_MARK" msprop:Generator_ColumnPropNameInRow="IRMARED_MARK" msprop:Generator_ColumnVarNameInTable="columnIRMARED_MARK" msprop:Generator_ColumnPropNameInTable="IRMARED_MARKColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMARED_oldID" msdata:Caption="RMARED_oldID" msprop:Generator_UserColumnName="IRMARED_oldID" msprop:Generator_ColumnPropNameInRow="IRMARED_oldID" msprop:Generator_ColumnVarNameInTable="columnIRMARED_oldID" msprop:Generator_ColumnPropNameInTable="IRMARED_oldIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="defective_name" msprop:Generator_UserColumnName="defective_name" msprop:Generator_ColumnVarNameInTable="columndefective_name" msprop:Generator_ColumnPropNameInRow="defective_name" msprop:Generator_ColumnPropNameInTable="defective_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IRMARED_IMPROPERUSAGE_NAME" msprop:Generator_UserColumnName="IRMARED_IMPROPERUSAGE_NAME" msprop:Generator_ColumnPropNameInRow="IRMARED_IMPROPERUSAGE_NAME" msprop:Generator_ColumnVarNameInTable="columnIRMARED_IMPROPERUSAGE_NAME" msprop:Generator_ColumnPropNameInTable="IRMARED_IMPROPERUSAGE_NAMEColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IRMARepair" msprop:Generator_UserTableName="IRMARepair" msprop:Generator_RowDeletedName="IRMARepairRowDeleted" msprop:Generator_RowChangedName="IRMARepairRowChanged" msprop:Generator_RowClassName="IRMARepairRow" msprop:Generator_RowChangingName="IRMARepairRowChanging" msprop:Generator_RowEvArgName="IRMARepairRowChangeEvent" msprop:Generator_RowEvHandlerName="IRMARepairRowChangeEventHandler" msprop:Generator_TableClassName="IRMARepairDataTable" msprop:Generator_TableVarName="tableIRMARepair" msprop:Generator_RowDeletingName="IRMARepairRowDeleting" msprop:Generator_TablePropName="IRMARepair">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IRMAR_ID" msdata:Caption="RMAR_ID" msprop:Generator_UserColumnName="IRMAR_ID" msprop:Generator_ColumnPropNameInRow="IRMAR_ID" msprop:Generator_ColumnVarNameInTable="columnIRMAR_ID" msprop:Generator_ColumnPropNameInTable="IRMAR_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_RMADID" msdata:Caption="RMAR_RMADID" msprop:Generator_UserColumnName="IRMAR_RMADID" msprop:Generator_ColumnPropNameInRow="IRMAR_RMADID" msprop:Generator_ColumnVarNameInTable="columnIRMAR_RMADID" msprop:Generator_ColumnPropNameInTable="IRMAR_RMADIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_COMPNO" msdata:Caption="RMAR_COMPNO" msprop:Generator_UserColumnName="IRMAR_COMPNO" msprop:Generator_ColumnPropNameInRow="IRMAR_COMPNO" msprop:Generator_ColumnVarNameInTable="columnIRMAR_COMPNO" msprop:Generator_ColumnPropNameInTable="IRMAR_COMPNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_DUTYNO" msdata:Caption="RMAR_DUTYNO" msprop:Generator_UserColumnName="IRMAR_DUTYNO" msprop:Generator_ColumnPropNameInRow="IRMAR_DUTYNO" msprop:Generator_ColumnVarNameInTable="columnIRMAR_DUTYNO" msprop:Generator_ColumnPropNameInTable="IRMAR_DUTYNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_FARCNO" msdata:Caption="RMAR_FARCNO" msprop:Generator_UserColumnName="IRMAR_FARCNO" msprop:Generator_ColumnPropNameInRow="IRMAR_FARCNO" msprop:Generator_ColumnVarNameInTable="columnIRMAR_FARCNO" msprop:Generator_ColumnPropNameInTable="IRMAR_FARCNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_FARNO" msdata:Caption="RMAR_FARNO" msprop:Generator_UserColumnName="IRMAR_FARNO" msprop:Generator_ColumnPropNameInRow="IRMAR_FARNO" msprop:Generator_ColumnVarNameInTable="columnIRMAR_FARNO" msprop:Generator_ColumnPropNameInTable="IRMAR_FARNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_PROBLEMDESC" msdata:Caption="RMAR_PROBLEMDESC" msprop:Generator_UserColumnName="IRMAR_PROBLEMDESC" msprop:Generator_ColumnPropNameInRow="IRMAR_PROBLEMDESC" msprop:Generator_ColumnVarNameInTable="columnIRMAR_PROBLEMDESC" msprop:Generator_ColumnPropNameInTable="IRMAR_PROBLEMDESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_REPAIRDESC" msdata:Caption="RMAR_REPAIRDESC" msprop:Generator_UserColumnName="IRMAR_REPAIRDESC" msprop:Generator_ColumnPropNameInRow="IRMAR_REPAIRDESC" msprop:Generator_ColumnVarNameInTable="columnIRMAR_REPAIRDESC" msprop:Generator_ColumnPropNameInTable="IRMAR_REPAIRDESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_REPAIRMEMO" msdata:Caption="RMAR_REPAIRMEMO" msprop:Generator_UserColumnName="IRMAR_REPAIRMEMO" msprop:Generator_ColumnPropNameInRow="IRMAR_REPAIRMEMO" msprop:Generator_ColumnVarNameInTable="columnIRMAR_REPAIRMEMO" msprop:Generator_ColumnPropNameInTable="IRMAR_REPAIRMEMOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_LABORHOUR" msdata:Caption="RMAR_LABORHOUR" msprop:Generator_UserColumnName="IRMAR_LABORHOUR" msprop:Generator_ColumnPropNameInRow="IRMAR_LABORHOUR" msprop:Generator_ColumnVarNameInTable="columnIRMAR_LABORHOUR" msprop:Generator_ColumnPropNameInTable="IRMAR_LABORHOURColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMAR_LABORPRICE" msdata:Caption="RMAR_LABORPRICE" msprop:Generator_UserColumnName="IRMAR_LABORPRICE" msprop:Generator_ColumnPropNameInRow="IRMAR_LABORPRICE" msprop:Generator_ColumnVarNameInTable="columnIRMAR_LABORPRICE" msprop:Generator_ColumnPropNameInTable="IRMAR_LABORPRICEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMAR_LABORCOST" msdata:Caption="RMAR_LABORCOST" msprop:Generator_UserColumnName="IRMAR_LABORCOST" msprop:Generator_ColumnPropNameInRow="IRMAR_LABORCOST" msprop:Generator_ColumnVarNameInTable="columnIRMAR_LABORCOST" msprop:Generator_ColumnPropNameInTable="IRMAR_LABORCOSTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMAR_MATERIALCOST" msdata:Caption="RMAR_MATERIALCOST" msprop:Generator_UserColumnName="IRMAR_MATERIALCOST" msprop:Generator_ColumnPropNameInRow="IRMAR_MATERIALCOST" msprop:Generator_ColumnVarNameInTable="columnIRMAR_MATERIALCOST" msprop:Generator_ColumnPropNameInTable="IRMAR_MATERIALCOSTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMAR_QUOTE" msdata:Caption="RMAR_QUOTE" msprop:Generator_UserColumnName="IRMAR_QUOTE" msprop:Generator_ColumnPropNameInRow="IRMAR_QUOTE" msprop:Generator_ColumnVarNameInTable="columnIRMAR_QUOTE" msprop:Generator_ColumnPropNameInTable="IRMAR_QUOTEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMAR_CURRENCYCODE" msdata:Caption="RMAR_CURRENCYCODE" msprop:Generator_UserColumnName="IRMAR_CURRENCYCODE" msprop:Generator_ColumnPropNameInRow="IRMAR_CURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnIRMAR_CURRENCYCODE" msprop:Generator_ColumnPropNameInTable="IRMAR_CURRENCYCODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_CURRENCYRATE" msdata:Caption="RMAR_CURRENCYRATE" msprop:Generator_UserColumnName="IRMAR_CURRENCYRATE" msprop:Generator_ColumnPropNameInRow="IRMAR_CURRENCYRATE" msprop:Generator_ColumnVarNameInTable="columnIRMAR_CURRENCYRATE" msprop:Generator_ColumnPropNameInTable="IRMAR_CURRENCYRATEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMAR_ASSIGELABORCOST" msdata:Caption="RMAR_ASSIGELABORCOST" msprop:Generator_UserColumnName="IRMAR_ASSIGELABORCOST" msprop:Generator_ColumnPropNameInRow="IRMAR_ASSIGELABORCOST" msprop:Generator_ColumnVarNameInTable="columnIRMAR_ASSIGELABORCOST" msprop:Generator_ColumnPropNameInTable="IRMAR_ASSIGELABORCOSTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMAR_ASSIGEMATERIALCOST" msdata:Caption="RMAR_ASSIGEMATERIALCOST" msprop:Generator_UserColumnName="IRMAR_ASSIGEMATERIALCOST" msprop:Generator_ColumnPropNameInRow="IRMAR_ASSIGEMATERIALCOST" msprop:Generator_ColumnVarNameInTable="columnIRMAR_ASSIGEMATERIALCOST" msprop:Generator_ColumnPropNameInTable="IRMAR_ASSIGEMATERIALCOSTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMAR_ASSIGEQUOTE" msdata:Caption="RMAR_ASSIGEQUOTE" msprop:Generator_UserColumnName="IRMAR_ASSIGEQUOTE" msprop:Generator_ColumnPropNameInRow="IRMAR_ASSIGEQUOTE" msprop:Generator_ColumnVarNameInTable="columnIRMAR_ASSIGEQUOTE" msprop:Generator_ColumnPropNameInTable="IRMAR_ASSIGEQUOTEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMAR_ASSIGECURRENCYCODE" msdata:Caption="RMAR_ASSIGECURRENCYCODE" msprop:Generator_UserColumnName="IRMAR_ASSIGECURRENCYCODE" msprop:Generator_ColumnPropNameInRow="IRMAR_ASSIGECURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnIRMAR_ASSIGECURRENCYCODE" msprop:Generator_ColumnPropNameInTable="IRMAR_ASSIGECURRENCYCODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_ASSIGECURRENCYRATE" msdata:Caption="RMAR_ASSIGECURRENCYRATE" msprop:Generator_UserColumnName="IRMAR_ASSIGECURRENCYRATE" msprop:Generator_ColumnPropNameInRow="IRMAR_ASSIGECURRENCYRATE" msprop:Generator_ColumnVarNameInTable="columnIRMAR_ASSIGECURRENCYRATE" msprop:Generator_ColumnPropNameInTable="IRMAR_ASSIGECURRENCYRATEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMAR_REPAIR_ISFILL" msdata:Caption="RMAR_REPAIR_ISFILL" msprop:Generator_UserColumnName="IRMAR_REPAIR_ISFILL" msprop:Generator_ColumnPropNameInRow="IRMAR_REPAIR_ISFILL" msprop:Generator_ColumnVarNameInTable="columnIRMAR_REPAIR_ISFILL" msprop:Generator_ColumnPropNameInTable="IRMAR_REPAIR_ISFILLColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IRMAR_REPAIRAD" msdata:Caption="RMAR_REPAIRAD" msprop:Generator_UserColumnName="IRMAR_REPAIRAD" msprop:Generator_ColumnPropNameInRow="IRMAR_REPAIRAD" msprop:Generator_ColumnVarNameInTable="columnIRMAR_REPAIRAD" msprop:Generator_ColumnPropNameInTable="IRMAR_REPAIRADColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_REPAIRADNAME" msdata:Caption="RMAR_REPAIRADNAME" msprop:Generator_UserColumnName="IRMAR_REPAIRADNAME" msprop:Generator_ColumnPropNameInRow="IRMAR_REPAIRADNAME" msprop:Generator_ColumnVarNameInTable="columnIRMAR_REPAIRADNAME" msprop:Generator_ColumnPropNameInTable="IRMAR_REPAIRADNAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_REPAIRDATE" msdata:Caption="RMAR_REPAIRDATE" msprop:Generator_UserColumnName="IRMAR_REPAIRDATE" msprop:Generator_ColumnPropNameInRow="IRMAR_REPAIRDATE" msprop:Generator_ColumnVarNameInTable="columnIRMAR_REPAIRDATE" msprop:Generator_ColumnPropNameInTable="IRMAR_REPAIRDATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IRMAR_AD" msdata:Caption="RMAR_AD" msprop:Generator_UserColumnName="IRMAR_AD" msprop:Generator_ColumnPropNameInRow="IRMAR_AD" msprop:Generator_ColumnVarNameInTable="columnIRMAR_AD" msprop:Generator_ColumnPropNameInTable="IRMAR_ADColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_ADNAME" msdata:Caption="RMAR_ADNAME" msprop:Generator_UserColumnName="IRMAR_ADNAME" msprop:Generator_ColumnPropNameInRow="IRMAR_ADNAME" msprop:Generator_ColumnVarNameInTable="columnIRMAR_ADNAME" msprop:Generator_ColumnPropNameInTable="IRMAR_ADNAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_CSTMP" msdata:Caption="RMAR_CSTMP" msprop:Generator_UserColumnName="IRMAR_CSTMP" msprop:Generator_ColumnPropNameInRow="IRMAR_CSTMP" msprop:Generator_ColumnVarNameInTable="columnIRMAR_CSTMP" msprop:Generator_ColumnPropNameInTable="IRMAR_CSTMPColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IRMAR_LUAD" msdata:Caption="RMAR_LUAD" msprop:Generator_UserColumnName="IRMAR_LUAD" msprop:Generator_ColumnPropNameInRow="IRMAR_LUAD" msprop:Generator_ColumnVarNameInTable="columnIRMAR_LUAD" msprop:Generator_ColumnPropNameInTable="IRMAR_LUADColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_LUADNAME" msdata:Caption="RMAR_LUADNAME" msprop:Generator_UserColumnName="IRMAR_LUADNAME" msprop:Generator_ColumnPropNameInRow="IRMAR_LUADNAME" msprop:Generator_ColumnVarNameInTable="columnIRMAR_LUADNAME" msprop:Generator_ColumnPropNameInTable="IRMAR_LUADNAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IRMAR_LUSTMP" msdata:Caption="RMAR_LUSTMP" msprop:Generator_UserColumnName="IRMAR_LUSTMP" msprop:Generator_ColumnPropNameInRow="IRMAR_LUSTMP" msprop:Generator_ColumnVarNameInTable="columnIRMAR_LUSTMP" msprop:Generator_ColumnPropNameInTable="IRMAR_LUSTMPColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:IRMARepair_Detail" />
+      <xs:field xpath="mstns:IRMARED_ID" />
+    </xs:unique>
+    <xs:unique name="IRMARepair_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:IRMARepair" />
+      <xs:field xpath="mstns:IRMAR_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

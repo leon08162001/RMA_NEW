@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ChargeQuotedDTO" targetNamespace="http://tempuri.org/ChargeQuotedDTO.xsd" xmlns:mstns="http://tempuri.org/ChargeQuotedDTO.xsd" xmlns="http://tempuri.org/ChargeQuotedDTO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString3" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString3 (MySettings)" PropertyReference="ApplicationSettings.DataService.My.MySettings.GlobalReference.Default.ConnectionString3" Provider="System.Data.OracleClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ChargeQuotedDTO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ChargeQuotedDTO" msprop:Generator_DataSetName="ChargeQuotedDTO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vwChargeQuotedList" msprop:Generator_UserTableName="vwChargeQuotedList" msprop:Generator_RowDeletedName="vwChargeQuotedListRowDeleted" msprop:Generator_RowChangedName="vwChargeQuotedListRowChanged" msprop:Generator_RowClassName="vwChargeQuotedListRow" msprop:Generator_RowChangingName="vwChargeQuotedListRowChanging" msprop:Generator_RowEvArgName="vwChargeQuotedListRowChangeEvent" msprop:Generator_RowEvHandlerName="vwChargeQuotedListRowChangeEventHandler" msprop:Generator_TableClassName="vwChargeQuotedListDataTable" msprop:Generator_TableVarName="tablevwChargeQuotedList" msprop:Generator_RowDeletingName="vwChargeQuotedListRowDeleting" msprop:Generator_TablePropName="vwChargeQuotedList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RMA_ID" msprop:Generator_UserColumnName="RMA_ID" msprop:Generator_ColumnPropNameInRow="RMA_ID" msprop:Generator_ColumnVarNameInTable="columnRMA_ID" msprop:Generator_ColumnPropNameInTable="RMA_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMA_NO" msprop:Generator_UserColumnName="RMA_NO" msprop:Generator_ColumnPropNameInRow="RMA_NO" msprop:Generator_ColumnVarNameInTable="columnRMA_NO" msprop:Generator_ColumnPropNameInTable="RMA_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMA_STATUS" msprop:Generator_UserColumnName="RMA_STATUS" msprop:Generator_ColumnPropNameInRow="RMA_STATUS" msprop:Generator_ColumnVarNameInTable="columnRMA_STATUS" msprop:Generator_ColumnPropNameInTable="RMA_STATUSColumn" type="xs:decimal" />
+              <xs:element name="RMA_CSTMP" msprop:Generator_UserColumnName="RMA_CSTMP" msprop:Generator_ColumnPropNameInRow="RMA_CSTMP" msprop:Generator_ColumnVarNameInTable="columnRMA_CSTMP" msprop:Generator_ColumnPropNameInTable="RMA_CSTMPColumn" type="xs:dateTime" />
+              <xs:element name="RMA_APPLICANT" msprop:Generator_UserColumnName="RMA_APPLICANT" msprop:Generator_ColumnPropNameInRow="RMA_APPLICANT" msprop:Generator_ColumnVarNameInTable="columnRMA_APPLICANT" msprop:Generator_ColumnPropNameInTable="RMA_APPLICANTColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QTY" msprop:Generator_UserColumnName="QTY" msprop:Generator_ColumnPropNameInRow="QTY" msprop:Generator_ColumnVarNameInTable="columnQTY" msprop:Generator_ColumnPropNameInTable="QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMASQ_QUOTE" msprop:Generator_UserColumnName="RMASQ_QUOTE" msprop:Generator_ColumnPropNameInRow="RMASQ_QUOTE" msprop:Generator_ColumnVarNameInTable="columnRMASQ_QUOTE" msprop:Generator_ColumnPropNameInTable="RMASQ_QUOTEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMASQ_CURRENCYCODE" msprop:Generator_UserColumnName="RMASQ_CURRENCYCODE" msprop:Generator_ColumnPropNameInRow="RMASQ_CURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnRMASQ_CURRENCYCODE" msprop:Generator_ColumnPropNameInTable="RMASQ_CURRENCYCODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQ_CURRENCYCODE" msprop:Generator_UserColumnName="RMACQ_CURRENCYCODE" msprop:Generator_ColumnPropNameInRow="RMACQ_CURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CURRENCYCODE" msprop:Generator_ColumnPropNameInTable="RMACQ_CURRENCYCODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQ_SALEQUOTE" msprop:Generator_UserColumnName="RMACQ_SALEQUOTE" msprop:Generator_ColumnPropNameInRow="RMACQ_SALEQUOTE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_SALEQUOTE" msprop:Generator_ColumnPropNameInTable="RMACQ_SALEQUOTEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_DISCOUNT" msprop:Generator_UserColumnName="RMACQ_DISCOUNT" msprop:Generator_ColumnPropNameInRow="RMACQ_DISCOUNT" msprop:Generator_ColumnVarNameInTable="columnRMACQ_DISCOUNT" msprop:Generator_ColumnPropNameInTable="RMACQ_DISCOUNTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_CHARGEQUOTE" msprop:Generator_UserColumnName="RMACQ_CHARGEQUOTE" msprop:Generator_ColumnPropNameInRow="RMACQ_CHARGEQUOTE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CHARGEQUOTE" msprop:Generator_ColumnPropNameInTable="RMACQ_CHARGEQUOTEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_CURRENCYRATE" msprop:Generator_UserColumnName="RMACQ_CURRENCYRATE" msprop:Generator_ColumnPropNameInRow="RMACQ_CURRENCYRATE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CURRENCYRATE" msprop:Generator_ColumnPropNameInTable="RMACQ_CURRENCYRATEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_CURRENCYCODE_ORIGINAL" msprop:Generator_UserColumnName="RMACQ_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQ_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQ_CURRENCYCODE_ORIGINALColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQ_QUOTE_ORIGINAL" msprop:Generator_UserColumnName="RMACQ_QUOTE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQ_QUOTE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQ_QUOTE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQ_QUOTE_ORIGINALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_APPROVAL" msprop:Generator_UserColumnName="RMACQ_APPROVAL" msprop:Generator_ColumnPropNameInRow="RMACQ_APPROVAL" msprop:Generator_ColumnVarNameInTable="columnRMACQ_APPROVAL" msprop:Generator_ColumnPropNameInTable="RMACQ_APPROVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_APPROVALDATE" msprop:Generator_UserColumnName="RMACQ_APPROVALDATE" msprop:Generator_ColumnPropNameInRow="RMACQ_APPROVALDATE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_APPROVALDATE" msprop:Generator_ColumnPropNameInTable="RMACQ_APPROVALDATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CU_NAME" msprop:Generator_UserColumnName="CU_NAME" msprop:Generator_ColumnPropNameInRow="CU_NAME" msprop:Generator_ColumnVarNameInTable="columnCU_NAME" msprop:Generator_ColumnPropNameInTable="CU_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RMACHARGE_QUOTED" msprop:Generator_UserTableName="RMACHARGE_QUOTED" msprop:Generator_RowDeletedName="RMACHARGE_QUOTEDRowDeleted" msprop:Generator_RowChangedName="RMACHARGE_QUOTEDRowChanged" msprop:Generator_RowClassName="RMACHARGE_QUOTEDRow" msprop:Generator_RowChangingName="RMACHARGE_QUOTEDRowChanging" msprop:Generator_RowEvArgName="RMACHARGE_QUOTEDRowChangeEvent" msprop:Generator_RowEvHandlerName="RMACHARGE_QUOTEDRowChangeEventHandler" msprop:Generator_TableClassName="RMACHARGE_QUOTEDDataTable" msprop:Generator_TableVarName="tableRMACHARGE_QUOTED" msprop:Generator_RowDeletingName="RMACHARGE_QUOTEDRowDeleting" msprop:Generator_TablePropName="RMACHARGE_QUOTED">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RMACQ_ID" msprop:Generator_UserColumnName="RMACQ_ID" msprop:Generator_ColumnVarNameInTable="columnRMACQ_ID" msprop:Generator_ColumnPropNameInRow="RMACQ_ID" msprop:Generator_ColumnPropNameInTable="RMACQ_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQ_RMANO" msprop:Generator_UserColumnName="RMACQ_RMANO" msprop:Generator_ColumnVarNameInTable="columnRMACQ_RMANO" msprop:Generator_ColumnPropNameInRow="RMACQ_RMANO" msprop:Generator_ColumnPropNameInTable="RMACQ_RMANOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQ_CHARGEDATE" msprop:Generator_UserColumnName="RMACQ_CHARGEDATE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CHARGEDATE" msprop:Generator_ColumnPropNameInRow="RMACQ_CHARGEDATE" msprop:Generator_ColumnPropNameInTable="RMACQ_CHARGEDATEColumn" type="xs:dateTime" />
+              <xs:element name="RMACQ_SALEQUOTE" msprop:Generator_UserColumnName="RMACQ_SALEQUOTE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_SALEQUOTE" msprop:Generator_ColumnPropNameInRow="RMACQ_SALEQUOTE" msprop:Generator_ColumnPropNameInTable="RMACQ_SALEQUOTEColumn" type="xs:decimal" />
+              <xs:element name="RMACQ_DISCOUNT" msprop:Generator_UserColumnName="RMACQ_DISCOUNT" msprop:Generator_ColumnVarNameInTable="columnRMACQ_DISCOUNT" msprop:Generator_ColumnPropNameInRow="RMACQ_DISCOUNT" msprop:Generator_ColumnPropNameInTable="RMACQ_DISCOUNTColumn" type="xs:decimal" />
+              <xs:element name="RMACQ_CHARGEQUOTE" msprop:Generator_UserColumnName="RMACQ_CHARGEQUOTE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CHARGEQUOTE" msprop:Generator_ColumnPropNameInRow="RMACQ_CHARGEQUOTE" msprop:Generator_ColumnPropNameInTable="RMACQ_CHARGEQUOTEColumn" type="xs:decimal" />
+              <xs:element name="RMACQ_CURRENCYCODE" msprop:Generator_UserColumnName="RMACQ_CURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CURRENCYCODE" msprop:Generator_ColumnPropNameInRow="RMACQ_CURRENCYCODE" msprop:Generator_ColumnPropNameInTable="RMACQ_CURRENCYCODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQ_CURRENCYRATE" msprop:Generator_UserColumnName="RMACQ_CURRENCYRATE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CURRENCYRATE" msprop:Generator_ColumnPropNameInRow="RMACQ_CURRENCYRATE" msprop:Generator_ColumnPropNameInTable="RMACQ_CURRENCYRATEColumn" type="xs:decimal" />
+              <xs:element name="RMACQ_QUOTE_ORIGINAL" msprop:Generator_UserColumnName="RMACQ_QUOTE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQ_QUOTE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQ_QUOTE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQ_QUOTE_ORIGINALColumn" type="xs:decimal" />
+              <xs:element name="RMACQ_CURRENCYCODE_ORIGINAL" msprop:Generator_UserColumnName="RMACQ_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQ_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQ_CURRENCYCODE_ORIGINALColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQ_CURRENCYRATE_ORIGINAL" msprop:Generator_UserColumnName="RMACQ_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQ_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQ_CURRENCYRATE_ORIGINALColumn" type="xs:decimal" />
+              <xs:element name="RMACQ_APPROVAL" msprop:Generator_UserColumnName="RMACQ_APPROVAL" msprop:Generator_ColumnVarNameInTable="columnRMACQ_APPROVAL" msprop:Generator_ColumnPropNameInRow="RMACQ_APPROVAL" msprop:Generator_ColumnPropNameInTable="RMACQ_APPROVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_APPROVALDATE" msprop:Generator_UserColumnName="RMACQ_APPROVALDATE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_APPROVALDATE" msprop:Generator_ColumnPropNameInRow="RMACQ_APPROVALDATE" msprop:Generator_ColumnPropNameInTable="RMACQ_APPROVALDATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RMACQ_AD" msprop:Generator_UserColumnName="RMACQ_AD" msprop:Generator_ColumnVarNameInTable="columnRMACQ_AD" msprop:Generator_ColumnPropNameInRow="RMACQ_AD" msprop:Generator_ColumnPropNameInTable="RMACQ_ADColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQ_ADNAME" msprop:Generator_UserColumnName="RMACQ_ADNAME" msprop:Generator_ColumnVarNameInTable="columnRMACQ_ADNAME" msprop:Generator_ColumnPropNameInRow="RMACQ_ADNAME" msprop:Generator_ColumnPropNameInTable="RMACQ_ADNAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQ_CSTMP" msprop:Generator_UserColumnName="RMACQ_CSTMP" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CSTMP" msprop:Generator_ColumnPropNameInRow="RMACQ_CSTMP" msprop:Generator_ColumnPropNameInTable="RMACQ_CSTMPColumn" type="xs:dateTime" />
+              <xs:element name="RMACQ_LUAD" msprop:Generator_UserColumnName="RMACQ_LUAD" msprop:Generator_ColumnVarNameInTable="columnRMACQ_LUAD" msprop:Generator_ColumnPropNameInRow="RMACQ_LUAD" msprop:Generator_ColumnPropNameInTable="RMACQ_LUADColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQ_LUADNAME" msprop:Generator_UserColumnName="RMACQ_LUADNAME" msprop:Generator_ColumnVarNameInTable="columnRMACQ_LUADNAME" msprop:Generator_ColumnPropNameInRow="RMACQ_LUADNAME" msprop:Generator_ColumnPropNameInTable="RMACQ_LUADNAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQ_LUSTMP" msprop:Generator_UserColumnName="RMACQ_LUSTMP" msprop:Generator_ColumnVarNameInTable="columnRMACQ_LUSTMP" msprop:Generator_ColumnPropNameInRow="RMACQ_LUSTMP" msprop:Generator_ColumnPropNameInTable="RMACQ_LUSTMPColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vwChargeQuotedHead" msprop:Generator_UserTableName="vwChargeQuotedHead" msprop:Generator_RowDeletedName="vwChargeQuotedHeadRowDeleted" msprop:Generator_RowChangedName="vwChargeQuotedHeadRowChanged" msprop:Generator_RowClassName="vwChargeQuotedHeadRow" msprop:Generator_RowChangingName="vwChargeQuotedHeadRowChanging" msprop:Generator_RowEvArgName="vwChargeQuotedHeadRowChangeEvent" msprop:Generator_RowEvHandlerName="vwChargeQuotedHeadRowChangeEventHandler" msprop:Generator_TableClassName="vwChargeQuotedHeadDataTable" msprop:Generator_TableVarName="tablevwChargeQuotedHead" msprop:Generator_RowDeletingName="vwChargeQuotedHeadRowDeleting" msprop:Generator_TablePropName="vwChargeQuotedHead">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RMA_NO" msprop:Generator_UserColumnName="RMA_NO" msprop:Generator_ColumnPropNameInRow="RMA_NO" msprop:Generator_ColumnVarNameInTable="columnRMA_NO" msprop:Generator_ColumnPropNameInTable="RMA_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMA_ID" msprop:Generator_UserColumnName="RMA_ID" msprop:Generator_ColumnPropNameInRow="RMA_ID" msprop:Generator_ColumnVarNameInTable="columnRMA_ID" msprop:Generator_ColumnPropNameInTable="RMA_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMA_STATUS" msprop:Generator_UserColumnName="RMA_STATUS" msprop:Generator_ColumnPropNameInRow="RMA_STATUS" msprop:Generator_ColumnVarNameInTable="columnRMA_STATUS" msprop:Generator_ColumnPropNameInTable="RMA_STATUSColumn" type="xs:decimal" />
+              <xs:element name="RMA_CSTMP" msprop:Generator_UserColumnName="RMA_CSTMP" msprop:Generator_ColumnPropNameInRow="RMA_CSTMP" msprop:Generator_ColumnVarNameInTable="columnRMA_CSTMP" msprop:Generator_ColumnPropNameInTable="RMA_CSTMPColumn" type="xs:dateTime" />
+              <xs:element name="RMA_REMARK" msprop:Generator_UserColumnName="RMA_REMARK" msprop:Generator_ColumnPropNameInRow="RMA_REMARK" msprop:Generator_ColumnVarNameInTable="columnRMA_REMARK" msprop:Generator_ColumnPropNameInTable="RMA_REMARKColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CU_NO" msprop:Generator_UserColumnName="CU_NO" msprop:Generator_ColumnPropNameInRow="CU_NO" msprop:Generator_ColumnVarNameInTable="columnCU_NO" msprop:Generator_ColumnPropNameInTable="CU_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CU_NAME" msprop:Generator_UserColumnName="CU_NAME" msprop:Generator_ColumnPropNameInRow="CU_NAME" msprop:Generator_ColumnVarNameInTable="columnCU_NAME" msprop:Generator_ColumnPropNameInTable="CU_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CUUS_ACCOUNTID" msprop:Generator_UserColumnName="CUUS_ACCOUNTID" msprop:Generator_ColumnPropNameInRow="CUUS_ACCOUNTID" msprop:Generator_ColumnVarNameInTable="columnCUUS_ACCOUNTID" msprop:Generator_ColumnPropNameInTable="CUUS_ACCOUNTIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMA_APPLICANT" msprop:Generator_UserColumnName="RMA_APPLICANT" msprop:Generator_ColumnPropNameInRow="RMA_APPLICANT" msprop:Generator_ColumnVarNameInTable="columnRMA_APPLICANT" msprop:Generator_ColumnPropNameInTable="RMA_APPLICANTColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMP_NO" msprop:Generator_UserColumnName="COMP_NO" msprop:Generator_ColumnPropNameInRow="COMP_NO" msprop:Generator_ColumnVarNameInTable="columnCOMP_NO" msprop:Generator_ColumnPropNameInTable="COMP_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMP_NAME" msprop:Generator_UserColumnName="COMP_NAME" msprop:Generator_ColumnPropNameInRow="COMP_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMP_NAME" msprop:Generator_ColumnPropNameInTable="COMP_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMASQ_CURRENCYCODE" msprop:Generator_UserColumnName="RMASQ_CURRENCYCODE" msprop:Generator_ColumnPropNameInRow="RMASQ_CURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnRMASQ_CURRENCYCODE" msprop:Generator_ColumnPropNameInTable="RMASQ_CURRENCYCODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMASQ_QUOTE" msprop:Generator_UserColumnName="RMASQ_QUOTE" msprop:Generator_ColumnPropNameInRow="RMASQ_QUOTE" msprop:Generator_ColumnVarNameInTable="columnRMASQ_QUOTE" msprop:Generator_ColumnPropNameInTable="RMASQ_QUOTEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMASQ_CURRENCYRATE" msprop:Generator_UserColumnName="RMASQ_CURRENCYRATE" msprop:Generator_ColumnPropNameInRow="RMASQ_CURRENCYRATE" msprop:Generator_ColumnVarNameInTable="columnRMASQ_CURRENCYRATE" msprop:Generator_ColumnPropNameInTable="RMASQ_CURRENCYRATEColumn" type="xs:decimal" />
+              <xs:element name="RMASQ_SALEAD" msprop:Generator_UserColumnName="RMASQ_SALEAD" msprop:Generator_ColumnPropNameInRow="RMASQ_SALEAD" msprop:Generator_ColumnVarNameInTable="columnRMASQ_SALEAD" msprop:Generator_ColumnPropNameInTable="RMASQ_SALEADColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMASQ_SALEADNAME" msprop:Generator_UserColumnName="RMASQ_SALEADNAME" msprop:Generator_ColumnPropNameInRow="RMASQ_SALEADNAME" msprop:Generator_ColumnVarNameInTable="columnRMASQ_SALEADNAME" msprop:Generator_ColumnPropNameInTable="RMASQ_SALEADNAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQ_CURRENCYCODE" msprop:Generator_UserColumnName="RMACQ_CURRENCYCODE" msprop:Generator_ColumnPropNameInRow="RMACQ_CURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CURRENCYCODE" msprop:Generator_ColumnPropNameInTable="RMACQ_CURRENCYCODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQ_SALEQUOTE" msprop:Generator_UserColumnName="RMACQ_SALEQUOTE" msprop:Generator_ColumnPropNameInRow="RMACQ_SALEQUOTE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_SALEQUOTE" msprop:Generator_ColumnPropNameInTable="RMACQ_SALEQUOTEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_DISCOUNT" msprop:Generator_UserColumnName="RMACQ_DISCOUNT" msprop:Generator_ColumnPropNameInRow="RMACQ_DISCOUNT" msprop:Generator_ColumnVarNameInTable="columnRMACQ_DISCOUNT" msprop:Generator_ColumnPropNameInTable="RMACQ_DISCOUNTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_CHARGEQUOTE" msprop:Generator_UserColumnName="RMACQ_CHARGEQUOTE" msprop:Generator_ColumnPropNameInRow="RMACQ_CHARGEQUOTE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CHARGEQUOTE" msprop:Generator_ColumnPropNameInTable="RMACQ_CHARGEQUOTEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_CURRENCYRATE" msprop:Generator_UserColumnName="RMACQ_CURRENCYRATE" msprop:Generator_ColumnPropNameInRow="RMACQ_CURRENCYRATE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CURRENCYRATE" msprop:Generator_ColumnPropNameInTable="RMACQ_CURRENCYRATEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_CURRENCYCODE_ORIGINAL" msprop:Generator_UserColumnName="RMACQ_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQ_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQ_CURRENCYCODE_ORIGINALColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQ_QUOTE_ORIGINAL" msprop:Generator_UserColumnName="RMACQ_QUOTE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQ_QUOTE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQ_QUOTE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQ_QUOTE_ORIGINALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_CURRENCYRATE_ORIGINAL" msprop:Generator_UserColumnName="RMACQ_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQ_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQ_CURRENCYRATE_ORIGINALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_APPROVAL" msprop:Generator_UserColumnName="RMACQ_APPROVAL" msprop:Generator_ColumnPropNameInRow="RMACQ_APPROVAL" msprop:Generator_ColumnVarNameInTable="columnRMACQ_APPROVAL" msprop:Generator_ColumnPropNameInTable="RMACQ_APPROVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_APPROVALDATE" msprop:Generator_UserColumnName="RMACQ_APPROVALDATE" msprop:Generator_ColumnPropNameInRow="RMACQ_APPROVALDATE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_APPROVALDATE" msprop:Generator_ColumnPropNameInTable="RMACQ_APPROVALDATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CU_TIPTOP_ID" msprop:Generator_UserColumnName="CU_TIPTOP_ID" msprop:Generator_ColumnPropNameInRow="CU_TIPTOP_ID" msprop:Generator_ColumnVarNameInTable="columnCU_TIPTOP_ID" msprop:Generator_ColumnPropNameInTable="CU_TIPTOP_IDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RMACHARGE_QUOTED_SN" msprop:Generator_UserTableName="RMACHARGE_QUOTED_SN" msprop:Generator_RowDeletedName="RMACHARGE_QUOTED_SNRowDeleted" msprop:Generator_RowChangedName="RMACHARGE_QUOTED_SNRowChanged" msprop:Generator_RowClassName="RMACHARGE_QUOTED_SNRow" msprop:Generator_RowChangingName="RMACHARGE_QUOTED_SNRowChanging" msprop:Generator_RowEvArgName="RMACHARGE_QUOTED_SNRowChangeEvent" msprop:Generator_RowEvHandlerName="RMACHARGE_QUOTED_SNRowChangeEventHandler" msprop:Generator_TableClassName="RMACHARGE_QUOTED_SNDataTable" msprop:Generator_TableVarName="tableRMACHARGE_QUOTED_SN" msprop:Generator_RowDeletingName="RMACHARGE_QUOTED_SNRowDeleting" msprop:Generator_TablePropName="RMACHARGE_QUOTED_SN">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RMACQSN_ID" msprop:Generator_UserColumnName="RMACQSN_ID" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_ID" msprop:Generator_ColumnPropNameInRow="RMACQSN_ID" msprop:Generator_ColumnPropNameInTable="RMACQSN_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQSN_RMADID" msprop:Generator_UserColumnName="RMACQSN_RMADID" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_RMADID" msprop:Generator_ColumnPropNameInRow="RMACQSN_RMADID" msprop:Generator_ColumnPropNameInTable="RMACQSN_RMADIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQSN_LABORCOST" msprop:Generator_UserColumnName="RMACQSN_LABORCOST" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_LABORCOST" msprop:Generator_ColumnPropNameInRow="RMACQSN_LABORCOST" msprop:Generator_ColumnPropNameInTable="RMACQSN_LABORCOSTColumn" type="xs:decimal" />
+              <xs:element name="RMACQSN_MATERIALCOST" msprop:Generator_UserColumnName="RMACQSN_MATERIALCOST" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_MATERIALCOST" msprop:Generator_ColumnPropNameInRow="RMACQSN_MATERIALCOST" msprop:Generator_ColumnPropNameInTable="RMACQSN_MATERIALCOSTColumn" type="xs:decimal" />
+              <xs:element name="RMACQSN_QUOTE" msprop:Generator_UserColumnName="RMACQSN_QUOTE" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_QUOTE" msprop:Generator_ColumnPropNameInRow="RMACQSN_QUOTE" msprop:Generator_ColumnPropNameInTable="RMACQSN_QUOTEColumn" type="xs:decimal" />
+              <xs:element name="RMACQSN_DISCOUNTAMOUNT" msprop:Generator_UserColumnName="RMACQSN_DISCOUNTAMOUNT" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_DISCOUNTAMOUNT" msprop:Generator_ColumnPropNameInRow="RMACQSN_DISCOUNTAMOUNT" msprop:Generator_ColumnPropNameInTable="RMACQSN_DISCOUNTAMOUNTColumn" type="xs:decimal" />
+              <xs:element name="RMACQSN_CURRENCYCODE" msprop:Generator_UserColumnName="RMACQSN_CURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_CURRENCYCODE" msprop:Generator_ColumnPropNameInRow="RMACQSN_CURRENCYCODE" msprop:Generator_ColumnPropNameInTable="RMACQSN_CURRENCYCODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQSN_CURRENCYRATE" msprop:Generator_UserColumnName="RMACQSN_CURRENCYRATE" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_CURRENCYRATE" msprop:Generator_ColumnPropNameInRow="RMACQSN_CURRENCYRATE" msprop:Generator_ColumnPropNameInTable="RMACQSN_CURRENCYRATEColumn" type="xs:decimal" />
+              <xs:element name="RMACQSN_LABORCOST_ORIGINAL" msprop:Generator_UserColumnName="RMACQSN_LABORCOST_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_LABORCOST_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQSN_LABORCOST_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQSN_LABORCOST_ORIGINALColumn" type="xs:decimal" />
+              <xs:element name="RMACQSN_MATERIALCOST_ORIGINAL" msprop:Generator_UserColumnName="RMACQSN_MATERIALCOST_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_MATERIALCOST_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQSN_MATERIALCOST_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQSN_MATERIALCOST_ORIGINALColumn" type="xs:decimal" />
+              <xs:element name="RMACQSN_QUOTE_ORIGINAL" msprop:Generator_UserColumnName="RMACQSN_QUOTE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_QUOTE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQSN_QUOTE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQSN_QUOTE_ORIGINALColumn" type="xs:decimal" />
+              <xs:element name="RMACQSN_CURRENCYCODE_ORIGINAL" msprop:Generator_UserColumnName="RMACQSN_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQSN_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQSN_CURRENCYCODE_ORIGINALColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQSN_CURRENCYRATE_ORIGINAL" msprop:Generator_UserColumnName="RMACQSN_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQSN_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQSN_CURRENCYRATE_ORIGINALColumn" type="xs:decimal" />
+              <xs:element name="RMACQSN_AD" msprop:Generator_UserColumnName="RMACQSN_AD" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_AD" msprop:Generator_ColumnPropNameInRow="RMACQSN_AD" msprop:Generator_ColumnPropNameInTable="RMACQSN_ADColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQSN_ADNAME" msprop:Generator_UserColumnName="RMACQSN_ADNAME" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_ADNAME" msprop:Generator_ColumnPropNameInRow="RMACQSN_ADNAME" msprop:Generator_ColumnPropNameInTable="RMACQSN_ADNAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQSN_CSTMP" msprop:Generator_UserColumnName="RMACQSN_CSTMP" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_CSTMP" msprop:Generator_ColumnPropNameInRow="RMACQSN_CSTMP" msprop:Generator_ColumnPropNameInTable="RMACQSN_CSTMPColumn" type="xs:dateTime" />
+              <xs:element name="RMACQSN_LUAD" msprop:Generator_UserColumnName="RMACQSN_LUAD" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_LUAD" msprop:Generator_ColumnPropNameInRow="RMACQSN_LUAD" msprop:Generator_ColumnPropNameInTable="RMACQSN_LUADColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQSN_LUADNAME" msprop:Generator_UserColumnName="RMACQSN_LUADNAME" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_LUADNAME" msprop:Generator_ColumnPropNameInRow="RMACQSN_LUADNAME" msprop:Generator_ColumnPropNameInTable="RMACQSN_LUADNAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQSN_LUSTMP" msprop:Generator_UserColumnName="RMACQSN_LUSTMP" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_LUSTMP" msprop:Generator_ColumnPropNameInRow="RMACQSN_LUSTMP" msprop:Generator_ColumnPropNameInTable="RMACQSN_LUSTMPColumn" type="xs:dateTime" />
+              <xs:element name="Charge_MaterialCost" msprop:Generator_UserColumnName="Charge_MaterialCost" msprop:Generator_ColumnPropNameInRow="Charge_MaterialCost" msprop:Generator_ColumnVarNameInTable="columnCharge_MaterialCost" msprop:Generator_ColumnPropNameInTable="Charge_MaterialCostColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RMACHARGE_QUOTED_PART" msprop:Generator_UserTableName="RMACHARGE_QUOTED_PART" msprop:Generator_RowDeletedName="RMACHARGE_QUOTED_PARTRowDeleted" msprop:Generator_RowChangedName="RMACHARGE_QUOTED_PARTRowChanged" msprop:Generator_RowClassName="RMACHARGE_QUOTED_PARTRow" msprop:Generator_RowChangingName="RMACHARGE_QUOTED_PARTRowChanging" msprop:Generator_RowEvArgName="RMACHARGE_QUOTED_PARTRowChangeEvent" msprop:Generator_RowEvHandlerName="RMACHARGE_QUOTED_PARTRowChangeEventHandler" msprop:Generator_TableClassName="RMACHARGE_QUOTED_PARTDataTable" msprop:Generator_TableVarName="tableRMACHARGE_QUOTED_PART" msprop:Generator_RowDeletingName="RMACHARGE_QUOTED_PARTRowDeleting" msprop:Generator_TablePropName="RMACHARGE_QUOTED_PART">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RMACQPT_ID" msprop:Generator_UserColumnName="RMACQPT_ID" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_ID" msprop:Generator_ColumnPropNameInRow="RMACQPT_ID" msprop:Generator_ColumnPropNameInTable="RMACQPT_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQPT_RMARQD_ID" msprop:Generator_UserColumnName="RMACQPT_RMARQD_ID" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_RMARQD_ID" msprop:Generator_ColumnPropNameInRow="RMACQPT_RMARQD_ID" msprop:Generator_ColumnPropNameInTable="RMACQPT_RMARQD_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQPT_RMADID" msprop:Generator_UserColumnName="RMACQPT_RMADID" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_RMADID" msprop:Generator_ColumnPropNameInRow="RMACQPT_RMADID" msprop:Generator_ColumnPropNameInTable="RMACQPT_RMADIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQPT_QTY" msprop:Generator_UserColumnName="RMACQPT_QTY" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_QTY" msprop:Generator_ColumnPropNameInRow="RMACQPT_QTY" msprop:Generator_ColumnPropNameInTable="RMACQPT_QTYColumn" type="xs:decimal" />
+              <xs:element name="RMACQPT_MATERIALCOST" msprop:Generator_UserColumnName="RMACQPT_MATERIALCOST" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_MATERIALCOST" msprop:Generator_ColumnPropNameInRow="RMACQPT_MATERIALCOST" msprop:Generator_ColumnPropNameInTable="RMACQPT_MATERIALCOSTColumn" type="xs:decimal" />
+              <xs:element name="RMACQPT_PRICE" msprop:Generator_UserColumnName="RMACQPT_PRICE" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_PRICE" msprop:Generator_ColumnPropNameInRow="RMACQPT_PRICE" msprop:Generator_ColumnPropNameInTable="RMACQPT_PRICEColumn" type="xs:decimal" />
+              <xs:element name="RMACQPT_RECHARGE_PRICE" msprop:Generator_UserColumnName="RMACQPT_RECHARGE_PRICE" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_RECHARGE_PRICE" msprop:Generator_ColumnPropNameInRow="RMACQPT_RECHARGE_PRICE" msprop:Generator_ColumnPropNameInTable="RMACQPT_RECHARGE_PRICEColumn" type="xs:decimal" />
+              <xs:element name="RMACQPT_CURRENCYCODE" msprop:Generator_UserColumnName="RMACQPT_CURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_CURRENCYCODE" msprop:Generator_ColumnPropNameInRow="RMACQPT_CURRENCYCODE" msprop:Generator_ColumnPropNameInTable="RMACQPT_CURRENCYCODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQPT_CURRENCYRATE" msprop:Generator_UserColumnName="RMACQPT_CURRENCYRATE" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_CURRENCYRATE" msprop:Generator_ColumnPropNameInRow="RMACQPT_CURRENCYRATE" msprop:Generator_ColumnPropNameInTable="RMACQPT_CURRENCYRATEColumn" type="xs:decimal" />
+              <xs:element name="RMACQPT_QTY_ORIGINAL" msprop:Generator_UserColumnName="RMACQPT_QTY_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_QTY_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQPT_QTY_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQPT_QTY_ORIGINALColumn" type="xs:decimal" />
+              <xs:element name="RMACQPT_MATERIALCOST_ORIGINAL" msprop:Generator_UserColumnName="RMACQPT_MATERIALCOST_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_MATERIALCOST_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQPT_MATERIALCOST_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQPT_MATERIALCOST_ORIGINALColumn" type="xs:decimal" />
+              <xs:element name="RMACQPT_PRICE_ORIGINAL" msprop:Generator_UserColumnName="RMACQPT_PRICE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_PRICE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQPT_PRICE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQPT_PRICE_ORIGINALColumn" type="xs:decimal" />
+              <xs:element name="RMACQPT_CURRENCYCODE_ORIGINAL" msprop:Generator_UserColumnName="RMACQPT_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQPT_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQPT_CURRENCYCODE_ORIGINALColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQPT_CURRENCYRATE_ORIGINAL" msprop:Generator_UserColumnName="RMACQPT_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQPT_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQPT_CURRENCYRATE_ORIGINALColumn" type="xs:decimal" />
+              <xs:element name="RMACQPT_AD" msprop:Generator_UserColumnName="RMACQPT_AD" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_AD" msprop:Generator_ColumnPropNameInRow="RMACQPT_AD" msprop:Generator_ColumnPropNameInTable="RMACQPT_ADColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQPT_ADNAME" msprop:Generator_UserColumnName="RMACQPT_ADNAME" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_ADNAME" msprop:Generator_ColumnPropNameInRow="RMACQPT_ADNAME" msprop:Generator_ColumnPropNameInTable="RMACQPT_ADNAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQPT_CSTMP" msprop:Generator_UserColumnName="RMACQPT_CSTMP" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_CSTMP" msprop:Generator_ColumnPropNameInRow="RMACQPT_CSTMP" msprop:Generator_ColumnPropNameInTable="RMACQPT_CSTMPColumn" type="xs:dateTime" />
+              <xs:element name="RMACQPT_LUAD" msprop:Generator_UserColumnName="RMACQPT_LUAD" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_LUAD" msprop:Generator_ColumnPropNameInRow="RMACQPT_LUAD" msprop:Generator_ColumnPropNameInTable="RMACQPT_LUADColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQPT_LUADNAME" msprop:Generator_UserColumnName="RMACQPT_LUADNAME" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_LUADNAME" msprop:Generator_ColumnPropNameInRow="RMACQPT_LUADNAME" msprop:Generator_ColumnPropNameInTable="RMACQPT_LUADNAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQPT_LUSTMP" msprop:Generator_UserColumnName="RMACQPT_LUSTMP" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_LUSTMP" msprop:Generator_ColumnPropNameInRow="RMACQPT_LUSTMP" msprop:Generator_ColumnPropNameInTable="RMACQPT_LUSTMPColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vwChargeQuotedSN" msprop:Generator_UserTableName="vwChargeQuotedSN" msprop:Generator_RowDeletedName="vwChargeQuotedSNRowDeleted" msprop:Generator_RowChangedName="vwChargeQuotedSNRowChanged" msprop:Generator_RowClassName="vwChargeQuotedSNRow" msprop:Generator_RowChangingName="vwChargeQuotedSNRowChanging" msprop:Generator_RowEvArgName="vwChargeQuotedSNRowChangeEvent" msprop:Generator_RowEvHandlerName="vwChargeQuotedSNRowChangeEventHandler" msprop:Generator_TableClassName="vwChargeQuotedSNDataTable" msprop:Generator_TableVarName="tablevwChargeQuotedSN" msprop:Generator_RowDeletingName="vwChargeQuotedSNRowDeleting" msprop:Generator_TablePropName="vwChargeQuotedSN">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RMA_NO" msprop:Generator_UserColumnName="RMA_NO" msprop:Generator_ColumnPropNameInRow="RMA_NO" msprop:Generator_ColumnVarNameInTable="columnRMA_NO" msprop:Generator_ColumnPropNameInTable="RMA_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMA_ID" msprop:Generator_UserColumnName="RMA_ID" msprop:Generator_ColumnPropNameInRow="RMA_ID" msprop:Generator_ColumnVarNameInTable="columnRMA_ID" msprop:Generator_ColumnPropNameInTable="RMA_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMA_STATUS" msprop:Generator_UserColumnName="RMA_STATUS" msprop:Generator_ColumnPropNameInRow="RMA_STATUS" msprop:Generator_ColumnVarNameInTable="columnRMA_STATUS" msprop:Generator_ColumnPropNameInTable="RMA_STATUSColumn" type="xs:decimal" />
+              <xs:element name="RMA_CSTMP" msprop:Generator_UserColumnName="RMA_CSTMP" msprop:Generator_ColumnPropNameInRow="RMA_CSTMP" msprop:Generator_ColumnVarNameInTable="columnRMA_CSTMP" msprop:Generator_ColumnPropNameInTable="RMA_CSTMPColumn" type="xs:dateTime" />
+              <xs:element name="RMA_APPLICANT" msprop:Generator_UserColumnName="RMA_APPLICANT" msprop:Generator_ColumnPropNameInRow="RMA_APPLICANT" msprop:Generator_ColumnVarNameInTable="columnRMA_APPLICANT" msprop:Generator_ColumnPropNameInTable="RMA_APPLICANTColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMP_NO" msprop:Generator_UserColumnName="COMP_NO" msprop:Generator_ColumnPropNameInRow="COMP_NO" msprop:Generator_ColumnVarNameInTable="columnCOMP_NO" msprop:Generator_ColumnPropNameInTable="COMP_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMP_NAME" msprop:Generator_UserColumnName="COMP_NAME" msprop:Generator_ColumnPropNameInRow="COMP_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMP_NAME" msprop:Generator_ColumnPropNameInTable="COMP_NAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMAD_ID" msprop:Generator_UserColumnName="RMAD_ID" msprop:Generator_ColumnPropNameInRow="RMAD_ID" msprop:Generator_ColumnVarNameInTable="columnRMAD_ID" msprop:Generator_ColumnPropNameInTable="RMAD_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMAD_SERIALNO" msprop:Generator_UserColumnName="RMAD_SERIALNO" msprop:Generator_ColumnPropNameInRow="RMAD_SERIALNO" msprop:Generator_ColumnVarNameInTable="columnRMAD_SERIALNO" msprop:Generator_ColumnPropNameInTable="RMAD_SERIALNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMAD_MODELNO" msprop:Generator_UserColumnName="RMAD_MODELNO" msprop:Generator_ColumnPropNameInRow="RMAD_MODELNO" msprop:Generator_ColumnVarNameInTable="columnRMAD_MODELNO" msprop:Generator_ColumnPropNameInTable="RMAD_MODELNOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMAD_STATUS" msprop:Generator_UserColumnName="RMAD_STATUS" msprop:Generator_ColumnPropNameInRow="RMAD_STATUS" msprop:Generator_ColumnVarNameInTable="columnRMAD_STATUS" msprop:Generator_ColumnPropNameInTable="RMAD_STATUSColumn" type="xs:decimal" />
+              <xs:element name="RMAD_ISWARRANTY" msprop:Generator_UserColumnName="RMAD_ISWARRANTY" msprop:Generator_ColumnPropNameInRow="RMAD_ISWARRANTY" msprop:Generator_ColumnVarNameInTable="columnRMAD_ISWARRANTY" msprop:Generator_ColumnPropNameInTable="RMAD_ISWARRANTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMAD_WARRANTY" msprop:Generator_UserColumnName="RMAD_WARRANTY" msprop:Generator_ColumnPropNameInRow="RMAD_WARRANTY" msprop:Generator_ColumnVarNameInTable="columnRMAD_WARRANTY" msprop:Generator_ColumnPropNameInTable="RMAD_WARRANTYColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RMAD_CSTMP" msprop:Generator_UserColumnName="RMAD_CSTMP" msprop:Generator_ColumnPropNameInRow="RMAD_CSTMP" msprop:Generator_ColumnVarNameInTable="columnRMAD_CSTMP" msprop:Generator_ColumnPropNameInTable="RMAD_CSTMPColumn" type="xs:dateTime" />
+              <xs:element name="RMARQ_IMPROPERUSAGE" msprop:Generator_UserColumnName="RMARQ_IMPROPERUSAGE" msprop:Generator_ColumnPropNameInRow="RMARQ_IMPROPERUSAGE" msprop:Generator_ColumnVarNameInTable="columnRMARQ_IMPROPERUSAGE" msprop:Generator_ColumnPropNameInTable="RMARQ_IMPROPERUSAGEColumn" type="xs:decimal" />
+              <xs:element name="FARC_NAME1" msprop:Generator_UserColumnName="FARC_NAME1" msprop:Generator_ColumnPropNameInRow="FARC_NAME1" msprop:Generator_ColumnVarNameInTable="columnFARC_NAME1" msprop:Generator_ColumnPropNameInTable="FARC_NAME1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FARC_NAME2" msprop:Generator_UserColumnName="FARC_NAME2" msprop:Generator_ColumnPropNameInRow="FARC_NAME2" msprop:Generator_ColumnVarNameInTable="columnFARC_NAME2" msprop:Generator_ColumnPropNameInTable="FARC_NAME2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMASQ_LABORCOST" msprop:Generator_UserColumnName="RMASQ_LABORCOST" msprop:Generator_ColumnPropNameInRow="RMASQ_LABORCOST" msprop:Generator_ColumnVarNameInTable="columnRMASQ_LABORCOST" msprop:Generator_ColumnPropNameInTable="RMASQ_LABORCOSTColumn" type="xs:decimal" />
+              <xs:element name="RMASQ_MATERIALCOST" msprop:Generator_UserColumnName="RMASQ_MATERIALCOST" msprop:Generator_ColumnPropNameInRow="RMASQ_MATERIALCOST" msprop:Generator_ColumnVarNameInTable="columnRMASQ_MATERIALCOST" msprop:Generator_ColumnPropNameInTable="RMASQ_MATERIALCOSTColumn" type="xs:decimal" />
+              <xs:element name="RMASQ_QUOTE" msprop:Generator_UserColumnName="RMASQ_QUOTE" msprop:Generator_ColumnPropNameInRow="RMASQ_QUOTE" msprop:Generator_ColumnVarNameInTable="columnRMASQ_QUOTE" msprop:Generator_ColumnPropNameInTable="RMASQ_QUOTEColumn" type="xs:decimal" />
+              <xs:element name="RMASQ_CURRENCYCODE" msprop:Generator_UserColumnName="RMASQ_CURRENCYCODE" msprop:Generator_ColumnPropNameInRow="RMASQ_CURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnRMASQ_CURRENCYCODE" msprop:Generator_ColumnPropNameInTable="RMASQ_CURRENCYCODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMASQ_CURRENCYRATE" msprop:Generator_UserColumnName="RMASQ_CURRENCYRATE" msprop:Generator_ColumnPropNameInRow="RMASQ_CURRENCYRATE" msprop:Generator_ColumnVarNameInTable="columnRMASQ_CURRENCYRATE" msprop:Generator_ColumnPropNameInTable="RMASQ_CURRENCYRATEColumn" type="xs:decimal" />
+              <xs:element name="RMACQSN_LABORCOST" msprop:Generator_UserColumnName="RMACQSN_LABORCOST" msprop:Generator_ColumnPropNameInRow="RMACQSN_LABORCOST" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_LABORCOST" msprop:Generator_ColumnPropNameInTable="RMACQSN_LABORCOSTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQSN_MATERIALCOST" msprop:Generator_UserColumnName="RMACQSN_MATERIALCOST" msprop:Generator_ColumnPropNameInRow="RMACQSN_MATERIALCOST" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_MATERIALCOST" msprop:Generator_ColumnPropNameInTable="RMACQSN_MATERIALCOSTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQSN_QUOTE" msprop:Generator_UserColumnName="RMACQSN_QUOTE" msprop:Generator_ColumnPropNameInRow="RMACQSN_QUOTE" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_QUOTE" msprop:Generator_ColumnPropNameInTable="RMACQSN_QUOTEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQSN_DISCOUNTAMOUNT" msprop:Generator_UserColumnName="RMACQSN_DISCOUNTAMOUNT" msprop:Generator_ColumnPropNameInRow="RMACQSN_DISCOUNTAMOUNT" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_DISCOUNTAMOUNT" msprop:Generator_ColumnPropNameInTable="RMACQSN_DISCOUNTAMOUNTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQSN_CURRENCYCODE" msprop:Generator_UserColumnName="RMACQSN_CURRENCYCODE" msprop:Generator_ColumnPropNameInRow="RMACQSN_CURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_CURRENCYCODE" msprop:Generator_ColumnPropNameInTable="RMACQSN_CURRENCYCODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQSN_CURRENCYRATE" msprop:Generator_UserColumnName="RMACQSN_CURRENCYRATE" msprop:Generator_ColumnPropNameInRow="RMACQSN_CURRENCYRATE" msprop:Generator_ColumnVarNameInTable="columnRMACQSN_CURRENCYRATE" msprop:Generator_ColumnPropNameInTable="RMACQSN_CURRENCYRATEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_CHARGEDATE" msprop:Generator_UserColumnName="RMACQ_CHARGEDATE" msprop:Generator_ColumnPropNameInRow="RMACQ_CHARGEDATE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_CHARGEDATE" msprop:Generator_ColumnPropNameInTable="RMACQ_CHARGEDATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RMACQ_APPROVAL" msprop:Generator_UserColumnName="RMACQ_APPROVAL" msprop:Generator_ColumnPropNameInRow="RMACQ_APPROVAL" msprop:Generator_ColumnVarNameInTable="columnRMACQ_APPROVAL" msprop:Generator_ColumnPropNameInTable="RMACQ_APPROVALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQ_APPROVALDATE" msprop:Generator_UserColumnName="RMACQ_APPROVALDATE" msprop:Generator_ColumnPropNameInRow="RMACQ_APPROVALDATE" msprop:Generator_ColumnVarNameInTable="columnRMACQ_APPROVALDATE" msprop:Generator_ColumnPropNameInTable="RMACQ_APPROVALDATEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CU_TIPTOP_ID" msprop:Generator_UserColumnName="CU_TIPTOP_ID" msprop:Generator_ColumnVarNameInTable="columnCU_TIPTOP_ID" msprop:Generator_ColumnPropNameInRow="CU_TIPTOP_ID" msprop:Generator_ColumnPropNameInTable="CU_TIPTOP_IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CU_SALESID" msprop:Generator_UserColumnName="CU_SALESID" msprop:Generator_ColumnPropNameInRow="CU_SALESID" msprop:Generator_ColumnVarNameInTable="columnCU_SALESID" msprop:Generator_ColumnPropNameInTable="CU_SALESIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GEN03" msprop:Generator_UserColumnName="GEN03" msprop:Generator_ColumnPropNameInRow="GEN03" msprop:Generator_ColumnVarNameInTable="columnGEN03" msprop:Generator_ColumnPropNameInTable="GEN03Column" type="xs:string" minOccurs="0" />
+              <xs:element name="RMARQ_ACCEPT" msprop:Generator_UserColumnName="RMARQ_ACCEPT" msprop:Generator_ColumnVarNameInTable="columnRMARQ_ACCEPT" msprop:Generator_ColumnPropNameInRow="RMARQ_ACCEPT" msprop:Generator_ColumnPropNameInTable="RMARQ_ACCEPTColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vwChargeQuotedPART" msprop:Generator_UserTableName="vwChargeQuotedPART" msprop:Generator_RowDeletedName="vwChargeQuotedPARTRowDeleted" msprop:Generator_RowChangedName="vwChargeQuotedPARTRowChanged" msprop:Generator_RowClassName="vwChargeQuotedPARTRow" msprop:Generator_RowChangingName="vwChargeQuotedPARTRowChanging" msprop:Generator_RowEvArgName="vwChargeQuotedPARTRowChangeEvent" msprop:Generator_RowEvHandlerName="vwChargeQuotedPARTRowChangeEventHandler" msprop:Generator_TableClassName="vwChargeQuotedPARTDataTable" msprop:Generator_TableVarName="tablevwChargeQuotedPART" msprop:Generator_RowDeletingName="vwChargeQuotedPARTRowDeleting" msprop:Generator_TablePropName="vwChargeQuotedPART">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RMA_NO" msprop:Generator_UserColumnName="RMA_NO" msprop:Generator_ColumnVarNameInTable="columnRMA_NO" msprop:Generator_ColumnPropNameInRow="RMA_NO" msprop:Generator_ColumnPropNameInTable="RMA_NOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMARQD_ID" msprop:Generator_UserColumnName="RMARQD_ID" msprop:Generator_ColumnVarNameInTable="columnRMARQD_ID" msprop:Generator_ColumnPropNameInRow="RMARQD_ID" msprop:Generator_ColumnPropNameInTable="RMARQD_IDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMARQD_RMADID" msprop:Generator_UserColumnName="RMARQD_RMADID" msprop:Generator_ColumnVarNameInTable="columnRMARQD_RMADID" msprop:Generator_ColumnPropNameInRow="RMARQD_RMADID" msprop:Generator_ColumnPropNameInTable="RMARQD_RMADIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMARQD_NPARTNO" msprop:Generator_UserColumnName="RMARQD_NPARTNO" msprop:Generator_ColumnVarNameInTable="columnRMARQD_NPARTNO" msprop:Generator_ColumnPropNameInRow="RMARQD_NPARTNO" msprop:Generator_ColumnPropNameInTable="RMARQD_NPARTNOColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMARQD_DESC" msprop:Generator_UserColumnName="RMARQD_DESC" msprop:Generator_ColumnVarNameInTable="columnRMARQD_DESC" msprop:Generator_ColumnPropNameInRow="RMARQD_DESC" msprop:Generator_ColumnPropNameInTable="RMARQD_DESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMARQD_QTY" msprop:Generator_UserColumnName="RMARQD_QTY" msprop:Generator_ColumnVarNameInTable="columnRMARQD_QTY" msprop:Generator_ColumnPropNameInRow="RMARQD_QTY" msprop:Generator_ColumnPropNameInTable="RMARQD_QTYColumn" type="xs:decimal" />
+              <xs:element name="RMARQD_MATERIALCOST" msprop:Generator_UserColumnName="RMARQD_MATERIALCOST" msprop:Generator_ColumnVarNameInTable="columnRMARQD_MATERIALCOST" msprop:Generator_ColumnPropNameInRow="RMARQD_MATERIALCOST" msprop:Generator_ColumnPropNameInTable="RMARQD_MATERIALCOSTColumn" type="xs:decimal" />
+              <xs:element name="RMARQD_PRICE" msprop:Generator_UserColumnName="RMARQD_PRICE" msprop:Generator_ColumnVarNameInTable="columnRMARQD_PRICE" msprop:Generator_ColumnPropNameInRow="RMARQD_PRICE" msprop:Generator_ColumnPropNameInTable="RMARQD_PRICEColumn" type="xs:decimal" />
+              <xs:element name="RMARQD_CURRENCYCODE" msprop:Generator_UserColumnName="RMARQD_CURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnRMARQD_CURRENCYCODE" msprop:Generator_ColumnPropNameInRow="RMARQD_CURRENCYCODE" msprop:Generator_ColumnPropNameInTable="RMARQD_CURRENCYCODEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMARQD_CURRENCYRATE" msprop:Generator_UserColumnName="RMARQD_CURRENCYRATE" msprop:Generator_ColumnVarNameInTable="columnRMARQD_CURRENCYRATE" msprop:Generator_ColumnPropNameInRow="RMARQD_CURRENCYRATE" msprop:Generator_ColumnPropNameInTable="RMARQD_CURRENCYRATEColumn" type="xs:decimal" />
+              <xs:element name="RMARQD_WAIVE" msprop:Generator_UserColumnName="RMARQD_WAIVE" msprop:Generator_ColumnVarNameInTable="columnRMARQD_WAIVE" msprop:Generator_ColumnPropNameInRow="RMARQD_WAIVE" msprop:Generator_ColumnPropNameInTable="RMARQD_WAIVEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMARQD_OPTION" msprop:Generator_UserColumnName="RMARQD_OPTION" msprop:Generator_ColumnVarNameInTable="columnRMARQD_OPTION" msprop:Generator_ColumnPropNameInRow="RMARQD_OPTION" msprop:Generator_ColumnPropNameInTable="RMARQD_OPTIONColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMARQD_OPTIONCLIENT" msprop:Generator_UserColumnName="RMARQD_OPTIONCLIENT" msprop:Generator_ColumnVarNameInTable="columnRMARQD_OPTIONCLIENT" msprop:Generator_ColumnPropNameInRow="RMARQD_OPTIONCLIENT" msprop:Generator_ColumnPropNameInTable="RMARQD_OPTIONCLIENTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQPT_QTY" msprop:Generator_UserColumnName="RMACQPT_QTY" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_QTY" msprop:Generator_ColumnPropNameInRow="RMACQPT_QTY" msprop:Generator_ColumnPropNameInTable="RMACQPT_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQPT_MATERIALCOST" msprop:Generator_UserColumnName="RMACQPT_MATERIALCOST" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_MATERIALCOST" msprop:Generator_ColumnPropNameInRow="RMACQPT_MATERIALCOST" msprop:Generator_ColumnPropNameInTable="RMACQPT_MATERIALCOSTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQPT_PRICE" msprop:Generator_UserColumnName="RMACQPT_PRICE" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_PRICE" msprop:Generator_ColumnPropNameInRow="RMACQPT_PRICE" msprop:Generator_ColumnPropNameInTable="RMACQPT_PRICEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQPT_RECHARGE_PRICE" msprop:Generator_UserColumnName="RMACQPT_RECHARGE_PRICE" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_RECHARGE_PRICE" msprop:Generator_ColumnPropNameInRow="RMACQPT_RECHARGE_PRICE" msprop:Generator_ColumnPropNameInTable="RMACQPT_RECHARGE_PRICEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQPT_CURRENCYCODE" msprop:Generator_UserColumnName="RMACQPT_CURRENCYCODE" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_CURRENCYCODE" msprop:Generator_ColumnPropNameInRow="RMACQPT_CURRENCYCODE" msprop:Generator_ColumnPropNameInTable="RMACQPT_CURRENCYCODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQPT_CURRENCYRATE" msprop:Generator_UserColumnName="RMACQPT_CURRENCYRATE" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_CURRENCYRATE" msprop:Generator_ColumnPropNameInRow="RMACQPT_CURRENCYRATE" msprop:Generator_ColumnPropNameInTable="RMACQPT_CURRENCYRATEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQPT_QTY_ORIGINAL" msprop:Generator_UserColumnName="RMACQPT_QTY_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_QTY_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQPT_QTY_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQPT_QTY_ORIGINALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQPT_MATERIALCOST_ORIGINAL" msprop:Generator_UserColumnName="RMACQPT_MATERIALCOST_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_MATERIALCOST_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQPT_MATERIALCOST_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQPT_MATERIALCOST_ORIGINALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQPT_PRICE_ORIGINAL" msprop:Generator_UserColumnName="RMACQPT_PRICE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_PRICE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQPT_PRICE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQPT_PRICE_ORIGINALColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RMACQPT_CURRENCYCODE_ORIGINAL" msprop:Generator_UserColumnName="RMACQPT_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQPT_CURRENCYCODE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQPT_CURRENCYCODE_ORIGINALColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RMACQPT_CURRENCYRATE_ORIGINAL" msprop:Generator_UserColumnName="RMACQPT_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnVarNameInTable="columnRMACQPT_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnPropNameInRow="RMACQPT_CURRENCYRATE_ORIGINAL" msprop:Generator_ColumnPropNameInTable="RMACQPT_CURRENCYRATE_ORIGINALColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RMACHARGE_QUOTED" />
+      <xs:field xpath="mstns:RMACQ_ID" />
+    </xs:unique>
+    <xs:unique name="RMACHARGE_QUOTED_SN_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RMACHARGE_QUOTED_SN" />
+      <xs:field xpath="mstns:RMACQSN_ID" />
+    </xs:unique>
+    <xs:unique name="RMACHARGE_QUOTED_PART_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RMACHARGE_QUOTED_PART" />
+      <xs:field xpath="mstns:RMACQPT_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

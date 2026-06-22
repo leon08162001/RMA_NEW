@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 微軟正黑體;
+}
+.rma-service-section{
+    width: 100%;
+}
+
+.rma-service-tabs{
+    background: #F0F0F0;    
+}
+
+.rma-service-tabs ul{
+    width: 65%;
+    min-width: 1000px;
+    margin: auto;
+}
+
+.rma-service-tabs li{
+    color: #939393;
+    list-style: none;
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.rma-service-tabs li.active{
+    color: #242424;
+    border-bottom: 2px solid #242424;
+    font-weight: bold;
+}
+
+.rma-service-content{
+    width: 65%;
+    min-width: 1000px;
+    margin: auto;
+    padding: 25px 0 75px;
+}
+
+.rma-service-content select{
+    margin-left:20px;
+    padding: 3px;
+    font-size: 16px;
+    width: 15%;
+    min-width: 150px;
+}
+
+.rma-service-information,.rma-service-needHelp{
+    width: 100%;
+}
+.rma-service-information table,.rma-service-needHelp table{
+    padding: 25px 0;
+}
+
+.rma-datagrid-table{
+        border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.rma-service-table td{
+    width: 33%;
+}
+
+.rma-datagrid-header td{
+    padding: 5px 15px 5px 0;
+    font-weight: bold
+}
+
+.rma-datagrid-line td{
+    border-bottom: 1px solid #242424; 
+}
+
+.rma-datagrid-serviceLocation,.rma-datagrid-device{
+    border-bottom: 1px solid #939393; 
+}
+
+.rma-datagrid-serviceLocation td{
+    padding: 15px 15px 15px 0;
+    vertical-align: top;
+}
+
+.rma-datagrid-device td{
+    padding: 15px 15px 15px 0;
+    vertical-align: middle;
+}
+
+.rma-datagrid-device img{
+    width: 40%;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.rma-service-warrantyCheck .rma-serialNumber{
+    display: inline-block;
+}
+
+.rma-service-warrantyCheck .rma-serialNumber-input{
+    padding: 5px;
+    margin-left:20px;
+    font-size: 16px;
+    width: 30%;
+    display: inline-block;
+}
+
+
+.rma-service-warrantyCheck .rma-serialNumber-button{
+    background: #097BF2;
+    padding: 9px 25px;
+    margin-left:20px;
+    color: #ffffff;
+    border: none;
+}
+
+.rma-service-where{
+    margin-left: 190px;
+    margin-top: 10px;
+}
+
+.rma-service-where a {
+    /*color: #242424;*/
+    color: #097bf2;
+}
+
+.rma-inquire-result{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.rma-inquire-TypeName{
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}

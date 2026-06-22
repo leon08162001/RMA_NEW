@@ -1,0 +1,510 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 14px;
+    font-family: "Arial","Helvetica", 微軟正黑體;
+}
+
+
+/* 語系樣式 */
+.erma-combobox-control {
+    display: flex;
+    right: 0;
+    right: 3%;
+}
+
+
+
+.erma-combobox-control img {
+    display: inline-block;
+    width: 24px;
+}
+
+    .erma-combobox-control span {
+        display: inline-block;
+    }
+
+
+.erma-combobox-choose {
+    border: 1px solid #E4E8F0;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #1d1d1d1a;
+    padding: 6px 9px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+
+
+
+.erma-login-language .erma-combobox-choose{
+    margin-left: 10px;    
+}
+
+.erma-language .erma-combobox-choose {
+    border: none;
+}
+
+/* input樣式 */
+.erma-input-components {}
+
+.erma-input-components p {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.erma-input-input {
+    padding: 8px 11px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #D8D8D8;
+}
+
+.erma-input-input::placeholder {
+    color: #888888;
+}
+
+
+
+
+/* checkbox */
+
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.erma-checkBox-components {
+    display: flex;
+}
+
+.erma-checkBox-components .erma-checkBox-div{
+    margin: 0 10px 0 0px;
+}
+
+.erma-checkBox-components input.erma-checkBox {
+    width: 16px;
+    height: 16px;
+}
+
+.erma-checkBox-components .erma-checkBox-text {
+}
+
+
+.erma-checkBox-components .erma-checkBox-text a{
+    color: #F96C4D;
+}
+
+
+/*table*/
+
+.erma-table-components {
+    border: 1px solid #D8D8D8;
+    height: 57.5vh;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: auto;
+    border-radius: 3px;
+}
+
+.erma-infomation-detailReport .erma-table-components{
+    height: 52vh;
+}
+
+.erma-table-components .erma-RMA-NO{
+    width:15%;
+}
+
+.erma-table-components .erma-RequestDate{
+    width:15%;
+}
+
+.erma-table-components .erma-Applicant{
+    width:15%;
+}
+
+.erma-table-components .erma-Quote{
+    width:15%;
+}
+
+.erma-table-components .erma-Net-Charge{
+    width:15%;
+}
+
+.erma-table-components .erma-RequestQty{
+    width:15%;
+}
+
+.erma-table-components .erma-Net-Charge{
+    
+}
+
+.erma-table-components .erma-ShippedQty{
+	max-width:125px;
+    width:15%;
+}
+
+.erma-table-components .erma-Status{
+    min-width: 125px;
+}
+
+.erma-table-components .erma-Content{
+     width:25%;
+}
+
+
+.erma-information-status-view .erma-table-components, .erma-information-parts-view .erma-table-components {
+    background: none;
+    border: none;
+    height: 57vh;
+}
+
+.erma-table-components .erma-table-header {
+    vertical-align: middle;
+	text-align: left; /* add by Hugh */
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+.erma-table-reportSearch .erma-table-header{
+    background: #f4f4f7;
+    border-bottom: 1px solid #a0a0a0;
+}
+
+.erma-table-components .erma-table-list td input[type="submit"]{
+    border: 0;
+    background: none;
+    text-decoration: underline;
+    color: #000000;
+    cursor: pointer;
+}
+
+	.erma-table-components .erma-table-header td {
+		border-bottom: 1px solid #a0a0a0;
+		position: sticky;
+		top: 0;
+		background: #fff;
+	}
+	
+	/* add by Hugh */
+	.erma-table-components .erma-table-header th {
+		top: 0;
+		/* background: #fff; */
+	}	
+    .erma-infomation-resultView .erma-table-header th {
+		background: #fff;
+	}	
+
+    .erma-infomation-rma-table{
+        display: table;
+    }
+    .erma-infomation-rma-detail-table{
+        margin-top: 10px;
+    }
+
+    .erma-infomation-rma-table td{
+        width: 16%;
+        padding-right: 10px;
+    }
+    .erma-infomation-rma-table td:last-child{
+        padding-right: 0px;
+
+    }
+	
+    .erma-table-components td {
+        padding: 6px 20px 6px 15px;
+        width: 12.5%;
+        min-width: auto;
+        transition: all 0.25s;
+    }
+
+    .erma-table-components .erma-table-list:hover td,
+    .erma-table-components tr:hover td,
+    .erma-table-components .erma-warrantyQuery-block:hover{
+        background-color: #d9e2ff;
+    }
+
+	.erma-table-components td a {
+		color: #1C218C;
+	}
+	
+	/* add by Hugh */
+    .erma-table-components th {
+        padding: 6px 20px 6px 15px;
+    }
+
+	/* add by Hugh */
+	.erma-table-components th a {
+		color: #353535;
+	}
+		
+
+/*changePage*/
+.erma-changePage-component {
+    vertical-align: middle;
+    display: flex;
+}
+
+.erma-faq-content .erma-changePage-component{
+    margin-top: 25px;
+    display: block;
+}
+
+.erma-changePage-component li .imgbutton{
+    
+}
+
+.erma-changePage-component .erma-button-export{
+
+}
+
+.erma-changePage-component .erma-pages-block{
+    display: flex;
+    align-items: center;
+}
+
+.erma-changePage-component .erma-pages-block{
+    height: 100%;
+    padding: 0px 10px;
+}
+
+    .erma-changePage-component .erma-pages-block input {
+        width: 30px;
+        padding: 3px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .erma-changePage-component ul {
+        display: flex;
+    }
+
+    .erma-changePage-component ul li:hover {
+        border: 1px solid #141414;
+    }
+
+    .erma-changePage-component li {
+        display: flex;
+        vertical-align: middle;
+        /* padding: 4px 6px; */
+        border: 1px solid #D8D8D8;
+        background: #fff;
+        cursor: pointer;
+        transition: all 0.25s;
+    }
+    .erma-changePage-component li input[type="image"]{
+        vertical-align: middle;
+        padding: 9px 14px 9px;
+    }
+
+        .erma-changePage-component li:first-child {
+            border-radius: 5px 0 0 5px;
+        }
+
+        .erma-changePage-component li:last-child {
+            border-radius: 0 5px 5px 0;
+        }
+        .erma-changePage-component li img {
+            vertical-align: middle;
+        }
+
+    .erma-changePage-component .erma-pages-block span {
+        padding: 0px 2px;
+    }
+
+    .erma-changePage-component .erma-pages-block    .erma-pages-mark{
+        margin: 0 5px;
+    }
+
+
+/*msg*/
+.erma-alert-list::-webkit-scrollbar {
+    display: none;
+}
+
+.erma-alert-block {
+    /* position: absolute; */
+    width: 350px;
+    height: 90vh;
+    padding: 5px;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    z-index: 9999;
+    right: 15%;
+}
+
+    .erma-alert-block h1 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        padding: 15px 15px 10px;
+    }
+
+.erma-alert-list {
+    width: 100%;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.erma-alert-listN {
+    position: relative;
+    margin-top: 5px;
+    width: 378px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.erma-alert-list1 {
+    display: flex;
+    margin-bottom: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    background-color: #F1F3FF;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.borders {
+    width: 85%;
+    padding: 10px;
+}
+
+.erma-alert-listOther {
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    padding: 5px 0;
+}
+
+.erma-alert-list1 h1 {
+    display: flex;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    left: 10px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+
+.nortext {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.boldtext {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: left;
+}
+
+.othertext {
+    display: flex;
+    text-align: center;
+}
+
+.hh2 {
+    color: #496FF2;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.erma-circle {
+    width: 12px;
+    height: 12px;
+    background: #F96C4D;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.erma-fly-panel{
+    display: table;
+    inset: 0!important;
+    margin: auto;
+}
+
+
+
+@media screen and (max-width: 1571px) {
+    .erma-table-components {
+        height: 55vh;
+    }
+}
+
+
+@media screen and (max-width: 1366px) {
+
+
+    .erma-infomation-detailReport .erma-table-components{
+        height: 36.5vh;
+    }
+
+    .erma-infomation-RMAdetailReport .erma-table-components{
+        height: 39.5vh;
+    }
+
+    .erma-combobox-control img{
+        width: 20px;
+    }
+    .erma-table-components,.erma-information-status-view .erma-table-components, .erma-information-parts-view .erma-table-components {
+        height: 47vh;
+    }
+    .erma-alert-block{
+
+    }
+    .erma-alert-list {
+        height: 78vh;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .erma-table-components,.erma-information-status-view .erma-table-components, .erma-information-parts-view .erma-table-components {
+        height: 41vh;
+    }
+
+    .erma-table-components {
+        height: 43.5vh;
+    }
+
+    .erma-infomation-detailReport .erma-table-components{
+        height: 32.5vh;
+    }
+
+    .erma-infomation-RMAdetailReport .erma-table-components{
+        height: 37vh;
+    }
+
+    .erma-alert-block{
+        height: 85vh;
+    }
+    .erma-alert-list {
+        height: 72vh;
+    }
+
+}

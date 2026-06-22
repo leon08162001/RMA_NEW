@@ -1,0 +1,73 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+
+public partial class ExpRMAData2 : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Session["sRMAID"] = txtRMAID.Text;
+    }
+
+    protected void btnSearch_Click(object sender, EventArgs e)
+    {
+
+    }
+    protected void btnExp_Click(object sender, EventArgs e)
+    {
+        Response.Clear();
+
+        Response.Write("<meta http-equiv=Content-Type content=text/html;charset=utf-8>");
+        Response.AddHeader("content-disposition", "attachment;filename=" + Session["sRMAID"] + ".xls");
+
+        Response.ContentType = "application/vnd.xls";
+
+        System.IO.StringWriter sw = new System.IO.StringWriter();
+
+        System.Web.UI.HtmlTextWriter htw = new HtmlTextWriter(sw);
+
+
+
+        //關閉換頁跟排序
+
+        GridView1.AllowSorting = false;
+
+        GridView1.AllowPaging = false;
+
+        //移去不要的欄位
+
+        GridView1.DataBind();
+
+        //建立假HtmlForm避免以下錯誤
+
+        //Control 'GridView1' of type 'GridView' must be placed inside 
+
+        //a form tag with runat=server. 
+
+        //另一種做法是override VerifyRenderingInServerForm後不做任何事
+
+        //這樣就可以直接GridView1.RenderControl(htw);
+
+
+        HtmlForm hf = new HtmlForm();
+
+        Controls.Add(hf);
+
+        hf.Controls.Add(GridView1);
+
+        hf.RenderControl(htw);
+
+
+
+        Response.Write(sw.ToString());
+
+        Response.End();
+    }
+}
