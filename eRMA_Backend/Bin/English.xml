@@ -1,0 +1,6471 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSpy v2010 rel. 3 sp1 (http://www.altova.com) by MESMERiZE (MSM) -->
+<NewDataSet>
+
+
+<_x0030_><FUNCTIONNAME>WARRANTYSERIAL_BI</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>001</KEY><VALUE>Warranty No</VALUE></_x0030_>
+<_x0030_><FUNCTIONNAME>WARRANTYSERIAL_BI</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>002</KEY><VALUE>SEQ</VALUE></_x0030_>
+<_x0030_><FUNCTIONNAME>WARRANTYSERIAL_BI</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>003</KEY><VALUE>Total</VALUE></_x0030_>
+<_x0030_><FUNCTIONNAME>WARRANTYSERIAL_BI</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>004</KEY><VALUE>Consumed Amount</VALUE></_x0030_>
+<_x0030_><FUNCTIONNAME>WARRANTYSERIAL_BI</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>005</KEY><VALUE>Remaining Consumption</VALUE></_x0030_>
+
+
+<_x0030_><FUNCTIONNAME>TotalLoss</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>001</KEY><VALUE>Project No.</VALUE></_x0030_>
+<_x0030_><FUNCTIONNAME>TotalLoss</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>002</KEY><VALUE>Project Q'ty</VALUE></_x0030_>
+<_x0030_><FUNCTIONNAME>TotalLoss</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>003</KEY><VALUE>Order No.</VALUE></_x0030_>
+<_x0030_><FUNCTIONNAME>TotalLoss</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>004</KEY><VALUE>Order Q'ty</VALUE></_x0030_>
+<_x0030_><FUNCTIONNAME>TotalLoss</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>005</KEY><VALUE>Total Loss Insurance</VALUE></_x0030_>
+<_x0030_><FUNCTIONNAME>TotalLoss</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>006</KEY><VALUE>Replaceable quantity</VALUE></_x0030_>
+<_x0030_><FUNCTIONNAME>TotalLoss</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>007</KEY><VALUE>Quantity replaced</VALUE></_x0030_>
+<_x0030_><FUNCTIONNAME>TotalLoss</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>008</KEY><VALUE>Apply Total Loss Insurance</VALUE></_x0030_>
+
+<_x0030_><FUNCTIONNAME>RMA_Repair</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>966</KEY><VALUE>Shipped Quantity</VALUE></_x0030_>
+<_x0030_><FUNCTIONNAME>RMA_Repair</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>967</KEY><VALUE>Accumulated Repair Quantity</VALUE></_x0030_>
+<_x0030_><FUNCTIONNAME>RMA_Repair</FUNCTIONNAME><TYPE>Tag</TYPE><KEY>968</KEY><VALUE>Repair Rate</VALUE></_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>001</KEY>
+		<VALUE>Submit</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Save</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>003</KEY>
+		<VALUE>Add</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>004</KEY>
+		<VALUE>Search</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>005</KEY>
+		<VALUE>Edit</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>006</KEY>
+		<VALUE>back</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>007</KEY>
+		<VALUE>Delete</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>008</KEY>
+		<VALUE>Close</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Add Line</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>010</KEY>
+		<VALUE>Cancel RMA Item</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>011</KEY>
+		<VALUE>Add New Center</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>012</KEY>
+		<VALUE>Add User</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>014</KEY>
+		<VALUE>OK</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>015</KEY>
+		<VALUE>Confirm</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>016</KEY>
+		<VALUE>Search</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>017</KEY>
+		<VALUE>Temporary Save</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>018</KEY>
+		<VALUE>Modify</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>021</KEY>
+		<VALUE>Query</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>022</KEY>
+		<VALUE>Accept</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>023</KEY>
+		<VALUE>Disagree</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>024</KEY>
+		<VALUE>Agree</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>025</KEY>
+		<VALUE>Details</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>037</KEY>
+		<VALUE>Upload</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>038</KEY>
+		<VALUE>RMA Cancel</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>039</KEY>
+		<VALUE>Close Window</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>040</KEY>
+		<VALUE>Submit to Customer</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>041</KEY>
+		<VALUE>Confirmed by Sales</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>043</KEY>
+		<VALUE>Add Ship Notice</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>044</KEY>
+		<VALUE>Print</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>045</KEY>
+		<VALUE>Print Now</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>046</KEY>
+		<VALUE>Clear File</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>047</KEY>
+		<VALUE>Quoting</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>049</KEY>
+		<VALUE>Detail</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>052</KEY>
+		<VALUE>DownLoad</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>070</KEY>
+		<VALUE>Cancel</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>073</KEY>
+		<VALUE>Substitute</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>074</KEY>
+		<VALUE>Replacement</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>075</KEY>
+		<VALUE>Picture</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>076</KEY>
+		<VALUE>Export</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>078</KEY>
+		<VALUE>Search</VALUE>
+	</_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Common</FUNCTIONNAME>
+    <TYPE>Command</TYPE>
+    <KEY>079</KEY>
+    <VALUE>Confirm and Export</VALUE>
+  </_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>026</KEY>
+		<VALUE>Requested</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>027</KEY>
+		<VALUE>Received</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>028</KEY>
+		<VALUE>Quoted</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>029</KEY>
+		<VALUE>Sales Quoted</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>030</KEY>
+		<VALUE>Confirmed</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>031</KEY>
+		<VALUE>Repaired</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>032</KEY>
+		<VALUE>Closed</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>033</KEY>
+		<VALUE>Canceled</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>034</KEY>
+		<VALUE>In Progress</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>060</KEY>
+		<VALUE>Noticed</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>061</KEY>
+		<VALUE>Processing</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>062</KEY>
+		<VALUE>New Request</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>066</KEY>
+		<VALUE>WIP</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>068</KEY>
+		<VALUE>Repairing</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>069</KEY>
+		<VALUE>Noticed</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>071</KEY>
+		<VALUE>Customer Confirmed</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>072</KEY>
+		<VALUE>Sales Quoted</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Status</TYPE>
+		<KEY>082</KEY>
+		<VALUE>Deleted</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>013</KEY>
+		<VALUE>Message Alert !!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>035</KEY>
+		<VALUE>Account</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>036</KEY>
+		<VALUE>Repair Center</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>042</KEY>
+		<VALUE>Upload failed.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>048</KEY>
+		<VALUE>Uploaded files successfully</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>050</KEY>
+		<VALUE>System time out...!!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>051</KEY>
+		<VALUE>Login Failed....!!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>053</KEY>
+		<VALUE>Forgot Password</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>054</KEY>
+		<VALUE>Please key in your Account ID and Email Address, System will send the password to your email in 10 minutes.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>055</KEY>
+		<VALUE>Account ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>056</KEY>
+		<VALUE>EMail</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>057</KEY>
+		<VALUE>Received</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>058</KEY>
+		<VALUE>Repaired</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>059</KEY>
+		<VALUE>Sales</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>063</KEY>
+		<VALUE>waiting for submit</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>064</KEY>
+		<VALUE>waiting for confirm</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>065</KEY>
+		<VALUE>Customer</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>067</KEY>
+		<VALUE>Role</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>077</KEY>
+		<VALUE>Data not found</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>019</KEY>
+		<VALUE>Problem with RMA No. please contact system administrator!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>020</KEY>
+		<VALUE>problem with ID number, please contact system administrator!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Country</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>001</KEY>
+		<VALUE>Setting - Country</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Country</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Country Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Country</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>003</KEY>
+		<VALUE>Country</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Country</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>004</KEY>
+		<VALUE>Edit Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Country</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>005</KEY>
+		<VALUE>Last Editor</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Country</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>006</KEY>
+		<VALUE>Status</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Country</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>007</KEY>
+		<VALUE>Open</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Country</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>008</KEY>
+		<VALUE>Close</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Country</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Please enter country name.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>001</KEY>
+		<VALUE>Setting - Customer</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Customer Searching</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>003</KEY>
+		<VALUE>Customer ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>004</KEY>
+		<VALUE>Customer Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>005</KEY>
+		<VALUE>Status</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>006</KEY>
+		<VALUE>- Select -</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>007</KEY>
+		<VALUE>Open</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>008</KEY>
+		<VALUE>Close</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Repair Center</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>010</KEY>
+		<VALUE>Customer Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>011</KEY>
+		<VALUE>TEL</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>012</KEY>
+		<VALUE>Company &amp; User</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>013</KEY>
+		<VALUE>Country</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>014</KEY>
+		<VALUE>Sales ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>015</KEY>
+		<VALUE>Assistant ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>016</KEY>
+		<VALUE>Contact Person</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>017</KEY>
+		<VALUE>Address (1)</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>018</KEY>
+		<VALUE>Address (2)</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>019</KEY>
+		<VALUE>Address (3)</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>020</KEY>
+		<VALUE>Address (4)</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>021</KEY>
+		<VALUE>EMail</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>022</KEY>
+		<VALUE>Account status</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>023</KEY>
+		<VALUE>User Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>024</KEY>
+		<VALUE>User ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>025</KEY>
+		<VALUE>Password</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>026</KEY>
+		<VALUE>Address</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>027</KEY>
+		<VALUE>Yes</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>028</KEY>
+		<VALUE>No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>029</KEY>
+		<VALUE>Customer ID is repeated, please check again !</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>030</KEY>
+		<VALUE>Please enter customer's name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>031</KEY>
+		<VALUE>Please enter customer's ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>032</KEY>
+		<VALUE>Please enter sales ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>033</KEY>
+		<VALUE>Please select a country</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>034</KEY>
+		<VALUE>Please select a repair center</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>035</KEY>
+		<VALUE>Incorrect email format</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>036</KEY>
+		<VALUE>Please enter your login ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>037</KEY>
+		<VALUE>Please enter your password</VALUE>
+	</_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Customer</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>038</KEY>
+    <VALUE>Last Editor</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Customer</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>039</KEY>
+    <VALUE>Last Edit Time</VALUE>
+  </_x0030_>
+  <_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>040</KEY>
+		<VALUE>Customer ID is repeated, please check again !</VALUE>
+	</_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Customer</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>041</KEY>
+    <VALUE>Manager</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Customer</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>042</KEY>
+    <VALUE>Choose a repair center</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Customer</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>043</KEY>
+    <VALUE>FinanceEMail</VALUE>
+  </_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>044</KEY>
+		<VALUE>Waive Service Charge when Reject</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>045</KEY>
+		<VALUE>Off</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Customer</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>046</KEY>
+		<VALUE>On</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>001</KEY>
+		<VALUE>Setting - Defect</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Defect Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>003</KEY>
+		<VALUE>Defect No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>004</KEY>
+		<VALUE>Defect Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>005</KEY>
+		<VALUE>Status</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>006</KEY>
+		<VALUE>Open</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>007</KEY>
+		<VALUE>Close</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>008</KEY>
+		<VALUE>Edit Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Last Editor</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>010</KEY>
+		<VALUE>Language</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>016</KEY>
+		<VALUE/>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>017</KEY>
+		<VALUE/>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>013</KEY>
+		<VALUE>Please Enter Defect Name!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>014</KEY>
+		<VALUE>This code already exists...!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Defective</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>015</KEY>
+		<VALUE>Please Enter Defect code!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>ExchangeRate</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>001</KEY>
+		<VALUE>Setting - Exchange Rate</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>ExchangeRate</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Currency &amp;amp; Exchange Rate Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>ExchangeRate</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>003</KEY>
+		<VALUE>USD</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>ExchangeRate</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>004</KEY>
+		<VALUE>Currency</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>ExchangeRate</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>005</KEY>
+		<VALUE>Rate</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>ExchangeRate</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>006</KEY>
+		<VALUE>Edit Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>ExchangeRate</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>007</KEY>
+		<VALUE>Last Editor</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>ExchangeRate</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>008</KEY>
+		<VALUE>Status</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>ExchangeRate</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Open</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>ExchangeRate</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>010</KEY>
+		<VALUE>Close</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>ExchangeRate</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>011</KEY>
+		<VALUE>Please enter USD rate.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>001</KEY>
+		<VALUE>Setting - FAQ</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>002</KEY>
+		<VALUE>FAQ Search</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>003</KEY>
+		<VALUE>Category</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>004</KEY>
+		<VALUE>Question</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>005</KEY>
+		<VALUE>--Category--</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>006</KEY>
+		<VALUE>FAQ Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>007</KEY>
+		<VALUE>Answer</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>008</KEY>
+		<VALUE>Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Edit</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>010</KEY>
+		<VALUE>Category(1)</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>011</KEY>
+		<VALUE>Category(2)</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>012</KEY>
+		<VALUE>Visible</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>013</KEY>
+		<VALUE>Open</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>014</KEY>
+		<VALUE>Close</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>015</KEY>
+		<VALUE>IssueDate</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>016</KEY>
+		<VALUE>Last Editor</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>017</KEY>
+		<VALUE>Last Edit Time</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>018</KEY>
+		<VALUE>FAQ Class</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>019</KEY>
+		<VALUE>Category1</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>020</KEY>
+		<VALUE>Status</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>021</KEY>
+		<VALUE>Category Name1</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>022</KEY>
+		<VALUE>FAQ Sub Class</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>023</KEY>
+		<VALUE>Category2</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>024</KEY>
+		<VALUE>Category Name2</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>031</KEY>
+		<VALUE>Last Time</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>032</KEY>
+		<VALUE>Return Merchanise Authorization (RMA) FAQ</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>033</KEY>
+		<VALUE>--SubCategory--</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>025</KEY>
+		<VALUE>Please select FAQ category(1)</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>026</KEY>
+		<VALUE>Please select a FAQ sub-category.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>027</KEY>
+		<VALUE>Please enter the start date of display.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>028</KEY>
+		<VALUE>Wrong date format.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>029</KEY>
+		<VALUE>Please enter the FAQ category(1).</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>FAQ</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>030</KEY>
+		<VALUE>Please enter the FAQ sub-category.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>001</KEY>
+		<VALUE>Setting - Fault</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Fault Category</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>003</KEY>
+		<VALUE>Category(1) Adding</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>004</KEY>
+		<VALUE>Fault No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>005</KEY>
+		<VALUE>Fault Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>006</KEY>
+		<VALUE>Category Searching</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>007</KEY>
+		<VALUE>-Select-</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>008</KEY>
+		<VALUE>Fault Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Category</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>010</KEY>
+		<VALUE>Category(1)</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>011</KEY>
+		<VALUE>Fault No(2)</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>012</KEY>
+		<VALUE>Category(2)</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>013</KEY>
+		<VALUE>Edit Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>014</KEY>
+		<VALUE>Last Editor</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>015</KEY>
+		<VALUE>Status</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>016</KEY>
+		<VALUE>Open</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>017</KEY>
+		<VALUE>Close</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>024</KEY>
+		<VALUE>Language</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>018</KEY>
+		<VALUE>Please enter fault category code.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>019</KEY>
+		<VALUE>Please enter fault category.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>020</KEY>
+		<VALUE>Please enter fault code.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>021</KEY>
+		<VALUE>Please enter fault description.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>022</KEY>
+		<VALUE>Please enter fault name.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>023</KEY>
+		<VALUE>Please select a language</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>025</KEY>
+		<VALUE>Failure category already exists!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>026</KEY>
+		<VALUE>Failure code already exists!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>030</KEY>
+		<VALUE>This code already exists RMA Request</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Failure</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>031</KEY>
+		<VALUE>This code already exists RMA Request</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>003</KEY>
+		<VALUE>Your account information of Cipherlab E-RMA system.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>004</KEY>
+		<VALUE>
+      This mail is to replay you that your RMA account information as below.\n
+      Company Name:  [$Company Name$]  Login ID:  [$Account ID$]  Login Password: [$Password]\n
+      Please visit http://e-rma.cipherlab.com.tw and try to login with above ID and Password. It is recommended to change your password for security reason.\n
+      Thank you for using the RMA system.\n\n\n
+      == This is an automated system notification, please do not reply. ==\n
+      == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$] ==\n\n
+      Best Regards,\n
+      Cipherlab E-RMA Service Center\n
+    </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>005</KEY>
+		<VALUE>e-rma@cipherlab.com.tw</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>006</KEY>
+		<VALUE>[$Customer's Name$] RMA Request was Quoted over discount by [$Sales Name(Submit person)$] on [$Quoted submit date$].</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>007</KEY>
+		<VALUE>
+      You have received a RMA application on RMA System, from [$Customer Name$], which is quoted over discount on behalf of [$Sales Name$] on [$Sales Confirm Date$]. To see the detail quoted contents and to submit your comments, please visit  [$Supervisor login url$]  or visit http://e-rma.cipherlab.com.tw on Status Query page.\n
+      Thank you for using the RMA system.\n\n\n
+      == This is an automated system notification, please do not reply. ==\n
+      == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$] ==\n\n
+      Best Regards,\n
+      Cipherlab E-RMA Service Center\n
+    </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Your RMA Request No: [$Request No$] was successfully submitted to CipherLab on [$Request Date$].</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>010</KEY>
+		<VALUE>
+      Dear [$Applicant Name$],\n
+      This notice is to confirm, as of [$Request Date$], the RMA system has received your RMA application and allocated Authorization number: [$RMA No$].\n
+      To check the application status, or to see detailed application information, please visit our RMA website: http://e-rma.cipherlab.com.tw and select "status query" link.\n\n
+      
+      Please print out your RMA Request Form, pack the form with your device, and send both the form and your device to the service center address shown on your RMA Request Form.\n\n
+      
+      Thank you for using the RMA system.\n\n\n
+	  
+	  
+	  
+      == This is an automated system notification, please do not reply. ==\n
+      == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$] ==\n\n
+	  
+      Best Regards,\n
+      Cipherlab E-RMA Service Center
+    </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>011</KEY>
+		<VALUE>[$Customer's Name$] - RMA Request No: [$Request No$] was successfully submitted to CipherLab on [$Request Date$].</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>012</KEY>
+		<VALUE>
+      Dear [$Sales Name$] / [$Assistant Name$],\n
+      This notice is to confirm, as of [$Request Date$], We have has received [$Customer Name$]  RMA application with authorization number: [$RMA No$]. \n	  
+	  To check the application status, or to see detailed application information, please visit our RMA website: http://e-rma.cipherlab.com.tw and select "status query" link.\n\n
+      
+      Please print out your RMA Request Form, pack the form with your device, and send both the form and your device to the service center address shown on your RMA Request Form.\n\n
+      
+      Thank you for using the RMA system.\n\n\n
+      == This is an automated system notification, please do not reply. ==\n
+      == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$] ==\n\n
+      Best Regards,\n
+      Cipherlab E-RMA Service Center\n
+    </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>013</KEY>
+		<VALUE>You Request on CipyerLab RMA repairing is confirmed for shipping out by sales.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>014</KEY>
+		<VALUE>
+      Dear [$Customer User Name$],\n
+      This notice is to confirm that the following repaired items will be shipped out by sales [$sales name$].  [$RMA Detail$]  \n
+	  
+	  To see the detailed request contents and status, please visit our RMA website: http://e-rma.cipherlab.com.tw and select "status query" link.\n\n
+      
+	  Thank you for using the RMA system.\n\n\n
+      == This is an automated system notification, please do not reply. ==\n
+      == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$] ==\n\n
+      Best Regards,\n
+      Cipherlab E-RMA Service Center\n
+    </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>015</KEY>
+		<VALUE>[$Sales Name$] confirmed [$Customer Name$] on Notice No.[$Notice No$]</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>016</KEY>
+		<VALUE>
+      Dear [$Repaire Person name$],\n
+      This notice is to confirme shipment Notice No.[$Notice No.$] by [$Sales Name$] on [$submit date$]. Please find the attachment for the Notice Form in PDF format. \n
+	  
+	  To see the detailed contents and status, please visit our RMA website: http://e-rma.cipherlab.com.tw and select "status query" link.\n\n
+      
+	  Thank you for using the RMA system.\n\n\n
+      == This is an automated system notification, please do not reply. ==\n
+      == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$] ==\n\n
+      Best Regards,\n
+      Cipherlab E-RMA Service Center\n
+    </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>017</KEY>
+		<VALUE>Your RMA No:[$RMANO$]. Inv No:[$INVNO$]. Request of Tracking No:[$Tracking no$] has been shipped.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>018</KEY>
+		<VALUE>
+      Dear [$Applicant Name$],\n
+      This notice is to confirm, on Tracking no: [$Tracking No.$]. Have been shipped out.  \n
+	  Your RMA: [$RMA Request No$] \n
+	  Items: [$RMA Detail$] \n\n
+	  	  
+	  To check the application status, or to see detailed application information, please visit our RMA website: http://e-rma.cipherlab.com.tw and select "status query" link.\n\n
+	  
+      Thank you for using the RMA system.\n\n\n
+	  
+	  
+      == This is an automated system notification, please do not reply. ==\n
+      == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$] ==\n\n
+	  
+      Best Regards,\n
+      Cipherlab E-RMA Service Center\n
+    </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>019</KEY>
+		<VALUE>RMA No: [$RMA No$] has been confirmed by [$Customer's Name$]</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>020</KEY>
+		<VALUE>
+      Dear [$Sales Name$] / [$Assistant Name$],\n
+      This notice is your customer [$Customer Name$] confirmed a RMA quotaion with request number: [$RMA No$] and get into repair status.  \n
+	  
+	  To check the application status,or to see detailed application information, please visit web: http://e-rma.cipherlab.com.tw and status query page.\n\n
+	  
+      Thank you for using the RMA system.\n\n\n
+      == This is an automated system notification, please do not reply ==\n
+      == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$] ==\n\n
+      Best Regards,\n
+      Cipherlab E-RMA Service Center\n
+    </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>021</KEY>
+		<VALUE>[$Customer's Name$]  RMA No: [$RMA No$] has been quotated by repair center.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>022</KEY>
+	    <VALUE>
+        Dear [$Sales Name$] / [$Assistant Name$],\n
+        This notice is your customer RMA has been quoted by repair center and waiting your price confirmation with request number: [$RMA No$].  \n
+        [$item$]
+		
+        To check the detail of cost and price , or to see detailed application information, please visit web: http://e-rma.cipherlab.com.tw and waiting for processing page.\n\n
+		
+        Thank you for using the RMA system.\n\n\n
+        == This is an automated system notification, please do not reply. ==\n
+        == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$] ==\n\n
+        Best Regards,\n
+        Cipherlab E-RMA Service Center\n
+      </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>023</KEY>
+		<VALUE>RMA No: [$RMA No$] has quoted. Please confirm.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>024</KEY>
+		<VALUE>
+      Dear [$Customer User Name$],\n
+      This notice is your RMA request items have been quoted. Please confirm this quotation soon. \n
+	  If you get any question, please contact CipherLab sales [$Sales Name$] / [$Assistant Name$]. Thank you!\n\n
+      
+	  You have received a RMA [$Customer Name$] application with request number: [$RMA Request No$] on RMA System.\n\n
+
+	  To see the detailed quotation and confirm for repairing , http://e-rma.cipherlab.com.tw on waiting for processing page.\n\n
+	  
+      Thank you for using the RMA system.\n\n\n
+	  
+	  
+      == This is an automated system notification, please do not reply ==\n
+      == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$] ==\n\n
+	  
+      Best Regards,\n
+      Cipherlab E-RMA Service Center\n
+    </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>025</KEY>
+		<VALUE>RMA No: [$RMA No$] has been confirmed by [$Customer's Name$]</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>026</KEY>
+		<VALUE>
+      Dear [$Repaire Name$],\n
+      This notice is your customer [$Customer Name$] confirmed a RMA quotaion with request number: [$RMA No$] and get into repair status.\n
+      Accept Item:[$item_Accept$] \n
+      Cancel Item:[$item_Reject$] \n\n
+	  
+      To check the application status, or to see detailed application information, please visit web: http://e-rma.cipherlab.com.tw and status query page.\n\n
+	  
+      Thank you for using the RMA system.\n\n\n
+      == This is an automated system notification, please do not reply. ==\n
+      == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$]	==\n\n
+      Best Regards,\n
+      Cipherlab E-RMA Service Center\n
+    </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>027</KEY>
+		<VALUE>RMA No: [$RMA No$]. Confirmed by sales for repairing.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>028</KEY>
+		<VALUE>
+      Dear [$Customer User Name$],\n
+      This notice is your RMA request items have been confirmed to repair by sales.\n
+	  If you get any question, please contact CipherLab sales [$Sales Name$] / [$Assistant Name$]. Thank you!\n\n
+      
+	  RMA request number: [$RMA Request No$] , To see the detailed ,please click http://e-rma.cipherlab.com.tw on waiting for processing page.\n
+	  
+      Thank you for using the RMA system.\n\n\n
+	  
+	  
+      == This is an automated system notification, please do not reply ==\n
+      == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$] ==\n\n
+	  
+      Best Regards,\n
+      Cipherlab E-RMA Service Center\n
+    </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>029</KEY>
+		<VALUE>RMA No: [$RMA No$].  confirmed by sales for repairing.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>030</KEY>
+		<VALUE>
+      Dear [$Repaire Name$],\n
+      This notice is your RMA request items have been confirmed to repair by sales. \n
+	  If you get any question, please contact CipherLab sales [$Sales Name$] / [$Assistant Name$]. Thank you!\n\n
+	  
+      RMA request number: [$RMA Request No$] , To see the detailed ,please click http://e-rma.cipherlab.com.tw on waiting for processing page.\n\n
+	  
+      Thank you for using the RMA system.\n\n\n
+	  
+	  
+      == This is an automated system notification, please do not reply ==\n
+      == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$] ==\n\n
+	  
+	  
+      Best Regards,\n
+      Cipherlab E-RMA Service Center\n
+    </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>031</KEY>
+		<VALUE>Your RMA Case has been waiting to be reviewed since [$Last Step Confirm Date$].</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>032</KEY>
+		<VALUE>
+      Dear [$Owner Name$],\n
+      This notice is to remind you that your [$RMA No$] has been waiting to be confirmed or reviewed for more than [$over due days$].  Please process at your earliest convenience. To check the application status, or to see detailed application information, please visit our RMA website: http://e-rma.cipherlab.com.tw and select "status query" link.\n
+      Thank you for using the RMA system.\n\n\n
+      == This is an automated system notification, please do not reply ==\n
+      == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$] ==\n\n
+      Best Regards,\n
+      Cipherlab E-RMA Service Center\n
+    </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>033</KEY>
+		<VALUE>[$Name$]-RMA No:[$RMA No$] has been Repaired by repair center.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>034</KEY>
+	<VALUE>
+		Dear [$Name$],\n
+		Your RMA:[$RMA No$] Have been Repaired.\n
+		[$item$]\n	
+		[$Note$]\n\n
+	 
+		To check the application status, or to see detailed application information,\n
+		please visit our RMA website: http://e-rma.cipherlab.com.tw and select "status query" link.\n\n
+		
+		Thank you for using the RMA system.\n\n\n
+
+		
+		== This is an automated system notification, please do not reply.  ==\n
+		== For any system operation issues, please contact Cipherlab E-RMA Administrator:[$Email URL$] ==\n\n
+		
+		Best Regards,\n
+		Cipherlab E-RMA Service Center\n
+	  </VALUE>
+	</_x0030_>
+
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>035</KEY>
+		<VALUE>RMA No: [$RMA No$] has been Canceled By [$Customer User Name$].</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>036</KEY>
+		<VALUE>
+      Dear [$Repair User Name$],\n
+      RMA:[$RMA No$] Have been Canceled.\n\n
+	  
+      To check the application status, or to see detailed application information, please visit our RMA website: http://e-rma.cipherlab.com.tw and select "status query" link.\n\n
+      
+	  Thank you for using the RMA system.\n\n\n
+	  
+	  
+      == This is an automated system notification, please do not reply. ==\n	  
+      == For any system operation issues, please contact Cipherlab E-RMA Administrator:  [$Email URL$] ==\n\n
+	  
+	  
+      Best Regards,\n
+      Cipherlab E-RMA Service Center\n
+    </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Mail</TYPE>
+		<KEY>037</KEY>
+		<VALUE>Your Parts Request RMA No: [$Request No$] was successfully submitted to CipherLab on [$Request Date$].</VALUE>
+	</_x0030_>
+	
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>001</KEY>
+		<VALUE>Password has been sent to registered email account shortly. Please check your mail</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Account or email address not found! Please contact CipherLab.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Mail</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>008</KEY>
+		<VALUE>Sent Mail fail...!!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>001</KEY>
+		<VALUE>Setting - Maintain Account</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Repair Center</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>003</KEY>
+		<VALUE>User Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>004</KEY>
+		<VALUE>-Select-</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>005</KEY>
+		<VALUE>ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>006</KEY>
+		<VALUE>Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>007</KEY>
+		<VALUE>Level</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>008</KEY>
+		<VALUE>Roles</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Repair Center</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>010</KEY>
+		<VALUE>Status</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>011</KEY>
+		<VALUE>EMail</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>012</KEY>
+		<VALUE/>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>013</KEY>
+		<VALUE>Account ID.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>014</KEY>
+		<VALUE>Authority Level</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>015</KEY>
+		<VALUE>-Select-</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>016</KEY>
+		<VALUE>by Center</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>017</KEY>
+		<VALUE>All</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>018</KEY>
+		<VALUE>Supervisor's Mail</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>019</KEY>
+		<VALUE>Password</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>020</KEY>
+		<VALUE>Role</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>021</KEY>
+		<VALUE>Receiver</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>022</KEY>
+		<VALUE>Sales</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>023</KEY>
+		<VALUE>Shipping</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>024</KEY>
+		<VALUE>Admin</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>025</KEY>
+		<VALUE>Open</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>026</KEY>
+		<VALUE>Close</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>027</KEY>
+		<VALUE>Last Editor</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>028</KEY>
+		<VALUE>Last Edit Time</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>029</KEY>
+		<VALUE>Please enter login ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>030</KEY>
+		<VALUE>Please enter the name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>031</KEY>
+		<VALUE>Please enter password</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>032</KEY>
+		<VALUE>Please select the authority level</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>033</KEY>
+		<VALUE>Incorrect email format</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>034</KEY>
+		<VALUE>Please select click box</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>035</KEY>
+		<VALUE>Please enter E-Mail Address.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>036</KEY>
+		<VALUE>Upload</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>037</KEY>
+		<VALUE>Warranty Selling</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>038</KEY>
+		<VALUE>Warranty Setting</VALUE>
+	</_x0030_>	
+  <_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>039</KEY>
+		<VALUE>RMA Cost</VALUE>
+	</_x0030_>	
+<_x0030_>
+		<FUNCTIONNAME>MaintainAccount</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>040</KEY>
+		<VALUE>Assistant</VALUE>
+	</_x0030_>	      
+	
+	<_x0030_>
+		<FUNCTIONNAME>Policy</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>001</KEY>
+		<VALUE>Setting - Policy</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Policy</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Language</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Policy</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>003</KEY>
+		<VALUE>-Select-</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Policy</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>006</KEY>
+		<VALUE>Policy Agreement</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Policy</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>007</KEY>
+		<VALUE>&amp;ltPlease fill in html code to below text box&amp;gt</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Policy</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>004</KEY>
+		<VALUE>Please select a language</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Policy</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>005</KEY>
+		<VALUE>Please enter description.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>001</KEY>
+		<VALUE>DELETE ? Are you sure?</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Saving Data, please wait.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>003</KEY>
+		<VALUE>Loading Data, please wait.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>004</KEY>
+		<VALUE>Process Data, please wait.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>005</KEY>
+		<VALUE>Exporting Data, please wait.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>006</KEY>
+		<VALUE>Processing Data, please wait.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>007</KEY>
+		<VALUE>Successfull</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>008</KEY>
+		<VALUE>Successfull</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Delete Successfull!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>010</KEY>
+		<VALUE>Send Successfull..!!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>011</KEY>
+		<VALUE>Approved ..!!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>012</KEY>
+		<VALUE>Password Changed Successfull! Please login with this password.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>013</KEY>
+		<VALUE>Loading Data,  Please wait...!!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>014</KEY>
+		<VALUE>Successfull.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Processing</FUNCTIONNAME>
+		<TYPE>Processing</TYPE>
+		<KEY>015</KEY>
+		<VALUE>Cancel item, Are you sure?</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>211</KEY>
+		<VALUE>Import</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>001</KEY>
+		<VALUE>New Request</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Client Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>003</KEY>
+		<VALUE>Account ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>004</KEY>
+		<VALUE>Company Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>005</KEY>
+		<VALUE>User ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>006</KEY>
+		<VALUE>Contact Person</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>007</KEY>
+		<VALUE>Tel No.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>008</KEY>
+		<VALUE>Address</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Repair Center</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>010</KEY>
+		<VALUE>Product Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>011</KEY>
+		<VALUE>Please pick a model you are going to request repair or key in barcode number.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>012</KEY>
+		<VALUE>Model No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>013</KEY>
+		<VALUE>Serial Number</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>014</KEY>
+		<VALUE>Customer Product Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>015</KEY>
+		<VALUE>Warranty</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>016</KEY>
+		<VALUE>Description</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>017</KEY>
+		<VALUE>Delete</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>018</KEY>
+		<VALUE>Please select a model number from list below.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>019</KEY>
+		<VALUE>Model number keyword search</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>020</KEY>
+		<VALUE>Model Number</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>021</KEY>
+		<VALUE>Model Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>022</KEY>
+		<VALUE>Specification / Problem</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>023</KEY>
+		<VALUE>Fault</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>024</KEY>
+		<VALUE>Upload File</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>025</KEY>
+		<VALUE>Problem Description</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>026</KEY>
+		<VALUE>-ALL-</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>027</KEY>
+		<VALUE>Status Query</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>028</KEY>
+		<VALUE>Search for Request Items Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>029</KEY>
+		<VALUE>RMA No.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>030</KEY>
+		<VALUE>Customer</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>031</KEY>
+		<VALUE>Repair Center</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>032</KEY>
+		<VALUE>Status</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>033</KEY>
+		<VALUE>Request Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>034</KEY>
+		<VALUE>Requested Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>035</KEY>
+		<VALUE>Model</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>036</KEY>
+		<VALUE>Company Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>037</KEY>
+		<VALUE>Sales quote Amount</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>038</KEY>
+		<VALUE>Detail</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>039</KEY>
+		<VALUE>Quick Receiving:  RMA No.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>040</KEY>
+		<VALUE>Received / Total Number</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>041</KEY>
+		<VALUE>Cancel</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>042</KEY>
+		<VALUE>Received Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>043</KEY>
+		<VALUE>Quick Receiving: Serial No.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>044</KEY>
+		<VALUE>Email</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>045</KEY>
+		<VALUE>Applicant ID.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>046</KEY>
+		<VALUE>RMA Number</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>051</KEY>
+		<VALUE>Duty</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>052</KEY>
+		<VALUE>Assign to</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>053</KEY>
+		<VALUE>Repair Description</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>054</KEY>
+		<VALUE>Repair Memo</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>055</KEY>
+		<VALUE>Estimate</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>056</KEY>
+		<VALUE>Man Hours</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>057</KEY>
+		<VALUE>hour</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>058</KEY>
+		<VALUE>Auto-Calculation</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>059</KEY>
+		<VALUE>Material</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>060</KEY>
+		<VALUE>Editor</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>061</KEY>
+		<VALUE>TW Repair Center-Taipei</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>063</KEY>
+		<VALUE>Quote Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>064</KEY>
+		<VALUE>Improper Usage</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>065</KEY>
+		<VALUE>Yes</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>066</KEY>
+		<VALUE>No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>067</KEY>
+		<VALUE>Waiting for Processing</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>068</KEY>
+		<VALUE>Search criteria</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>069</KEY>
+		<VALUE>Quick search</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>070</KEY>
+		<VALUE>Estimated Amount</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>071</KEY>
+		<VALUE>Re-Assign</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>080</KEY>
+		<VALUE>Unidentified</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>082</KEY>
+		<VALUE>Replace Component</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>083</KEY>
+		<VALUE>Part No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>084</KEY>
+		<VALUE>Location</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>085</KEY>
+		<VALUE>Currency</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>086</KEY>
+		<VALUE>Man power</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>087</KEY>
+		<VALUE>Parts</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>088</KEY>
+		<VALUE>Total Charge</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>089</KEY>
+		<VALUE>Status Update</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>090</KEY>
+		<VALUE>Received</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>091</KEY>
+		<VALUE>Repair Quoted</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>092</KEY>
+		<VALUE>Sales Confirmed</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>093</KEY>
+		<VALUE>Client Confirmed</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>094</KEY>
+		<VALUE>Repaired</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>095</KEY>
+		<VALUE>Close</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>096</KEY>
+		<VALUE>Approved by</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>097</KEY>
+		<VALUE>Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>098</KEY>
+		<VALUE>Serial No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>099</KEY>
+		<VALUE>Description</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>100</KEY>
+		<VALUE>SMT Location</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>101</KEY>
+		<VALUE>Improper Usage</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>102</KEY>
+		<VALUE>Defect Reason</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>103</KEY>
+		<VALUE>Qty</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>104</KEY>
+		<VALUE>Price</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>105</KEY>
+		<VALUE>New</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>106</KEY>
+		<VALUE>Old</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>111</KEY>
+		<VALUE>Repair Detail</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>112</KEY>
+		<VALUE>Man Hours</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>113</KEY>
+		<VALUE>Estimated Amount</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>114</KEY>
+		<VALUE>Request Detail</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>115</KEY>
+		<VALUE>Upload Report</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>116</KEY>
+		<VALUE>Report Attached</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>117</KEY>
+		<VALUE>File Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>118</KEY>
+		<VALUE>File Description</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>119</KEY>
+		<VALUE>Problem Category</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>120</KEY>
+		<VALUE>Desc</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>122</KEY>
+		<VALUE>Problem Desc</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>123</KEY>
+		<VALUE>Customer File</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>124</KEY>
+		<VALUE>Charge</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>125</KEY>
+		<VALUE>Labor Cost</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>126</KEY>
+		<VALUE>Material Cost</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>127</KEY>
+		<VALUE>Original Charge</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>128</KEY>
+		<VALUE>RMA Report Attachment</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>129</KEY>
+		<VALUE>Repair Reports.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>130</KEY>
+		<VALUE>Charge Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>131</KEY>
+		<VALUE>Repair Charge</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>132</KEY>
+		<VALUE>Repair Quote</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>133</KEY>
+		<VALUE>Sales Quote</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>134</KEY>
+		<VALUE>Remark</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>137</KEY>
+		<VALUE>Waiting for Processing-Shipping</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>138</KEY>
+		<VALUE>Tracking Number</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>139</KEY>
+		<VALUE>Notice Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>140</KEY>
+		<VALUE>Tracking No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>141</KEY>
+		<VALUE>Shipped Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>142</KEY>
+		<VALUE>Shipping Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>143</KEY>
+		<VALUE>Search for Shipment Notice Items.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>144</KEY>
+		<VALUE>Notice Number</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>145</KEY>
+		<VALUE>Notice No.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>146</KEY>
+		<VALUE>Wait for Processing-Shipment Notice</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>147</KEY>
+		<VALUE>Shipment Notice</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>148</KEY>
+		<VALUE>Please select customer first.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>149</KEY>
+		<VALUE>Ship with Orders</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>150</KEY>
+		<VALUE>Number</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>151</KEY>
+		<VALUE>Memo</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>152</KEY>
+		<VALUE>Add Items to this Shipment</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>153</KEY>
+		<VALUE>Part Number</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>154</KEY>
+		<VALUE>Shipping</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>155</KEY>
+		<VALUE>Search for Shipping Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>156</KEY>
+		<VALUE>Shipping Number</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>157</KEY>
+		<VALUE>Customer</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>158</KEY>
+		<VALUE>Shipped by</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>159</KEY>
+		<VALUE>From</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>160</KEY>
+		<VALUE>To</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>161</KEY>
+		<VALUE>Express Co.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>162</KEY>
+		<VALUE>RMA to Ship</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>163</KEY>
+		<VALUE>Ctn. &amp; No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>164</KEY>
+		<VALUE>Pick from Notice</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>165</KEY>
+		<VALUE>Net Weight</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>166</KEY>
+		<VALUE>Gross Weight</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>167</KEY>
+		<VALUE>Measurement</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>168</KEY>
+		<VALUE>Shipment Notice Number</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>169</KEY>
+		<VALUE>Quantity</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>170</KEY>
+		<VALUE>Print Report?</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>173</KEY>
+		<VALUE>Please select customer</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>174</KEY>
+		<VALUE>Keyword Search</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>175</KEY>
+		<VALUE>Customer ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>176</KEY>
+		<VALUE>Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>178</KEY>
+		<VALUE>Labor</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>179</KEY>
+		<VALUE>Quoted</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>180</KEY>
+		<VALUE>SubTotal</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>182</KEY>
+		<VALUE>Report Attachment</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>183</KEY>
+		<VALUE>Status History</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>184</KEY>
+		<VALUE>New Part No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>185</KEY>
+		<VALUE>New Serial No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>186</KEY>
+		<VALUE>Upload file size(MAX:5MB)</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>187</KEY>
+		<VALUE>Amount</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>188</KEY>
+		<VALUE>Please select RMA to ship</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>189</KEY>
+		<VALUE>Ship with</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>190</KEY>
+		<VALUE>Numbers</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>192</KEY>
+		<VALUE>Maintenance quote</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>193</KEY>
+		<VALUE>Maintenance costs</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>196</KEY>
+		<VALUE>Product Description</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>202</KEY>
+		<VALUE>RMA Repaired</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>204</KEY>
+		<VALUE>Please select RMA to ship</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>205</KEY>
+		<VALUE>This shipment Notice has been reviewed.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>206</KEY>
+		<VALUE>Please select a Address from below lists.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>208</KEY>
+		<VALUE>-Select-</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>212</KEY>
+		<VALUE>Download Sample</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>213</KEY>
+		<VALUE>RMA Q'TY</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>214</KEY>
+		<VALUE>Shipped Q'ty</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>215</KEY>
+		<VALUE>Processing Q'ty</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>216</KEY>
+		<VALUE>Received Q'TY</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>217</KEY>
+		<VALUE>Print</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>218</KEY>
+		<VALUE>Auto Number</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>221</KEY>
+		<VALUE>Please click radio box for Part's selection and get window closed from below lists.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>222</KEY>
+		<VALUE>Apply Battery Insurance</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>223</KEY>
+		<VALUE>Remaining Q’ty：</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>224</KEY>
+		<VALUE>Warranty BI Recode</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>047</KEY>
+		<VALUE>Address is required.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>048</KEY>
+		<VALUE>Applicant is required.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>049</KEY>
+		<VALUE>Wrong email format</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>050</KEY>
+		<VALUE>Please select a company.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>062</KEY>
+		<VALUE>Email address is required.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>072</KEY>
+		<VALUE>Please enter fault description</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>073</KEY>
+		<VALUE>Please enter repair description</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>074</KEY>
+		<VALUE>Please enter labor hours</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>075</KEY>
+		<VALUE>please enter Parts costs</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>076</KEY>
+		<VALUE>Incorrect labor hour format.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>077</KEY>
+		<VALUE>Incorrect parts cost format</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>078</KEY>
+		<VALUE>Please select fault category</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>079</KEY>
+		<VALUE>Please select fault reason.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>081</KEY>
+		<VALUE>Serial Number is required.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>107</KEY>
+		<VALUE>Please enter new part number.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>108</KEY>
+		<VALUE>Please enter new serial number.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>109</KEY>
+		<VALUE>Incorrect quantity format</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>110</KEY>
+		<VALUE>Incorrect price format</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>121</KEY>
+		<VALUE>Please select files to upload</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>135</KEY>
+		<VALUE>Please enter total amount.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>136</KEY>
+		<VALUE>Incorrect total amount format.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>181</KEY>
+		<VALUE>Please select a customer.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>191</KEY>
+		<VALUE>Model Number is required.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>194</KEY>
+		<VALUE>Please set up maintenance items!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>195</KEY>
+		<VALUE>Entries incomplete!! Please enter all details and re Submit</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>197</KEY>
+		<VALUE>Record in use by another user</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>198</KEY>
+		<VALUE>Product Description Required</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>199</KEY>
+		<VALUE>Problem Description Required</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>200</KEY>
+		<VALUE>Packing List Required</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>201</KEY>
+		<VALUE>Tracking No. Required</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>203</KEY>
+		<VALUE>This item has been received, This RMA can not be modified!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>207</KEY>
+		<VALUE>Please fill in TEL.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>209</KEY>
+		<VALUE>Some goods Warranty in one month.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>210</KEY>
+		<VALUE>please fill in  Model or SN!!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>219</KEY>
+		<VALUE>上傳檔案必須為CSV檔</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>220</KEY>
+		<VALUE>必須輸入客戶編號</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>001</KEY>
+		<VALUE>Setting - Repair Center</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Repair Center Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>003</KEY>
+		<VALUE>Center Code</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>004</KEY>
+		<VALUE>Center Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>005</KEY>
+		<VALUE>TEL</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>006</KEY>
+		<VALUE>Currency</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>007</KEY>
+		<VALUE>Status</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Repair Center.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>010</KEY>
+		<VALUE>Country</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>011</KEY>
+		<VALUE>Labor Cost</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>012</KEY>
+		<VALUE>man hours</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>013</KEY>
+		<VALUE>Repair Approval amount</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>014</KEY>
+		<VALUE>Lowest Discount</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>015</KEY>
+		<VALUE/>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>016</KEY>
+		<VALUE>Address (1)</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>017</KEY>
+		<VALUE>Express Co.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>018</KEY>
+		<VALUE>Express URL</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>019</KEY>
+		<VALUE>Open</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>020</KEY>
+		<VALUE>Close</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>021</KEY>
+		<VALUE>Remark</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>022</KEY>
+		<VALUE>Parts Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>023</KEY>
+		<VALUE>Part No.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>024</KEY>
+		<VALUE>-Select-</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>025</KEY>
+		<VALUE>Location</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>026</KEY>
+		<VALUE>Material Cost</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>027</KEY>
+		<VALUE>Description</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>028</KEY>
+		<VALUE>Delete</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>029</KEY>
+		<VALUE>Please enter company name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>030</KEY>
+		<VALUE>Please enter company ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>031</KEY>
+		<VALUE>Please select a country</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>032</KEY>
+		<VALUE>Please select a currency</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>033</KEY>
+		<VALUE>Please enter unit price of labor hour</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>034</KEY>
+		<VALUE>Incorrect format!!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>035</KEY>
+		<VALUE>Please enter Part No.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>036</KEY>
+		<VALUE>Please enter part cost</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>037</KEY>
+		<VALUE>Incorrect format of part cost</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>038</KEY>
+		<VALUE>Please enter repair cost</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>039</KEY>
+		<VALUE>Incorrect amount format !</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>040</KEY>
+		<VALUE>Please enter the lowest discount percentage.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>041</KEY>
+		<VALUE>Incorrect discount format !</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>042</KEY>
+		<VALUE>Company ID already exists!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>043</KEY>
+		<VALUE>Serial Number already exists!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RepairCenter</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>044</KEY>
+		<VALUE>Stock Manager</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>001</KEY>
+		<VALUE>Part's Query</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Repair Frequency Query</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>003</KEY>
+		<VALUE>Warranty Query</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>004</KEY>
+		<VALUE>RMA Detail Report</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>005</KEY>
+		<VALUE>Repair Center Monthly Report</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>006</KEY>
+		<VALUE>Over Due Report</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>007</KEY>
+		<VALUE>Customers Request Report</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>008</KEY>
+		<VALUE>Failure Reason Report</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Failure Reason Report - by Model</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>030</KEY>
+		<VALUE>Report Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>050</KEY>
+		<VALUE>Yes</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>051</KEY>
+		<VALUE>No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>052</KEY>
+		<VALUE>Unidentified</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>100</KEY>
+		<VALUE>Company Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>101</KEY>
+		<VALUE>Model No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>102</KEY>
+		<VALUE>Repair Center</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>103</KEY>
+		<VALUE>Warranty</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>104</KEY>
+		<VALUE>Status</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>105</KEY>
+		<VALUE>Request Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>106</KEY>
+		<VALUE>RMA No.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>107</KEY>
+		<VALUE>Request Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>108</KEY>
+		<VALUE>Company&lt;br&gt;Applicant</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>109</KEY>
+		<VALUE>Model</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>110</KEY>
+		<VALUE>Product Desc.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>111</KEY>
+		<VALUE>Fail Reason</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>112</KEY>
+		<VALUE>Warranty Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>113</KEY>
+		<VALUE>Labor&lt;br&gt;Amount</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>114</KEY>
+		<VALUE>Material&lt;br&gt;Amount</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>115</KEY>
+		<VALUE>Labor&lt;br&gt;Amount&lt;br&gt;Sales</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>116</KEY>
+		<VALUE>Material&lt;br&gt;Amount&lt;br&gt;Sales</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>117</KEY>
+		<VALUE>Total&lt;br&gt;Amount&lt;br&gt;Sales</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>118</KEY>
+		<VALUE>Repair Center</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>119</KEY>
+		<VALUE>Status</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>120</KEY>
+		<VALUE>Receiver</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>121</KEY>
+		<VALUE>Received Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>122</KEY>
+		<VALUE>Repairer</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>123</KEY>
+		<VALUE>Quoted Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>124</KEY>
+		<VALUE>Repaired Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>125</KEY>
+		<VALUE>Sales</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>126</KEY>
+		<VALUE>Confirmed Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>127</KEY>
+		<VALUE>Customer Confirm Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>128</KEY>
+		<VALUE>Noticed Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>129</KEY>
+		<VALUE>Shipping Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>130</KEY>
+		<VALUE>Man hour</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>131</KEY>
+		<VALUE>Manpower Price</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>132</KEY>
+		<VALUE>Part’s Price</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>133</KEY>
+		<VALUE>Total Amount</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>134</KEY>
+		<VALUE>Estimated Manpower</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>135</KEY>
+		<VALUE>Estimated Amount</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>136</KEY>
+		<VALUE>Category(2) ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>137</KEY>
+		<VALUE>Category(2)</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>138</KEY>
+		<VALUE>Model No.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>139</KEY>
+		<VALUE>Model Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>140</KEY>
+		<VALUE>Quanty</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>141</KEY>
+		<VALUE>Subtotal Numbers:</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>142</KEY>
+		<VALUE>Total Numbers:</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>143</KEY>
+		<VALUE>Customer ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>144</KEY>
+		<VALUE>Customer Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>145</KEY>
+		<VALUE>Year-Month</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>146</KEY>
+		<VALUE>Request Quantity</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>147</KEY>
+		<VALUE>Closed  Quantity</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>148</KEY>
+		<VALUE>Canceled Quantity</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>149</KEY>
+		<VALUE>Model No (Original) </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>150</KEY>
+		<VALUE>Serial No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>151</KEY>
+		<VALUE>Product’s Serial No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>152</KEY>
+		<VALUE>Part’s No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>153</KEY>
+		<VALUE>Product Serial No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>154</KEY>
+		<VALUE>Part’s Serial No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>155</KEY>
+		<VALUE>Shipped date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>156</KEY>
+		<VALUE>Warranty date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>157</KEY>
+		<VALUE>Original warranty date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>158</KEY>
+		<VALUE>Part’s No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>159</KEY>
+		<VALUE>Serial No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>160</KEY>
+		<VALUE>Detail Part's No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>161</KEY>
+		<VALUE>Description</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>162</KEY>
+		<VALUE>Replacement</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>163</KEY>
+		<VALUE>Substitute</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>164</KEY>
+		<VALUE>Pic</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>165</KEY>
+		<VALUE>Part NO. for Replacement</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>166</KEY>
+		<VALUE>Part NO. for Substitute</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>167</KEY>
+		<VALUE>Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>168</KEY>
+		<VALUE>upper Part's No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>169</KEY>
+		<VALUE>Requested&lt;br&gt;Quantity</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>170</KEY>
+		<VALUE>Canceled&lt;br&gt;Quantity</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>171</KEY>
+		<VALUE>Received&lt;br&gt;Quantity</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>172</KEY>
+		<VALUE>Quoted&lt;br&gt;Quantity</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>173</KEY>
+		<VALUE>Repaired&lt;br&gt;Quantity</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>174</KEY>
+		<VALUE>Performed&lt;br&gt;Quantity</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>175</KEY>
+		<VALUE>Warranty&lt;br&gt;Quantity</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>176</KEY>
+		<VALUE>Out of Warranty&lt;br&gt;Quantity</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>177</KEY>
+		<VALUE>Total Amount</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>178</KEY>
+		<VALUE>Problem Desc.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>179</KEY>
+		<VALUE>Quantity</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>180</KEY>
+		<VALUE>Detail</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>181</KEY>
+		<VALUE>Link to Request List</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>182</KEY>
+		<VALUE>Repair Desc.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>183</KEY>
+		<VALUE>Warranty</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>184</KEY>
+		<VALUE>Improper Usage</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>185</KEY>
+		<VALUE>Estimated Part's</VALUE>
+	</_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>186</KEY>
+    <VALUE>Client</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>187</KEY>
+    <VALUE>Repairing Center</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>188</KEY>
+    <VALUE>Shipping / Received Number</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>189</KEY>
+    <VALUE>Bill Date</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>190</KEY>
+    <VALUE>Repair Man</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>191</KEY>
+    <VALUE>List Price</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>192</KEY>
+    <VALUE>CW/EW Warranty date</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>193</KEY>
+    <VALUE>Original shipping date</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>194</KEY>
+    <VALUE>Sales Quoted Amount</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>195</KEY>
+    <VALUE>Extra Discount for RMA</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>196</KEY>
+    <VALUE>Request Year</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>197</KEY>
+    <VALUE>Request Month</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>198</KEY>
+    <VALUE>Shipping Year</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>199</KEY>
+    <VALUE>Shipping Month</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>200</KEY>
+    <VALUE>Repair Centre</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>201</KEY>
+    <VALUE>Country Name</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Report</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>202</KEY>
+    <VALUE>RMA NO</VALUE>
+  </_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>203</KEY>
+		<VALUE>SKU</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>001</KEY>
+		<VALUE>Setting - Warranty</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Warranty Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>003</KEY>
+		<VALUE>Value</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>004</KEY>
+		<VALUE>Unit</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>005</KEY>
+		<VALUE>Edit Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>006</KEY>
+		<VALUE>Last Editor</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>007</KEY>
+		<VALUE>Status</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>008</KEY>
+		<VALUE>Year</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Month</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>010</KEY>
+		<VALUE>Day</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>011</KEY>
+		<VALUE>Open</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>012</KEY>
+		<VALUE>Close</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>013</KEY>
+		<VALUE>Please enter value.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>021</KEY>
+		<VALUE>Speciall Warranty Setting- Searching</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>022</KEY>
+		<VALUE>Operation Center</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>023</KEY>
+		<VALUE>Model</VALUE>
+	</_x0030_>		
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>024</KEY>
+		<VALUE>Warranty Type</VALUE>
+	</_x0030_>		
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>025</KEY>
+		<VALUE>Price List</VALUE>
+	</_x0030_>		
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>026</KEY>
+		<VALUE>Operation Center</VALUE>
+	</_x0030_>		
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>027</KEY>
+		<VALUE>Model</VALUE>
+	</_x0030_>		
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>028</KEY>
+		<VALUE>Version</VALUE>
+	</_x0030_>		
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>029</KEY>
+		<VALUE>Warranty Name</VALUE>
+	</_x0030_>		
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>030</KEY>
+		<VALUE>Warranty Type</VALUE>
+	</_x0030_>		
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>031</KEY>
+		<VALUE>Extra Months</VALUE>
+	</_x0030_>		
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>032</KEY>
+		<VALUE>Years</VALUE>
+	</_x0030_>		
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>033</KEY>
+		<VALUE>Price</VALUE>
+	</_x0030_>		
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>034</KEY>
+		<VALUE>Status</VALUE>
+	</_x0030_>		
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>035</KEY>
+		<VALUE>Warrenty Setting- Special </VALUE>
+	</_x0030_>		
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>036</KEY>
+		<VALUE>Description</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>037</KEY>
+		<VALUE>Unit Price </VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>038</KEY>
+		<VALUE>Please fill in the header below and click button Go, system will list the price table.</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>039</KEY>
+		<VALUE>Next</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>040</KEY>
+		<VALUE>Select</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>041</KEY>
+		<VALUE>Parts</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>042</KEY>
+		<VALUE>To</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>043</KEY>
+		<VALUE>Parts Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>044</KEY>
+		<VALUE>Attachments</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>045</KEY>
+		<VALUE>Parts No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>046</KEY>
+		<VALUE>Desciption</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>047</KEY>
+		<VALUE>Parts No</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>048</KEY>
+		<VALUE>Warranty Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>049</KEY>
+		<VALUE>Discount</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>050</KEY>
+		<VALUE>Standard Years</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>051</KEY>
+		<VALUE>Longest Years</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>052</KEY>
+		<VALUE>Valid Client</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>053</KEY>
+		<VALUE>Invalid All Price</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>054</KEY>
+		<VALUE>Sales</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>055</KEY>
+		<VALUE>Please pick one product group from below lists and get window closed.</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>056</KEY>
+		<VALUE>Product Gruop</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>057</KEY>
+		<VALUE>Description</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>058</KEY>
+		<VALUE>Please pick part no from below lists and get window closed.</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>059</KEY>
+		<VALUE>Part No</VALUE>
+	</_x0030_>	
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>060</KEY>
+		<VALUE>Description</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>061</KEY>
+		<VALUE>Price List</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>062</KEY>
+		<VALUE>Extension Comprehensive Warrnty Setting</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>063</KEY>
+		<VALUE>Batch Serial Search</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>064</KEY>
+		<VALUE>Current Warranty Information :</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>065</KEY>
+		<VALUE>Purchasing Records :</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>066</KEY>
+		<VALUE>Import patch of serial No. and output warranty information to below:</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>067</KEY>
+		<VALUE>Serial No.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>068</KEY>
+		<VALUE>Warranty Type</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>069</KEY>
+		<VALUE>Start Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>070</KEY>
+		<VALUE>End Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>071</KEY>
+		<VALUE>Total Years</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>072</KEY>
+		<VALUE>Model</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>073</KEY>
+		<VALUE>SKU</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>074</KEY>
+		<VALUE>Description</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>075</KEY>
+		<VALUE>Order No.</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>076</KEY>
+		<VALUE>Customer</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>077</KEY>
+		<VALUE>Order Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>078</KEY>
+		<VALUE>Ship No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>079</KEY>
+		<VALUE>Deliver Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>080</KEY>
+		<VALUE>PurchaseDate</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>081</KEY>
+		<VALUE>Warranty Code</VALUE>
+	</_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Warranty</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>082</KEY>
+    <VALUE>Item Type</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Warranty</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>083</KEY>
+    <VALUE>Price Version</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Warranty</FUNCTIONNAME>
+    <TYPE>Tag</TYPE>
+    <KEY>084</KEY>
+    <VALUE>Program Type</VALUE>
+  </_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>101</KEY>
+		<VALUE>Please input Extra Months!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>102</KEY>
+		<VALUE>Please choose Product Group!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>103</KEY>
+		<VALUE>Please input Warranty Name!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>104</KEY>
+		<VALUE>Please input Years!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>105</KEY>
+		<VALUE>Please input Unit Price!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>106</KEY>
+		<VALUE>Please input Discount!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>107</KEY>
+		<VALUE>Please input Longest Years!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>108</KEY>
+		<VALUE>Please input Standard Years !</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>109</KEY>
+		<VALUE>Please input Item Type !</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>110</KEY>
+		<VALUE>Please input Project Type !</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>111</KEY>
+		<VALUE>Please input Price Type !</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Warranty</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>112</KEY>
+		<VALUE>Warranty Spec Desc</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>010</KEY>
+		<VALUE>Check Account Report</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>011</KEY>
+		<VALUE>Warranty Yes</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>012</KEY>
+		<VALUE>Warranty No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>013</KEY>
+		<VALUE>EF</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>014</KEY>
+		<VALUE>EK</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>015</KEY>
+		<VALUE>subTotal Amount</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>016</KEY>
+		<VALUE>Total QTY</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>230</KEY>
+		<VALUE>Serial Number Duplicate! Please Check Detail List or Excel!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>231</KEY>
+		<VALUE>Serial Number Can Not Empty,Please Check Detail List!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>232</KEY>
+		<VALUE>System Not Permit Serial Number Duplicate,Please Check Detail List!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>233</KEY>
+		<VALUE>OTHER</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>234</KEY>
+		<VALUE>NT</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>080</KEY>
+		<VALUE>Shipping</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>081</KEY>
+		<VALUE>Apply</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>017</KEY>
+		<VALUE>Total Amount</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>235</KEY>
+		<VALUE>This Serial Number Not Valid,Please Input Another!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>236</KEY>
+		<VALUE>This Serial Number Not Permit To Modify!</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>237</KEY>
+		<VALUE>The replace information will replicate to the RMA item you ticked off below. Are you sure? </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>242</KEY>
+		<VALUE>This serial number has been out of warranty,Please contact your sales representative </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>241</KEY>
+		<VALUE>This serial number is not under Comprehensive Warranty, Please contact your sales representative </VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_001</KEY>
+		<VALUE>Order Delivery Schedule Query</VALUE>
+	</_x0030_>
+    <_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_002</KEY>
+		<VALUE>System Customer ID.</VALUE>
+	</_x0030_>
+	  <_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_003</KEY>
+		<VALUE>Order No.</VALUE>
+	</_x0030_>
+	  <_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_004</KEY>
+		<VALUE>Item</VALUE>
+	</_x0030_>
+	  <_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_005</KEY>
+		<VALUE>Product No.</VALUE>
+	</_x0030_>
+	  <_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_006</KEY>
+		<VALUE>Desc</VALUE>
+	</_x0030_>
+	  <_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_007</KEY>
+		<VALUE>Ord. Date</VALUE>
+	</_x0030_>               
+	  <_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_008</KEY>
+		<VALUE>E.D.D</VALUE>
+	</_x0030_>
+		  <_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_009</KEY>
+		<VALUE>Plan Ship Date</VALUE>
+	</_x0030_>
+		  <_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_010</KEY>
+		<VALUE>Ship Date</VALUE>
+	</_x0030_>
+		  <_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_011</KEY>
+		<VALUE>Del. Qty.</VALUE>
+	</_x0030_>
+		  <_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_012</KEY>
+		<VALUE>Undel. Qty.</VALUE>
+	</_x0030_>
+		  <_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_013</KEY>
+		<VALUE>Customer Ord. No.</VALUE>
+	</_x0030_>
+		<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_014</KEY>
+		<VALUE>Parts Warranty Query</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_015</KEY>
+		<VALUE>Parts SN</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_016</KEY>
+		<VALUE>Parts NO</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_017</KEY>
+		<VALUE>Shipped Time</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_018</KEY>
+		<VALUE>Customer ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_019</KEY>
+		<VALUE>Customer Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_020</KEY>
+		<VALUE>Order ID</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Report</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>H_021</KEY>
+		<VALUE>Shipping Notice NO</VALUE>
+	</_x0030_>
+		  <_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>H_001</KEY>
+		<VALUE>Print Quotation</VALUE>
+	</_x0030_>
+		<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>301</KEY>
+		<VALUE>Version Modification</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>302</KEY>
+		<VALUE>Field</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>303</KEY>
+		<VALUE>Version Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>304</KEY>
+		<VALUE>Current PNO of Version of this Serial</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>305</KEY>
+		<VALUE>Latest PNO of Version of the Model of this Serial</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>306</KEY>
+		<VALUE>#A Field 01</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>307</KEY>
+		<VALUE>#A Field 02</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>308</KEY>
+		<VALUE>#A Field 03</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>309</KEY>
+		<VALUE>#A Field 04</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>310</KEY>
+		<VALUE>#A Field 05</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>311</KEY>
+		<VALUE>#A Field 06</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>312</KEY>
+		<VALUE>#A Field 07</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>313</KEY>
+		<VALUE>#A Field 08</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>314</KEY>
+		<VALUE>#A Field 09</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>315</KEY>
+		<VALUE>#A Field 10</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>316</KEY>
+		<VALUE>#A Field 11</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>317</KEY>
+		<VALUE>#A Field 12</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>318</KEY>
+		<VALUE>#B Field 01</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>319</KEY>
+		<VALUE>#B Field 02</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>320</KEY>
+		<VALUE>#B Field 03</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>321</KEY>
+		<VALUE>#B Field 04</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>322</KEY>
+		<VALUE>#B Field 05</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>323</KEY>
+		<VALUE>#B Field 06</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>324</KEY>
+		<VALUE>Query</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>325</KEY>
+		<VALUE>Cannot be Modified Because of the inconsistency of model of selected serial</VALUE>
+	</_x0030_>	                                       
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>382</KEY>
+		<VALUE>field</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>383</KEY>
+		<VALUE>Version Name</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>384</KEY>
+		<VALUE>Current PNO of Version of this Serial</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>385</KEY>
+		<VALUE>Latest PNO of Version of the Model of this Serial</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>386</KEY>
+		<VALUE>#A field 01</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>387</KEY>
+		<VALUE>#A field 02</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>388</KEY>
+		<VALUE>#A field 03</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>389</KEY>
+		<VALUE>#A field 04</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>390</KEY>
+		<VALUE>#A field 05</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>391</KEY>
+		<VALUE>#A field 06</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>392</KEY>
+		<VALUE>#A field 07</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>393</KEY>
+		<VALUE>#A field 08</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>394</KEY>
+		<VALUE>#A field 09</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>395</KEY>
+		<VALUE>#A field 10</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>396</KEY>
+		<VALUE>#A field 11</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>397</KEY>
+		<VALUE>#A field 12</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>398</KEY>
+		<VALUE>#B field 01</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>399</KEY>
+		<VALUE>#B field 02</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>400</KEY>
+		<VALUE>#B field 03</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>401</KEY>
+		<VALUE>#B field 04</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>402</KEY>
+		<VALUE>#B field 05</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>403</KEY>
+		<VALUE>#B field 06</VALUE>
+	</_x0030_>
+
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>001</KEY>
+		<VALUE>Temporary</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>002</KEY>
+		<VALUE>Search for Import Items Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>003</KEY>
+		<VALUE>Customer</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>004</KEY>
+		<VALUE>Serial Number</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>005</KEY>
+		<VALUE>Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>006</KEY>
+		<VALUE>Imported Information</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>007</KEY>
+		<VALUE>Import</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>008</KEY>
+		<VALUE>Reject</VALUE>
+	</_x0030_>
+
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>009</KEY>
+		<VALUE>Temp No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>010</KEY>
+		<VALUE>Import Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>011</KEY>
+		<VALUE>Customer</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>012</KEY>
+		<VALUE>Status</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>013</KEY>
+		<VALUE>Error Message</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>014</KEY>
+		<VALUE>Import Link</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>015</KEY>
+		<VALUE>Cancel</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>016</KEY>
+		<VALUE>Model No</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>017</KEY>
+		<VALUE>Warranty</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>018</KEY>
+		<VALUE>Fault Reason</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>019</KEY>
+		<VALUE>Description</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>020</KEY>
+		<VALUE>Edit</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>021</KEY>
+		<VALUE>Delete</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>022</KEY>
+		<VALUE>Modified</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Upload</FUNCTIONNAME>
+		<TYPE>Tag</TYPE>
+		<KEY>023</KEY>
+		<VALUE>Date</VALUE>
+	</_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>Common</FUNCTIONNAME>
+		<TYPE>Command</TYPE>
+		<KEY>083</KEY>
+		<VALUE>send mail</VALUE>
+	</_x0030_>
+  <_x0030_>
+      <FUNCTIONNAME>Common</FUNCTIONNAME>
+      <TYPE>Validator</TYPE>
+      <KEY>084</KEY>
+      <VALUE>Repeat sent</VALUE>
+  </_x0030_>
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>238</KEY>
+		<VALUE>[$item$]:尚未報價</VALUE>
+	</_x0030_>
+
+	<_x0030_>
+		<FUNCTIONNAME>RMA</FUNCTIONNAME>
+		<TYPE>Validator</TYPE>
+		<KEY>239</KEY>
+		<VALUE>[$item$]:尚未維修</VALUE>
+	</_x0030_>	
+    <_x0030_>
+     <FUNCTIONNAME>RMA</FUNCTIONNAME>
+     <TYPE>Tag</TYPE>
+     <KEY>240</KEY>
+     <VALUE>Discount</VALUE>
+    </_x0030_>	
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>404</KEY>
+	    <VALUE>Service Charge</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>405</KEY>
+	    <VALUE>Waive</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>406</KEY>
+	    <VALUE>Option</VALUE>
+    </_x0030_>
+
+    <_x0030_>
+	    <FUNCTIONNAME>Mail</FUNCTIONNAME>
+	    <TYPE>Mail</TYPE>
+	    <KEY>407</KEY>
+	    <VALUE>RMA No: [$RMA No$] has SN:[$Serial No$] need to input spec or price</VALUE>
+    </_x0030_>
+
+    <_x0030_>
+	    <FUNCTIONNAME>Mail</FUNCTIONNAME>
+	    <TYPE>Mail</TYPE>
+	    <KEY>408</KEY>
+	    <VALUE>
+        Dear [$HQRMA_Name$],\n
+        Please input the following spec or price information of the part to complete the Quotaing Process...\n
+        RMA no:[$RMA No$]\n
+        Serial no:[$Serial No$]\n
+        Model no:[$Model No$]\n
+        Reason:(Lack of spec or Lack of price)\n\n\n
+        To check the application status, or to see detailed application information,\n
+        please visit our RMA website: http://e-rma.cipherlab.com.tw and select "status query" link.\n
+        Thank you for using the RMA system.\n\n\n
+        == This is an automated system notification, please do not reply. ==\n
+        == For any system operation issues, please contact Cipherlab E-RMA Administrator:e-rma@cipherlab.com.tw	==\n\n
+        Best Regards,\n
+        Cipherlab E-RMA Service Center\n
+      </VALUE>
+    </_x0030_>
+
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>409</KEY>
+	    <!--<VALUE>零件異常, 有一筆零件規格空白或單價為0, 請確認</VALUE>-->
+      <VALUE>System abnormal from Input data,
+        Please directly click the “Close” button,
+        The system will automatically save the records and contact administrator
+      </VALUE>
+
+    </_x0030_>
+
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>410</KEY>
+	    <VALUE>Waiting for HQ Quoted Processing</VALUE>
+    </_x0030_>
+
+
+    <_x0030_>
+	    <FUNCTIONNAME>Mail</FUNCTIONNAME>
+	    <TYPE>Mail</TYPE>
+	    <KEY>411</KEY>
+	    <VALUE>RMA No: [$RMA No$] has quoted. Please confirm.</VALUE>
+    </_x0030_>
+
+    <_x0030_>
+	    <FUNCTIONNAME>Mail</FUNCTIONNAME>
+	    <TYPE>Mail</TYPE>
+	    <KEY>412</KEY>
+	    <VALUE>
+        Dear [$Customer User Name$],\n
+        This notice is your RMA request items have been quoted. Please confirm this quotation soon. \n
+		If you get any question, please contact CipherLab sales [$Sales Name$] / [$Assistant Name$]. Thank you!\n\n
+		
+        You have received a RMA [$Customer Name$] application with request number: [$RMA Request No$] on RMA System. \n\n
+
+		To see the detailed quotation and confirm for repairing , http://e-rma.cipherlab.com.tw on waiting for processing page.\n\n
+		
+        Thank you for using the RMA system.\n\n\n
+		
+		
+        == This is an automated system notification, please do not reply ==\n
+        == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$]	==\n\n
+		
+        Best Regards,\n
+        Cipherlab E-RMA Service Center\n
+      </VALUE>
+    </_x0030_>
+
+    <_x0030_>
+	    <FUNCTIONNAME>Mail</FUNCTIONNAME>
+	    <TYPE>Mail</TYPE>
+	    <KEY>413</KEY>
+	    <VALUE>
+        Dear [$Repaire Name$],\n
+        This notice is your RMA request items have been quoted. Please confirm this quotation soon.\n
+        If you get any question, please contact CipherLab sales [$Sales Name$] / [$Assistant Name$]. Thank you!\n
+        You have received a RMA [$Customer Name$] application with request number: [$RMA Request No$] on RMA System,\n\n
+		
+        To see the detailed quotation and confirm for repairing, http://e-rma.cipherlab.com.tw on waiting for processing page. \n\n
+				
+        Thank you for using the RMA system.\n\n\n
+		
+		
+        == This is an automated system notification, please do not reply ==\n
+        == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$]	==\n\n
+				
+        Best Regards,\n
+        Cipherlab E-RMA Service Center\n
+      </VALUE>
+    </_x0030_>
+
+
+    <_x0030_>
+	    <FUNCTIONNAME>Common</FUNCTIONNAME>
+	    <TYPE>Command</TYPE>
+	    <KEY>414</KEY>
+	    <VALUE>Preview</VALUE>
+    </_x0030_>
+
+ 
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>415</KEY>
+	    <VALUE>Please download your Repair Quotation.</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>416</KEY>
+	    <VALUE>Please download Inovice Report 及 AD Report.</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>Common</FUNCTIONNAME>
+	    <TYPE>Command</TYPE>
+	    <KEY>417</KEY>
+	    <VALUE>Print Inovice</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>Common</FUNCTIONNAME>
+	    <TYPE>Command</TYPE>
+	    <KEY>418</KEY>
+	    <VALUE>Print AD</VALUE>
+    </_x0030_>
+
+
+    <_x0030_>
+      <FUNCTIONNAME>Common</FUNCTIONNAME>
+      <TYPE>Command</TYPE>
+      <KEY>419</KEY>
+      <VALUE>Print Form</VALUE>
+    </_x0030_>
+    <_x0030_>
+      <FUNCTIONNAME>Common</FUNCTIONNAME>
+      <TYPE>Command</TYPE>
+      <KEY>420</KEY>
+      <VALUE>Print Quotation</VALUE>
+    </_x0030_>  
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>421</KEY>
+	    <VALUE>[RMA Quote] Replace Component</VALUE>
+    </_x0030_>
+
+    <_x0030_>
+	    <FUNCTIONNAME>Mail</FUNCTIONNAME>
+	    <TYPE>Mail</TYPE>
+	    <KEY>422</KEY>
+	    <VALUE>[$Customer's Name$]-[RMA System notice] RMA No:[$RMANo$],A/R No:[$ARNo$],INVOICE No:[$INVNo$]</VALUE>
+    </_x0030_>
+
+    <_x0030_>
+	    <FUNCTIONNAME>Mail</FUNCTIONNAME>
+	    <TYPE>Mail</TYPE>
+	    <KEY>423</KEY>
+	    <!--<VALUE>Dear [$sales Name$],\n\n
+	    This is to Notice that RMA has generated two reports:\n
+	    Account Receivable NO:  [$Receivable NO$]\n
+	    Invoice NO : [$Invoice NO$]\n
+	    Please see the files attached….\n
+	    Thank you for using the RMA system.\n\n\n
+	    == This is an automated system notification, please do not reply ==\n
+	    == For any system operation issues, please contact Cipherlab E-RMA Administrator: e-rma@cipherlab.com.tw ==\n\n
+	    Best Regards,\n 
+	    Cipherlab E-RMA Service Center\n
+	    </VALUE>-->
+      <VALUE>
+        Dear Customer,\n\n
+        This is to Notice that RMA has generated two reports:\n
+        Account Receivable NO:  [$Receivable NO$]\n
+        Invoice NO : [$Invoice NO$]\n
+        Please see the files attached.\n\n
+		
+        Thank you for using the RMA system.\n\n\n
+		
+		
+		
+        == This is an automated system notification, please do not reply ==\n
+        == For any system operation issues, please contact Cipherlab E-RMA Administrator: e-rma@cipherlab.com.tw ==\n\n
+		
+		
+        Best Regards,\n
+        Cipherlab E-RMA Service Center\n
+      </VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>424</KEY>
+	    <VALUE>HQ Quote</VALUE>
+    </_x0030_>
+	
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>425</KEY>
+	    <VALUE>Repair Report</VALUE>
+    </_x0030_>
+    <_x0030_>
+     <FUNCTIONNAME>RMA</FUNCTIONNAME>
+     <TYPE>Tag</TYPE>
+     <KEY>428</KEY>
+     <!--<VALUE>零件異常, 零件規格空白或單價為0, 請確認 </VALUE>-->
+     <VALUE>Part Price is abnormal, Please Check! </VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>426</KEY>
+	    <VALUE>Charge Quoted</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>427</KEY>
+	    <VALUE>Charge Renew by Sales</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>429</KEY>
+	    <VALUE>RMA Information</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>430</KEY>
+	    <VALUE>RMA Status</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>431</KEY>
+	    <VALUE>Sales</VALUE>
+    </_x0030_>
+
+
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>432</KEY>
+	    <VALUE>Discount Off Total Charge</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>433</KEY>
+	    <VALUE>Approval</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>434</KEY>
+	    <VALUE>Net Charge</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>Common</FUNCTIONNAME>
+	    <TYPE>Command</TYPE>
+	    <KEY>435</KEY>
+	    <VALUE>Modify Discount Off</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>436</KEY>
+	    <VALUE>通過</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>437</KEY>
+	    <VALUE>不通過</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>438</KEY>
+	    <VALUE>Total Charge</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>439</KEY>
+	    <VALUE>PartsDetail</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>440</KEY>
+	    <VALUE>Service Charge</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>441</KEY>
+	    <VALUE>Material</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Validator</TYPE>
+	    <KEY>442</KEY>
+	    <VALUE>Please enter After Discount</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>443</KEY>
+	    <VALUE>Renew Date</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>444</KEY>
+	    <VALUE>Approval Status</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>445</KEY>
+	    <VALUE>Approval Date</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>446</KEY>
+	    <VALUE>Original Charge</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>447</KEY>
+	    <VALUE>Renew Charge</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>448</KEY>
+	    <VALUE>Material Charge</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>449</KEY>
+	    <VALUE>Total Charge</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Validator</TYPE>
+	    <KEY>450</KEY>
+	    <VALUE>Charge Quoted, Cannot Shipping</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>451</KEY>
+	    <VALUE>New</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>452</KEY>
+	    <VALUE>Flow</VALUE>
+    </_x0030_>
+    <_x0030_>
+	    <FUNCTIONNAME>RMA</FUNCTIONNAME>
+	    <TYPE>Tag</TYPE>
+	    <KEY>453</KEY>
+	    <VALUE>Confirmed</VALUE>
+    </_x0030_>
+    <_x0030_>
+     <FUNCTIONNAME>RMA</FUNCTIONNAME>
+     <TYPE>Validator</TYPE>
+     <KEY>454</KEY>
+     <VALUE>discount金額不可大於原始金額</VALUE>
+    </_x0030_>
+    <_x0030_>
+        <FUNCTIONNAME>RMA</FUNCTIONNAME>
+        <TYPE>Tag</TYPE>
+        <KEY>459</KEY>
+        <VALUE>End User Company Name</VALUE>
+    </_x0030_>
+    <_x0030_>
+        <FUNCTIONNAME>RMA</FUNCTIONNAME>
+        <TYPE>Tag</TYPE>
+        <KEY>455</KEY>
+        <VALUE>End User Tel No.</VALUE>
+    </_x0030_>
+    <_x0030_>
+        <FUNCTIONNAME>RMA</FUNCTIONNAME>
+        <TYPE>Tag</TYPE>
+        <KEY>456</KEY>
+        <VALUE>End User Contact Person</VALUE>
+    </_x0030_>
+    <_x0030_>
+        <FUNCTIONNAME>RMA</FUNCTIONNAME>
+        <TYPE>Tag</TYPE>
+        <KEY>457</KEY>
+        <VALUE>End User Email</VALUE>
+    </_x0030_>
+    <_x0030_>
+        <FUNCTIONNAME>RMA</FUNCTIONNAME>
+        <TYPE>Tag</TYPE>
+        <KEY>458</KEY>
+        <VALUE>End User Address</VALUE>
+    </_x0030_>
+    <_x0030_>
+            <FUNCTIONNAME>RMA</FUNCTIONNAME>
+            <TYPE>Tag</TYPE>
+            <KEY>411</KEY>
+            <VALUE>Note: CipherLab Service Center will send for a courier to pick up the faulty unit if it is covered by comprehensive warranty. Any other item, that does not have comprehensive warranty, in the delivery box to the service center will incur an additional charge of delivery.</VALUE>
+    </_x0030_>
+
+    <_x0030_>
+            <FUNCTIONNAME>Mail</FUNCTIONNAME>
+            <TYPE>Mail</TYPE>
+            <KEY>424-old</KEY>
+            <VALUE>[$Customer's Name$]  Request No: [$Request No$] was successfully submitted to CipherLab on [$Request Date$].</VALUE>
+    </_x0030_>
+    <_x0030_>
+            <FUNCTIONNAME>Mail</FUNCTIONNAME>
+            <TYPE>Mail</TYPE>
+            <KEY>425-old</KEY>
+            <VALUE>
+              Dear All,\n
+              This notice is to confirm, as of [$Request Date$], We have has received [$Customer Name$]  RMA application with authorization number: [$RMA No$].    To check the application status, or to see detailed application information, please visit our RMA website: http://e-rma.cipherlab.com.tw and select "status query" link.\n\n
+              
+              Please print out your RMA Request Form, pack the form with your device, and send both the form and your device to the service center address shown on your RMA Request Form.\n\n
+              
+              Thank you for using the RMA system.\n\n\n
+              == This is an automated system notification, please do not reply. ==\n
+              == For any system operation issues, please contact Cipherlab E-RMA Administrator: [$Email URL$] ==\n\n
+              Best Regards,\n
+              Cipherlab E-RMA Service Center\n
+            </VALUE>
+    </_x0030_>
+    <_x0030_>
+            <FUNCTIONNAME>Mail</FUNCTIONNAME>
+            <TYPE>Mail</TYPE>
+            <KEY>424</KEY>
+            <VALUE>[$Customer's Name$] Service for CipherLab Comprehensive Warranty, RMA No.[$Request No$] .</VALUE>
+    </_x0030_>
+
+    <_x0030_>
+            <FUNCTIONNAME>Mail</FUNCTIONNAME>
+            <TYPE>Mail</TYPE>
+            <KEY>425</KEY>
+            <VALUE>
+              To CipherLab Service Center,\n\n
+              [$Customer Name$] has filed a service request with RMA number of [$RMA No$] on [$Request Date$]. Please contact the customer and send for a courier to pick up the faulty item.\n\n
+              The customer may track the status on Cipherlab E-RMA system, http://e-rma.cipherlab.com.tw , anytime during the course of service.\n\n
+
+              Best Regards,\n
+              Cipherlab E-RMA Service Center\n
+            </VALUE>
+    </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>001</KEY>
+    <VALUE>Log in</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>002</KEY>
+    <VALUE>Account Setting</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>003</KEY>
+    <VALUE>RMA Status Query</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>004</KEY>
+    <VALUE>PO Date</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>005</KEY>
+    <VALUE>Warranty Content</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>006</KEY>
+    <VALUE>Warranty Month</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>007</KEY>
+    <VALUE>Extra Month</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>008</KEY>
+    <VALUE>Memo</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>009</KEY>
+    <VALUE>Warranty End Date</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>010</KEY>
+    <VALUE>RMA Number for Parts Request Only</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>011</KEY>
+    <VALUE>Part Number</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>012</KEY>
+    <VALUE>Warranty Detail</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>013</KEY>
+    <VALUE>Year</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>014</KEY>
+    <VALUE>Month</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>015</KEY>
+    <VALUE>Day</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>016</KEY>
+    <VALUE>January</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>017</KEY>
+    <VALUE>February</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>018</KEY>
+    <VALUE>March</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>019</KEY>
+    <VALUE>April</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>020</KEY>
+    <VALUE>May</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>021</KEY>
+    <VALUE>June</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>022</KEY>
+    <VALUE>July</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>023</KEY>
+    <VALUE>August</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>024</KEY>
+    <VALUE>Septemper</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>025</KEY>
+    <VALUE>Octber</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>026</KEY>
+    <VALUE>November</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>027</KEY>
+    <VALUE>December</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>029</KEY>
+    <VALUE>EW/MW Warranty</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>030</KEY>
+    <VALUE>CW Warranty</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>031</KEY>
+    <VALUE>LogOut</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>032</KEY>
+    <VALUE>Requested Information Detail</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>033</KEY>
+    <VALUE>Confirm</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>034</KEY>
+    <VALUE>Accept</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>035</KEY>
+    <VALUE>Reject</VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>036</KEY>
+    <VALUE>
+      Warranty Parts List
+    </VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>037</KEY>
+    <VALUE>
+      Repair Detail
+    </VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>038</KEY>
+    <VALUE>
+      EndUser
+    </VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>039</KEY>
+    <VALUE>
+      End User Company Name is null
+    </VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>040</KEY>
+    <VALUE>
+      End User Tel No. is null
+    </VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>041</KEY>
+    <VALUE>
+      End User Contact Person is null
+    </VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>042</KEY>
+    <VALUE>
+      End User Email is null
+    </VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>043</KEY>
+    <VALUE>
+      End User Address is null
+    </VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>044</KEY>
+    <VALUE>
+      Please refer to Warranty Details for valid expiration date
+    </VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>045</KEY>
+    <VALUE>
+      Confirm
+    </VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>046</KEY>
+    <VALUE>
+      Confirm
+    </VALUE>
+  </_x0030_>
+  <_x0030_>
+    <FUNCTIONNAME>Transfer</FUNCTIONNAME>
+    <TYPE>word</TYPE>
+    <KEY>047</KEY>
+    <VALUE>
+      Service Charge cannot be 0
+    </VALUE>
+  </_x0030_>
+</NewDataSet>
